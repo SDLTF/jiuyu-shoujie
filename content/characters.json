@@ -1,0 +1,191 @@
+[
+  {
+    "id": "01",
+    "name": "三岛",
+    "real": "鲁益杰",
+    "original": "assets/originals/01.png",
+    "source_filename": "三岛重绘版/三岛_人物展示卡_v3.png"
+  },
+  {
+    "id": "02",
+    "name": "琉西法",
+    "real": "刘思言",
+    "original": "assets/originals/02.png",
+    "source_filename": "前批十七人/02_琉西法_人物展示卡.png"
+  },
+  {
+    "id": "03",
+    "name": "土方奏一",
+    "real": "陈彦堃",
+    "original": "assets/originals/03.png",
+    "source_filename": "前批十七人/07_土方奏一_人物展示卡.png"
+  },
+  {
+    "id": "04",
+    "name": "贾小鱼",
+    "real": "贾雨微",
+    "original": "assets/originals/04.png",
+    "source_filename": "前批十七人/12_贾小鱼_人物展示卡.png"
+  },
+  {
+    "id": "05",
+    "name": "酥心糖",
+    "real": "吴沛霖",
+    "original": "assets/originals/05.png",
+    "source_filename": "前批十七人/06_酥心糖_人物展示卡.png"
+  },
+  {
+    "id": "06",
+    "name": "吴语",
+    "real": "吴安奇",
+    "original": "assets/originals/06.png",
+    "source_filename": "补齐九人版/01_吴语_人物展示卡.png"
+  },
+  {
+    "id": "07",
+    "name": "闵霁",
+    "real": "尹若菲",
+    "original": "assets/originals/07.png",
+    "source_filename": "前批十七人/05_闵霁_人物展示卡.png"
+  },
+  {
+    "id": "08",
+    "name": "楚惊殊",
+    "real": "胡陈紫雨",
+    "original": "assets/originals/08.png",
+    "source_filename": "前批十七人/04_楚惊殊_人物展示卡.png"
+  },
+  {
+    "id": "09",
+    "name": "莉莉",
+    "real": "赵紫煜",
+    "original": "assets/originals/09.png",
+    "source_filename": "补齐九人版/02_莉莉_人物展示卡.png"
+  },
+  {
+    "id": "10",
+    "name": "林清翊",
+    "real": "卢梁昊",
+    "original": "assets/originals/10.png",
+    "source_filename": "前批十七人/10_林清翊_人物展示卡.png"
+  },
+  {
+    "id": "11",
+    "name": "韦侃",
+    "real": "周末",
+    "original": "assets/originals/11.png",
+    "source_filename": "前批十七人/14_韦侃_人物展示卡.png"
+  },
+  {
+    "id": "12",
+    "name": "单谣",
+    "real": "沙天语",
+    "original": "assets/originals/12.png",
+    "source_filename": "前批十七人/13_单谣_人物展示卡.png"
+  },
+  {
+    "id": "13",
+    "name": "赵香香",
+    "real": "赵鑫",
+    "original": "assets/originals/13.png",
+    "source_filename": "前批十七人/17_赵香香_人物展示卡.png"
+  },
+  {
+    "id": "14",
+    "name": "彭湃",
+    "real": "彭昱阳",
+    "original": "assets/originals/14.png",
+    "source_filename": "前批十七人/11_彭湃_人物展示卡.png"
+  },
+  {
+    "id": "15",
+    "name": "妙愿",
+    "real": "汪亮宇",
+    "original": "assets/originals/15.png",
+    "source_filename": "补齐九人版/03_妙愿_人物展示卡.png"
+  },
+  {
+    "id": "16",
+    "name": "蔚蔚",
+    "real": "邱语晨",
+    "original": "assets/originals/16.png",
+    "source_filename": "补齐九人版/04_蔚蔚_人物展示卡.png"
+  },
+  {
+    "id": "17",
+    "name": "顾霆",
+    "real": "范明宇",
+    "original": "assets/originals/17.png",
+    "source_filename": "补齐九人版/05_顾霆_人物展示卡.png"
+  },
+  {
+    "id": "18",
+    "name": "甄没用",
+    "real": "黎睿",
+    "original": "assets/originals/18.png",
+    "source_filename": "前批十七人/03_甄没用_人物展示卡.png"
+  },
+  {
+    "id": "19",
+    "name": "曲柯",
+    "real": "余奕涵",
+    "original": "assets/originals/19.png",
+    "source_filename": "前批十七人/01_曲柯_人物展示卡.png"
+  },
+  {
+    "id": "20",
+    "name": "谢寄风",
+    "real": "梅文诚",
+    "original": "assets/originals/20.png",
+    "source_filename": "补齐九人版/06_谢寄风_人物展示卡.png"
+  },
+  {
+    "id": "21",
+    "name": "莫问",
+    "real": "唐思齐",
+    "original": "assets/originals/21.png",
+    "source_filename": "前批十七人/16_莫问_人物展示卡.png"
+  },
+  {
+    "id": "22",
+    "name": "江照明",
+    "real": "王润泽",
+    "original": "assets/originals/22.png",
+    "source_filename": "前批十七人/08_江照明_人物展示卡.png"
+  },
+  {
+    "id": "23",
+    "name": "小语",
+    "real": "刘筱语",
+    "original": "assets/originals/23.png",
+    "source_filename": "补齐九人版/07_小语_人物展示卡.png"
+  },
+  {
+    "id": "24",
+    "name": "晏执衡",
+    "real": "吴俊逸",
+    "original": "assets/originals/24.png",
+    "source_filename": "补齐九人版/08_晏执衡_人物展示卡.png"
+  },
+  {
+    "id": "25",
+    "name": "墨默",
+    "real": "全诗轩",
+    "original": "assets/originals/25.png",
+    "source_filename": "前批十七人/15_墨默_人物展示卡.png"
+  },
+  {
+    "id": "26",
+    "name": "白阅尘",
+    "real": "曹轲",
+    "original": "assets/originals/26.png",
+    "source_filename": "补齐九人版/09_白阅尘_人物展示卡.png"
+  },
+  {
+    "id": "27",
+    "name": "赫利俄斯",
+    "real": "刘文旺",
+    "original": "assets/originals/27.png",
+    "source_filename": "前批十七人/09_赫利俄斯_人物展示卡.png"
+  }
+]
