@@ -29,7 +29,7 @@ if (viewer) {
     selected = index;
     const button = buttons[index];
     image.src = button.dataset.image;
-    image.alt = button.dataset.name + "人物展示卡";
+    image.alt = button.dataset.name + (button.dataset.kind || "人物展示卡");
     title.textContent = button.dataset.name;
     original.href = button.dataset.original;
     viewer.classList.remove("is-zoomed");

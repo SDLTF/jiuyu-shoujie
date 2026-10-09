@@ -306,3 +306,49 @@ body{font-weight:400;font-kerning:normal;text-rendering:optimizeLegibility;-webk
  .advanced-heading .wiki-clear{margin-left:0}
 }
 @media(max-width:360px){.tile-link h2{font-size:23px}.profile-heading h1{font-size:36px}.world-heading h1{font-size:54px}.wiki-section h2{font-size:30px}.wiki-term h3{font-size:32px}}
+
+/* Each character has their own scenery, with a clear portrait above the dossier. */
+.page-character .page-backdrop{height:100%;background-image:linear-gradient(#101b25ed,#101b25fa),var(--character-background);background-size:cover;background-position:center top;opacity:1}
+.page-character .page-backdrop:after{display:none}
+.character-scene{position:relative;isolation:isolate;min-height:clamp(640px,56vw,900px);overflow:hidden}
+.character-scene-art{position:absolute;z-index:-2;inset:0;display:block}
+.character-scene-art img{display:block;width:100%;height:100%;object-fit:cover;object-position:center top}
+.scene-shade{position:absolute;z-index:-1;inset:0;background:linear-gradient(90deg,#101b25ed 0%,#101b25cf 26%,#101b2560 44%,transparent 61%),linear-gradient(0deg,var(--bg),transparent 35%);pointer-events:none}
+.scene-content{padding-top:35px;padding-bottom:70px}
+.scene-content .breadcrumbs{margin-bottom:40px;color:#d2d5d4}
+.scene-content .breadcrumbs a{color:var(--gold);min-height:44px;display:inline-flex;align-items:center}
+.scene-content .profile-heading{display:block;max-width:43%;padding:0;border:0;margin:0}
+.scene-content .profile-avatar{width:94px;height:94px;margin-bottom:22px;border-color:#bba27280}
+.scene-content .profile-heading h1{font-size:clamp(48px,5.5vw,76px);line-height:1.35;margin:6px 0 14px;text-shadow:0 3px 20px #0007;overflow-wrap:anywhere}
+.scene-content .profile-name-line{color:#d1d9dc;line-height:1.9;margin-bottom:18px}
+.scene-content .profile-basic{max-width:430px;gap:7px 10px}
+.scene-content .profile-basic span{background:#101b2577;border:1px solid #b5c3c435;padding:4px 9px;color:#e5e7e1;font-size:13px}
+.scene-content .profile-quote{max-width:40%;background:none;border:0;padding:0;margin:25px 0 20px;color:#eee8d9;font-size:25px;line-height:1.8;text-shadow:0 2px 14px #000}
+.scene-actions{display:flex;align-items:center;flex-wrap:wrap;gap:16px;max-width:43%;margin-top:22px}
+.scene-actions .button{font-family:var(--sans);background:#101b25bb;font-size:14px;min-height:46px;border-color:#bba27299}
+.scene-original{font:13px/1.8 var(--sans);color:var(--gold);min-height:44px;display:inline-flex;align-items:center}
+.character-profile{padding-top:28px}
+.page-character .dossier-section h2,.page-character .profile-info h2{text-shadow:0 2px 12px #0007}
+@media(max-width:850px) and (min-width:641px){.scene-content .profile-heading{max-width:46%}.scene-content .profile-avatar{width:78px;height:78px}.scene-content .profile-heading h1{font-size:52px}.scene-content .profile-quote{max-width:43%;font-size:23px}.scene-content .breadcrumbs{margin-bottom:25px}}
+@media(max-width:640px){
+ .page-character .page-backdrop{background-image:none;background-color:var(--bg)}
+ .character-scene{--scene-art-height:min(112vw,480px);min-height:0}
+ .character-scene-art{height:var(--scene-art-height);bottom:auto}
+ .character-scene-art img{object-position:center top;object-fit:cover}
+ .scene-shade{background:linear-gradient(0deg,var(--bg) 0%,var(--bg) calc(100% - var(--scene-art-height)),#101b2500 calc(100% - var(--scene-art-height) + 140px),#101b2500 100%)}
+ .scene-content{padding-top:calc(var(--scene-art-height) - 15px);padding-bottom:24px}
+ .scene-content .breadcrumbs{position:absolute;top:12px;left:20px;background:#101b25cc;border:1px solid #b5c3c435;border-radius:3px;padding:0 12px;margin:0;font-size:12px}
+ .scene-content .profile-heading{display:flex;align-items:flex-start;gap:17px;max-width:none}
+ .scene-content .profile-avatar{flex-shrink:0;width:68px;height:68px;margin:9px 0 0}
+ .scene-content .profile-heading-copy{min-width:0}
+ .scene-content .profile-heading h1{font-size:42px;margin:5px 0 9px}
+ .scene-content .profile-heading .eyebrow{font-size:10px;letter-spacing:.08em}
+ .scene-content .profile-name-line{font-size:14px;margin-bottom:14px}
+ .scene-content .profile-basic{gap:6px}
+ .scene-content .profile-basic span{font-size:12px;padding:3px 7px}
+ .scene-content .profile-quote{max-width:none;font-size:23px;margin:22px 0 10px;line-height:1.8}
+ .scene-actions{max-width:none;margin-top:16px;gap:18px}
+ .scene-actions .button{font-size:14px;padding:10px 15px}
+ .character-profile{padding-top:17px}
+}
+@media(max-width:360px){.scene-content .profile-heading h1{font-size:36px}.scene-content .profile-avatar{width:58px;height:58px}.scene-content .profile-heading{gap:13px}}

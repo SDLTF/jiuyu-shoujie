@@ -1,6 +1,7 @@
 """Prepare responsive scenery and self-hosted, content-subset web fonts."""
 from pathlib import Path
 import hashlib
+import json
 import shutil
 from PIL import Image
 from fontTools import subset
@@ -21,6 +22,27 @@ def prepare_design_assets():
                     image = image.convert('RGB')
                     image.thumbnail((width, width), Image.Resampling.LANCZOS)
                     image.save(target, 'WEBP', quality=85, method=6)
+
+    # Keep native PNG artwork; deliver lighter desktop and portrait mobile versions.
+    manifest_path = ROOT / 'assets/character-backgrounds/generation-prompts.json'
+    if manifest_path.exists():
+        art_dir = OUT / 'character-backgrounds'
+        art_dir.mkdir(parents=True, exist_ok=True)
+        manifest = json.loads(manifest_path.read_text(encoding='utf-8'))
+        for art in manifest['images']:
+            source = ROOT / art['original']
+            for suffix in ('', '-mobile'):
+                target = art_dir / f'{art["id"]}{suffix}.webp'
+                if not target.exists() or source.stat().st_mtime > target.stat().st_mtime or manifest_path.stat().st_mtime > target.stat().st_mtime:
+                    with Image.open(source) as picture:
+                        image = picture.convert('RGB')
+                        if suffix:
+                            crop_width = min(image.width, round(image.height * 3 / 4))
+                            center = image.width * art.get('focus_x', 68) / 100
+                            left = max(0, min(image.width - crop_width, round(center - crop_width / 2)))
+                            image = image.crop((left, 0, left + crop_width, image.height))
+                            image.thumbnail((900, 1200), Image.Resampling.LANCZOS)
+                        image.save(target, 'WEBP', quality=90, method=6)
 
     font_dir = OUT / 'fonts'
     font_dir.mkdir(parents=True, exist_ok=True)

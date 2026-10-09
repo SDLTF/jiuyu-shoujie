@@ -23,6 +23,12 @@
 
 轮播使用 `content/characters.json` 中的 `hero_framing` 为每张原图定位头部中心；小屏幕限制放大比例以容纳完整头部，余下空间由柔化背景衔接。展示卡原图不变。
 
+每位角色另有一张专属场景大图，作为人物页的背景与顶部主视觉。桌面显示横幅，手机显示围绕人物调整的竖屏版本；文字在独立暗色区域阅读，页面提供大图放大和原始 PNG 入口。
+
+- `assets/character-backgrounds/01.png` 至 `27.png`：以相应原始展示卡为身份参考，由内置 image_gen 分别生成的场景插画。
+- `assets/character-backgrounds/generation-prompts.json`：27 张图片的完整提示词、参考图、原生尺寸、校验值及手机构图中心 `focus_x`。
+- `docs/assets/character-backgrounds/`：网站使用的 WebP 图片及 `-mobile.webp` 竖屏版本。场景仅用于视觉氛围，不补充剧情事实。
+
 ## 世界档案与视觉素材
 
 `world/` 是独立的世界观与术语 Wiki，现收录 99 条词条，支持搜索、分类、相关词条跳转和人物链接。76 条基础设定默认可读；23 条进阶设定包含后续机制和剧情，必须主动展开才会进入列表和搜索结果。没有明确的设定会说明资料边界，不将推测写成规则。

@@ -34,7 +34,7 @@ def avatar(person, prefix="../", loading='loading="lazy"'):
 def image_viewer():
     return '''<dialog id="image-viewer" aria-labelledby="viewer-name"><div class="viewer-toolbar"><h2 id="viewer-name">人物展示卡</h2><div><button id="viewer-zoom" type="button" aria-pressed="false">放大细节</button><button id="viewer-close" type="button" aria-label="关闭图片">关闭 <span aria-hidden="true">×</span></button></div></div><div class="viewer-image-wrap"><img id="viewer-image" alt=""></div><div class="viewer-bottom"><p class="viewer-tip">放大后可滑动查看图片细节</p><a id="viewer-original" target="_blank" rel="noopener">查看原始 PNG</a></div></dialog>'''
 
-def frame(title, body, prefix="", active="", noindex=False, route=""):
+def frame(title, body, prefix="", active="", noindex=False, route="", background=""):
     links = "".join(
         f'<a href="{prefix}{href}"' + (' aria-current="page"' if name == active else '') + f'>{label}</a>'
         for name, href, label in [("gallery", "gallery/", "人物图集"), ("world", "world/", "世界观"), ("chapters", "chapters/", "正文阅读")]
@@ -52,7 +52,7 @@ def frame(title, body, prefix="", active="", noindex=False, route=""):
 <link rel="stylesheet" href="{prefix}assets/fonts/fonts.css?v={asset_version('fonts/fonts.css')}">
 <link rel="stylesheet" href="{prefix}assets/site.css?v={asset_version('site.css')}">
 <script src="{prefix}assets/site.js?v={asset_version('site.js')}" defer></script>
-</head><body class="page-{page_kind}">
+</head><body class="page-{page_kind}"{f' style="--character-background:url({escape(background)})"' if background else ''}>
 <a class="skip-link" href="#main">跳到正文</a>
 <header class="site-header"><div class="header-inner">
 <a class="brand" href="{prefix or './'}" aria-label="九域守界首页"><span class="brand-mark" aria-hidden="true">九</span><span>九域守界</span></a>
@@ -147,6 +147,13 @@ def build():
         profile = person["profile"]
         image = f"../assets/images/{ident}.webp"
         raw = escape(RAW_URL + person["original"])
+        art_name = f'character-backgrounds/{ident}.webp'
+        art = f'../assets/{art_name}?v={asset_version(art_name)}'
+        art_mobile_name = f'character-backgrounds/{ident}-mobile.webp'
+        art_mobile = f'../assets/{art_mobile_name}?v={asset_version(art_mobile_name)}'
+        art_raw = escape(RAW_URL + f'assets/character-backgrounds/{ident}.png')
+        with Image.open(ROOT / f'assets/character-backgrounds/{ident}.png') as picture:
+            art_width, art_height = picture.size
         basic = ''.join(f'<span>{escape(part.strip())}</span>' for part in profile['basic'].split('｜'))
         sections = []
         for section in profile['sections']:
@@ -157,11 +164,12 @@ def build():
                 sections.append(f'<section class="profile-section"><h3>{escape(section["title"])}</h3>{text}</section>')
         quote = f'<blockquote class="profile-quote">{escape(profile["quote"])}</blockquote>' if profile['quote'] else ''
         previous, following = characters[(index - 1) % len(characters)], characters[(index + 1) % len(characters)]
-        body = f'''<div class="page-shell character-profile"><nav class="breadcrumbs" aria-label="位置"><a href="./">人物图集</a><span aria-hidden="true">/</span><span>{name}</span></nav>
+        body = f'''<section class="character-scene" aria-label="{name}专属场景"><picture class="character-scene-art"><source media="(max-width: 640px)" srcset="{art_mobile}"><img src="{art}" alt="{name}专属场景插画" width="{art_width}" height="{art_height}" fetchpriority="high"></picture><div class="scene-shade" aria-hidden="true"></div><div class="page-shell scene-content"><nav class="breadcrumbs" aria-label="位置"><a href="./">人物图集</a><span aria-hidden="true">/</span><span>{name}</span></nav>
 <header class="profile-heading"><div class="profile-avatar">{avatar(person, loading='fetchpriority="high"')}</div><div class="profile-heading-copy"><p class="eyebrow">九域守界 / 人物档案 {ident}</p><h1>{name}</h1><p class="profile-name-line">{escape(profile['name_line'])}</p><div class="profile-basic">{basic}</div></div></header>{quote}
+<div class="scene-actions"><button type="button" class="button secondary image-open" data-image="{art}" data-name="{name} · 专属场景" data-kind="专属场景插画" data-original="{art_raw}">查看专属大图 ↗</button><a href="{art_raw}" target="_blank" rel="noopener" class="scene-original">原始 PNG</a></div></div></section><div class="page-shell character-profile">
 <div class="profile-layout"><section class="dossier-section" aria-labelledby="dossier-title"><h2 id="dossier-title">人物展示卡</h2><button type="button" class="image-open dossier-image" data-image="{image}" data-name="{name}" data-original="{raw}" aria-label="放大{name}人物展示卡"><img src="{image}" alt="{name}完整人物展示卡" width="1774" height="887"><span class="image-hint">点击放大</span></button><div class="dossier-actions"><a class="button secondary" href="{image}" target="_blank" rel="noopener">打开完整图片</a><a class="button secondary" href="{raw}" target="_blank" rel="noopener">查看原始 PNG</a></div></section><section class="profile-info" aria-labelledby="profile-info-title"><h2 id="profile-info-title">个人资料</h2>{''.join(sections)}</section></div>
 <nav class="profile-pagination" aria-label="人物导航"><a href="{previous['id']}.html"><span>上一位</span>{escape(previous['name'])}</a><a class="back-to-gallery" href="./">全部人物</a><a href="{following['id']}.html"><span>下一位</span>{escape(following['name'])}</a></nav></div>{image_viewer()}'''
-        save(OUT / f'gallery/{ident}.html', frame(f'{person["name"]} · 人物资料', body, '../', 'gallery', route=f'gallery/{ident}.html'))
+        save(OUT / f'gallery/{ident}.html', frame(f'{person["name"]} · 人物资料', body, '../', 'gallery', route=f'gallery/{ident}.html', background=art))
 
     outline_title, outline_body, toc = md_content((ROOT / "content/outline.md").read_text(encoding="utf-8"))
     outline = f'''<div class="page-shell"><div class="page-heading"><p class="eyebrow">AUTHOR'S NOTES / 创作资料</p><h1>故事大纲</h1><p>此页包含完整剧情走向、人物选择与结局。</p></div>
