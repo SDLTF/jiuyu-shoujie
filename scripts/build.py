@@ -100,7 +100,11 @@ def build():
     slides = []
     for index in range(0, len(ordered), 3):
         figures = []
-        for slot, person in enumerate(ordered[index:index + 3]):
+        group = ordered[index:index + 3]
+        # Keep the three-panel composition when a new character leaves a partial group.
+        if len(group) < 3:
+            group = group + ordered[:3 - len(group)]
+        for slot, person in enumerate(group):
             loading = 'fetchpriority="high"' if index == 0 and slot == 0 else 'loading="lazy"'
             framing = person['hero_framing']
             # At the narrowest viewport, cap scaling so the entire head has 10% breathing room.
@@ -116,15 +120,16 @@ def build():
 <p class="hero-intro">从灰桥的一次救援出发，<br>走入九域交错的世界。</p>
 <p class="hero-note">在这里认识同行者，翻阅他们的设定，等待故事展开。</p>
 <div class="hero-actions"><a class="button primary" href="gallery/">翻阅人物图集</a><a class="button secondary" href="chapters/">正文阅读</a></div>
-<p class="hero-meta"><span class="line" aria-hidden="true"></span>27 位角色 · 人物设定图集已收录</p></div>
+<p class="hero-meta"><span class="line" aria-hidden="true"></span>CHARACTER_COUNT 位角色 · 人物设定图集已收录</p></div>
 <!-- CHARACTER_CAROUSEL -->
 </section>
 <a class="world-entry" href="world/"><span class="eyebrow">WORLD & LEXICON / 世界观与术语</span><span class="world-entry-title">九域之间</span><span class="world-entry-copy">从地脉到梦路，认识这个世界里的名字与规则。</span><span class="world-entry-action">打开世界档案 ↗</span></a>
 <section class="entry-grid" aria-label="阅读入口">
-<a class="entry" href="gallery/"><div class="entry-top"><span class="eyebrow">01 / 人物</span><span class="entry-status">27 份设定</span></div><h2>人物设定图集</h2><p>从头像认识角色，翻阅展示卡与个人资料。</p><span class="entry-action">打开图集 <span aria-hidden="true">↗</span></span></a>
+<a class="entry" href="gallery/"><div class="entry-top"><span class="eyebrow">01 / 人物</span><span class="entry-status">CHARACTER_COUNT 份设定</span></div><h2>人物设定图集</h2><p>从头像认识角色，翻阅展示卡与个人资料。</p><span class="entry-action">打开图集 <span aria-hidden="true">↗</span></span></a>
 <a class="entry" href="chapters/"><div class="entry-top"><span class="eyebrow">02 / 故事</span><span class="entry-status">正文尚未发布</span></div><h2>小说正文</h2><p>章节发布后，将在这里按顺序收录。</p><span class="entry-action">前往阅读目录 <span aria-hidden="true">↗</span></span></a>
 </section></div>'''
     home = home.replace('<!-- CHARACTER_CAROUSEL -->', carousel)
+    home = home.replace("CHARACTER_COUNT", str(len(characters)))
     chapters = sorted((ROOT / "content/chapters").glob("*.md"))
     if chapters:
         home = home.replace("正文尚未发布", f"已收录 {len(chapters)} 章").replace("章节发布后，将在这里按顺序收录。", "按章节顺序，继续九域守界的故事。")
