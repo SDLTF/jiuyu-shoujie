@@ -22,6 +22,7 @@ if (viewer) {
   const image = document.getElementById("viewer-image");
   const title = document.getElementById("viewer-name");
   const original = document.getElementById("viewer-original");
+  const zoom = document.getElementById("viewer-zoom");
   const buttons = Array.from(document.querySelectorAll(".image-open"));
   let selected = 0;
   const show = (index) => {
@@ -31,6 +32,9 @@ if (viewer) {
     image.alt = button.dataset.name + "人物展示卡";
     title.textContent = button.dataset.name;
     original.href = button.dataset.original;
+    viewer.classList.remove("is-zoomed");
+    zoom.textContent = "放大细节";
+    zoom.setAttribute("aria-pressed", "false");
   };
   buttons.forEach((button, index) => {
     button.addEventListener("click", () => {
@@ -40,6 +44,11 @@ if (viewer) {
     });
   });
   document.getElementById("viewer-close").addEventListener("click", () => viewer.close());
+  zoom.addEventListener("click", () => {
+    const enlarged = viewer.classList.toggle("is-zoomed");
+    zoom.textContent = enlarged ? "适合屏幕" : "放大细节";
+    zoom.setAttribute("aria-pressed", String(enlarged));
+  });
   viewer.addEventListener("click", (event) => {
     if (event.target !== viewer) return;
     const bounds = viewer.getBoundingClientRect();
@@ -47,13 +56,14 @@ if (viewer) {
   });
   viewer.addEventListener("close", () => { document.body.style.overflow = ""; });
   viewer.addEventListener("keydown", (event) => {
-    if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+    if (buttons.length < 2 || (event.key !== "ArrowLeft" && event.key !== "ArrowRight")) return;
     event.preventDefault();
     const direction = event.key === "ArrowRight" ? 1 : -1;
     let next = selected;
     for (let step = 0; step < buttons.length; step += 1) {
       next = (next + direction + buttons.length) % buttons.length;
-      if (!buttons[next].closest("article").hidden) { show(next); break; }
+      const card = buttons[next].closest(".character-card");
+      if (!card || !card.hidden) { show(next); break; }
     }
   });
 }

@@ -4,18 +4,20 @@
 
 **访问网站：[sdltf.github.io/jiuyu-shoujie](https://sdltf.github.io/jiuyu-shoujie/)**
 
-目前收录 27 位角色的完整人物展示卡；小说正文尚未发布。
+目前收录 27 位角色。人物列表显示头像，点击后进入独立人物页面，查看完整展示卡和可阅读的个人资料；小说正文尚未发布。
 
 创作大纲单独保存于 `content/outline.md`，包含完整剧情与结局。网站首页不展示大纲内容，大纲页面默认显示剧透提醒，需要主动确认后才会展开。
 
 ## 内容与网站
 
-- `content/characters.json`：人物图册清单。
+- `content/characters.json`：人物清单、头像显示位置和个人资料。个人资料取自已有绘制说明，三岛使用最新版本。
 - `assets/originals/`：27 张原始 PNG 图片。
 - `content/outline.md`：故事大纲（含剧透）。
 - `content/chapters/`：小说正文，使用 Markdown 编写。
 - `docs/`：已经生成的静态网站，GitHub Pages 从这里发布。
-- `scripts/build.py`：将内容生成网页，并为人物图片生成 WebP 浏览版本。
+- `scripts/build.py`：将内容生成网页，并为人物图片生成 WebP 浏览版本与头像预览。头像通过 CSS 显示展示卡中间的肖像，不改动原图。
+
+人物图集的手机布局为两列头像；人物详情使用纵向布局，展示卡可以放大并滑动查看，个人资料以网页文字排版。样式和脚本使用内容版本号，发布后不会继续使用旧版本缓存。
 
 ## 更新网站
 

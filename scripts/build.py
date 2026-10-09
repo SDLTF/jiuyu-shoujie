@@ -2,8 +2,8 @@
 from pathlib import Path
 import html
 import json
+import hashlib
 import re
-import sys
 import markdown
 from PIL import Image
 
@@ -22,6 +22,17 @@ def save(path, value):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(value, encoding="utf-8")
 
+def asset_version(name):
+    return hashlib.sha256((OUT / "assets" / name).read_bytes()).hexdigest()[:10]
+
+def avatar(person, prefix="../", loading='loading="lazy"'):
+    crop = person.get("avatar", {"width": 315, "left": -108, "top": 0})
+    style = f'--portrait-width:{crop["width"]}%;--portrait-left:{crop["left"]}%;--portrait-top:{crop["top"]}%'
+    return f'<span class="avatar-window" style="{style}"><img src="{prefix}assets/thumbs/{person["id"]}.webp" alt="{escape(person["name"])}头像" width="960" height="480" {loading}></span>'
+
+def image_viewer():
+    return '''<dialog id="image-viewer" aria-labelledby="viewer-name"><div class="viewer-toolbar"><h2 id="viewer-name">人物展示卡</h2><div><button id="viewer-zoom" type="button" aria-pressed="false">放大细节</button><button id="viewer-close" type="button" aria-label="关闭图片">关闭 <span aria-hidden="true">×</span></button></div></div><div class="viewer-image-wrap"><img id="viewer-image" alt=""></div><div class="viewer-bottom"><p class="viewer-tip">放大后可滑动查看图片细节</p><a id="viewer-original" target="_blank" rel="noopener">查看原始 PNG</a></div></dialog>'''
+
 def frame(title, body, prefix="", active="", noindex=False, route=""):
     links = "".join(
         f'<a href="{prefix}{href}"' + (' aria-current="page"' if name == active else '') + f'>{label}</a>'
@@ -36,8 +47,8 @@ def frame(title, body, prefix="", active="", noindex=False, route=""):
 <meta name="theme-color" content="#101b25">{robots}
 <link rel="canonical" href="{SITE_URL}{route}">
 <link rel="icon" href="{prefix}assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="{prefix}assets/site.css">
-<script src="{prefix}assets/site.js" defer></script>
+<link rel="stylesheet" href="{prefix}assets/site.css?v={asset_version('site.css')}">
+<script src="{prefix}assets/site.js?v={asset_version('site.js')}" defer></script>
 </head><body>
 <a class="skip-link" href="#main">跳到正文</a>
 <header class="site-header"><div class="header-inner">
@@ -64,12 +75,20 @@ def build():
     characters = json.loads((ROOT / "content/characters.json").read_text(encoding="utf-8"))
     image_dir = OUT / "assets/images"
     image_dir.mkdir(parents=True, exist_ok=True)
+    thumbnail_dir = OUT / "assets/thumbs"
+    thumbnail_dir.mkdir(parents=True, exist_ok=True)
     for person in characters:
         source = ROOT / person["original"]
         target = image_dir / f'{person["id"]}.webp'
         if not target.exists() or target.stat().st_mtime < source.stat().st_mtime:
             with Image.open(source) as picture:
                 picture.convert("RGB").save(target, "WEBP", quality=92, method=6)
+        thumbnail = thumbnail_dir / f'{person["id"]}.webp'
+        if not thumbnail.exists() or thumbnail.stat().st_mtime < source.stat().st_mtime:
+            with Image.open(source) as picture:
+                preview = picture.convert("RGB")
+                preview.thumbnail((960, 480), Image.Resampling.LANCZOS)
+                preview.save(thumbnail, "WEBP", quality=82, method=6)
 
     home = '''<div class="home-shell">
 <section class="hero" aria-labelledby="hero-title">
@@ -85,7 +104,7 @@ def build():
 <span class="art-caption">人物档案 / CHARACTER ARCHIVE</span></div>
 </section>
 <section class="entry-grid" aria-label="阅读入口">
-<a class="entry" href="gallery/"><div class="entry-top"><span class="eyebrow">01 / 人物</span><span class="entry-status">27 份设定</span></div><h2>人物设定图集</h2><p>全员人物展示卡，查看细节与原始图片。</p><span class="entry-action">打开图集 <span aria-hidden="true">↗</span></span></a>
+<a class="entry" href="gallery/"><div class="entry-top"><span class="eyebrow">01 / 人物</span><span class="entry-status">27 份设定</span></div><h2>人物设定图集</h2><p>从头像认识角色，翻阅展示卡与个人资料。</p><span class="entry-action">打开图集 <span aria-hidden="true">↗</span></span></a>
 <a class="entry" href="chapters/"><div class="entry-top"><span class="eyebrow">02 / 故事</span><span class="entry-status">正文尚未发布</span></div><h2>小说正文</h2><p>章节发布后，将在这里按顺序收录。</p><span class="entry-action">前往阅读目录 <span aria-hidden="true">↗</span></span></a>
 </section></div>'''
     chapters = sorted((ROOT / "content/chapters").glob("*.md"))
@@ -96,19 +115,33 @@ def build():
     cards = []
     for i, person in enumerate(characters):
         name, real, ident = escape(person["name"]), escape(person.get("real", "")), person["id"]
+        loading = 'fetchpriority="high"' if i < 4 else 'loading="lazy"'
+        cards.append(f'''<article class="character-card character-tile" data-search="{name} {real}"><a class="tile-link" href="{ident}.html" aria-label="查看{name}的展示卡和个人资料"><span class="tile-number">{ident}</span>{avatar(person, loading=loading)}<h2>{name}</h2><span class="tile-caption">查看人物资料</span></a></article>''')
+    gallery = f'''<div class="page-shell gallery-shell"><div class="page-heading"><p class="eyebrow">CHARACTER ARCHIVE / 人物档案</p><h1>人物设定图集</h1><p>九域之间的同行者。选择头像，查看人物展示卡与个人资料。</p></div>
+<div class="gallery-tools"><label class="search-field"><span aria-hidden="true">⌕</span><input id="character-search" type="search" placeholder="搜索角色名或原名" aria-label="搜索角色名或原名" autocomplete="off"></label><span class="gallery-count" aria-live="polite"><strong id="character-count">{len(characters)}</strong> / {len(characters)} 位角色</span></div>
+<div class="avatar-grid">{''.join(cards)}</div><p id="no-results" class="empty-results" hidden>没有找到对应角色，换个名字试试。</p></div>'''
+    save(OUT / "gallery/index.html", frame("人物设定图集", gallery, "../", "gallery", route="gallery/"))
+
+    for index, person in enumerate(characters):
+        ident, name = person["id"], escape(person["name"])
+        profile = person["profile"]
         image = f"../assets/images/{ident}.webp"
         raw = escape(RAW_URL + person["original"])
-        loading = 'fetchpriority="high"' if i == 0 else 'loading="lazy"'
-        cards.append(f'''<article class="character-card" data-search="{name} {real}">
-<div class="card-heading"><span class="card-number">{ident}</span><h2>{name}</h2><span class="real-name">{real}</span></div>
-<button type="button" class="image-open" data-image="{image}" data-name="{name}" data-original="{raw}" aria-label="放大{name}人物展示卡">
-<img src="{image}" alt="{name}人物展示卡" width="1774" height="887" {loading}><span class="image-hint">放大查看</span></button>
-<div class="card-footer"><span>人物展示卡</span><a href="{raw}" target="_blank" rel="noopener">查看原始 PNG <span aria-hidden="true">↗</span></a></div></article>''')
-    gallery = f'''<div class="page-shell gallery-shell"><div class="page-heading"><p class="eyebrow">CHARACTER ARCHIVE / 人物档案</p><h1>人物设定图集</h1><p>九域之间的同行者。点击展示卡，放大查看人物与设定细节。</p></div>
-<div class="gallery-tools"><label class="search-field"><span aria-hidden="true">⌕</span><input id="character-search" type="search" placeholder="搜索角色名或原名" aria-label="搜索角色名或原名" autocomplete="off"></label><span class="gallery-count" aria-live="polite"><strong id="character-count">{len(characters)}</strong> / {len(characters)} 位角色</span></div>
-<div class="character-grid">{''.join(cards)}</div><p id="no-results" class="empty-results" hidden>没有找到对应角色，换个名字试试。</p></div>
-<dialog id="image-viewer" aria-labelledby="viewer-name"><div class="viewer-toolbar"><h2 id="viewer-name">人物展示卡</h2><div><a id="viewer-original" target="_blank" rel="noopener">查看原始 PNG</a><button id="viewer-close" type="button" aria-label="关闭图片">关闭 <span aria-hidden="true">×</span></button></div></div><div class="viewer-image-wrap"><img id="viewer-image" alt=""></div><p class="viewer-tip">按 Esc 关闭 · 使用左右方向键切换人物</p></dialog>'''
-    save(OUT / "gallery/index.html", frame("人物设定图集", gallery, "../", "gallery", route="gallery/"))
+        basic = ''.join(f'<span>{escape(part.strip())}</span>' for part in profile['basic'].split('｜'))
+        sections = []
+        for section in profile['sections']:
+            text = ''.join(f'<p>{escape(line)}</p>' for line in section['lines'])
+            if section['title'] == '隐秘':
+                sections.append(f'<details class="profile-secret"><summary>隐秘设定 <span>含剧透</span></summary><div>{text}</div></details>')
+            else:
+                sections.append(f'<section class="profile-section"><h3>{escape(section["title"])}</h3>{text}</section>')
+        quote = f'<blockquote class="profile-quote">{escape(profile["quote"])}</blockquote>' if profile['quote'] else ''
+        previous, following = characters[(index - 1) % len(characters)], characters[(index + 1) % len(characters)]
+        body = f'''<div class="page-shell character-profile"><nav class="breadcrumbs" aria-label="位置"><a href="./">人物图集</a><span aria-hidden="true">/</span><span>{name}</span></nav>
+<header class="profile-heading"><div class="profile-avatar">{avatar(person, loading='fetchpriority="high"')}</div><div class="profile-heading-copy"><p class="eyebrow">九域守界 / 人物档案 {ident}</p><h1>{name}</h1><p class="profile-name-line">{escape(profile['name_line'])}</p><div class="profile-basic">{basic}</div></div></header>{quote}
+<div class="profile-layout"><section class="dossier-section" aria-labelledby="dossier-title"><h2 id="dossier-title">人物展示卡</h2><button type="button" class="image-open dossier-image" data-image="{image}" data-name="{name}" data-original="{raw}" aria-label="放大{name}人物展示卡"><img src="{image}" alt="{name}完整人物展示卡" width="1774" height="887"><span class="image-hint">点击放大</span></button><div class="dossier-actions"><a class="button secondary" href="{image}" target="_blank" rel="noopener">打开完整图片</a><a class="button secondary" href="{raw}" target="_blank" rel="noopener">查看原始 PNG</a></div></section><section class="profile-info" aria-labelledby="profile-info-title"><h2 id="profile-info-title">个人资料</h2>{''.join(sections)}</section></div>
+<nav class="profile-pagination" aria-label="人物导航"><a href="{previous['id']}.html"><span>上一位</span>{escape(previous['name'])}</a><a class="back-to-gallery" href="./">全部人物</a><a href="{following['id']}.html"><span>下一位</span>{escape(following['name'])}</a></nav></div>{image_viewer()}'''
+        save(OUT / f'gallery/{ident}.html', frame(f'{person["name"]} · 人物资料', body, '../', 'gallery', route=f'gallery/{ident}.html'))
 
     outline_title, outline_body, toc = md_content((ROOT / "content/outline.md").read_text(encoding="utf-8"))
     outline = f'''<div class="page-shell"><div class="page-heading"><p class="eyebrow">AUTHOR'S NOTES / 创作资料</p><h1>故事大纲</h1><p>此页包含完整剧情走向、人物选择与结局。</p></div>
