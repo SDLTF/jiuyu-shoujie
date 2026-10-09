@@ -90,7 +90,7 @@ dialog{width:min(1600px,96vw);max-width:96vw;max-height:96dvh;padding:0;border:1
   .page-shell{padding:28px 16px 50px}
   .page-heading h1{font-size:32px;line-height:1.5}
   .page-heading>p:last-child{font-size:15px}
-  .gallery-tools{flex-wrap:wrap;gap:12px;align-items:center}
+  .gallery-tools{flex-direction:row;flex-wrap:wrap;gap:12px;align-items:center}
   .search-field{padding:9px 12px;min-height:46px;flex:1 1 220px;max-width:none}
   .search-field input{font-size:16px;line-height:1.6}
   .gallery-count{margin-left:auto;font-size:13px}
