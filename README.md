@@ -4,7 +4,7 @@
 
 **访问网站：[sdltf.github.io/jiuyu-shoujie](https://sdltf.github.io/jiuyu-shoujie/)**
 
-目前收录 28 位角色，新增[环（张瑞康）](https://sdltf.github.io/jiuyu-shoujie/gallery/28.html)。人物列表显示头像，点击后进入独立人物页面，查看完整展示卡和可阅读的个人资料；小说正文已发布五章：[第一章《交班以后》](https://sdltf.github.io/jiuyu-shoujie/chapters/001.html)、[第二章《春水不回头》](https://sdltf.github.io/jiuyu-shoujie/chapters/002.html)、[第三章《鱼汤还热着》](https://sdltf.github.io/jiuyu-shoujie/chapters/003.html)、[第四章《人已经出来了》](https://sdltf.github.io/jiuyu-shoujie/chapters/004.html)、[第五章《不回答的客人》](https://sdltf.github.io/jiuyu-shoujie/chapters/005.html)。
+目前收录 28 位角色，新增[环（张瑞康）](https://sdltf.github.io/jiuyu-shoujie/gallery/28.html)。人物列表显示头像，点击后进入独立人物页面，查看完整展示卡和可阅读的个人资料；小说正文已发布六章：[第一章《交班以后》](https://sdltf.github.io/jiuyu-shoujie/chapters/001.html)、[第二章《春水不回头》](https://sdltf.github.io/jiuyu-shoujie/chapters/002.html)、[第三章《鱼汤还热着》](https://sdltf.github.io/jiuyu-shoujie/chapters/003.html)、[第四章《人已经出来了》](https://sdltf.github.io/jiuyu-shoujie/chapters/004.html)、[第五章《不回答的客人》](https://sdltf.github.io/jiuyu-shoujie/chapters/005.html)、[第六章《绳子的另一头》](https://sdltf.github.io/jiuyu-shoujie/chapters/006.html)。
 
 创作大纲单独保存于 `content/outline.md`，包含完整剧情与结局。网站保留大纲页面与地址，但首页、导航、页脚和其他公开页面都不提供大纲入口，大纲页面不设置展开开关。直接知道地址的人仍可访问；这不是访问权限控制。
 
