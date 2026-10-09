@@ -60,7 +60,7 @@ def frame(title, body, prefix="", active="", noindex=False, route=""):
 </div></header>
 <main id="main"><div class="page-backdrop" aria-hidden="true"></div>{body}</main>
 <footer class="site-footer"><div><a class="footer-title" href="{prefix or './'}">九域守界</a><span>故事与人物档案 · SDLTF</span></div>
-<a href="{prefix}outline/" class="spoiler-link">创作大纲 <span>含剧透</span></a></footer>
+<a href="{prefix}world/" class="footer-world-link">世界观与术语 ↗</a></footer>
 </body></html>'''
 
 def md_content(text):
@@ -94,6 +94,18 @@ def build():
                 preview.thumbnail((960, 480), Image.Resampling.LANCZOS)
                 preview.save(thumbnail, "WEBP", quality=82, method=6)
 
+    featured = [characters[0], characters[9], characters[5]]
+    featured_ids = {person['id'] for person in featured}
+    ordered = featured + [person for person in characters if person['id'] not in featured_ids]
+    slides = []
+    for index in range(0, len(ordered), 3):
+        figures = []
+        for slot, person in enumerate(ordered[index:index + 3]):
+            loading = 'fetchpriority="high"' if index == 0 and slot == 0 else 'loading="lazy"'
+            figures.append(f'<figure class="portrait portrait-{["one", "two", "three"][slot]}"><a href="gallery/{person["id"]}.html" aria-label="查看{escape(person["name"])}人物资料"><img src="assets/images/{person["id"]}.webp" alt="{escape(person["name"])}的人物设定" {loading}></a><figcaption><span>{person["id"]}</span>{escape(person["name"])}</figcaption></figure>')
+        hidden = ' hidden' if index else ''
+        slides.append(f'<div class="hero-slide" role="group" aria-roledescription="幻灯片" aria-label="第{index//3+1}组，共{(len(ordered)+2)//3}组"{hidden}>{"".join(figures)}</div>')
+    carousel = f'''<div class="hero-art" id="hero-carousel" role="region" aria-roledescription="轮播" aria-label="人物设定预览"><div class="hero-slides">{''.join(slides)}</div><div class="carousel-controls"><span class="art-caption">人物档案 / CHARACTER ARCHIVE</span><div class="carousel-buttons"><button id="carousel-prev" type="button" aria-label="上一组人物" aria-controls="hero-carousel">←</button><span id="carousel-status" aria-live="polite" aria-atomic="true">01 / {(len(ordered)+2)//3:02}</span><button id="carousel-next" type="button" aria-label="下一组人物" aria-controls="hero-carousel">→</button></div></div></div>'''
     home = '''<div class="home-shell">
 <section class="hero" aria-labelledby="hero-title">
 <div class="hero-copy"><p class="eyebrow">九域守界 · 故事档案</p><h1 id="hero-title">九域<span>守界</span></h1>
@@ -101,17 +113,14 @@ def build():
 <p class="hero-note">在这里认识同行者，翻阅他们的设定，等待故事展开。</p>
 <div class="hero-actions"><a class="button primary" href="gallery/">翻阅人物图集</a><a class="button secondary" href="chapters/">正文阅读</a></div>
 <p class="hero-meta"><span class="line" aria-hidden="true"></span>27 位角色 · 人物设定图集已收录</p></div>
-<div class="hero-art" aria-label="人物设定预览">
-<figure class="portrait portrait-one"><img src="assets/images/01.webp" alt="三岛的人物设定" fetchpriority="high"><figcaption><span>01</span>三岛</figcaption></figure>
-<figure class="portrait portrait-two"><img src="assets/images/10.webp" alt="林清翊的人物设定"><figcaption><span>10</span>林清翊</figcaption></figure>
-<figure class="portrait portrait-three"><img src="assets/images/06.webp" alt="吴语的人物设定"><figcaption><span>06</span>吴语</figcaption></figure>
-<span class="art-caption">人物档案 / CHARACTER ARCHIVE</span></div>
+<!-- CHARACTER_CAROUSEL -->
 </section>
 <a class="world-entry" href="world/"><span class="eyebrow">WORLD & LEXICON / 世界观与术语</span><span class="world-entry-title">九域之间</span><span class="world-entry-copy">从地脉到梦路，认识这个世界里的名字与规则。</span><span class="world-entry-action">打开世界档案 ↗</span></a>
 <section class="entry-grid" aria-label="阅读入口">
 <a class="entry" href="gallery/"><div class="entry-top"><span class="eyebrow">01 / 人物</span><span class="entry-status">27 份设定</span></div><h2>人物设定图集</h2><p>从头像认识角色，翻阅展示卡与个人资料。</p><span class="entry-action">打开图集 <span aria-hidden="true">↗</span></span></a>
 <a class="entry" href="chapters/"><div class="entry-top"><span class="eyebrow">02 / 故事</span><span class="entry-status">正文尚未发布</span></div><h2>小说正文</h2><p>章节发布后，将在这里按顺序收录。</p><span class="entry-action">前往阅读目录 <span aria-hidden="true">↗</span></span></a>
 </section></div>'''
+    home = home.replace('<!-- CHARACTER_CAROUSEL -->', carousel)
     chapters = sorted((ROOT / "content/chapters").glob("*.md"))
     if chapters:
         home = home.replace("正文尚未发布", f"已收录 {len(chapters)} 章").replace("章节发布后，将在这里按顺序收录。", "按章节顺序，继续九域守界的故事。")
@@ -124,7 +133,7 @@ def build():
         name, real, ident = escape(person["name"]), escape(person.get("real", "")), person["id"]
         loading = 'fetchpriority="high"' if i < 4 else 'loading="lazy"'
         cards.append(f'''<article class="character-card character-tile" data-search="{name} {real}"><a class="tile-link" href="{ident}.html" aria-label="查看{name}的展示卡和个人资料"><span class="tile-number">{ident}</span>{avatar(person, loading=loading)}<h2>{name}</h2><span class="tile-caption">查看人物资料</span></a></article>''')
-    gallery = f'''<div class="page-shell gallery-shell"><div class="page-heading"><p class="eyebrow">CHARACTER ARCHIVE / 人物档案</p><h1>人物设定图集</h1><p>九域之间的同行者。选择头像，查看人物展示卡与个人资料。</p></div>
+    gallery = f'''<div class="page-shell gallery-shell"><a class="gallery-world-link" href="../world/">← 返回世界观</a><div class="page-heading"><p class="eyebrow">CHARACTER ARCHIVE / 人物档案</p><h1>人物设定图集</h1><p>九域之间的同行者。选择头像，查看人物展示卡与个人资料。</p></div>
 <div class="gallery-tools"><label class="search-field"><span aria-hidden="true">⌕</span><input id="character-search" type="search" placeholder="搜索角色名或原名" aria-label="搜索角色名或原名" autocomplete="off"></label><span class="gallery-count" aria-live="polite"><strong id="character-count">{len(characters)}</strong> / {len(characters)} 位角色</span></div>
 <div class="avatar-grid">{''.join(cards)}</div><p id="no-results" class="empty-results" hidden>没有找到对应角色，换个名字试试。</p></div>'''
     save(OUT / "gallery/index.html", frame("人物设定图集", gallery, "../", "gallery", route="gallery/"))
@@ -152,8 +161,7 @@ def build():
 
     outline_title, outline_body, toc = md_content((ROOT / "content/outline.md").read_text(encoding="utf-8"))
     outline = f'''<div class="page-shell"><div class="page-heading"><p class="eyebrow">AUTHOR'S NOTES / 创作资料</p><h1>故事大纲</h1><p>此页包含完整剧情走向、人物选择与结局。</p></div>
-<section id="spoiler-notice" class="spoiler-notice" aria-labelledby="spoiler-title"><span class="warning-label">含剧透</span><h2 id="spoiler-title">在翻阅之前</h2><p>如果你希望随正文逐步探索故事，请先返回正文目录。<br>确认后，可以查看完整的创作大纲。</p><div class="notice-actions"><button id="reveal-outline" class="button primary" type="button">我已知晓，查看大纲</button><a class="button secondary" href="../chapters/">返回正文目录</a></div><noscript><p>请启用 JavaScript 后查看大纲，或在 GitHub 阅读 <a href="{REPO_URL}/blob/main/content/outline.md">大纲源文件（含剧透）</a>。</p></noscript></section>
-<div id="outline-content" hidden><div class="reading-layout"><aside class="reading-toc"><p class="eyebrow">大纲目录</p>{toc}</aside><div class="reading-column"><details class="mobile-toc"><summary>展开大纲目录</summary>{toc}</details><article class="prose">{outline_body}</article><div class="reading-end">创作大纲 · 九域守界 <a href="{REPO_URL}/blob/main/content/outline.md" target="_blank" rel="noopener">查看 Markdown 源文件</a></div></div></div></div></div>'''
+<div id="outline-content"><div class="reading-layout"><aside class="reading-toc"><p class="eyebrow">大纲目录</p>{toc}</aside><div class="reading-column"><details class="mobile-toc"><summary>展开大纲目录</summary>{toc}</details><article class="prose">{outline_body}</article><div class="reading-end">创作大纲 · 九域守界 <a href="{REPO_URL}/blob/main/content/outline.md" target="_blank" rel="noopener">查看 Markdown 源文件</a></div></div></div></div></div>'''
     save(OUT / "outline/index.html", frame("故事大纲（含剧透）", outline, "../", noindex=True, route="outline/"))
 
     chapter_entries = []

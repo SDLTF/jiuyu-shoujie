@@ -68,14 +68,40 @@ if (viewer) {
   });
 }
 
-const revealOutline = document.getElementById("reveal-outline");
-if (revealOutline) {
-  revealOutline.addEventListener("click", () => {
-    document.getElementById("spoiler-notice").hidden = true;
-    document.getElementById("outline-content").hidden = false;
-    const heading = document.querySelector("#outline-content .prose h2");
-    if (heading) { heading.tabIndex = -1; heading.focus({ preventScroll: true }); }
+const carousel = document.getElementById("hero-carousel");
+if (carousel) {
+  const slides = Array.from(carousel.querySelectorAll(".hero-slide"));
+  const status = document.getElementById("carousel-status");
+  let active = 0;
+  const showSlide = (index) => {
+    active = (index + slides.length) % slides.length;
+    slides.forEach((slide, position) => {
+      slide.hidden = position !== active;
+      if (!slide.hidden) slide.querySelectorAll("img").forEach(image => { image.loading = "eager"; });
+    });
+    status.textContent = `${String(active + 1).padStart(2, "0")} / ${String(slides.length).padStart(2, "0")}`;
+  };
+  document.getElementById("carousel-prev").addEventListener("click", () => showSlide(active - 1));
+  document.getElementById("carousel-next").addEventListener("click", () => showSlide(active + 1));
+  carousel.addEventListener("keydown", event => {
+    if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
+      event.preventDefault();
+      showSlide(active + (event.key === "ArrowRight" ? 1 : -1));
+    }
   });
+  let touchStart;
+  carousel.addEventListener("touchstart", event => {
+    if (event.touches.length !== 1) { touchStart = undefined; return; }
+    touchStart = {x:event.touches[0].clientX,y:event.touches[0].clientY};
+  }, {passive:true});
+  carousel.addEventListener("touchend", event => {
+    if (!touchStart || event.changedTouches.length !== 1) return;
+    const dx = event.changedTouches[0].clientX - touchStart.x;
+    const dy = event.changedTouches[0].clientY - touchStart.y;
+    touchStart = undefined;
+    if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5) showSlide(active + (dx < 0 ? 1 : -1));
+  }, {passive:true});
+  carousel.addEventListener("touchcancel", () => { touchStart = undefined; }, {passive:true});
 }
 
 const wikiSearch = document.getElementById("wiki-search");
