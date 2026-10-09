@@ -77,3 +77,76 @@ if (revealOutline) {
     if (heading) { heading.tabIndex = -1; heading.focus({ preventScroll: true }); }
   });
 }
+
+const wikiSearch = document.getElementById("wiki-search");
+if (wikiSearch) {
+  const terms = Array.from(document.querySelectorAll(".wiki-term"));
+  const filters = Array.from(document.querySelectorAll("[data-wiki-category]"));
+  const count = document.getElementById("wiki-count");
+  const clear = document.getElementById("wiki-clear");
+  const advanced = document.getElementById("wiki-advanced");
+  const notice = document.getElementById("wiki-spoiler-notice");
+  const reveal = document.getElementById("wiki-reveal");
+  let category = "all";
+  let includeSpoilers = false;
+  const update = () => {
+    const query = wikiSearch.value.trim().toLocaleLowerCase();
+    let visible = 0;
+    for (const term of terms) {
+      const allowed = includeSpoilers || term.dataset.spoiler !== "true";
+      const matchesCategory = category === "all" || term.dataset.category === category;
+      term.hidden = !(allowed && matchesCategory && term.dataset.search.toLocaleLowerCase().includes(query));
+      if (!term.hidden) visible += 1;
+    }
+    count.textContent = `${visible} 条${includeSpoilers ? "词条 · 含剧透" : "基础词条"}`;
+    document.getElementById("wiki-no-results").hidden = visible !== 0;
+    clear.hidden = !query && category === "all";
+    for (const filter of filters) filter.setAttribute("aria-pressed", String(filter.dataset.wikiCategory === category));
+  };
+  const resetFilters = () => { wikiSearch.value = ""; category = "all"; update(); };
+  wikiSearch.addEventListener("input", update);
+  filters.forEach(filter => filter.addEventListener("click", () => { category = filter.dataset.wikiCategory; update(); }));
+  clear.addEventListener("click", () => { resetFilters(); wikiSearch.focus({preventScroll:true}); });
+  reveal.addEventListener("click", () => {
+    includeSpoilers = true;
+    advanced.hidden = false;
+    notice.hidden = true;
+    reveal.setAttribute("aria-expanded", "true");
+    update();
+    document.getElementById("wiki-hide").focus({preventScroll:true});
+  });
+  document.getElementById("wiki-hide").addEventListener("click", () => {
+    includeSpoilers = false;
+    advanced.hidden = true;
+    notice.hidden = false;
+    reveal.setAttribute("aria-expanded", "false");
+    update();
+    reveal.focus({preventScroll:true});
+    notice.scrollIntoView({block:"center"});
+  });
+  const visitTerm = (ident) => {
+    const target = document.getElementById(`term-${ident}`);
+    if (!target) return;
+    if (target.dataset.spoiler === "true" && !includeSpoilers) {
+      notice.scrollIntoView({block:"center"});
+      reveal.focus({preventScroll:true});
+      return;
+    }
+    resetFilters();
+    target.scrollIntoView({block:"start"});
+    target.focus({preventScroll:true});
+  };
+  document.querySelectorAll("[data-term-link]").forEach(link => link.addEventListener("click", (event) => {
+    event.preventDefault();
+    const ident = link.dataset.termLink;
+    const target = document.getElementById(`term-${ident}`);
+    if (target.dataset.spoiler !== "true" || includeSpoilers) history.replaceState(null, "", `#term-${ident}`);
+    visitTerm(ident);
+  }));
+  const visitHash = () => {
+    if (location.hash.startsWith("#term-")) visitTerm(location.hash.slice(6));
+  };
+  window.addEventListener("hashchange", visitHash);
+  update();
+  visitHash();
+}

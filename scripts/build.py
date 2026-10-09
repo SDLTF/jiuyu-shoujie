@@ -6,6 +6,7 @@ import hashlib
 import re
 import markdown
 from PIL import Image
+from design_assets import prepare_design_assets
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "docs"
@@ -36,9 +37,10 @@ def image_viewer():
 def frame(title, body, prefix="", active="", noindex=False, route=""):
     links = "".join(
         f'<a href="{prefix}{href}"' + (' aria-current="page"' if name == active else '') + f'>{label}</a>'
-        for name, href, label in [("gallery", "gallery/", "人物图集"), ("chapters", "chapters/", "正文阅读")]
+        for name, href, label in [("gallery", "gallery/", "人物图集"), ("world", "world/", "世界观"), ("chapters", "chapters/", "正文阅读")]
     )
     robots = '<meta name="robots" content="noindex">' if noindex else ''
+    page_kind = 'home' if not route else ('character' if route.startswith('gallery/') and route.endswith('.html') else ('gallery' if route == 'gallery/' else ('world' if route == 'world/' else 'reader')))
     return f'''<!doctype html>
 <html lang="zh-CN"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
@@ -47,15 +49,16 @@ def frame(title, body, prefix="", active="", noindex=False, route=""):
 <meta name="theme-color" content="#101b25">{robots}
 <link rel="canonical" href="{SITE_URL}{route}">
 <link rel="icon" href="{prefix}assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="{prefix}assets/fonts/fonts.css?v={asset_version('fonts/fonts.css')}">
 <link rel="stylesheet" href="{prefix}assets/site.css?v={asset_version('site.css')}">
 <script src="{prefix}assets/site.js?v={asset_version('site.js')}" defer></script>
-</head><body>
+</head><body class="page-{page_kind}">
 <a class="skip-link" href="#main">跳到正文</a>
 <header class="site-header"><div class="header-inner">
 <a class="brand" href="{prefix or './'}" aria-label="九域守界首页"><span class="brand-mark" aria-hidden="true">九</span><span>九域守界</span></a>
 <nav aria-label="主导航">{links}<a class="repo-link" href="{REPO_URL}" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></nav>
 </div></header>
-<main id="main">{body}</main>
+<main id="main"><div class="page-backdrop" aria-hidden="true"></div>{body}</main>
 <footer class="site-footer"><div><a class="footer-title" href="{prefix or './'}">九域守界</a><span>故事与人物档案 · SDLTF</span></div>
 <a href="{prefix}outline/" class="spoiler-link">创作大纲 <span>含剧透</span></a></footer>
 </body></html>'''
@@ -72,6 +75,7 @@ def md_content(text):
     return title, body, parser.toc
 
 def build():
+    prepare_design_assets()
     characters = json.loads((ROOT / "content/characters.json").read_text(encoding="utf-8"))
     image_dir = OUT / "assets/images"
     image_dir.mkdir(parents=True, exist_ok=True)
@@ -103,6 +107,7 @@ def build():
 <figure class="portrait portrait-three"><img src="assets/images/06.webp" alt="吴语的人物设定"><figcaption><span>06</span>吴语</figcaption></figure>
 <span class="art-caption">人物档案 / CHARACTER ARCHIVE</span></div>
 </section>
+<a class="world-entry" href="world/"><span class="eyebrow">WORLD & LEXICON / 世界观与术语</span><span class="world-entry-title">九域之间</span><span class="world-entry-copy">从地脉到梦路，认识这个世界里的名字与规则。</span><span class="world-entry-action">打开世界档案 ↗</span></a>
 <section class="entry-grid" aria-label="阅读入口">
 <a class="entry" href="gallery/"><div class="entry-top"><span class="eyebrow">01 / 人物</span><span class="entry-status">27 份设定</span></div><h2>人物设定图集</h2><p>从头像认识角色，翻阅展示卡与个人资料。</p><span class="entry-action">打开图集 <span aria-hidden="true">↗</span></span></a>
 <a class="entry" href="chapters/"><div class="entry-top"><span class="eyebrow">02 / 故事</span><span class="entry-status">正文尚未发布</span></div><h2>小说正文</h2><p>章节发布后，将在这里按顺序收录。</p><span class="entry-action">前往阅读目录 <span aria-hidden="true">↗</span></span></a>
@@ -111,6 +116,8 @@ def build():
     if chapters:
         home = home.replace("正文尚未发布", f"已收录 {len(chapters)} 章").replace("章节发布后，将在这里按顺序收录。", "按章节顺序，继续九域守界的故事。")
     save(OUT / "index.html", frame("故事与人物档案", home))
+
+    build_world(characters)
 
     cards = []
     for i, person in enumerate(characters):
@@ -165,6 +172,38 @@ def build():
     save(OUT / ".nojekyll", "")
     save(OUT / "robots.txt", "User-agent: *\nAllow: /\nDisallow: /jiuyu-shoujie/outline/\n")
     print(f"Built {len(characters)} character cards, complete outline, {len(chapters)} published chapters.")
+
+def build_world(characters):
+    world = json.loads((ROOT / 'content/world.json').read_text(encoding='utf-8'))
+    people = {person['id']: person['name'] for person in characters}
+    terms = {term['id']: term for term in world['terms']}
+    categories = {category['id']: category['name'] for category in world['categories']}
+    def term_link(ident):
+        term = terms[ident]
+        marker = ' <span class="link-spoiler">剧透</span>' if term['spoiler'] else ''
+        return f'<a href="#term-{ident}" class="term-link" data-term-link="{ident}">{escape(term["name"])}{marker}</a>'
+    overview = ''.join(f'<article class="world-overview-card"><span class="overview-number">0{index+1}</span><h2>{escape(item["title"])}</h2><p>{escape(item["text"])}</p><div class="related-terms">{"".join(term_link(ident) for ident in item["links"])}</div></article>' for index, item in enumerate(world['overview']))
+    entries = []
+    for term in world['terms']:
+        searchable = ' '.join([term['name'], *term['aliases'], term['summary'], *term['detail']])
+        related = f'<div class="term-related"><span>相关词条</span><div class="related-terms">{"".join(term_link(ident) for ident in term["related"])}</div></div>' if term['related'] else ''
+        characters_html = f'<div class="term-people"><span>相关人物</span>{"".join(f"<a href=\"../gallery/{ident}.html\">{escape(people[ident])} ↗</a>" for ident in term["people"])}</div>' if term['people'] else ''
+        aliases = f'<p class="term-aliases">亦作：{escape("、".join(term["aliases"]))}</p>' if term['aliases'] else ''
+        content = ''.join(f'<p>{escape(paragraph)}</p>' for paragraph in term['detail'])
+        entry = f'''<article id="term-{term['id']}" class="wiki-term" data-category="{term['category']}" data-spoiler="{str(term['spoiler']).lower()}" data-search="{escape(searchable)}" tabindex="-1"><div class="term-title-row"><span class="term-category">{escape(categories[term['category']])}</span><a class="term-permalink" href="#term-{term['id']}" aria-label="{escape(term['name'])}的直接链接">#</a></div><h3>{escape(term['name'])}</h3>{aliases}<p class="term-summary">{escape(term['summary'])}</p><div class="term-description">{content}</div>{related}{characters_html}<p class="term-source">资料依据：{escape(term['source'])}</p></article>'''
+        entries.append((term['spoiler'], entry))
+    basic = ''.join(entry for spoiler, entry in entries if not spoiler)
+    advanced = ''.join(entry for spoiler, entry in entries if spoiler)
+    filters = '<button type="button" data-wiki-category="all" aria-pressed="true">全部词条</button>' + ''.join(f'<button type="button" data-wiki-category="{ident}" aria-pressed="false">{escape(name)}</button>' for ident, name in categories.items())
+    basic_count = sum(not term['spoiler'] for term in world['terms'])
+    body = f'''<div class="page-shell world-shell"><div class="page-heading world-heading"><p class="eyebrow">WORLD & LEXICON / 世界档案</p><h1>{escape(world['title'])}</h1><p>{escape(world['intro'])}</p><div class="world-jump-links"><a href="#world-overview">世界速览 ↓</a><a href="#wiki">术语索引 ↓</a></div></div>
+<section id="world-overview" class="world-overview" aria-label="世界速览">{overview}</section>
+<section id="wiki" class="wiki-section" aria-labelledby="wiki-title"><div class="wiki-section-heading"><div><p class="eyebrow">THE LEXICON / 术语索引</p><h2 id="wiki-title">把每一个名字说清楚</h2></div><p><strong>{len(terms)}</strong> 条档案 · 默认浏览基础设定</p></div><p class="wiki-editorial">{escape(world['editorial_note'])}</p>
+<div class="wiki-tools"><label class="search-field"><span aria-hidden="true">⌕</span><input id="wiki-search" type="search" placeholder="搜索术语、别名或解释" aria-label="搜索世界观术语" autocomplete="off"></label><span id="wiki-count" class="wiki-count" aria-live="polite">{basic_count} 条基础词条</span><button id="wiki-clear" class="wiki-clear" type="button" hidden>清除筛选</button></div><div class="wiki-filters" role="group" aria-label="词条分类">{filters}</div>
+<div id="wiki-basic" class="wiki-grid">{basic}</div><p id="wiki-no-results" class="empty-results" hidden>没有匹配的词条，试试别名或清除分类筛选。</p>
+<section id="wiki-spoiler-notice" class="wiki-spoiler-notice" aria-labelledby="wiki-spoiler-title"><span class="warning-label">进阶档案 · 含剧透</span><h2 id="wiki-spoiler-title">翻到故事更深处</h2><p>另有 {len(terms)-basic_count} 条词条涉及后续机制、人物秘密与结局。主动展开后，它们才会进入列表和搜索结果。</p><button id="wiki-reveal" class="button secondary" type="button" aria-controls="wiki-advanced" aria-expanded="false">我已知晓，展开进阶词条</button></section><div id="wiki-advanced" hidden><div class="advanced-heading"><h2>进阶档案</h2><span class="warning-label">含剧透</span><button id="wiki-hide" type="button" class="wiki-clear">收起进阶词条</button></div><div class="wiki-grid">{advanced}</div></div>
+</section><a class="world-back" href="#wiki">返回术语索引 ↑</a></div>'''
+    save(OUT / 'world/index.html', frame('世界观与术语', body, '../', 'world', route='world/'))
 
 if __name__ == "__main__":
     build()

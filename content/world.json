@@ -1,0 +1,2007 @@
+{
+  "title": "九域之间",
+  "intro": "从灰桥的河水与灯火出发，认识这个世界的地域、力量、器物与生活。",
+  "overview": [
+    {
+      "title": "世界落在生活里",
+      "text": "地脉、术法与神明不是远离日常的传说。它们联系着井水、田地、航路、供能与一顿热饭；救援也必须照顾留在原地的人。",
+      "links": [
+        "nine-realms",
+        "earth-veins",
+        "greybridge"
+      ]
+    },
+    {
+      "title": "不同力量彼此协作",
+      "text": "符术、牌术、共振、炼金、梦路与工程各有用途。同行者带来的不只是战斗能力，还有记录、勘路、照护和交接的本领。",
+      "links": [
+        "rune-art",
+        "resonance",
+        "dream-path"
+      ]
+    },
+    {
+      "title": "修复需要留下保护",
+      "text": "带走一处守护遗存之前，先建立当地仍然可靠的保护与维护。迁移是技术问题，也关系到居民能否继续生活。",
+      "links": [
+        "nine-heads",
+        "temporary-anchor",
+        "public-grid"
+      ]
+    },
+    {
+      "title": "看见、记录，再判断",
+      "text": "神谕需要与现场核对，记录可以先保存再解释。名字相近、图式有效或某次成功，都不能替代对眼前情况的认识。",
+      "links": [
+        "oracle",
+        "raw-record",
+        "trace"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "places",
+      "name": "地域与地点"
+    },
+    {
+      "id": "world",
+      "name": "世界与守护"
+    },
+    {
+      "id": "arts",
+      "name": "施术与能力"
+    },
+    {
+      "id": "items",
+      "name": "器物与文献"
+    },
+    {
+      "id": "people",
+      "name": "族群与身份"
+    },
+    {
+      "id": "engineering",
+      "name": "工程与协作"
+    }
+  ],
+  "terms": [
+    {
+      "id": "greybridge",
+      "name": "灰桥",
+      "category": "places",
+      "summary": "故事开端的镇子，石桥、赤渠与旅店都位于这里。",
+      "detail": [
+        "镇上的一次抢修与救援使最初的同行者相遇。这里的净水、田地、食店与居民的生活，是理解世界异常的起点。"
+      ],
+      "related": [
+        "red-canal",
+        "earth-veins"
+      ],
+      "people": [
+        "23",
+        "11",
+        "14",
+        "15"
+      ],
+      "source": "第一卷场景细纲",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "red-canal",
+      "name": "赤渠",
+      "category": "places",
+      "summary": "灰桥需要检修的渠系，也是开篇水位异常的现场。",
+      "detail": [
+        "它的闸门状态与下游水位出现不一致。查明回流、寻找泄洪路线与照顾受影响居民，都从这一现场开始。"
+      ],
+      "related": [
+        "greybridge",
+        "return-flow",
+        "temporary-anchor"
+      ],
+      "people": [
+        "23",
+        "11"
+      ],
+      "source": "第一卷场景细纲",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "yaohuan",
+      "name": "曜环",
+      "category": "places",
+      "summary": "公共地脉网与工程技术集中出现的地域。",
+      "detail": [
+        "这里的供能、过载、维护接入与不同居民承担的代价，构成技术与日常生活相接的场景。"
+      ],
+      "related": [
+        "public-grid",
+        "overload"
+      ],
+      "people": [
+        "04",
+        "17",
+        "24"
+      ],
+      "source": "第二卷因果衔接",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "qinglan",
+      "name": "青岚",
+      "category": "places",
+      "summary": "生态修复与梦路问题交汇的地域。",
+      "detail": [
+        "已有大纲涉及这里的生态损伤、湿地工作与共梦危机。水土、花术和梦境向导的能力在这里各有用途。"
+      ],
+      "related": [
+        "shared-dream",
+        "dream-path",
+        "roots"
+      ],
+      "people": [
+        "07",
+        "09",
+        "16"
+      ],
+      "source": "第三卷因果衔接",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "four-ports",
+      "name": "四港",
+      "category": "places",
+      "summary": "需要共同建立备用航路的港口群。",
+      "detail": [
+        "海路错位使返程、引航与运输都变得困难。资料以“四港”统称参与建立备用航路的港口，尚未逐一给出港名。"
+      ],
+      "related": [
+        "tide-light",
+        "return-anchor",
+        "resonance"
+      ],
+      "people": [
+        "03",
+        "10",
+        "22"
+      ],
+      "source": "第四卷因果衔接",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "sand-crown",
+      "name": "砂冕",
+      "category": "places",
+      "summary": "名字、流亡者身份与供水资格发生关联的地域。",
+      "detail": [
+        "这里的行动需要命簿、真名与誓约、救济和现场记录配合。资料没有给出它的完整地理边界。"
+      ],
+      "related": [
+        "life-ledger",
+        "true-name",
+        "oath"
+      ],
+      "people": [
+        "01",
+        "12",
+        "23"
+      ],
+      "source": "第五卷因果衔接",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "dusk-rift",
+      "name": "暮隙",
+      "category": "places",
+      "summary": "出现时间重复与坟城混同问题的地方。",
+      "detail": [
+        "相关段落讨论重复的一天，以及归来者、残响与本人之间的区别。具体形成机制仍须随故事逐步认识。"
+      ],
+      "related": [
+        "echoes"
+      ],
+      "people": [
+        "01"
+      ],
+      "source": "第六卷因果衔接",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "star-platform",
+      "name": "星台",
+      "category": "places",
+      "summary": "保存旧壁画、用于比对历史线索的地点。",
+      "detail": [
+        "星台壁画与多处遗存共同成为核对旧历史的材料；一幅旧图不能单独替代当下的观察和试验。"
+      ],
+      "related": [
+        "old-score"
+      ],
+      "people": [
+        "03"
+      ],
+      "source": "第六卷因果衔接",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "white-well",
+      "name": "白井城档案馆",
+      "category": "places",
+      "summary": "三岛常驻、从事命簿研究与写作的档案馆。",
+      "detail": [
+        "人物资料明确了三岛与这里的联系；馆内制度、馆藏全貌与城市地图尚未展开。"
+      ],
+      "related": [
+        "life-ledger",
+        "rescue-register"
+      ],
+      "people": [
+        "01"
+      ],
+      "source": "三岛人物资料",
+      "spoiler": false,
+      "aliases": [
+        "白井城"
+      ]
+    },
+    {
+      "id": "return-court",
+      "name": "归庭",
+      "category": "places",
+      "summary": "九首交接仪式所在的关键地点。",
+      "detail": [
+        "仪式的准备、审议、保障与交接都围绕这里展开。它的深层机制列在进阶档案中。"
+      ],
+      "related": [
+        "return-heads",
+        "nine-heads"
+      ],
+      "people": [],
+      "source": "第七卷因果衔接",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "mother-court",
+      "name": "母庭",
+      "category": "places",
+      "summary": "与生命线路和琉西法经历有关的地点。",
+      "detail": [
+        "大纲将它作为生命线路行动的目的地。祭坛、身份风险与救援结果属于后续剧情，见进阶档案。"
+      ],
+      "related": [
+        "life-route"
+      ],
+      "people": [
+        "02"
+      ],
+      "source": "第八至第十卷因果衔接",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "stay-day-court",
+      "name": "留昼庭",
+      "category": "places",
+      "summary": "后期门路行动涉及的地点。",
+      "detail": [
+        "这里的被扣留者救援与本界门锚分离构成终局行动的一部分。资料未给出它独立于该行动的完整历史。"
+      ],
+      "related": [
+        "local-gate-anchor",
+        "gate-key"
+      ],
+      "people": [
+        "27"
+      ],
+      "source": "第十二卷因果衔接",
+      "spoiler": true,
+      "aliases": []
+    },
+    {
+      "id": "nine-realms",
+      "name": "九域",
+      "category": "world",
+      "summary": "作品世界的总体称呼，也是故事与守护问题的背景。",
+      "detail": [
+        "不同地域有各自的生活、技术与力量传统，同行者在迁移和救援中将这些地点连接起来。",
+        "当前资料没有列齐九域的完整名单；本页只解释已经出现的地名，不把九处地点直接等同为九域。"
+      ],
+      "related": [
+        "earth-veins",
+        "greybridge",
+        "yaohuan",
+        "qinglan"
+      ],
+      "people": [],
+      "source": "故事大纲",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "earth-veins",
+      "name": "地脉",
+      "category": "world",
+      "summary": "与世界守护、供水及公共供能相联系的基础脉络。",
+      "detail": [
+        "地脉衰败是故事行动的起因之一。赤渠抢修与曜环供能把这一宏观问题具体呈现在居民的日常中。"
+      ],
+      "related": [
+        "public-grid",
+        "return-flow",
+        "nine-heads"
+      ],
+      "people": [],
+      "source": "故事大纲",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "return-flow",
+      "name": "回流",
+      "category": "world",
+      "summary": "可以反复观察、记录并用于核对系统状态的流动现象。",
+      "detail": [
+        "赤渠的回流增强帮助调查者发现补漏没有解决全部问题；临时锚的效果也需要跨回流观察。",
+        "“回流”在不同场景中的具体测量方式依现场而定，不能把所有回流都直接算作同一时钟。"
+      ],
+      "related": [
+        "red-canal",
+        "temporary-anchor",
+        "day-return"
+      ],
+      "people": [
+        "25"
+      ],
+      "source": "第一卷场景细纲",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "nine-headed-bird",
+      "name": "九头鸟",
+      "category": "world",
+      "summary": "与九首、守护传说和酥心糖血脉追寻有关的核心存在。",
+      "detail": [
+        "同行者希望找到与九头鸟有关的修复之道。关于它能否归来、归来意味着什么的答案属于进阶剧情。"
+      ],
+      "related": [
+        "nine-heads",
+        "return-heads"
+      ],
+      "people": [
+        "05"
+      ],
+      "source": "故事大纲",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "nine-heads",
+      "name": "九首",
+      "category": "world",
+      "summary": "归首工程希望汇聚的九处“首”，与各地守护遗存相连。",
+      "detail": [
+        "取得和迁移九首不是简单的收集：每次带走遗存，都需要让当地仍然得到保护。",
+        "当前大纲出现了脉首、梦首、界首、生首、曙与星等称呼，但没有完整列出九首的全部名称与分类。"
+      ],
+      "related": [
+        "pulse-head",
+        "return-heads",
+        "temporary-anchor"
+      ],
+      "people": [],
+      "source": "故事大纲",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "pulse-head",
+      "name": "脉首",
+      "category": "world",
+      "summary": "在赤渠地下发现、可以响应并影响当地守护的遗存。",
+      "detail": [
+        "试搬脉首会使净水阵失灵，说明搬迁必须同时安排替代保护。酥心糖的符纸与相关古印对它出现响应。"
+      ],
+      "related": [
+        "nine-heads",
+        "temporary-anchor",
+        "clean-water"
+      ],
+      "people": [
+        "05",
+        "25"
+      ],
+      "source": "第一卷场景细纲",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "return-heads",
+      "name": "归首",
+      "category": "world",
+      "summary": "依据归首碑指引，汇聚九首以尝试修复衰败的工程与行动。",
+      "detail": [
+        "这是同行者前期寄托希望的方案。碑给出的局部修复能够奏效，但局部有效不等于已经知道整个工程的全部机制。"
+      ],
+      "related": [
+        "return-stele",
+        "nine-heads",
+        "safeguards"
+      ],
+      "people": [],
+      "source": "故事大纲",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "guard-world",
+      "name": "守界",
+      "category": "world",
+      "summary": "守护世界边界、让这里的人能够继续生活的行动主题。",
+      "detail": [
+        "救援、留下返回路线、交接设施和尊重同行者选择，都是作品中守护的具体实践。",
+        "后期作为工程方案的“守界”如何实施，另收录在进阶档案，避免提前揭晓。"
+      ],
+      "related": [
+        "boundary-calibration",
+        "return-anchor"
+      ],
+      "people": [],
+      "source": "故事大纲",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "oracle",
+      "name": "神谕",
+      "category": "world",
+      "summary": "以归首碑等载体给出回应或修复指引的讯息。",
+      "detail": [
+        "第一卷通过求援信与碑的回答作比对，确认载体无法知道尚未输入的新消息。神谕的内容需要与实际观察核对。"
+      ],
+      "related": [
+        "return-stele",
+        "trace"
+      ],
+      "people": [
+        "23"
+      ],
+      "source": "第一卷第三章",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "nine-lamps",
+      "name": "九灯",
+      "category": "world",
+      "summary": "旧历史中与九首分置有关的称呼。",
+      "detail": [
+        "梦首记忆、旧禁令和旧图逐步指出，分置曾是主动行为。资料没有完整说明九灯的身份构成，不能将其与九首或二十七站直接混同。"
+      ],
+      "related": [
+        "nine-heads",
+        "dream-head"
+      ],
+      "people": [],
+      "source": "第三至第六卷因果衔接",
+      "spoiler": true,
+      "aliases": []
+    },
+    {
+      "id": "godhood",
+      "name": "神格",
+      "category": "world",
+      "summary": "资料中用于描述神明力量与身份承载的概念。",
+      "detail": [
+        "赵香香持有酒泉神格。大纲另涉及九头鸟神格的用途与代价，但没有为所有神格给出统一的取得方式。"
+      ],
+      "related": [
+        "wine-godhood"
+      ],
+      "people": [
+        "13"
+      ],
+      "source": "人物资料与故事大纲",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "wine-godhood",
+      "name": "酒泉神格",
+      "category": "world",
+      "summary": "赵香香持有、与灵酒能力相联系的神格。",
+      "detail": [
+        "人物资料将他称为酒神和酒馆老板，说明灵酒的不同配方能够产生不同功效。"
+      ],
+      "related": [
+        "godhood",
+        "spirit-wine"
+      ],
+      "people": [
+        "13"
+      ],
+      "source": "赵香香人物资料",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "formless",
+      "name": "无相",
+      "category": "people",
+      "summary": "琉西法身份描述中的特殊称呼。",
+      "detail": [
+        "人物资料写作“无相男身”，并给出骰首、山羊角与六翼等形态。当前资料没有定义所有无相存在共同的种族规则，也不能仅凭名称断定无相密钥的来源。"
+      ],
+      "related": [
+        "formless-key"
+      ],
+      "people": [
+        "02"
+      ],
+      "source": "琉西法人物资料",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "angel-kind",
+      "name": "天使族",
+      "category": "people",
+      "summary": "林清翊所属的族群。",
+      "detail": [
+        "人物资料明确他具有天使外形，并作为御龙师照顾伙伴。资料没有说明天使族普遍拥有何种共同能力，不将清翊的个人能力推广给全族。"
+      ],
+      "related": [
+        "dragon-tamer"
+      ],
+      "people": [
+        "10"
+      ],
+      "source": "林清翊人物资料",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "blood-kind",
+      "name": "血族",
+      "category": "people",
+      "summary": "曲柯所属的族群，其个人身份还包含贵族血统。",
+      "detail": [
+        "曲柯的金发红瞳、家族纹章与礼仪构成辨识特征。资料没有规定全体血族的饮食、弱点与寿命，不套用外部作品的吸血鬼规则。"
+      ],
+      "related": [
+        "day-cut"
+      ],
+      "people": [
+        "19"
+      ],
+      "source": "曲柯人物资料",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "academy",
+      "name": "学院",
+      "category": "people",
+      "summary": "安排外勤、实习调查并参与跨地区修复研究的机构。",
+      "detail": [
+        "韦侃是学院外勤，小语以实习调查进入行动；大纲中的学院也希望找到跨地区修复办法。资料尚未给出统一校名与完整组织架构。"
+      ],
+      "related": [
+        "trace"
+      ],
+      "people": [
+        "11",
+        "23"
+      ],
+      "source": "人物资料与第一卷场景细纲",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "law-academy",
+      "name": "律学院",
+      "category": "people",
+      "summary": "赫利俄斯作为见习法务所关联的机构。",
+      "detail": [
+        "法务工作与对居民、受害者意见的追问属于赫利俄斯前期的真实贡献。不能把律学院与一般学院直接认定为同一所学校。"
+      ],
+      "related": [
+        "academy"
+      ],
+      "people": [
+        "27"
+      ],
+      "source": "赫利俄斯人物资料与故事大纲",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "rune-caster",
+      "name": "符师",
+      "category": "people",
+      "summary": "以符术施法的职业称呼，酥心糖来自遥远东方。",
+      "detail": [
+        "符笔、朱砂符札与有效图式是她的施术工具；职业身份并不等同于近身战斗能力。"
+      ],
+      "related": [
+        "rune-art"
+      ],
+      "people": [
+        "05"
+      ],
+      "source": "酥心糖人物资料",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "dragon-tamer",
+      "name": "御龙师／驯兽师系统",
+      "category": "people",
+      "summary": "林清翊的职业与所持系统，以照顾和训练伙伴为重要部分。",
+      "detail": [
+        "现有资料列出乐温、龙食与训练记录，没有展开系统界面、等级树或统一升级规则。"
+      ],
+      "related": [
+        "formless-key"
+      ],
+      "people": [
+        "10"
+      ],
+      "source": "林清翊人物资料",
+      "spoiler": false,
+      "aliases": [
+        "御龙师",
+        "驯兽师系统"
+      ]
+    },
+    {
+      "id": "wave-knight",
+      "name": "浪涌骑士",
+      "category": "people",
+      "summary": "彭湃的骑士身份，承担护送和防御任务。",
+      "detail": [
+        "他的剑与护盾、水土护御及稳守反击构成实际能力。资料未说明这是组织名称还是更广泛的职业体系。"
+      ],
+      "related": [
+        "water-earth"
+      ],
+      "people": [
+        "14"
+      ],
+      "source": "彭湃人物资料",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "dream-guide",
+      "name": "幻梦境向导",
+      "category": "people",
+      "summary": "莉莉的身份之一，帮助辨认梦路与保留返回联系。",
+      "detail": [
+        "莉莉是巴斯特信徒，可以在人话、实体与幽灵态等能力的基础上参与梦境行动。"
+      ],
+      "related": [
+        "dreamland",
+        "dream-path",
+        "return-anchor"
+      ],
+      "people": [
+        "09"
+      ],
+      "source": "莉莉人物资料",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "bastet",
+      "name": "巴斯特",
+      "category": "people",
+      "summary": "莉莉信仰所指向的名字，徽记出现在她的项圈上。",
+      "detail": [
+        "当前作品资料只明确了信徒与徽记关系；不把现实神话中的全部设定自动补入这个世界。"
+      ],
+      "related": [
+        "dream-guide"
+      ],
+      "people": [
+        "09"
+      ],
+      "source": "莉莉人物资料",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "spell-structure",
+      "name": "术式",
+      "category": "arts",
+      "summary": "可以辨识、牵引、修复或作用于器物的施术结构。",
+      "detail": [
+        "贾小鱼擅长结构修复，楚惊殊可以辨识并牵引术式，甄没用熟悉器物术式。资料没有将所有术式归入统一等级体系。"
+      ],
+      "related": [
+        "alchemy",
+        "card-art"
+      ],
+      "people": [
+        "04",
+        "08",
+        "18"
+      ],
+      "source": "人物资料",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "rune-art",
+      "name": "符术",
+      "category": "arts",
+      "summary": "使用符札与图式施行的术法。",
+      "detail": [
+        "酥心糖会以有效图式补符，也能让符纸在接触遗存时响应。其作用需要在现场观察和复核。"
+      ],
+      "related": [
+        "rune-caster",
+        "clean-water"
+      ],
+      "people": [
+        "05"
+      ],
+      "source": "人物资料与第一卷",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "card-art",
+      "name": "牌术",
+      "category": "arts",
+      "summary": "楚惊殊借助牌面辨识、牵引术式的施法方式。",
+      "detail": [
+        "她使用京剧牌面塔罗，偏爱宝剑组。大纲明确存在牌术误读，因此牌面不能被当作绝不会出错的预言。"
+      ],
+      "related": [
+        "opera-tarot",
+        "spell-structure"
+      ],
+      "people": [
+        "08"
+      ],
+      "source": "人物资料与第三卷",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "resonance",
+      "name": "共振术",
+      "category": "arts",
+      "summary": "土方奏一通过演奏掌控施法节拍的能力。",
+      "detail": [
+        "共振可以影响协作与力量均势。演奏的优美、技术与输出都是人物设定的一部分；完整同步谱的作用列在进阶档案。"
+      ],
+      "related": [
+        "old-score",
+        "synchronization"
+      ],
+      "people": [
+        "03"
+      ],
+      "source": "土方奏一人物资料与故事大纲",
+      "spoiler": false,
+      "aliases": [
+        "共振",
+        "共振施术"
+      ]
+    },
+    {
+      "id": "alchemy",
+      "name": "炼金",
+      "category": "arts",
+      "summary": "贾小鱼用于材料处理和术式结构修复的专长。",
+      "detail": [
+        "她是炼金工坊店主与古代结构修复师，携带炼金工具箱和高阶紫晶。资料尚未给出炼金配方大全。"
+      ],
+      "related": [
+        "spell-structure",
+        "purple-crystal"
+      ],
+      "people": [
+        "04"
+      ],
+      "source": "贾小鱼人物资料",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "trace",
+      "name": "光水留痕",
+      "category": "arts",
+      "summary": "小语以光水媒介保留已发生现象和现场变化的能力。",
+      "detail": [
+        "留痕可以帮助比较补漏前后等真实变化，不能直接读取整座地下的历史。能力的记录作用与之后的解释判断是两件事。"
+      ],
+      "related": [
+        "raw-record",
+        "oracle"
+      ],
+      "people": [
+        "23"
+      ],
+      "source": "小语人物资料与第一卷",
+      "spoiler": false,
+      "aliases": [
+        "留痕",
+        "留痕媒介"
+      ]
+    },
+    {
+      "id": "true-name",
+      "name": "真名",
+      "category": "arts",
+      "summary": "单谣能够辨认、用于核验联系的名字。",
+      "detail": [
+        "真名与誓约、身份核验的行动相联系。资料没有说明知道真名便能无条件控制本人，不能将这种规则自行补入。"
+      ],
+      "related": [
+        "oath",
+        "life-ledger"
+      ],
+      "people": [
+        "12"
+      ],
+      "source": "单谣人物资料与第五卷",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "oath",
+      "name": "誓约",
+      "category": "arts",
+      "summary": "单谣能够核验与解除的约束联系。",
+      "detail": [
+        "誓约文书与鸣骨尺是她的随身物品，相关能力在身份、流亡者与名字问题中发挥作用。"
+      ],
+      "related": [
+        "true-name",
+        "bone-ruler"
+      ],
+      "people": [
+        "12"
+      ],
+      "source": "单谣人物资料",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "flower-art",
+      "name": "花术",
+      "category": "arts",
+      "summary": "以花枝、花径辨认生命状态并帮助康复的能力。",
+      "detail": [
+        "闵霁可以铺设治疗花径，动作轻而细心。这里收录的是她已明确的个人能力，不代表所有花术都拥有完全相同的效果。"
+      ],
+      "related": [
+        "life-route"
+      ],
+      "people": [
+        "07"
+      ],
+      "source": "闵霁人物资料",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "water-earth",
+      "name": "水土护御",
+      "category": "arts",
+      "summary": "以水与土的力量承担保护、稳守和现场构筑的能力。",
+      "detail": [
+        "彭湃以它配合剑与护盾，蔚蔚则用水土魔法固定土层、铺出能走的道路。不同人物的具体用法有差别。"
+      ],
+      "related": [
+        "roots",
+        "wave-knight"
+      ],
+      "people": [
+        "14",
+        "16"
+      ],
+      "source": "人物资料",
+      "spoiler": false,
+      "aliases": [
+        "水土魔法"
+      ]
+    },
+    {
+      "id": "roots",
+      "name": "根系构筑",
+      "category": "arts",
+      "summary": "蔚蔚固定土层、架根网与铺设道路的能力。",
+      "detail": [
+        "它服务于野外勘路和战地引路，必须同时顾及真正可走的路线与回程。"
+      ],
+      "related": [
+        "water-earth",
+        "qinglan"
+      ],
+      "people": [
+        "16"
+      ],
+      "source": "蔚蔚人物资料与第三卷",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "wind-transform",
+      "name": "风术与稳定变形",
+      "category": "arts",
+      "summary": "韦侃的风术、弓箭与绿色狐狸兽形共同构成的行动能力。",
+      "detail": [
+        "她会变狐探查狭路、查找通口与泄漏，并在行动前确认退路。现有资料没有给变形能力列出统一持续时间。"
+      ],
+      "related": [
+        "return-anchor"
+      ],
+      "people": [
+        "11"
+      ],
+      "source": "韦侃人物资料与第一卷",
+      "spoiler": false,
+      "aliases": [
+        "风术",
+        "稳定变形"
+      ]
+    },
+    {
+      "id": "thunder-grid",
+      "name": "雷网定向",
+      "category": "arts",
+      "summary": "顾霆定向处理雷网、切分过载的工程能力。",
+      "detail": [
+        "他使用导流杆、容量表、接头与粉笔；重视把设备状态和操作知识交给下一位维护者。"
+      ],
+      "related": [
+        "overload",
+        "public-grid"
+      ],
+      "people": [
+        "17"
+      ],
+      "source": "顾霆人物资料",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "shadow-frost",
+      "name": "影霜隔离",
+      "category": "arts",
+      "summary": "墨默用于隔离、精确施法与保存原始记录的能力。",
+      "detail": [
+        "封存匣、测片与短杖是他的工具。记录可以先被保存，不必在原因尚不明确时立刻给出解释。"
+      ],
+      "related": [
+        "raw-record"
+      ],
+      "people": [
+        "25"
+      ],
+      "source": "墨默人物资料",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "courier-path",
+      "name": "风影驿路术",
+      "category": "arts",
+      "summary": "谢寄风用于短距突入送信的能力。",
+      "detail": [
+        "它依靠真实地点与已经建立的联系；送达、回执与可核对的时日是消息在故事中可信的依据。"
+      ],
+      "related": [
+        "return-anchor"
+      ],
+      "people": [
+        "20"
+      ],
+      "source": "谢寄风人物资料",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "spirit-wine",
+      "name": "灵酒",
+      "category": "arts",
+      "summary": "赵香香调配、具有不同功效的酒。",
+      "detail": [
+        "已有资料明确疗伤、增幅与清醒等用途，功效随配方不同而改变。不能把任意灵酒都当作同一种治疗手段。"
+      ],
+      "related": [
+        "wine-godhood"
+      ],
+      "people": [
+        "13"
+      ],
+      "source": "赵香香人物资料",
+      "spoiler": false,
+      "aliases": [
+        "多功能灵酒",
+        "功能酒"
+      ]
+    },
+    {
+      "id": "dreamland",
+      "name": "幻梦境",
+      "category": "arts",
+      "summary": "莉莉能够进入、并作为向导参与其中的梦境空间。",
+      "detail": [
+        "进入之后仍需要维持返回联系。资料没有给出幻梦境所有层级、居民或独立地图。"
+      ],
+      "related": [
+        "dream-path",
+        "dream-guide"
+      ],
+      "people": [
+        "09"
+      ],
+      "source": "莉莉人物资料",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "dream-path",
+      "name": "梦路",
+      "category": "arts",
+      "summary": "可以辨认和进入、需要保留返回联系的梦境路径。",
+      "detail": [
+        "莉莉擅长辨认梦路。听见熟人的声音不能代替核验同伴位置，进入异常空间也不能省略回程安排。"
+      ],
+      "related": [
+        "dreamland",
+        "return-anchor"
+      ],
+      "people": [
+        "09"
+      ],
+      "source": "人物资料与第一卷",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "shared-dream",
+      "name": "共梦",
+      "category": "arts",
+      "summary": "第三卷中需要通过进入梦路处理的梦境问题。",
+      "detail": [
+        "共梦危机与青岚的生态损伤同时影响行动。当前资料没有给出所有参与者共享梦境的统一触发条件。"
+      ],
+      "related": [
+        "qinglan",
+        "dream-path"
+      ],
+      "people": [
+        "09"
+      ],
+      "source": "第三卷因果衔接",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "tide-light",
+      "name": "潮光",
+      "category": "arts",
+      "summary": "江照明可以积攒、用于建立返回灯标的水光力量。",
+      "detail": [
+        "其用途与海路引航、帮助陌生人返程相联系。现有资料没有给出它与普通照明的全部差别。"
+      ],
+      "related": [
+        "four-ports",
+        "return-anchor"
+      ],
+      "people": [
+        "22"
+      ],
+      "source": "第四卷因果衔接",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "boundary-calibration",
+      "name": "边界校准",
+      "category": "arts",
+      "summary": "小白所擅长的边界相关能力。",
+      "detail": [
+        "妙愿的资料明确小白拥有强大的古龙真形，并能进行风水护御和边界校准。后期高级边界的作用见进阶档案。"
+      ],
+      "related": [
+        "guard-world",
+        "advanced-boundary"
+      ],
+      "people": [
+        "15"
+      ],
+      "source": "妙愿人物资料",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "projection",
+      "name": "投影",
+      "category": "arts",
+      "summary": "白阅尘以成年公橘猫的形态在此界参与故事的方式。",
+      "detail": [
+        "人物资料区分猫形投影与洁白骨龙本体；投影能够观察、提示和帮忙。没有把这套方式规定为所有龙或所有人通用的能力。"
+      ],
+      "related": [
+        "multiverse"
+      ],
+      "people": [
+        "26"
+      ],
+      "source": "白阅尘人物资料",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "multiverse",
+      "name": "多元宇宙与时间线",
+      "category": "world",
+      "summary": "白阅尘能够游弋、阅读并参与的多个世界与时间线。",
+      "detail": [
+        "这首先是白阅尘个人设定中的活动范围。资料没有规定九域与多元宇宙的全部层级关系，也没有给出任意人跨世界的通行方式。"
+      ],
+      "related": [
+        "projection"
+      ],
+      "people": [
+        "26"
+      ],
+      "source": "白阅尘人物资料",
+      "spoiler": false,
+      "aliases": [
+        "多元宇宙",
+        "时间线"
+      ]
+    },
+    {
+      "id": "return-stele",
+      "name": "归首碑",
+      "category": "items",
+      "summary": "灰桥出现、给出修复图式与回应的神谕载体。",
+      "detail": [
+        "依碑所示办法进行的修复可以真实奏效，但载体不知道尚未输入的新消息。读懂它需要同时保存原问题、回答与现场事实。"
+      ],
+      "related": [
+        "oracle",
+        "return-heads",
+        "trace"
+      ],
+      "people": [
+        "05",
+        "23"
+      ],
+      "source": "第一卷第三章",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "life-ledger",
+      "name": "命簿",
+      "category": "items",
+      "summary": "三岛研究与携带、与名字和复生问题相联系的簿册。",
+      "detail": [
+        "命簿在砂冕身份与供水资格的问题中发挥作用。日常救援姓名册与后来可执行强制死籍的主册应分别理解；后者列在进阶档案。"
+      ],
+      "related": [
+        "rescue-register",
+        "master-ledger",
+        "true-name"
+      ],
+      "people": [
+        "01"
+      ],
+      "source": "三岛人物资料与故事大纲",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "rescue-register",
+      "name": "救援姓名册",
+      "category": "items",
+      "summary": "三岛用于补录名字、联系和救援信息的记录。",
+      "detail": [
+        "记药、递茶、补名字与记得别人的小事构成他的日常照护。这份姓名册不能直接等同于具有强制作用的主册。"
+      ],
+      "related": [
+        "life-ledger"
+      ],
+      "people": [
+        "01"
+      ],
+      "source": "三岛人物资料与故事大纲",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "day-cut",
+      "name": "昼切",
+      "category": "items",
+      "summary": "曲柯携带的双刃武器。",
+      "detail": [
+        "它配合曲柯的火光突袭与迅捷身法。昼切与赫利俄斯的断昼是两种不同武器，不能因名字相近而混写。"
+      ],
+      "related": [
+        "break-day"
+      ],
+      "people": [
+        "19"
+      ],
+      "source": "曲柯人物资料与大纲说明",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "break-day",
+      "name": "断昼",
+      "category": "items",
+      "summary": "赫利俄斯携带、内部蕴有剑灵的古代誓剑。",
+      "detail": [
+        "剑灵保有自己的判断。资料明确断昼与昼切不同；剑灵的具体来历及其与封印的关系仍待后续细纲补全。"
+      ],
+      "related": [
+        "day-cut",
+        "sword-spirit"
+      ],
+      "people": [
+        "27"
+      ],
+      "source": "赫利俄斯人物资料与大纲说明",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "sword-spirit",
+      "name": "剑灵",
+      "category": "arts",
+      "summary": "断昼内部能够与赫利俄斯对话、保有独立判断的存在。",
+      "detail": [
+        "现有资料没有给所有武器设定剑灵，也未补全这位剑灵的具体来历。"
+      ],
+      "related": [
+        "break-day"
+      ],
+      "people": [
+        "27"
+      ],
+      "source": "大纲中的断昼说明",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "formless-key",
+      "name": "无相密钥",
+      "category": "items",
+      "summary": "林清翊佩戴的项链式密钥。",
+      "detail": [
+        "颈间密钥在日常与救援中具有辨识作用，并与清翊的传送行动相联系。其完整来源、权限和与“无相”族群称呼的关系尚未定义。"
+      ],
+      "related": [
+        "dragon-tamer",
+        "ancient-powers"
+      ],
+      "people": [
+        "10"
+      ],
+      "source": "林清翊人物资料与故事大纲",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "snake-staff",
+      "name": "阿斯克勒庇俄斯之杖",
+      "category": "items",
+      "summary": "琉西法携带、具有单蛇缠杖特征的器物。",
+      "detail": [
+        "人物资料将它与治疗、创生和辅助能力一同列出。本页只收录作品中的已知用途，不追加现实神话规则。"
+      ],
+      "related": [
+        "life-route"
+      ],
+      "people": [
+        "02"
+      ],
+      "source": "琉西法人物资料",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "opera-tarot",
+      "name": "京剧牌面塔罗",
+      "category": "items",
+      "summary": "楚惊殊施行牌术的牌组，偏爱宝剑组。",
+      "detail": [
+        "牌面采用京剧主题，能力用于辨识与牵引术式；其判断也可能发生误读。"
+      ],
+      "related": [
+        "card-art"
+      ],
+      "people": [
+        "08"
+      ],
+      "source": "楚惊殊人物资料",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "bone-ruler",
+      "name": "鸣骨尺",
+      "category": "items",
+      "summary": "单谣随身携带、与真名和誓约工作并列出现的器物。",
+      "detail": [
+        "资料给出它的名字，但没有独立说明其全部操作、材质与能力边界。"
+      ],
+      "related": [
+        "true-name",
+        "oath"
+      ],
+      "people": [
+        "12"
+      ],
+      "source": "单谣人物资料",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "purple-crystal",
+      "name": "高阶紫晶与空白签",
+      "category": "items",
+      "summary": "贾小鱼携带的炼金材料与小挂件。",
+      "detail": [
+        "高阶紫晶与炼金工具箱一同出现，“空白签”是小挂件的名称。当前资料未赋予空白签独立的特殊效果。"
+      ],
+      "related": [
+        "alchemy"
+      ],
+      "people": [
+        "04"
+      ],
+      "source": "贾小鱼人物资料",
+      "spoiler": false,
+      "aliases": [
+        "高阶紫晶",
+        "空白签"
+      ]
+    },
+    {
+      "id": "thunder-armor",
+      "name": "鸣雷甲",
+      "category": "items",
+      "summary": "晏执衡在需要正式战斗时使用的装备。",
+      "detail": [
+        "它与日常哑光黑高领外套有所区分；他的雷系攻防、机关与供能控制是人物能力。现有资料没有给甲体列出完整模块表。"
+      ],
+      "related": [
+        "public-grid"
+      ],
+      "people": [
+        "24"
+      ],
+      "source": "晏执衡人物资料与故事大纲",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "old-score",
+      "name": "古谱",
+      "category": "items",
+      "summary": "土方奏一沿独立路径追查、与旧遗存相互比对的乐谱。",
+      "detail": [
+        "古谱参与对归首方案的审议。它与后来用于九路同步的完整同步谱有关，但不能把两者所有内容直接等同。"
+      ],
+      "related": [
+        "resonance",
+        "synchronization"
+      ],
+      "people": [
+        "03"
+      ],
+      "source": "第四至第六卷因果衔接",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "public-grid",
+      "name": "公共地脉网",
+      "category": "engineering",
+      "summary": "曜环用于公共供能、需要维护与负荷管理的网络。",
+      "detail": [
+        "切分过载、读取容量、交接开关与训练操作员，都关系到网络能否真正保护居民。"
+      ],
+      "related": [
+        "earth-veins",
+        "overload",
+        "maintenance"
+      ],
+      "people": [
+        "17",
+        "24"
+      ],
+      "source": "人物资料与第二卷",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "overload",
+      "name": "过载与串流",
+      "category": "engineering",
+      "summary": "供能现场需要检查和切分的异常负荷与流动问题。",
+      "detail": [
+        "顾霆擅长切分过载；曜环工坊也会出现串流。已有资料没有给出电学公式或把这两类现象设为完全相同。"
+      ],
+      "related": [
+        "public-grid",
+        "thunder-grid"
+      ],
+      "people": [
+        "04",
+        "17"
+      ],
+      "source": "人物资料与第二、九卷",
+      "spoiler": false,
+      "aliases": [
+        "过载",
+        "串流"
+      ]
+    },
+    {
+      "id": "clean-water",
+      "name": "净水阵",
+      "category": "engineering",
+      "summary": "灰桥恢复井水时使用、依赖当地守护条件的阵式。",
+      "detail": [
+        "试搬脉首后净水阵立即失灵，使迁移前安排临时锚与当地维护成为必要条件。"
+      ],
+      "related": [
+        "pulse-head",
+        "temporary-anchor",
+        "rune-art"
+      ],
+      "people": [
+        "05"
+      ],
+      "source": "第一卷第四章",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "temporary-anchor",
+      "name": "临时锚",
+      "category": "engineering",
+      "summary": "迁移脉首前，为当地留下保护而建立的临时接续。",
+      "detail": [
+        "补符、连续观察回流、检查泄漏和轮换支撑共同验证它是否可靠。它与进入危险空间时使用的返回锚用途不同。"
+      ],
+      "related": [
+        "pulse-head",
+        "clean-water",
+        "return-anchor"
+      ],
+      "people": [
+        "05",
+        "11",
+        "14",
+        "25"
+      ],
+      "source": "第一卷第四章",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "return-anchor",
+      "name": "返回锚／返回联系",
+      "category": "engineering",
+      "summary": "进入异常空间或危险地点时，保持回程可辨、可达的联系。",
+      "detail": [
+        "梦路行动和母庭救援都要求明确返回安排。熟人的声音、单纯的希望或未核验的出口，不能代替实际联系。"
+      ],
+      "related": [
+        "dream-path",
+        "temporary-anchor"
+      ],
+      "people": [
+        "09",
+        "11"
+      ],
+      "source": "人物资料与第一、十卷",
+      "spoiler": false,
+      "aliases": [
+        "返回锚",
+        "返回联系",
+        "回程联系"
+      ]
+    },
+    {
+      "id": "raw-record",
+      "name": "原始记录",
+      "category": "engineering",
+      "summary": "先保留观察结果、再解释原因的记录方式。",
+      "detail": [
+        "墨默保存未经解释的记录，小语核对现场变化。记录、原因与当事人的判断在作品中需要分开核验。"
+      ],
+      "related": [
+        "trace",
+        "shadow-frost"
+      ],
+      "people": [
+        "23",
+        "25"
+      ],
+      "source": "人物资料与故事大纲",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "maintenance",
+      "name": "维护接入",
+      "category": "engineering",
+      "summary": "为了检修供能或设施而保留的操作入口。",
+      "detail": [
+        "它使维护得以进行，也意味着接入权限和实体保障需要被认真管理。具体被利用的过程属于进阶剧情。"
+      ],
+      "related": [
+        "public-grid",
+        "safeguards"
+      ],
+      "people": [
+        "17",
+        "24"
+      ],
+      "source": "第七卷因果衔接",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "safeguards",
+      "name": "三道保障",
+      "category": "engineering",
+      "summary": "归首仪式前为工程设置的三层保障。",
+      "detail": [
+        "大纲明确它们在各自可见范围内有效，但没有逐项给出全部结构。对隐藏内核的覆盖范围与最终结果见进阶档案。"
+      ],
+      "related": [
+        "return-heads",
+        "hidden-core"
+      ],
+      "people": [],
+      "source": "第七卷因果衔接",
+      "spoiler": false,
+      "aliases": []
+    },
+    {
+      "id": "day-return",
+      "name": "日脉回流",
+      "category": "world",
+      "summary": "后期行动用来独立计数、确认期限的回流。",
+      "detail": [
+        "归首失败后的补救必须在四十九次回流以前完成。这里的期限依独立回流计数，不把它直接等同为四十九个普通自然日。"
+      ],
+      "related": [
+        "distribution",
+        "stations"
+      ],
+      "people": [],
+      "source": "第八至第十二卷因果衔接",
+      "spoiler": true,
+      "aliases": [
+        "四十九次回流",
+        "日脉"
+      ]
+    },
+    {
+      "id": "distribution",
+      "name": "分授",
+      "category": "engineering",
+      "summary": "烧尽九头鸟神格，向二十七站分配力量的补救方案。",
+      "detail": [
+        "这是归首失败后形成的守界路线。地方训练、负荷复核、接收线路与实际操作员使它具备执行条件。"
+      ],
+      "related": [
+        "godhood",
+        "stations",
+        "day-return",
+        "synchronization"
+      ],
+      "people": [],
+      "source": "第八至第十二卷因果衔接",
+      "spoiler": true,
+      "aliases": []
+    },
+    {
+      "id": "stations",
+      "name": "二十七站",
+      "category": "engineering",
+      "summary": "分授方案中的二十七处接收节点。",
+      "detail": [
+        "节点需要地方操作员、训练和负荷复核，不能只由旧行动队保管开关。资料没有列齐全部站名；二十七站也不等于二十七位角色。"
+      ],
+      "related": [
+        "distribution",
+        "public-grid"
+      ],
+      "people": [
+        "17"
+      ],
+      "source": "第八至第十一卷因果衔接",
+      "spoiler": true,
+      "aliases": [
+        "接收节点",
+        "地方节点",
+        "接收线路"
+      ]
+    },
+    {
+      "id": "unified-one",
+      "name": "归一者",
+      "category": "world",
+      "summary": "九首同次交接后出现的承载者。",
+      "detail": [
+        "归来的承载者没有原守护者的人格，并首先执行撤销世界隔离。它的出现使工程成功交接与世界得到保护成为不同的问题。"
+      ],
+      "related": [
+        "hidden-core",
+        "lamp-bearer"
+      ],
+      "people": [],
+      "source": "第七卷因果衔接",
+      "spoiler": true,
+      "aliases": []
+    },
+    {
+      "id": "lamp-bearer",
+      "name": "执灯客",
+      "category": "people",
+      "summary": "归首仪式后出现、提出献世交易的存在。",
+      "detail": [
+        "其提出的条件是以献世换取局部幸存。资料没有给出它的完整来历、种族或与九灯的确定对应关系。"
+      ],
+      "related": [
+        "unified-one",
+        "nine-lamps"
+      ],
+      "people": [],
+      "source": "第七、十一卷因果衔接",
+      "spoiler": true,
+      "aliases": []
+    },
+    {
+      "id": "hidden-core",
+      "name": "隐藏内核",
+      "category": "engineering",
+      "summary": "审议与三道保障未能完整展开的工程内部机制。",
+      "detail": [
+        "九首同次交接先撤销整体隔离，三道保障因不同原因失败。局部修复与可见保障有效，并没有覆盖这个隐藏机制。"
+      ],
+      "related": [
+        "safeguards",
+        "core-diagram",
+        "unified-one"
+      ],
+      "people": [],
+      "source": "第七卷因果衔接",
+      "spoiler": true,
+      "aliases": []
+    },
+    {
+      "id": "core-diagram",
+      "name": "核心图／仰星残图",
+      "category": "items",
+      "summary": "归首失败后用于形成补救方案的重要图文证据。",
+      "detail": [
+        "墨默保存的核心图、仰星残图和独立回流计数共同支撑分授方案。它们是不同材料，不能只凭一张图替代全部核验。"
+      ],
+      "related": [
+        "distribution",
+        "day-return",
+        "raw-record"
+      ],
+      "people": [
+        "25",
+        "23"
+      ],
+      "source": "第七、八卷因果衔接",
+      "spoiler": true,
+      "aliases": [
+        "核心图",
+        "仰星残图"
+      ]
+    },
+    {
+      "id": "master-ledger",
+      "name": "主册／强制死籍",
+      "category": "items",
+      "summary": "三岛后来能够执行强制死籍的命簿主册及其强制作用。",
+      "detail": [
+        "第三十五章三岛烧去主册，拒绝替他人保证复生；救援姓名册、老师旧信与铜片被保留。主册与日常照护记录具有不同用途。"
+      ],
+      "related": [
+        "life-ledger",
+        "rescue-register",
+        "echoes"
+      ],
+      "people": [
+        "01"
+      ],
+      "source": "第五、九卷与人物落实表",
+      "spoiler": true,
+      "aliases": [
+        "主册",
+        "强制死籍"
+      ]
+    },
+    {
+      "id": "echoes",
+      "name": "残响",
+      "category": "world",
+      "summary": "不能简单还原为本人、与复生问题相关的遗留回应。",
+      "detail": [
+        "大纲将陶澄确实回来过与其他人的残响无法还原为本人并列，用来说明成功个案不能证明统一复生可行。"
+      ],
+      "related": [
+        "master-ledger",
+        "dusk-rift"
+      ],
+      "people": [
+        "01"
+      ],
+      "source": "第六、九卷因果衔接",
+      "spoiler": true,
+      "aliases": []
+    },
+    {
+      "id": "life-route",
+      "name": "生命线路／生首通道",
+      "category": "world",
+      "summary": "母庭与生首相关行动所涉及的生命通路。",
+      "detail": [
+        "母庭堵塞生命线路，后来接近生首通道，使行动不得不返回边境。资料没有明确二者完全同义，因此在同条中分别解释其出现的场景。"
+      ],
+      "related": [
+        "mother-court",
+        "life-head"
+      ],
+      "people": [
+        "02"
+      ],
+      "source": "第八至第十卷因果衔接",
+      "spoiler": true,
+      "aliases": [
+        "生命线路",
+        "生首通道"
+      ]
+    },
+    {
+      "id": "dream-head",
+      "name": "梦首",
+      "category": "world",
+      "summary": "其记忆为旧禁令与九灯主动分置提供线索的首。",
+      "detail": [
+        "梦首记忆是比对旧历史的材料之一，不等于已经掌握归首工程全部输出路径。"
+      ],
+      "related": [
+        "nine-heads",
+        "nine-lamps"
+      ],
+      "people": [],
+      "source": "第三卷因果衔接",
+      "spoiler": true,
+      "aliases": []
+    },
+    {
+      "id": "boundary-head",
+      "name": "界首",
+      "category": "world",
+      "summary": "海路行动中需要建立备用航路后才能迁移的首。",
+      "detail": [
+        "四港的合作为界首迁移创造条件。资料没有单独列出界首所有能力、持有者与遗存外形。"
+      ],
+      "related": [
+        "nine-heads",
+        "four-ports"
+      ],
+      "people": [],
+      "source": "第四卷因果衔接",
+      "spoiler": true,
+      "aliases": []
+    },
+    {
+      "id": "life-head",
+      "name": "生首",
+      "category": "world",
+      "summary": "母庭后期行动所接近通道的相关首。",
+      "detail": [
+        "当前资料只给出生首通道与生命线路的联系，不能据名称自行补写生首的全部力量与历史。"
+      ],
+      "related": [
+        "nine-heads",
+        "life-route"
+      ],
+      "people": [],
+      "source": "第九卷因果衔接",
+      "spoiler": true,
+      "aliases": []
+    },
+    {
+      "id": "last-three-routes",
+      "name": "曙、界、星三路",
+      "category": "engineering",
+      "summary": "终局中成为最后阻碍的三条接收路线。",
+      "detail": [
+        "前六条接收线路亮起后，这三路仍需完成。资料提到释权文字、高级边界校准与门路窗口，但没有提供三路各自的完整技术表。"
+      ],
+      "related": [
+        "distribution",
+        "release-text",
+        "advanced-boundary"
+      ],
+      "people": [],
+      "source": "第十一、十二卷因果衔接",
+      "spoiler": true,
+      "aliases": [
+        "曙",
+        "界",
+        "星",
+        "九路"
+      ]
+    },
+    {
+      "id": "synchronization",
+      "name": "完整同步谱",
+      "category": "items",
+      "summary": "土方奏一用于让九路节拍和异地行动同步的乐谱。",
+      "detail": [
+        "它使此前建立的协作条件在终局持续发挥作用。古谱追查与最终同步应用是相关但不同的阶段。"
+      ],
+      "related": [
+        "resonance",
+        "distribution",
+        "old-score"
+      ],
+      "people": [
+        "03"
+      ],
+      "source": "第十、十一卷因果衔接",
+      "spoiler": true,
+      "aliases": [
+        "同步谱",
+        "九路节拍"
+      ]
+    },
+    {
+      "id": "gate-key",
+      "name": "门之钥",
+      "category": "world",
+      "summary": "沉睡在赫利俄斯意识深处的危险门之封印。",
+      "detail": [
+        "赫利俄斯是封印宿主。它后来意外解封，先被用于救人，也逐步成为强制选择未来与扣留他人的手段。"
+      ],
+      "related": [
+        "local-gate-anchor",
+        "break-day"
+      ],
+      "people": [
+        "27"
+      ],
+      "source": "人物资料与第九至十二卷",
+      "spoiler": true,
+      "aliases": [
+        "门之钥封印"
+      ]
+    },
+    {
+      "id": "local-gate-anchor",
+      "name": "本界门锚",
+      "category": "engineering",
+      "summary": "赫利俄斯的门路与本界联系中需要逐层分离的锚。",
+      "detail": [
+        "终局救援包括停用、分离门锚与带出被扣留者。它不能与净水保护的临时锚或一般返回联系混作同一种器物。"
+      ],
+      "related": [
+        "gate-key",
+        "stay-day-court",
+        "return-anchor"
+      ],
+      "people": [
+        "27"
+      ],
+      "source": "第十至十二卷因果衔接",
+      "spoiler": true,
+      "aliases": [
+        "门锚"
+      ]
+    },
+    {
+      "id": "ancient-powers",
+      "name": "古力",
+      "category": "world",
+      "summary": "林清翊体内相互排斥的多种远古之力。",
+      "detail": [
+        "清翊寻找古力分立和平衡之道，传送的有效性与记忆代价持续存在。当前资料没有列出每一种古力的独立名称。"
+      ],
+      "related": [
+        "formless-key"
+      ],
+      "people": [
+        "10"
+      ],
+      "source": "林清翊隐秘资料与故事大纲",
+      "spoiler": true,
+      "aliases": [
+        "远古之力",
+        "古力分立"
+      ]
+    },
+    {
+      "id": "advanced-boundary",
+      "name": "高级边界",
+      "category": "world",
+      "summary": "终局中需要小白校准的更高层级边界。",
+      "detail": [
+        "高级边界校准与分授最后阶段共同出现；资料没有给出所有边界层级或校准公式。"
+      ],
+      "related": [
+        "boundary-calibration",
+        "last-three-routes"
+      ],
+      "people": [
+        "15"
+      ],
+      "source": "第十二卷因果衔接",
+      "spoiler": true,
+      "aliases": []
+    },
+    {
+      "id": "release-text",
+      "name": "释权文字",
+      "category": "items",
+      "summary": "陆衡在最后窗口发现并继续译读的关键文字。",
+      "detail": [
+        "继续译读是让最后几路接收得以完成的行动条件，陆衡因此无法归来。资料没有给出文字的全文，不补造咒文。"
+      ],
+      "related": [
+        "last-three-routes",
+        "distribution"
+      ],
+      "people": [],
+      "source": "第十一、十二卷因果衔接",
+      "spoiler": true,
+      "aliases": []
+    },
+    {
+      "id": "immortality",
+      "name": "不灭",
+      "category": "arts",
+      "summary": "琉西法在母庭救援后仍生效、在终局失去的特性。",
+      "detail": [
+        "母庭祭坛被拆与不灭消失并非同一个时点；大纲明确不灭在离开母庭后仍然生效，随后随终局代价而失去。"
+      ],
+      "related": [
+        "godhood",
+        "mother-court"
+      ],
+      "people": [
+        "02"
+      ],
+      "source": "第十、十二卷因果衔接",
+      "spoiler": true,
+      "aliases": []
+    }
+  ],
+  "editorial_note": "依据现有故事大纲与人物资料整理。尚未明确的规则会注明资料边界；人物姓名可在人物图集中查询。"
+}
