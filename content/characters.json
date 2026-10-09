@@ -54,6 +54,10 @@
       "width": 315,
       "left": -108,
       "top": 0
+    },
+    "hero_framing": {
+      "x": 18.602,
+      "head_width": 130
     }
   },
   {
@@ -107,6 +111,10 @@
       "width": 315,
       "left": -108,
       "top": 0
+    },
+    "hero_framing": {
+      "x": 20.011,
+      "head_width": 160
     }
   },
   {
@@ -159,6 +167,10 @@
       "width": 315,
       "left": -108,
       "top": 0
+    },
+    "hero_framing": {
+      "x": 18.038,
+      "head_width": 130
     }
   },
   {
@@ -211,6 +223,10 @@
       "width": 315,
       "left": -108,
       "top": 0
+    },
+    "hero_framing": {
+      "x": 21.139,
+      "head_width": 130
     }
   },
   {
@@ -263,6 +279,10 @@
       "width": 315,
       "left": -108,
       "top": 0
+    },
+    "hero_framing": {
+      "x": 18.884,
+      "head_width": 130
     }
   },
   {
@@ -315,6 +335,10 @@
       "width": 315,
       "left": -108,
       "top": 0
+    },
+    "hero_framing": {
+      "x": 18.32,
+      "head_width": 130
     }
   },
   {
@@ -367,6 +391,10 @@
       "width": 315,
       "left": -108,
       "top": 0
+    },
+    "hero_framing": {
+      "x": 18.038,
+      "head_width": 130
     }
   },
   {
@@ -419,6 +447,10 @@
       "width": 315,
       "left": -108,
       "top": 0
+    },
+    "hero_framing": {
+      "x": 18.602,
+      "head_width": 130
     }
   },
   {
@@ -471,6 +503,10 @@
       "width": 315,
       "left": -108,
       "top": 0
+    },
+    "hero_framing": {
+      "x": 19.166,
+      "head_width": 220
     }
   },
   {
@@ -519,6 +555,10 @@
       "width": 315,
       "left": -108,
       "top": 0
+    },
+    "hero_framing": {
+      "x": 18.038,
+      "head_width": 130
     }
   },
   {
@@ -570,6 +610,10 @@
       "width": 315,
       "left": -108,
       "top": 0
+    },
+    "hero_framing": {
+      "x": 19.166,
+      "head_width": 130
     }
   },
   {
@@ -622,6 +666,10 @@
       "width": 315,
       "left": -108,
       "top": 0
+    },
+    "hero_framing": {
+      "x": 19.729,
+      "head_width": 130
     }
   },
   {
@@ -674,6 +722,10 @@
       "width": 315,
       "left": -108,
       "top": 0
+    },
+    "hero_framing": {
+      "x": 18.038,
+      "head_width": 130
     }
   },
   {
@@ -725,6 +777,10 @@
       "width": 315,
       "left": -108,
       "top": 0
+    },
+    "hero_framing": {
+      "x": 20.857,
+      "head_width": 130
     }
   },
   {
@@ -773,6 +829,10 @@
       "width": 315,
       "left": -108,
       "top": 0
+    },
+    "hero_framing": {
+      "x": 20.857,
+      "head_width": 130
     }
   },
   {
@@ -825,6 +885,10 @@
       "width": 315,
       "left": -108,
       "top": 0
+    },
+    "hero_framing": {
+      "x": 19.448,
+      "head_width": 130
     }
   },
   {
@@ -878,6 +942,10 @@
       "width": 315,
       "left": -108,
       "top": 0
+    },
+    "hero_framing": {
+      "x": 18.32,
+      "head_width": 130
     }
   },
   {
@@ -930,6 +998,10 @@
       "width": 315,
       "left": -108,
       "top": 0
+    },
+    "hero_framing": {
+      "x": 21.984,
+      "head_width": 130
     }
   },
   {
@@ -982,6 +1054,10 @@
       "width": 315,
       "left": -108,
       "top": 0
+    },
+    "hero_framing": {
+      "x": 19.448,
+      "head_width": 130
     }
   },
   {
@@ -1034,6 +1110,10 @@
       "width": 315,
       "left": -108,
       "top": 0
+    },
+    "hero_framing": {
+      "x": 22.266,
+      "head_width": 130
     }
   },
   {
@@ -1086,6 +1166,10 @@
       "width": 315,
       "left": -108,
       "top": 0
+    },
+    "hero_framing": {
+      "x": 18.602,
+      "head_width": 130
     }
   },
   {
@@ -1138,6 +1222,10 @@
       "width": 315,
       "left": -108,
       "top": 0
+    },
+    "hero_framing": {
+      "x": 20.575,
+      "head_width": 130
     }
   },
   {
@@ -1185,6 +1273,10 @@
       "width": 315,
       "left": -108,
       "top": 0
+    },
+    "hero_framing": {
+      "x": 21.139,
+      "head_width": 130
     }
   },
   {
@@ -1238,6 +1330,10 @@
       "width": 315,
       "left": -108,
       "top": 0
+    },
+    "hero_framing": {
+      "x": 20.857,
+      "head_width": 130
     }
   },
   {
@@ -1290,6 +1386,10 @@
       "width": 315,
       "left": -108,
       "top": 0
+    },
+    "hero_framing": {
+      "x": 21.139,
+      "head_width": 130
     }
   },
   {
@@ -1342,6 +1442,10 @@
       "width": 315,
       "left": -108,
       "top": 0
+    },
+    "hero_framing": {
+      "x": 20.011,
+      "head_width": 300
     }
   },
   {
@@ -1394,6 +1498,10 @@
       "width": 315,
       "left": -108,
       "top": 0
+    },
+    "hero_framing": {
+      "x": 21.984,
+      "head_width": 130
     }
   }
 ]

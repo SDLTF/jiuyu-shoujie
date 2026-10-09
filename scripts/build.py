@@ -102,7 +102,11 @@ def build():
         figures = []
         for slot, person in enumerate(ordered[index:index + 3]):
             loading = 'fetchpriority="high"' if index == 0 and slot == 0 else 'loading="lazy"'
-            figures.append(f'<figure class="portrait portrait-{["one", "two", "three"][slot]}"><a href="gallery/{person["id"]}.html" aria-label="查看{escape(person["name"])}人物资料"><img src="assets/images/{person["id"]}.webp" alt="{escape(person["name"])}的人物设定" {loading}></a><figcaption><span>{person["id"]}</span>{escape(person["name"])}</figcaption></figure>')
+            framing = person['hero_framing']
+            # At the narrowest viewport, cap scaling so the entire head has 10% breathing room.
+            face_scale = round(887 / framing['head_width'] * .9, 4)
+            style = f'--hero-focus-x:{framing["x"]}%;--hero-face-scale:{face_scale};--hero-portrait-src:url(assets/images/{person["id"]}.webp)'
+            figures.append(f'<figure class="portrait portrait-{["one", "two", "three"][slot]}" style="{style}"><a href="gallery/{person["id"]}.html" aria-label="查看{escape(person["name"])}人物资料"><img src="assets/images/{person["id"]}.webp" alt="{escape(person["name"])}的人物设定" {loading}></a><figcaption><span>{person["id"]}</span>{escape(person["name"])}</figcaption></figure>')
         hidden = ' hidden' if index else ''
         slides.append(f'<div class="hero-slide" role="group" aria-roledescription="幻灯片" aria-label="第{index//3+1}组，共{(len(ordered)+2)//3}组"{hidden}>{"".join(figures)}</div>')
     carousel = f'''<div class="hero-art" id="hero-carousel" role="region" aria-roledescription="轮播" aria-label="人物设定预览"><div class="hero-slides">{''.join(slides)}</div><div class="carousel-controls"><span class="art-caption">人物档案 / CHARACTER ARCHIVE</span><div class="carousel-buttons"><button id="carousel-prev" type="button" aria-label="上一组人物" aria-controls="hero-carousel">←</button><span id="carousel-status" aria-live="polite" aria-atomic="true">01 / {(len(ordered)+2)//3:02}</span><button id="carousel-next" type="button" aria-label="下一组人物" aria-controls="hero-carousel">→</button></div></div></div>'''

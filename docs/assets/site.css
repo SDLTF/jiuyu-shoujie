@@ -241,6 +241,12 @@ body{font-weight:400;font-kerning:normal;text-rendering:optimizeLegibility;-webk
 @media(max-width:640px){.hero-slide{gap:10px}.hero-art{margin-bottom:28px}.hero{padding-bottom:62px}.carousel-controls{top:calc(100% + 12px);flex-wrap:wrap;gap:8px 12px}.carousel-controls .art-caption{font-size:9px;letter-spacing:.04em}.carousel-buttons{margin-left:auto;gap:8px}.carousel-buttons button{width:44px;height:44px}.footer-world-link{font-size:13px}}
 @media(max-width:360px){.carousel-controls .art-caption{max-width:112px}.hero-slide{gap:8px}}
 @media(prefers-reduced-motion:reduce){.hero-slide{animation:none}.tile-link:hover{transform:none}}
+/* Centre each original head rather than cropping from the exhibition card's left edge. */
+.hero-art .portrait{container-type:inline-size}
+.hero-art .portrait:before{content:"";position:absolute;inset:0;background-image:var(--hero-portrait-src);background-size:auto 100%;background-position:20% center;filter:blur(12px) brightness(.5);transform:scale(1.08);pointer-events:none}
+.hero-art .portrait>a{position:relative;overflow:hidden}
+.hero-art .portrait img{position:absolute;top:0;left:50%;width:auto;max-width:none;height:min(100%,calc(100cqw * var(--hero-face-scale)));object-fit:initial;transform:translateX(calc(-1 * var(--hero-focus-x)));transition:filter .25s}
+.hero-art .portrait:hover img{transform:translateX(calc(-1 * var(--hero-focus-x)));filter:brightness(1.05)}
 @media(max-width:1050px){.hero h1{font-size:94px}.hero-intro{font-size:24px}}
 @media(max-width:760px){.hero h1{font-size:80px}.world-overview{gap:16px}.world-overview-card{padding:22px}.wiki-term{padding:23px}.world-heading h1{font-size:62px}.wiki-section-heading{gap:10px}.reading-column{padding:20px}.profile-info{padding:22px}}
 @media(max-width:640px){
