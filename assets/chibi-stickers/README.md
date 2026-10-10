@@ -16,4 +16,8 @@
 
 本套使用内置image_gen工具重新绘制，以官方人物卡确定外观，以提供的两张Q版参考确定画风。网页预览使用保留透明通道的WebP，并沿用原有深色底色；下载的PNG保持上述原生尺寸。
 
+## 命名与JSON字段
+
+文件名为`角色编号_角色名_图片序号_标准立绘或表情序号.png`。角色`id`为1至28，图片`index`为1至4；`type`使用`standard`（标准立绘）或`expression`（表情包）；`position`为`top_left`、`top_right`、`bottom_left`、`bottom_right`。`sheet`与`file`为相对项目根目录的路径，`name`为表情名称，`emotion`为情绪，`description`描述实际成图，`action`记录动作。`width`、`height`为实际像素尺寸，`sha256`用于校验文件；根级count字段统计角色与图片数量。
+
 可通过manifest定位角色图片，或直接打开对应编号文件夹。三组表情含动作和道具变化；名称是文字说明，不写入图片。聊天软件可能限制贴图尺寸，可按软件要求另行缩小导入。本压缩包保留完整素材。

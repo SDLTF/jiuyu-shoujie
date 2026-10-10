@@ -1,8 +1,8 @@
 {
   "project": "九域守界 Q版立绘与表情包",
   "version": "2026-10-11-full-body-v1",
-  "source": "官方人物展示卡、用户提供的三岛及琉西法Q版参考图、Q版小人生成prompt.md",
-  "style": "日系萌系Q版，圆润大头短身，完整全身及道具；真实透明RGBA背景",
+  "source": "https://sdltf.github.io/jiuyu-shoujie/gallery/",
+  "style": "精致日系萌系Q版，约1.8至2.2头身；完整全身及道具；真实透明RGBA背景",
   "character_count": 28,
   "sheet_count": 28,
   "individual_count": 112,
@@ -25,8 +25,8 @@
       "images": [
         {
           "index": 1,
-          "type": "标准立绘",
-          "position": "top-left",
+          "type": "standard",
+          "position": "top_left",
           "name": "记下名字",
           "file": "assets/chibi-stickers/01/01.png",
           "emotion": "平静",
@@ -38,8 +38,8 @@
         },
         {
           "index": 2,
-          "type": "表情包",
-          "position": "top-right",
+          "type": "expression",
+          "position": "top_right",
           "name": "先喝口热的",
           "file": "assets/chibi-stickers/01/02.png",
           "emotion": "关心、开心",
@@ -51,8 +51,8 @@
         },
         {
           "index": 3,
-          "type": "表情包",
-          "position": "bottom-left",
+          "type": "expression",
+          "position": "bottom_left",
           "name": "整理命簿",
           "file": "assets/chibi-stickers/01/03.png",
           "emotion": "专注",
@@ -64,8 +64,8 @@
         },
         {
           "index": 4,
-          "type": "表情包",
-          "position": "bottom-right",
+          "type": "expression",
+          "position": "bottom_right",
           "name": "又忘了饭点",
           "file": "assets/chibi-stickers/01/04.png",
           "emotion": "慌张",
@@ -85,8 +85,8 @@
       "images": [
         {
           "index": 1,
-          "type": "标准立绘",
-          "position": "top-left",
+          "type": "standard",
+          "position": "top_left",
           "name": "骰首牧师",
           "file": "assets/chibi-stickers/02/01.png",
           "emotion": "平静",
@@ -98,8 +98,8 @@
         },
         {
           "index": 2,
-          "type": "表情包",
-          "position": "top-right",
+          "type": "expression",
+          "position": "top_right",
           "name": "轮到你了",
           "file": "assets/chibi-stickers/02/02.png",
           "emotion": "得意、招呼",
@@ -111,8 +111,8 @@
         },
         {
           "index": 3,
-          "type": "表情包",
-          "position": "bottom-left",
+          "type": "expression",
+          "position": "bottom_left",
           "name": "你在说什么",
           "file": "assets/chibi-stickers/02/03.png",
           "emotion": "困惑",
@@ -124,8 +124,8 @@
         },
         {
           "index": 4,
-          "type": "表情包",
-          "position": "bottom-right",
+          "type": "expression",
+          "position": "bottom_right",
           "name": "怎么又失败",
           "file": "assets/chibi-stickers/02/04.png",
           "emotion": "抓狂",
@@ -145,8 +145,8 @@
       "images": [
         {
           "index": 1,
-          "type": "标准立绘",
-          "position": "top-left",
+          "type": "standard",
+          "position": "top_left",
           "name": "巡演音乐生",
           "file": "assets/chibi-stickers/03/01.png",
           "emotion": "平静",
@@ -158,8 +158,8 @@
         },
         {
           "index": 2,
-          "type": "表情包",
-          "position": "top-right",
+          "type": "expression",
+          "position": "top_right",
           "name": "优美一曲",
           "file": "assets/chibi-stickers/03/02.png",
           "emotion": "陶醉",
@@ -171,8 +171,8 @@
         },
         {
           "index": 3,
-          "type": "表情包",
-          "position": "bottom-left",
+          "type": "expression",
+          "position": "bottom_left",
           "name": "不合拍",
           "file": "assets/chibi-stickers/03/03.png",
           "emotion": "嫌弃、无奈",
@@ -184,8 +184,8 @@
         },
         {
           "index": 4,
-          "type": "表情包",
-          "position": "bottom-right",
+          "type": "expression",
+          "position": "bottom_right",
           "name": "谢谢欣赏",
           "file": "assets/chibi-stickers/03/04.png",
           "emotion": "得意",
@@ -205,8 +205,8 @@
       "images": [
         {
           "index": 1,
-          "type": "标准立绘",
-          "position": "top-left",
+          "type": "standard",
+          "position": "top_left",
           "name": "炼金工坊店主",
           "file": "assets/chibi-stickers/04/01.png",
           "emotion": "平静",
@@ -218,8 +218,8 @@
         },
         {
           "index": 2,
-          "type": "表情包",
-          "position": "top-right",
+          "type": "expression",
+          "position": "top_right",
           "name": "修好啦",
           "file": "assets/chibi-stickers/04/02.png",
           "emotion": "开心、得意",
@@ -231,8 +231,8 @@
         },
         {
           "index": 3,
-          "type": "表情包",
-          "position": "bottom-left",
+          "type": "expression",
+          "position": "bottom_left",
           "name": "细节要对齐",
           "file": "assets/chibi-stickers/04/03.png",
           "emotion": "专注",
@@ -244,8 +244,8 @@
         },
         {
           "index": 4,
-          "type": "表情包",
-          "position": "bottom-right",
+          "type": "expression",
+          "position": "bottom_right",
           "name": "这也能坏",
           "file": "assets/chibi-stickers/04/04.png",
           "emotion": "惊讶、吐槽",
@@ -265,8 +265,8 @@
       "images": [
         {
           "index": 1,
-          "type": "标准立绘",
-          "position": "top-left",
+          "type": "standard",
+          "position": "top_left",
           "name": "东方符师",
           "file": "assets/chibi-stickers/05/01.png",
           "emotion": "平静",
@@ -278,8 +278,8 @@
         },
         {
           "index": 2,
-          "type": "表情包",
-          "position": "top-right",
+          "type": "expression",
+          "position": "top_right",
           "name": "符来好运",
           "file": "assets/chibi-stickers/05/02.png",
           "emotion": "兴奋",
@@ -291,8 +291,8 @@
         },
         {
           "index": 3,
-          "type": "表情包",
-          "position": "bottom-left",
+          "type": "expression",
+          "position": "bottom_left",
           "name": "请你吃糖",
           "file": "assets/chibi-stickers/05/03.png",
           "emotion": "俏皮、亲近",
@@ -304,8 +304,8 @@
         },
         {
           "index": 4,
-          "type": "表情包",
-          "position": "bottom-right",
+          "type": "expression",
+          "position": "bottom_right",
           "name": "符贴稳了",
           "file": "assets/chibi-stickers/05/04.png",
           "emotion": "认真、专注",
@@ -325,8 +325,8 @@
       "images": [
         {
           "index": 1,
-          "type": "标准立绘",
-          "position": "top-left",
+          "type": "standard",
+          "position": "top_left",
           "name": "旧守护照看者",
           "file": "assets/chibi-stickers/06/01.png",
           "emotion": "平静",
@@ -338,8 +338,8 @@
         },
         {
           "index": 2,
-          "type": "表情包",
-          "position": "top-right",
+          "type": "expression",
+          "position": "top_right",
           "name": "听我念两句",
           "file": "assets/chibi-stickers/06/02.png",
           "emotion": "唠叨、关心",
@@ -351,8 +351,8 @@
         },
         {
           "index": 3,
-          "type": "表情包",
-          "position": "bottom-left",
+          "type": "expression",
+          "position": "bottom_left",
           "name": "喝茶就好",
           "file": "assets/chibi-stickers/06/03.png",
           "emotion": "惬意",
@@ -364,8 +364,8 @@
         },
         {
           "index": 4,
-          "type": "表情包",
-          "position": "bottom-right",
+          "type": "expression",
+          "position": "bottom_right",
           "name": "退路我守",
           "file": "assets/chibi-stickers/06/04.png",
           "emotion": "坚定",
@@ -385,8 +385,8 @@
       "images": [
         {
           "index": 1,
-          "type": "标准立绘",
-          "position": "top-left",
+          "type": "standard",
+          "position": "top_left",
           "name": "花系治疗者",
           "file": "assets/chibi-stickers/07/01.png",
           "emotion": "平静",
@@ -398,8 +398,8 @@
         },
         {
           "index": 2,
-          "type": "表情包",
-          "position": "top-right",
+          "type": "expression",
+          "position": "top_right",
           "name": "给你一朵花",
           "file": "assets/chibi-stickers/07/02.png",
           "emotion": "温柔、关心",
@@ -411,8 +411,8 @@
         },
         {
           "index": 3,
-          "type": "表情包",
-          "position": "bottom-left",
+          "type": "expression",
+          "position": "bottom_left",
           "name": "别碰伤口",
           "file": "assets/chibi-stickers/07/03.png",
           "emotion": "担心、专注",
@@ -424,8 +424,8 @@
         },
         {
           "index": 4,
-          "type": "表情包",
-          "position": "bottom-right",
+          "type": "expression",
+          "position": "bottom_right",
           "name": "花开了",
           "file": "assets/chibi-stickers/07/04.png",
           "emotion": "惊喜、开心",
@@ -445,8 +445,8 @@
       "images": [
         {
           "index": 1,
-          "type": "标准立绘",
-          "position": "top-left",
+          "type": "standard",
+          "position": "top_left",
           "name": "牌术法师",
           "file": "assets/chibi-stickers/08/01.png",
           "emotion": "平静",
@@ -458,8 +458,8 @@
         },
         {
           "index": 2,
-          "type": "表情包",
-          "position": "top-right",
+          "type": "expression",
+          "position": "top_right",
           "name": "抽张好牌",
           "file": "assets/chibi-stickers/08/02.png",
           "emotion": "得意、俏皮",
@@ -471,8 +471,8 @@
         },
         {
           "index": 3,
-          "type": "表情包",
-          "position": "bottom-left",
+          "type": "expression",
+          "position": "bottom_left",
           "name": "怎么是这张",
           "file": "assets/chibi-stickers/08/03.png",
           "emotion": "震惊",
@@ -484,8 +484,8 @@
         },
         {
           "index": 4,
-          "type": "表情包",
-          "position": "bottom-right",
+          "type": "expression",
+          "position": "bottom_right",
           "name": "牌阵开场",
           "file": "assets/chibi-stickers/08/04.png",
           "emotion": "专注、兴奋",
@@ -505,8 +505,8 @@
       "images": [
         {
           "index": 1,
-          "type": "标准立绘",
-          "position": "top-left",
+          "type": "standard",
+          "position": "top_left",
           "name": "梦路向导",
           "file": "assets/chibi-stickers/09/01.png",
           "emotion": "平静",
@@ -518,8 +518,8 @@
         },
         {
           "index": 2,
-          "type": "表情包",
-          "position": "top-right",
+          "type": "expression",
+          "position": "top_right",
           "name": "别吵我",
           "file": "assets/chibi-stickers/09/02.png",
           "emotion": "嫌弃",
@@ -531,8 +531,8 @@
         },
         {
           "index": 3,
-          "type": "表情包",
-          "position": "bottom-left",
+          "type": "expression",
+          "position": "bottom_left",
           "name": "这里可以走",
           "file": "assets/chibi-stickers/09/03.png",
           "emotion": "自信、引导",
@@ -544,8 +544,8 @@
         },
         {
           "index": 4,
-          "type": "表情包",
-          "position": "bottom-right",
+          "type": "expression",
+          "position": "bottom_right",
           "name": "尾巴别碰",
           "file": "assets/chibi-stickers/09/04.png",
           "emotion": "炸毛、惊讶",
@@ -565,8 +565,8 @@
       "images": [
         {
           "index": 1,
-          "type": "标准立绘",
-          "position": "top-left",
+          "type": "standard",
+          "position": "top_left",
           "name": "御龙师",
           "file": "assets/chibi-stickers/10/01.png",
           "emotion": "平静",
@@ -578,8 +578,8 @@
         },
         {
           "index": 2,
-          "type": "表情包",
-          "position": "top-right",
+          "type": "expression",
+          "position": "top_right",
           "name": "一起出发",
           "file": "assets/chibi-stickers/10/02.png",
           "emotion": "开心、兴奋",
@@ -591,8 +591,8 @@
         },
         {
           "index": 3,
-          "type": "表情包",
-          "position": "bottom-left",
+          "type": "expression",
+          "position": "bottom_left",
           "name": "吃饭啦",
           "file": "assets/chibi-stickers/10/03.png",
           "emotion": "温柔、关心",
@@ -604,8 +604,8 @@
         },
         {
           "index": 4,
-          "type": "表情包",
-          "position": "bottom-right",
+          "type": "expression",
+          "position": "bottom_right",
           "name": "别怕有我",
           "file": "assets/chibi-stickers/10/04.png",
           "emotion": "紧张但坚定",
@@ -625,8 +625,8 @@
       "images": [
         {
           "index": 1,
-          "type": "标准立绘",
-          "position": "top-left",
+          "type": "standard",
+          "position": "top_left",
           "name": "学院弓箭手",
           "file": "assets/chibi-stickers/11/01.png",
           "emotion": "平静",
@@ -638,8 +638,8 @@
         },
         {
           "index": 2,
-          "type": "表情包",
-          "position": "top-right",
+          "type": "expression",
+          "position": "top_right",
           "name": "这边集合",
           "file": "assets/chibi-stickers/11/02.png",
           "emotion": "开心、热情",
@@ -651,8 +651,8 @@
         },
         {
           "index": 3,
-          "type": "表情包",
-          "position": "bottom-left",
+          "type": "expression",
+          "position": "bottom_left",
           "name": "先让我看看",
           "file": "assets/chibi-stickers/11/03.png",
           "emotion": "拘谨、好奇",
@@ -664,8 +664,8 @@
         },
         {
           "index": 4,
-          "type": "表情包",
-          "position": "bottom-right",
+          "type": "expression",
+          "position": "bottom_right",
           "name": "风里一箭",
           "file": "assets/chibi-stickers/11/04.png",
           "emotion": "专注",
@@ -685,8 +685,8 @@
       "images": [
         {
           "index": 1,
-          "type": "标准立绘",
-          "position": "top-left",
+          "type": "standard",
+          "position": "top_left",
           "name": "真名施术者",
           "file": "assets/chibi-stickers/12/01.png",
           "emotion": "平静",
@@ -698,8 +698,8 @@
         },
         {
           "index": 2,
-          "type": "表情包",
-          "position": "top-right",
+          "type": "expression",
+          "position": "top_right",
           "name": "你说的真名",
           "file": "assets/chibi-stickers/12/02.png",
           "emotion": "玩味、调侃",
@@ -711,8 +711,8 @@
         },
         {
           "index": 3,
-          "type": "表情包",
-          "position": "bottom-left",
+          "type": "expression",
+          "position": "bottom_left",
           "name": "核验誓约",
           "file": "assets/chibi-stickers/12/03.png",
           "emotion": "认真、专注",
@@ -724,8 +724,8 @@
         },
         {
           "index": 4,
-          "type": "表情包",
-          "position": "bottom-right",
+          "type": "expression",
+          "position": "bottom_right",
           "name": "契约有问题",
           "file": "assets/chibi-stickers/12/04.png",
           "emotion": "无奈、质疑",
@@ -745,8 +745,8 @@
       "images": [
         {
           "index": 1,
-          "type": "标准立绘",
-          "position": "top-left",
+          "type": "standard",
+          "position": "top_left",
           "name": "酒馆老板",
           "file": "assets/chibi-stickers/13/01.png",
           "emotion": "平静",
@@ -758,8 +758,8 @@
         },
         {
           "index": 2,
-          "type": "表情包",
-          "position": "top-right",
+          "type": "expression",
+          "position": "top_right",
           "name": "敬你一杯",
           "file": "assets/chibi-stickers/13/02.png",
           "emotion": "开心、招呼",
@@ -771,8 +771,8 @@
         },
         {
           "index": 3,
-          "type": "表情包",
-          "position": "bottom-left",
+          "type": "expression",
+          "position": "bottom_left",
           "name": "配方正好",
           "file": "assets/chibi-stickers/13/03.png",
           "emotion": "得意、专注",
@@ -784,8 +784,8 @@
         },
         {
           "index": 4,
-          "type": "表情包",
-          "position": "bottom-right",
+          "type": "expression",
+          "position": "bottom_right",
           "name": "别喝太快",
           "file": "assets/chibi-stickers/13/04.png",
           "emotion": "担心、惊讶",
@@ -805,8 +805,8 @@
       "images": [
         {
           "index": 1,
-          "type": "标准立绘",
-          "position": "top-left",
+          "type": "standard",
+          "position": "top_left",
           "name": "浪涌骑士",
           "file": "assets/chibi-stickers/14/01.png",
           "emotion": "平静",
@@ -818,8 +818,8 @@
         },
         {
           "index": 2,
-          "type": "表情包",
-          "position": "top-right",
+          "type": "expression",
+          "position": "top_right",
           "name": "我来挡住",
           "file": "assets/chibi-stickers/14/02.png",
           "emotion": "坚定",
@@ -831,8 +831,8 @@
         },
         {
           "index": 3,
-          "type": "表情包",
-          "position": "bottom-left",
+          "type": "expression",
+          "position": "bottom_left",
           "name": "可以歇一会",
           "file": "assets/chibi-stickers/14/03.png",
           "emotion": "放松、开心",
@@ -844,8 +844,8 @@
         },
         {
           "index": 4,
-          "type": "表情包",
-          "position": "bottom-right",
+          "type": "expression",
+          "position": "bottom_right",
           "name": "跟紧我",
           "file": "assets/chibi-stickers/14/04.png",
           "emotion": "关心、警觉",
@@ -865,8 +865,8 @@
       "images": [
         {
           "index": 1,
-          "type": "标准立绘",
-          "position": "top-left",
+          "type": "standard",
+          "position": "top_left",
           "name": "航路记录者",
           "file": "assets/chibi-stickers/15/01.png",
           "emotion": "平静",
@@ -878,8 +878,8 @@
         },
         {
           "index": 2,
-          "type": "表情包",
-          "position": "top-right",
+          "type": "expression",
+          "position": "top_right",
           "name": "饭已经好了",
           "file": "assets/chibi-stickers/15/02.png",
           "emotion": "开心、照料",
@@ -891,8 +891,8 @@
         },
         {
           "index": 3,
-          "type": "表情包",
-          "position": "bottom-left",
+          "type": "expression",
+          "position": "bottom_left",
           "name": "路线在这里",
           "file": "assets/chibi-stickers/15/03.png",
           "emotion": "认真",
@@ -904,8 +904,8 @@
         },
         {
           "index": 4,
-          "type": "表情包",
-          "position": "bottom-right",
+          "type": "expression",
+          "position": "bottom_right",
           "name": "救命呀",
           "file": "assets/chibi-stickers/15/04.png",
           "emotion": "慌张",
@@ -925,8 +925,8 @@
       "images": [
         {
           "index": 1,
-          "type": "标准立绘",
-          "position": "top-left",
+          "type": "standard",
+          "position": "top_left",
           "name": "野外引路法师",
           "file": "assets/chibi-stickers/16/01.png",
           "emotion": "平静",
@@ -938,8 +938,8 @@
         },
         {
           "index": 2,
-          "type": "表情包",
-          "position": "top-right",
+          "type": "expression",
+          "position": "top_right",
           "name": "路铺好了",
           "file": "assets/chibi-stickers/16/02.png",
           "emotion": "开心、坚定",
@@ -951,8 +951,8 @@
         },
         {
           "index": 3,
-          "type": "表情包",
-          "position": "bottom-left",
+          "type": "expression",
+          "position": "bottom_left",
           "name": "种下希望",
           "file": "assets/chibi-stickers/16/03.png",
           "emotion": "温柔、专注",
@@ -964,8 +964,8 @@
         },
         {
           "index": 4,
-          "type": "表情包",
-          "position": "bottom-right",
+          "type": "expression",
+          "position": "bottom_right",
           "name": "别走错啦",
           "file": "assets/chibi-stickers/16/04.png",
           "emotion": "关心、提醒",
@@ -985,8 +985,8 @@
       "images": [
         {
           "index": 1,
-          "type": "标准立绘",
-          "position": "top-left",
+          "type": "standard",
+          "position": "top_left",
           "name": "雷系工程法师",
           "file": "assets/chibi-stickers/17/01.png",
           "emotion": "平静",
@@ -998,8 +998,8 @@
         },
         {
           "index": 2,
-          "type": "表情包",
-          "position": "top-right",
+          "type": "expression",
+          "position": "top_right",
           "name": "过载切掉了",
           "file": "assets/chibi-stickers/17/02.png",
           "emotion": "安心、认真",
@@ -1011,8 +1011,8 @@
         },
         {
           "index": 3,
-          "type": "表情包",
-          "position": "bottom-left",
+          "type": "expression",
+          "position": "bottom_left",
           "name": "再核对一次",
           "file": "assets/chibi-stickers/17/03.png",
           "emotion": "专注",
@@ -1024,8 +1024,8 @@
         },
         {
           "index": 4,
-          "type": "表情包",
-          "position": "bottom-right",
+          "type": "expression",
+          "position": "bottom_right",
           "name": "你该休息了",
           "file": "assets/chibi-stickers/17/04.png",
           "emotion": "疲倦、困惑",
@@ -1045,8 +1045,8 @@
       "images": [
         {
           "index": 1,
-          "type": "标准立绘",
-          "position": "top-left",
+          "type": "standard",
+          "position": "top_left",
           "name": "流动装备商",
           "file": "assets/chibi-stickers/18/01.png",
           "emotion": "平静",
@@ -1058,8 +1058,8 @@
         },
         {
           "index": 2,
-          "type": "表情包",
-          "position": "top-right",
+          "type": "expression",
+          "position": "top_right",
           "name": "这件准好用",
           "file": "assets/chibi-stickers/18/02.png",
           "emotion": "得意、热情",
@@ -1071,8 +1071,8 @@
         },
         {
           "index": 3,
-          "type": "表情包",
-          "position": "bottom-left",
+          "type": "expression",
+          "position": "bottom_left",
           "name": "账算清楚了",
           "file": "assets/chibi-stickers/18/03.png",
           "emotion": "专注",
@@ -1084,8 +1084,8 @@
         },
         {
           "index": 4,
-          "type": "表情包",
-          "position": "bottom-right",
+          "type": "expression",
+          "position": "bottom_right",
           "name": "还有这种用法",
           "file": "assets/chibi-stickers/18/04.png",
           "emotion": "惊讶、脑洞",
@@ -1105,8 +1105,8 @@
       "images": [
         {
           "index": 1,
-          "type": "标准立绘",
-          "position": "top-left",
+          "type": "standard",
+          "position": "top_left",
           "name": "贵族双刃手",
           "file": "assets/chibi-stickers/19/01.png",
           "emotion": "平静",
@@ -1118,8 +1118,8 @@
         },
         {
           "index": 2,
-          "type": "表情包",
-          "position": "top-right",
+          "type": "expression",
+          "position": "top_right",
           "name": "我先举个手",
           "file": "assets/chibi-stickers/19/02.png",
           "emotion": "开朗、俏皮",
@@ -1131,8 +1131,8 @@
         },
         {
           "index": 3,
-          "type": "表情包",
-          "position": "bottom-left",
+          "type": "expression",
+          "position": "bottom_left",
           "name": "准备好了",
           "file": "assets/chibi-stickers/19/03.png",
           "emotion": "自信、专注",
@@ -1144,8 +1144,8 @@
         },
         {
           "index": 4,
-          "type": "表情包",
-          "position": "bottom-right",
+          "type": "expression",
+          "position": "bottom_right",
           "name": "说中了吗",
           "file": "assets/chibi-stickers/19/04.png",
           "emotion": "装无辜、心虚",
@@ -1165,8 +1165,8 @@
       "images": [
         {
           "index": 1,
-          "type": "标准立绘",
-          "position": "top-left",
+          "type": "standard",
+          "position": "top_left",
           "name": "认真送达",
           "file": "assets/chibi-stickers/20/01.png",
           "emotion": "平静",
@@ -1178,8 +1178,8 @@
         },
         {
           "index": 2,
-          "type": "表情包",
-          "position": "top-right",
+          "type": "expression",
+          "position": "top_right",
           "name": "你的信到了",
           "file": "assets/chibi-stickers/20/02.png",
           "emotion": "开心、得意",
@@ -1191,8 +1191,8 @@
         },
         {
           "index": 3,
-          "type": "表情包",
-          "position": "bottom-left",
+          "type": "expression",
+          "position": "bottom_left",
           "name": "让我找一下",
           "file": "assets/chibi-stickers/20/03.png",
           "emotion": "着急、专注",
@@ -1204,8 +1204,8 @@
         },
         {
           "index": 4,
-          "type": "表情包",
-          "position": "bottom-right",
+          "type": "expression",
+          "position": "bottom_right",
           "name": "我可没迟到",
           "file": "assets/chibi-stickers/20/04.png",
           "emotion": "心虚、俏皮",
@@ -1225,8 +1225,8 @@
       "images": [
         {
           "index": 1,
-          "type": "标准立绘",
-          "position": "top-left",
+          "type": "standard",
+          "position": "top_left",
           "name": "神秘路人",
           "file": "assets/chibi-stickers/21/01.png",
           "emotion": "平静",
@@ -1238,8 +1238,8 @@
         },
         {
           "index": 2,
-          "type": "表情包",
-          "position": "top-right",
+          "type": "expression",
+          "position": "top_right",
           "name": "先看个热闹",
           "file": "assets/chibi-stickers/21/02.png",
           "emotion": "悠闲、坏笑",
@@ -1251,8 +1251,8 @@
         },
         {
           "index": 3,
-          "type": "表情包",
-          "position": "bottom-left",
+          "type": "expression",
+          "position": "bottom_left",
           "name": "这也拿得出",
           "file": "assets/chibi-stickers/21/03.png",
           "emotion": "得意、神秘",
@@ -1264,8 +1264,8 @@
         },
         {
           "index": 4,
-          "type": "表情包",
-          "position": "bottom-right",
+          "type": "expression",
+          "position": "bottom_right",
           "name": "该换边了",
           "file": "assets/chibi-stickers/21/04.png",
           "emotion": "不满、提醒",
@@ -1285,8 +1285,8 @@
       "images": [
         {
           "index": 1,
-          "type": "标准立绘",
-          "position": "top-left",
+          "type": "standard",
+          "position": "top_left",
           "name": "海路剑客",
           "file": "assets/chibi-stickers/22/01.png",
           "emotion": "平静",
@@ -1298,8 +1298,8 @@
         },
         {
           "index": 2,
-          "type": "表情包",
-          "position": "top-right",
+          "type": "expression",
+          "position": "top_right",
           "name": "这边是归途",
           "file": "assets/chibi-stickers/22/02.png",
           "emotion": "自信、关心",
@@ -1311,8 +1311,8 @@
         },
         {
           "index": 3,
-          "type": "表情包",
-          "position": "bottom-left",
+          "type": "expression",
+          "position": "bottom_left",
           "name": "剑要够快",
           "file": "assets/chibi-stickers/22/03.png",
           "emotion": "专注、坚定",
@@ -1324,8 +1324,8 @@
         },
         {
           "index": 4,
-          "type": "表情包",
-          "position": "bottom-right",
+          "type": "expression",
+          "position": "bottom_right",
           "name": "灯还可以修",
           "file": "assets/chibi-stickers/22/04.png",
           "emotion": "认真、无奈",
@@ -1345,8 +1345,8 @@
       "images": [
         {
           "index": 1,
-          "type": "标准立绘",
-          "position": "top-left",
+          "type": "standard",
+          "position": "top_left",
           "name": "团队发言者",
           "file": "assets/chibi-stickers/23/01.png",
           "emotion": "自然、开心",
@@ -1358,8 +1358,8 @@
         },
         {
           "index": 2,
-          "type": "表情包",
-          "position": "top-right",
+          "type": "expression",
+          "position": "top_right",
           "name": "你先讲完",
           "file": "assets/chibi-stickers/23/02.png",
           "emotion": "认真、关心",
@@ -1371,8 +1371,8 @@
         },
         {
           "index": 3,
-          "type": "表情包",
-          "position": "bottom-left",
+          "type": "expression",
+          "position": "bottom_left",
           "name": "证据在这里",
           "file": "assets/chibi-stickers/23/03.png",
           "emotion": "自信、兴奋",
@@ -1384,8 +1384,8 @@
         },
         {
           "index": 4,
-          "type": "表情包",
-          "position": "bottom-right",
+          "type": "expression",
+          "position": "bottom_right",
           "name": "又要补记录",
           "file": "assets/chibi-stickers/23/04.png",
           "emotion": "无奈、忙乱",
@@ -1405,8 +1405,8 @@
       "images": [
         {
           "index": 1,
-          "type": "标准立绘",
-          "position": "top-left",
+          "type": "standard",
+          "position": "top_left",
           "name": "鸣雷甲术师",
           "file": "assets/chibi-stickers/24/01.png",
           "emotion": "平静",
@@ -1418,8 +1418,8 @@
         },
         {
           "index": 2,
-          "type": "表情包",
-          "position": "top-right",
+          "type": "expression",
+          "position": "top_right",
           "name": "开关由我",
           "file": "assets/chibi-stickers/24/02.png",
           "emotion": "冷静、掌控",
@@ -1431,8 +1431,8 @@
         },
         {
           "index": 3,
-          "type": "表情包",
-          "position": "bottom-left",
+          "type": "expression",
+          "position": "bottom_left",
           "name": "再检查一遍",
           "file": "assets/chibi-stickers/24/03.png",
           "emotion": "严谨、专注",
@@ -1444,8 +1444,8 @@
         },
         {
           "index": 4,
-          "type": "表情包",
-          "position": "bottom-right",
+          "type": "expression",
+          "position": "bottom_right",
           "name": "计划偏了",
           "file": "assets/chibi-stickers/24/04.png",
           "emotion": "压抑的烦躁",
@@ -1465,8 +1465,8 @@
       "images": [
         {
           "index": 1,
-          "type": "标准立绘",
-          "position": "top-left",
+          "type": "standard",
+          "position": "top_left",
           "name": "影霜观测者",
           "file": "assets/chibi-stickers/25/01.png",
           "emotion": "平静",
@@ -1478,8 +1478,8 @@
         },
         {
           "index": 2,
-          "type": "表情包",
-          "position": "top-right",
+          "type": "expression",
+          "position": "top_right",
           "name": "记录先保存",
           "file": "assets/chibi-stickers/25/02.png",
           "emotion": "认真、谨慎",
@@ -1491,8 +1491,8 @@
         },
         {
           "index": 3,
-          "type": "表情包",
-          "position": "bottom-left",
+          "type": "expression",
+          "position": "bottom_left",
           "name": "隔离完成",
           "file": "assets/chibi-stickers/25/03.png",
           "emotion": "冷静、坚定",
@@ -1504,8 +1504,8 @@
         },
         {
           "index": 4,
-          "type": "表情包",
-          "position": "bottom-right",
+          "type": "expression",
+          "position": "bottom_right",
           "name": "我听见了",
           "file": "assets/chibi-stickers/25/04.png",
           "emotion": "温柔但克制",
@@ -1525,8 +1525,8 @@
       "images": [
         {
           "index": 1,
-          "type": "标准立绘",
-          "position": "top-left",
+          "type": "standard",
+          "position": "top_left",
           "name": "故事阅读者",
           "file": "assets/chibi-stickers/26/01.png",
           "emotion": "自然",
@@ -1538,8 +1538,8 @@
         },
         {
           "index": 2,
-          "type": "表情包",
-          "position": "top-right",
+          "type": "expression",
+          "position": "top_right",
           "name": "别打扰我",
           "file": "assets/chibi-stickers/26/02.png",
           "emotion": "炸毛、哈气",
@@ -1551,8 +1551,8 @@
         },
         {
           "index": 3,
-          "type": "表情包",
-          "position": "bottom-left",
+          "type": "expression",
+          "position": "bottom_left",
           "name": "故事真有趣",
           "file": "assets/chibi-stickers/26/03.png",
           "emotion": "好奇、专注",
@@ -1564,8 +1564,8 @@
         },
         {
           "index": 4,
-          "type": "表情包",
-          "position": "bottom-right",
+          "type": "expression",
+          "position": "bottom_right",
           "name": "蹭口饭吧",
           "file": "assets/chibi-stickers/26/04.png",
           "emotion": "开心、期待",
@@ -1585,8 +1585,8 @@
       "images": [
         {
           "index": 1,
-          "type": "标准立绘",
-          "position": "top-left",
+          "type": "standard",
+          "position": "top_left",
           "name": "律学院见习生",
           "file": "assets/chibi-stickers/27/01.png",
           "emotion": "平静",
@@ -1598,8 +1598,8 @@
         },
         {
           "index": 2,
-          "type": "表情包",
-          "position": "top-right",
+          "type": "expression",
+          "position": "top_right",
           "name": "叫我赫神",
           "file": "assets/chibi-stickers/27/02.png",
           "emotion": "得意、开心",
@@ -1611,8 +1611,8 @@
         },
         {
           "index": 3,
-          "type": "表情包",
-          "position": "bottom-left",
+          "type": "expression",
+          "position": "bottom_left",
           "name": "我可没输",
           "file": "assets/chibi-stickers/27/03.png",
           "emotion": "嘴硬、恼火",
@@ -1624,8 +1624,8 @@
         },
         {
           "index": 4,
-          "type": "表情包",
-          "position": "bottom-right",
+          "type": "expression",
+          "position": "bottom_right",
           "name": "断昼出鞘",
           "file": "assets/chibi-stickers/27/04.png",
           "emotion": "认真、专注",
@@ -1645,8 +1645,8 @@
       "images": [
         {
           "index": 1,
-          "type": "标准立绘",
-          "position": "top-left",
+          "type": "standard",
+          "position": "top_left",
           "name": "温和巡视者",
           "file": "assets/chibi-stickers/28/01.png",
           "emotion": "平静",
@@ -1658,8 +1658,8 @@
         },
         {
           "index": 2,
-          "type": "表情包",
-          "position": "top-right",
+          "type": "expression",
+          "position": "top_right",
           "name": "这个不能答",
           "file": "assets/chibi-stickers/28/02.png",
           "emotion": "歉意、谨慎",
@@ -1671,8 +1671,8 @@
         },
         {
           "index": 3,
-          "type": "表情包",
-          "position": "bottom-left",
+          "type": "expression",
+          "position": "bottom_left",
           "name": "我先看看",
           "file": "assets/chibi-stickers/28/03.png",
           "emotion": "好奇、专注",
@@ -1684,8 +1684,8 @@
         },
         {
           "index": 4,
-          "type": "表情包",
-          "position": "bottom-right",
+          "type": "expression",
+          "position": "bottom_right",
           "name": "一起处理吧",
           "file": "assets/chibi-stickers/28/04.png",
           "emotion": "关心、坚定",
@@ -1698,5 +1698,6 @@
       ]
     }
   ],
-  "archive": "assets/chibi-stickers/complete.zip"
+  "archive": "assets/chibi-stickers/complete.zip",
+  "references": "官方人物展示卡、用户提供的三岛及琉西法Q版参考图、Q版小人生成prompt.md"
 }
