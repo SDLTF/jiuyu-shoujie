@@ -155,7 +155,31 @@
       "height": 941,
       "sha256": "22f01f2e487769c28d58100d1f69fc5d4d6910840de2fa63faafac452995acc0",
       "generation_metadata": "assets/chapter-art/generation-prompts.json"
+    },
+    {
+      "id": "9-1",
+      "chapter": "009",
+      "caption": "石碑补出的路",
+      "original": "assets/chapter-art/9-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "15744da0b5d91ae6715b1d55a8213cf0abe7b8a110717f3ffa992f01832062f3",
+      "alt": "归首碑在夹固的窄板车上显出旧水路，小语用淡蓝水光留痕，苏弥抄图，艾琳扶住碑侧，墨默记录原问题。",
+      "after": "墨默从匣侧取出新媒纸，垫上干托片，搁在车架一侧的横板上。小语将手腕搁在板边，把指尖水光送向碑面。淡蓝的薄光贴着正在显现的图铺开，磨坊、旧墙角、砖渠和石阶依次留在纸上。她到了末端又看了一眼，两道横槽都在，才收回手。",
+      "generation_metadata": "assets/chapter-art/generation-prompts.json"
+    },
+    {
+      "id": "9-2",
+      "chapter": "009",
+      "caption": "拱口旁的两道横槽",
+      "original": "assets/chapter-art/9-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "2b3c4c5bcfdb88387368fb11e3473863116ede8782ef91a4099d2e5da93aae41",
+      "alt": "河堤旧石阶下，林砚与工人清出拱口和两道横槽，小语、韦侃、苏弥在较高处对照碑图，拱内仍被泥堵住。",
+      "after": "“对上了。”林砚看过横槽和拱缘，“这里有旧泄水口。”",
+      "generation_metadata": "assets/chapter-art/generation-prompts.json"
     }
   ],
-  "provenance": "Chapters 1-6: nine user-supplied illustrations preserved unchanged. Chapters 7-8: four illustrations generated with built-in image_gen using existing artwork and character cards as references; full prompts and revisions are preserved in assets/chapter-art/generation-prompts.json."
+  "provenance": "Chapters 1-6: nine user-supplied illustrations preserved unchanged. Chapters 7-9: six illustrations generated with built-in image_gen using existing artwork and character cards as references; full prompts and revisions are preserved in assets/chapter-art/generation-prompts.json."
 }
