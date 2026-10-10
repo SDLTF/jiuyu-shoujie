@@ -51,9 +51,7 @@
       "quote": "“名字我记下了。你先喝口热的。”"
     },
     "avatar": {
-      "width": 315,
-      "left": -108,
-      "top": 0
+      "original": "assets/avatars/01.png"
     },
     "hero_framing": {
       "x": 18.602,
@@ -108,9 +106,7 @@
       "quote": "“治疗有效。现在，你愿意吗？”"
     },
     "avatar": {
-      "width": 315,
-      "left": -108,
-      "top": 0
+      "original": "assets/avatars/02.png"
     },
     "hero_framing": {
       "x": 20.011,
@@ -164,9 +160,7 @@
       "quote": "“这一段我来。下一拍，听你们的。”"
     },
     "avatar": {
-      "width": 315,
-      "left": -108,
-      "top": 0
+      "original": "assets/avatars/03.png"
     },
     "hero_framing": {
       "x": 18.038,
@@ -220,9 +214,7 @@
       "quote": "“能修。材料单你也得看。”"
     },
     "avatar": {
-      "width": 315,
-      "left": -108,
-      "top": 0
+      "original": "assets/avatars/04.png"
     },
     "hero_framing": {
       "x": 21.139,
@@ -276,9 +268,7 @@
       "quote": "“漂亮归漂亮，符也得贴稳。”"
     },
     "avatar": {
-      "width": 315,
-      "left": -108,
-      "top": 0
+      "original": "assets/avatars/05.png"
     },
     "hero_framing": {
       "x": 18.884,
@@ -332,9 +322,7 @@
       "quote": "“能砸的那个，你指给我。”"
     },
     "avatar": {
-      "width": 315,
-      "left": -108,
-      "top": 0
+      "original": "assets/avatars/06.png"
     },
     "hero_framing": {
       "x": 18.32,
@@ -388,9 +376,7 @@
       "quote": "“别急，先把呼吸放慢。”"
     },
     "avatar": {
-      "width": 315,
-      "left": -108,
-      "top": 0
+      "original": "assets/avatars/07.png"
     },
     "hero_framing": {
       "x": 18.038,
@@ -444,9 +430,7 @@
       "quote": "“来，选三个数字。”"
     },
     "avatar": {
-      "width": 315,
-      "left": -108,
-      "top": 0
+      "original": "assets/avatars/08.png"
     },
     "hero_framing": {
       "x": 18.602,
@@ -500,9 +484,7 @@
       "quote": "“莉莉。不是黑猫，也不是喂。”"
     },
     "avatar": {
-      "width": 315,
-      "left": -108,
-      "top": 0
+      "original": "assets/avatars/09.png"
     },
     "hero_framing": {
       "x": 19.166,
@@ -552,9 +534,7 @@
       "quote": "“乐温，今天也一起出发！”"
     },
     "avatar": {
-      "width": 315,
-      "left": -108,
-      "top": 0
+      "original": "assets/avatars/10.png"
     },
     "hero_framing": {
       "x": 18.038,
@@ -607,9 +587,7 @@
       "quote": "“等我探完路，再一起走。”"
     },
     "avatar": {
-      "width": 315,
-      "left": -108,
-      "top": 0
+      "original": "assets/avatars/11.png"
     },
     "hero_framing": {
       "x": 19.166,
@@ -663,9 +641,7 @@
       "quote": "“话可以乱说，名字别乱签。”"
     },
     "avatar": {
-      "width": 315,
-      "left": -108,
-      "top": 0
+      "original": "assets/avatars/12.png"
     },
     "hero_framing": {
       "x": 19.729,
@@ -719,9 +695,7 @@
       "quote": "“先交个朋友，再说喝哪一杯。”"
     },
     "avatar": {
-      "width": 315,
-      "left": -108,
-      "top": 0
+      "original": "assets/avatars/13.png"
     },
     "hero_framing": {
       "x": 18.038,
@@ -774,9 +748,7 @@
       "quote": "“这一次，我守到最后。”"
     },
     "avatar": {
-      "width": 315,
-      "left": -108,
-      "top": 0
+      "original": "assets/avatars/14.png"
     },
     "hero_framing": {
       "x": 20.857,
@@ -826,9 +798,7 @@
       "quote": "“小白，你愿意继续吗？”"
     },
     "avatar": {
-      "width": 315,
-      "left": -108,
-      "top": 0
+      "original": "assets/avatars/15.png"
     },
     "hero_framing": {
       "x": 20.857,
@@ -882,9 +852,7 @@
       "quote": "“我先去看。路线我留给你。”"
     },
     "avatar": {
-      "width": 315,
-      "left": -108,
-      "top": 0
+      "original": "assets/avatars/16.png"
     },
     "hero_framing": {
       "x": 19.448,
@@ -939,9 +907,7 @@
       "quote": "“先把人教会，再算工程完工。”"
     },
     "avatar": {
-      "width": 315,
-      "left": -108,
-      "top": 0
+      "original": "assets/avatars/17.png"
     },
     "hero_framing": {
       "x": 18.32,
@@ -995,9 +961,7 @@
       "quote": "“没用的是店名，东西包好用。”"
     },
     "avatar": {
-      "width": 315,
-      "left": -108,
-      "top": 0
+      "original": "assets/avatars/18.png"
     },
     "hero_framing": {
       "x": 21.984,
@@ -1051,9 +1015,7 @@
       "quote": "“我举手，是因为有个问题。”"
     },
     "avatar": {
-      "width": 315,
-      "left": -108,
-      "top": 0
+      "original": "assets/avatars/19.png"
     },
     "hero_framing": {
       "x": 19.448,
@@ -1107,9 +1069,7 @@
       "quote": "“邮资另算，回执不能少。”"
     },
     "avatar": {
-      "width": 315,
-      "left": -108,
-      "top": 0
+      "original": "assets/avatars/20.png"
     },
     "hero_framing": {
       "x": 22.266,
@@ -1163,9 +1123,7 @@
       "quote": "“哟，这边是不是赢得太顺了？”"
     },
     "avatar": {
-      "width": 315,
-      "left": -108,
-      "top": 0
+      "original": "assets/avatars/21.png"
     },
     "hero_framing": {
       "x": 18.602,
@@ -1219,9 +1177,7 @@
       "quote": "“剑要快，回家的路要亮。”"
     },
     "avatar": {
-      "width": 315,
-      "left": -108,
-      "top": 0
+      "original": "assets/avatars/22.png"
     },
     "hero_framing": {
       "x": 20.575,
@@ -1270,9 +1226,7 @@
       "quote": "“你先讲完，我得听明白。”"
     },
     "avatar": {
-      "width": 315,
-      "left": -108,
-      "top": 0
+      "original": "assets/avatars/23.png"
     },
     "hero_framing": {
       "x": 21.139,
@@ -1327,9 +1281,7 @@
       "quote": "“开关，为什么由你们决定？”"
     },
     "avatar": {
-      "width": 315,
-      "left": -108,
-      "top": 0
+      "original": "assets/avatars/24.png"
     },
     "hero_framing": {
       "x": 20.857,
@@ -1383,9 +1335,7 @@
       "quote": "“这是记录。原因还不知道。”"
     },
     "avatar": {
-      "width": 315,
-      "left": -108,
-      "top": 0
+      "original": "assets/avatars/25.png"
     },
     "hero_framing": {
       "x": 21.139,
@@ -1439,9 +1389,7 @@
       "quote": "“还没有结束。”"
     },
     "avatar": {
-      "width": 315,
-      "left": -108,
-      "top": 0
+      "original": "assets/avatars/26.png"
     },
     "hero_framing": {
       "x": 20.011,
@@ -1495,9 +1443,7 @@
       "quote": "“叫赫神可以。剑，你别乱碰。”"
     },
     "avatar": {
-      "width": 315,
-      "left": -108,
-      "top": 0
+      "original": "assets/avatars/27.png"
     },
     "hero_framing": {
       "x": 21.984,
@@ -1574,9 +1520,7 @@
       "quote": "“我可以不回答，但不能说假话。”"
     },
     "avatar": {
-      "width": 315,
-      "left": -108,
-      "top": 0
+      "original": "assets/avatars/28.png"
     },
     "hero_framing": {
       "x": 18.0,

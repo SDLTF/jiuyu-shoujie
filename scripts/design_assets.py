@@ -44,6 +44,23 @@ def prepare_design_assets():
                             image.thumbnail((900, 1200), Image.Resampling.LANCZOS)
                         image.save(target, 'WEBP', quality=90, method=6)
 
+    # Independent painted avatars: retain native PNGs and serve responsive squares.
+    avatar_manifest = ROOT / 'assets/avatars/generation-prompts.json'
+    if avatar_manifest.exists():
+        avatar_dir = OUT / 'avatars'
+        avatar_dir.mkdir(parents=True, exist_ok=True)
+        for art in json.loads(avatar_manifest.read_text(encoding='utf-8'))['images']:
+            source = ROOT / art['original']
+            for suffix, width, quality in (('', 1024, 92), ('-512', 512, 90), ('-256', 256, 87)):
+                target = avatar_dir / f'{art["id"]}{suffix}.webp'
+                if not target.exists() or source.stat().st_mtime > target.stat().st_mtime:
+                    with Image.open(source) as picture:
+                        if picture.width != picture.height:
+                            raise ValueError(f'Avatar must be square: {source}')
+                        image = picture.convert('RGB')
+                        image.thumbnail((width, width), Image.Resampling.LANCZOS)
+                        image.save(target, 'WEBP', quality=quality, method=6)
+
     # Preserve complete chapter compositions, including on small screens.
     chapter_manifest = ROOT / 'content/chapter-art.json'
     if chapter_manifest.exists():
