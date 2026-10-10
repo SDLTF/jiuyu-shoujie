@@ -1,0 +1,537 @@
+{
+  "note": "依据角色设定绘制的独立场景插画，不补充正文剧情事实。",
+  "characters": [
+    {
+      "id": "01",
+      "portrait": {
+        "original": "assets/character-scenes/01.png",
+        "title": "叙事人设",
+        "caption": "三岛的第二版人设插画，沿用已有角色外观，呈现独立的动作与场景。",
+        "width": 1086,
+        "height": 1448,
+        "sha256": "acfea4d39a03a475ceae1127c831aa677a8dd28bcfac1483bb9bf9a744162c01"
+      },
+      "battle": {
+        "original": "assets/character-battles/01.png",
+        "title": "名册未合",
+        "caption": "袭击中的档案馆，他护住撤离者与尚未登记的姓名。",
+        "width": 1672,
+        "height": 941,
+        "sha256": "31bda61b5c4067401ef360821c70420205b2c0997aa190a8a51af0bbfeb1be35"
+      }
+    },
+    {
+      "id": "02",
+      "portrait": {
+        "original": "assets/character-scenes/02.png",
+        "title": "叙事人设",
+        "caption": "琉西法的第二版人设插画，沿用已有角色外观，呈现独立的动作与场景。",
+        "width": 1086,
+        "height": 1448,
+        "sha256": "a7d55dda6cf7a00c3fb10d583e28ce302d3692f4df847c6509fdca0dc5450153"
+      },
+      "battle": {
+        "original": "assets/character-battles/02.png",
+        "title": "六翼护生",
+        "caption": "六翼挡住战场碎屑，他专注救治身前的伤员。",
+        "width": 1672,
+        "height": 941,
+        "sha256": "1cce1705995d0b733d97ed1134f183d9d6103c200a893668b5a078740248cf0f"
+      }
+    },
+    {
+      "id": "03",
+      "portrait": {
+        "original": "assets/character-scenes/03.png",
+        "title": "叙事人设",
+        "caption": "土方奏一的第二版人设插画，沿用已有角色外观，呈现独立的动作与场景。",
+        "width": 1086,
+        "height": 1448,
+        "sha256": "d0d863f3f4193d18845bbe04aed66cbbbff25c829cca8deee81caef80861d588"
+      },
+      "battle": {
+        "original": "assets/character-battles/03.png",
+        "title": "弦上逆潮",
+        "caption": "小提琴的共振截住来袭，为港口撤离争取节拍。",
+        "width": 1672,
+        "height": 941,
+        "sha256": "57fc6d58bdcbc9e3f09d5df5593f9a2822cb59b0185b5a5498c4354a43622f2c"
+      }
+    },
+    {
+      "id": "04",
+      "portrait": {
+        "original": "assets/character-scenes/04.png",
+        "title": "叙事人设",
+        "caption": "贾小鱼的第二版人设插画，沿用已有角色外观，呈现独立的动作与场景。",
+        "width": 1086,
+        "height": 1448,
+        "sha256": "b03ed56c0644759aa5e807803c26e44c6f0d5d593bcf45eac3dad4c4fc1787ff"
+      },
+      "battle": {
+        "original": "assets/character-battles/04.png",
+        "title": "紫晶复燃",
+        "caption": "工坊受袭时，她抢修护盾供能，让街口重新亮起。",
+        "width": 1672,
+        "height": 941,
+        "sha256": "5bfb9b671ae15fd499c5a83421e9d126ddc9adf84dde7dfcdc51f84cf39397a9"
+      }
+    },
+    {
+      "id": "05",
+      "portrait": {
+        "original": "assets/character-scenes/05.png",
+        "title": "叙事人设",
+        "caption": "酥心糖的第二版人设插画，沿用已有角色外观，呈现独立的动作与场景。",
+        "width": 1086,
+        "height": 1448,
+        "sha256": "8b4d928e9f55bcff549586712dd4b7af01159f8489504e49ef582ed4ad8fc5bf"
+      },
+      "battle": {
+        "original": "assets/character-battles/05.png",
+        "title": "朱符封隘",
+        "caption": "以朱砂符札守住山口，给身后的人留出撤离时间。",
+        "width": 1672,
+        "height": 941,
+        "sha256": "ba8e4e9d34e4fe6024696516e4e0eab7d0c1624acf9b38a83f322c3ab8926738"
+      }
+    },
+    {
+      "id": "06",
+      "portrait": {
+        "original": "assets/character-scenes/06.png",
+        "title": "叙事人设",
+        "caption": "吴语的第二版人设插画，沿用已有角色外观，呈现独立的动作与场景。",
+        "width": 1086,
+        "height": 1448,
+        "sha256": "8e1a5a127b4fe420ac579cfc6f906aa509f28deb25ca4c49b21d8a2e8e2b9cad"
+      },
+      "battle": {
+        "original": "assets/character-battles/06.png",
+        "title": "杖定风雷",
+        "caption": "老武者在断桥前拦下攻势，风雷沿杖势而起。",
+        "width": 1672,
+        "height": 941,
+        "sha256": "b57fc81f16e8d4583d86b4510290c5d0608c3482d36db59c286f87d6ac71aa10"
+      }
+    },
+    {
+      "id": "07",
+      "portrait": {
+        "original": "assets/character-scenes/07.png",
+        "title": "叙事人设",
+        "caption": "闵霁的第二版人设插画，沿用已有角色外观，呈现独立的动作与场景。",
+        "width": 1086,
+        "height": 1448,
+        "sha256": "45cccf630769dffec7ef5c098f264f778dc18ca93d992f747201894ee7363bfb"
+      },
+      "battle": {
+        "original": "assets/character-battles/07.png",
+        "title": "花开战线",
+        "caption": "以花枝辨认生命，在森林战线后撑开一处疗护空间。",
+        "width": 1672,
+        "height": 941,
+        "sha256": "966ec89d49d497fac18f105f6cdbb09756447cf6c4ca8400464652694585e8a2"
+      }
+    },
+    {
+      "id": "08",
+      "portrait": {
+        "original": "assets/character-scenes/08.png",
+        "title": "叙事人设",
+        "caption": "楚惊殊的第二版人设插画，沿用已有角色外观，呈现独立的动作与场景。",
+        "width": 1086,
+        "height": 1448,
+        "sha256": "f95ebc4fa28adc1f1a27d96cd62b00a82468aa36038337f7df06f1459a7a648f"
+      },
+      "battle": {
+        "original": "assets/character-battles/08.png",
+        "title": "剑牌分流",
+        "caption": "剑牌在雨夜分开两道危险的牵引，她盯住真正的来袭方向。",
+        "width": 1672,
+        "height": 941,
+        "sha256": "fa26384c255b6566c03719f98e04ebb59e2c4f12c2ac3fc558b7dee0f2ca80d2"
+      }
+    },
+    {
+      "id": "09",
+      "portrait": {
+        "original": "assets/character-scenes/09.png",
+        "title": "叙事人设",
+        "caption": "莉莉的第二版人设插画，沿用已有角色外观，呈现独立的动作与场景。",
+        "width": 1086,
+        "height": 1448,
+        "sha256": "0e3d384bd760dd785746115a75058222e897b7364e507af121bf98bb4dc1aa87"
+      },
+      "battle": {
+        "original": "assets/character-battles/09.png",
+        "title": "梦隙跃影",
+        "caption": "黑猫以实体与幽灵态穿过梦境的断裂，守住返回的联系。",
+        "width": 1672,
+        "height": 941,
+        "sha256": "1a492938524b0993ea1d23c0cce120b09aa9f99d2e325da04e9a888fecd9bdb4"
+      }
+    },
+    {
+      "id": "10",
+      "portrait": {
+        "original": "assets/character-scenes/10.png",
+        "title": "叙事人设",
+        "caption": "林清翊的第二版人设插画，沿用已有角色外观，呈现独立的动作与场景。",
+        "width": 1536,
+        "height": 1024,
+        "sha256": "9c792ed5004432b4dd9193a8f48027412169de6557328e93da668c8214d1053d"
+      },
+      "battle": {
+        "original": "assets/character-battles/10.png",
+        "title": "并翼迎风",
+        "caption": "林清翊与乐温配合，挡住山道上的来袭。",
+        "width": 1672,
+        "height": 941,
+        "sha256": "489fbc6f635d00ab7293a23fb6798ca24314ef7df53916f685d578d3df0321f4"
+      }
+    },
+    {
+      "id": "11",
+      "portrait": {
+        "original": "assets/character-scenes/11.png",
+        "title": "叙事人设",
+        "caption": "韦侃的第二版人设插画，沿用已有角色外观，呈现独立的动作与场景。",
+        "width": 1086,
+        "height": 1448,
+        "sha256": "a27a1c68f9b52de0531fd927bfe9998558d645db50aad9fff9eef4550e521bed"
+      },
+      "battle": {
+        "original": "assets/character-battles/11.png",
+        "title": "风箭越雨",
+        "caption": "弓手在高架桥上压住追击，箭路穿过骤雨。",
+        "width": 1672,
+        "height": 941,
+        "sha256": "94d605bbdf492a78071d73dfb07f53d982bf3ead993cbc99ff51342a8d905cee"
+      }
+    },
+    {
+      "id": "12",
+      "portrait": {
+        "original": "assets/character-scenes/12.png",
+        "title": "叙事人设",
+        "caption": "单谣的第二版人设插画，沿用已有角色外观，呈现独立的动作与场景。",
+        "width": 1086,
+        "height": 1448,
+        "sha256": "b3815fc4aa2332547b72d6b692534dac9aebe3ff090cc7e164d509980f362db5"
+      },
+      "battle": {
+        "original": "assets/character-battles/12.png",
+        "title": "鸣尺断契",
+        "caption": "她在誓约阵前核验真名，解除强加在众人身上的束缚。",
+        "width": 1672,
+        "height": 940,
+        "sha256": "beb35ed91a935a6d11377d9124797d78e328dabda5451a6243e8976adc84a236"
+      }
+    },
+    {
+      "id": "13",
+      "portrait": {
+        "original": "assets/character-scenes/13.png",
+        "title": "叙事人设",
+        "caption": "赵香香的第二版人设插画，沿用已有角色外观，呈现独立的动作与场景。",
+        "width": 1086,
+        "height": 1448,
+        "sha256": "13a05caaaa603761fd294e7dfa5cde5cc35b075865c5d209c97c57dfb21fad75"
+      },
+      "battle": {
+        "original": "assets/character-battles/13.png",
+        "title": "酒泉夜守",
+        "caption": "酒馆受袭时，他以灵酒与清水照护同伴，稳住一夜的防线。",
+        "width": 1672,
+        "height": 941,
+        "sha256": "3f9b7fc66ba0efe66a3d9a4876ded04365b5f5e6a1a0aff1c6bb050c5436de83"
+      }
+    },
+    {
+      "id": "14",
+      "portrait": {
+        "original": "assets/character-scenes/14.png",
+        "title": "叙事人设",
+        "caption": "彭湃的第二版人设插画，沿用已有角色外观，呈现独立的动作与场景。",
+        "width": 1086,
+        "height": 1448,
+        "sha256": "83d771fd2fa95285f09f0791d09ba351ede90fd26186415fe59dd1b3f922d430"
+      },
+      "battle": {
+        "original": "assets/character-battles/14.png",
+        "title": "浪盾拒敌",
+        "caption": "水土与护盾在缺口前合拢，他顶住第一波冲击。",
+        "width": 1672,
+        "height": 941,
+        "sha256": "d5a7df5aa12ac5d589061c312f4836fefad54f932bcdeff9e9da638a7ab9965f"
+      }
+    },
+    {
+      "id": "15",
+      "portrait": {
+        "original": "assets/character-scenes/15.png",
+        "title": "叙事人设",
+        "caption": "妙愿的第二版人设插画，沿用已有角色外观，呈现独立的动作与场景。",
+        "width": 1086,
+        "height": 1448,
+        "sha256": "005768cae3918dabf16f108fa1d384cceaa6635fbc601522739859bce6773952"
+      },
+      "battle": {
+        "original": "assets/character-battles/15.png",
+        "title": "小白护营",
+        "caption": "妙愿护住营地中的人，小白以活着的白龙之身挡下攻势。",
+        "width": 1672,
+        "height": 941,
+        "sha256": "a514ec68bd58e200c03c89ec025b286150b5e629e1db2e5cf18247451f7697ab"
+      }
+    },
+    {
+      "id": "16",
+      "portrait": {
+        "original": "assets/character-scenes/16.png",
+        "title": "叙事人设",
+        "caption": "蔚蔚的第二版人设插画，沿用已有角色外观，呈现独立的动作与场景。",
+        "width": 1086,
+        "height": 1448,
+        "sha256": "42aab282c5aa5cf2b15b448220e26169ea23316998627cce49248317bf7f1ef9"
+      },
+      "battle": {
+        "original": "assets/character-battles/16.png",
+        "title": "根桥不坠",
+        "caption": "水土与根系托住撤退路线，她让每一步都有落脚之处。",
+        "width": 1672,
+        "height": 941,
+        "sha256": "21b8207df25eeee4b2fb0a114776e599642262d2403ae755813cc0c75252ac60"
+      }
+    },
+    {
+      "id": "17",
+      "portrait": {
+        "original": "assets/character-scenes/17.png",
+        "title": "叙事人设",
+        "caption": "顾霆的第二版人设插画，沿用已有角色外观，呈现独立的动作与场景。",
+        "width": 1086,
+        "height": 1448,
+        "sha256": "4bfa36bbe9cc88ed4004184220ae9d545d4e9f5e814c587a6410a9586f06eff5"
+      },
+      "battle": {
+        "original": "assets/character-battles/17.png",
+        "title": "雷流改道",
+        "caption": "工程法师把失控电弧导离人群，接住战线上的过载。",
+        "width": 1672,
+        "height": 941,
+        "sha256": "6db780541b163a4658d9dfd2bad317fcd1587f3abfc5bbd15088132cc4e8aae1"
+      }
+    },
+    {
+      "id": "18",
+      "portrait": {
+        "original": "assets/character-scenes/18.png",
+        "title": "叙事人设",
+        "caption": "甄没用的第二版人设插画，沿用已有角色外观，呈现独立的动作与场景。",
+        "width": 1086,
+        "height": 1448,
+        "sha256": "91c9002611ce47f79f18033bd3a75a7bccc5aecc27d92e7e7c2472c0a20832d8"
+      },
+      "battle": {
+        "original": "assets/character-battles/18.png",
+        "title": "齿轮设伏",
+        "caption": "旧货商拉动绳索，让货场里的零件成为一场精准的伏击。",
+        "width": 1672,
+        "height": 941,
+        "sha256": "470ae969f4ba5afabe602efb6b2cefdc79b2aa375cfb87bb448503662c5f738f"
+      }
+    },
+    {
+      "id": "19",
+      "portrait": {
+        "original": "assets/character-scenes/19.png",
+        "title": "叙事人设",
+        "caption": "曲柯的第二版人设插画，沿用已有角色外观，呈现独立的动作与场景。",
+        "width": 1086,
+        "height": 1448,
+        "sha256": "91db6d06cefb6be5f6caf565ace0923b30fdade7064365a887fb5f857e994f01"
+      },
+      "battle": {
+        "original": "assets/character-battles/19.png",
+        "title": "昼切掠火",
+        "caption": "双刃昼切在窄巷交锋，火与光只沿真正的刃路展开。",
+        "width": 1672,
+        "height": 941,
+        "sha256": "74e085c434b07cc79975c8d5dd949bdc62501086b3671c73daed003dddf35600"
+      }
+    },
+    {
+      "id": "20",
+      "portrait": {
+        "original": "assets/character-scenes/20.png",
+        "title": "叙事人设",
+        "caption": "谢寄风的第二版人设插画，沿用已有角色外观，呈现独立的动作与场景。",
+        "width": 1086,
+        "height": 1448,
+        "sha256": "a8c81171e9a67673fe28e18e7e966e5abc49c8626aad3e530fdc68c5c1360fa2"
+      },
+      "battle": {
+        "original": "assets/character-battles/20.png",
+        "title": "风信穿阵",
+        "caption": "驿使沿熟悉的巷路穿过交火，把封缄送到守线的人手里。",
+        "width": 1672,
+        "height": 941,
+        "sha256": "aca0d5e0fa05a22758fea1f3ef79095898ee0ab39b12b0d1b97c9c0c9c6c6c1a"
+      }
+    },
+    {
+      "id": "21",
+      "portrait": {
+        "original": "assets/character-scenes/21.png",
+        "title": "叙事人设",
+        "caption": "莫问的第二版人设插画，沿用已有角色外观，呈现独立的动作与场景。",
+        "width": 1086,
+        "height": 1448,
+        "sha256": "97236b727901bab3355babdc69f283f0f1292a1cb3bf15ba2eb69599a100dee2"
+      },
+      "battle": {
+        "original": "assets/character-battles/21.png",
+        "title": "一步偏锋",
+        "caption": "莫问借杂物绊开强敌的一步，为弱势的一方争取机会。",
+        "width": 1672,
+        "height": 941,
+        "sha256": "645bd0854af51069589f9f28b5e2e0c90c6e215e5fb1a1ce58a14cedc3650a63"
+      }
+    },
+    {
+      "id": "22",
+      "portrait": {
+        "original": "assets/character-scenes/22.png",
+        "title": "叙事人设",
+        "caption": "江照明的第二版人设插画，沿用已有角色外观，呈现独立的动作与场景。",
+        "width": 1086,
+        "height": 1448,
+        "sha256": "ae9d3a676e0913f5ec93c6ca1d834cbaacb65507b0b1dba59f15b8f8786f0099"
+      },
+      "battle": {
+        "original": "assets/character-battles/22.png",
+        "title": "灯前分浪",
+        "caption": "旧灯仍亮着，他用水与光守住风暴中的码头。",
+        "width": 1672,
+        "height": 941,
+        "sha256": "03e27e536a92b23c3fd4a82b6e61702e71672a8089facf463a55cf366dae21c2"
+      }
+    },
+    {
+      "id": "23",
+      "portrait": {
+        "original": "assets/character-scenes/23.png",
+        "title": "叙事人设",
+        "caption": "小语的第二版人设插画，沿用已有角色外观，呈现独立的动作与场景。",
+        "width": 1086,
+        "height": 1448,
+        "sha256": "353191def26d2215197b8b70950d7370e9660443239715e5d17051351d75a501"
+      },
+      "battle": {
+        "original": "assets/character-battles/23.png",
+        "title": "留痕指路",
+        "caption": "小语标出危险来向，让同伴在混乱中接上下一步。",
+        "width": 1672,
+        "height": 941,
+        "sha256": "f4a87aba0799d61ec18251492048dbe3f96e076cb923ab4b4a3503949c63c5ad"
+      }
+    },
+    {
+      "id": "24",
+      "portrait": {
+        "original": "assets/character-scenes/24.png",
+        "title": "叙事人设",
+        "caption": "晏执衡的第二版人设插画，沿用已有角色外观，呈现独立的动作与场景。",
+        "width": 1086,
+        "height": 1448,
+        "sha256": "7b7fa00307a66c1463edd12d8835899a8823c82e64d9e63380dd823379460f57"
+      },
+      "battle": {
+        "original": "assets/character-battles/24.png",
+        "title": "鸣雷截锋",
+        "caption": "晏执衡在供能塔前迎击，电弧沿鸣雷甲的结构释放。",
+        "width": 1672,
+        "height": 941,
+        "sha256": "ddc0e175217a57221ca520f9173d86b9f1cdae33c8c34bf6ee9be57753329719"
+      }
+    },
+    {
+      "id": "25",
+      "portrait": {
+        "original": "assets/character-scenes/25.png",
+        "title": "叙事人设",
+        "caption": "墨默的第二版人设插画，沿用已有角色外观，呈现独立的动作与场景。",
+        "width": 1086,
+        "height": 1448,
+        "sha256": "53d9d94f7647b65d67276d5812746752131ef33b2abd9512e3afc5bb8dc6128a"
+      },
+      "battle": {
+        "original": "assets/character-battles/25.png",
+        "title": "影霜划界",
+        "caption": "墨默以影霜隔开袭击与人群，边界精确止在该停的地方。",
+        "width": 1672,
+        "height": 941,
+        "sha256": "a3478ca99edcc8c69224991acb133f88c6b1ad0b85232c38042c9a78964d9c39"
+      }
+    },
+    {
+      "id": "26",
+      "portrait": {
+        "original": "assets/character-scenes/26.png",
+        "title": "叙事人设",
+        "caption": "白阅尘的第二版人设插画，沿用已有角色外观，呈现独立的动作与场景。",
+        "width": 1086,
+        "height": 1448,
+        "sha256": "45272fd064ae886f5d8f039d2543d7a6e9494e6ca1218a273651cc25850cad56"
+      },
+      "battle": {
+        "original": "assets/character-battles/26.png",
+        "title": "阶前猫威",
+        "caption": "胖橘猫在遗迹阶前拦住机关追击，蓝焰只在眼中一闪。",
+        "width": 1672,
+        "height": 941,
+        "sha256": "7efede334cccfc76fef4e39d65481fedbc228e1193a91742bd931b2da755a1ce"
+      }
+    },
+    {
+      "id": "27",
+      "portrait": {
+        "original": "assets/character-scenes/27.png",
+        "title": "叙事人设",
+        "caption": "赫利俄斯的第二版人设插画，沿用已有角色外观，呈现独立的动作与场景。",
+        "width": 1086,
+        "height": 1448,
+        "sha256": "158b38ba7fc50924fde0b3e556c7e67e0053ea7b96cffbc145f1fc623cf7e3f1"
+      },
+      "battle": {
+        "original": "assets/character-battles/27.png",
+        "title": "断昼承刃",
+        "caption": "年轻法务握住誓剑，在屋顶的交锋中守住身后的证人。",
+        "width": 1672,
+        "height": 941,
+        "sha256": "74c41105d16ff75eea6d2f0424e9c9d7b144fe9bc7b92c6281149589f4a1e57e"
+      }
+    },
+    {
+      "id": "28",
+      "portrait": {
+        "original": "assets/character-scenes/28.png",
+        "title": "叙事人设",
+        "caption": "环的第二版人设插画，沿用已有角色外观，呈现独立的动作与场景。",
+        "width": 1086,
+        "height": 1448,
+        "sha256": "47d636028243146ec6454d12fb7312ba349e5a6ac8eae0b3633f95691b07cf5c"
+      },
+      "battle": {
+        "original": "assets/character-battles/28.png",
+        "title": "海中巡界",
+        "caption": "环以章鱼形态巡视海岸，在船底拦住逼近的海中威胁。",
+        "width": 1672,
+        "height": 941,
+        "sha256": "3882c6204d8a121fb378d024612174d15ae98162c66a24df865a60579131fd40"
+      }
+    }
+  ]
+}

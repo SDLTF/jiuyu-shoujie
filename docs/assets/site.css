@@ -482,6 +482,35 @@ body{font-weight:400;font-kerning:normal;text-rendering:optimizeLegibility;-webk
  .fanworks-empty h2{font-size:26px}
 }
 
+/* Full compositions stay visible in both character artwork sections and the viewer. */
+.character-art-section{margin-top:58px;padding-top:36px;border-top:1px solid var(--line)}
+.character-art-intro .eyebrow{font-size:12px;margin:0 0 12px}
+.character-art-intro h2{font:400 34px/1.5 var(--display);margin:0 0 14px}
+.character-art-intro>p:last-child{font:15px/1.9 var(--sans);color:var(--muted);margin:0 0 28px}
+.character-art-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:28px;align-items:start}
+.character-art-card{min-width:0;overflow:hidden;border:1px solid #52616b;background:#16232ef2;border-radius:4px}
+.character-art-heading{padding:21px 24px 18px}
+.character-art-heading .eyebrow{font-size:12px;margin:0 0 9px}
+.character-art-heading h3{font:400 27px/1.5 var(--display);margin:0;overflow-wrap:anywhere}
+.character-art-image{background:#0c1620;border-block:1px solid var(--line)}
+.character-art-image img{display:block;width:100%;height:auto;object-fit:contain}
+.character-art-image .image-hint{opacity:1}
+.character-art-description{padding:18px 24px 22px;font:14px/1.9 var(--sans)}
+.character-art-description p{color:var(--muted);margin:0 0 12px}
+.character-art-description a{display:inline-flex;align-items:center;min-height:44px;color:var(--gold)}
+.viewer-image-wrap img{max-height:calc(92dvh - 190px);object-fit:contain}
+.is-zoomed .viewer-image-wrap img{width:max(100%,var(--viewer-native-width,1774px));max-height:none}
+@media(max-width:760px){
+ .character-art-section{margin-top:36px;padding-top:26px}
+ .character-art-intro h2{font-size:27px}
+ .character-art-grid{grid-template-columns:minmax(0,1fr);gap:22px}
+ .character-art-heading{padding:18px 19px 16px}
+ .character-art-heading h3{font-size:25px}
+ .character-art-description{padding:15px 19px 18px}
+ .viewer-image-wrap img{max-height:calc(100dvh - 210px)}
+ .is-zoomed .viewer-image-wrap img{max-height:none}
+}
+
 /* Each avatar is an independent square painting, shown without dossier cropping. */
 .scene-action-group{display:flex;align-items:center;flex-wrap:wrap;gap:14px;max-width:100%}
 .scene-action-group .scene-original{display:inline-flex;align-items:center;min-height:44px}

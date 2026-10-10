@@ -8,6 +8,7 @@ import shutil
 import markdown
 from PIL import Image, ImageOps
 from design_assets import prepare_design_assets
+from character_art import prepare_character_art
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "docs"
@@ -26,6 +27,28 @@ def save(path, value):
 
 def asset_version(name):
     return hashlib.sha256((OUT / "assets" / name).read_bytes()).hexdigest()[:10]
+
+def character_art_section(person, artwork):
+    if not artwork:
+        return ''
+    name = escape(person['name'])
+    cards = []
+    for kind, label in (('portrait', '人设图-2'), ('battle', '战斗壁纸')):
+        art = artwork[kind]
+        directory, ident = art['web_directory'], person['id']
+        full_name = f'{directory}/{ident}.webp'
+        full = f'../assets/{full_name}?v={asset_version(full_name)}'
+        sources = []
+        for suffix in ('-480', '-960'):
+            path = f'{directory}/{ident}{suffix}.webp'
+            with Image.open(OUT / 'assets' / path) as preview:
+                width = preview.width
+            sources.append(f'../assets/{path}?v={asset_version(path)} {width}w')
+        sources.append(f'{full} {art["width"]}w')
+        original = escape(RAW_URL + art['original'])
+        title, caption = escape(art['title']), escape(art['caption'])
+        cards.append(f'''<article class="character-art-card character-art-{kind}"><div class="character-art-heading"><p class="eyebrow">{label}</p><h3>{title}</h3></div><button type="button" class="image-open character-art-image" data-image="{full}" data-name="{name} · {label} · {title}" data-kind="{label}" data-alt="{name}：{caption}" data-original="{original}" aria-label="放大{name}的{label}"><img src="{full}" srcset="{', '.join(sources)}" sizes="(max-width: 760px) calc(100vw - 32px), 50vw" alt="{name}：{caption}" width="{art['width']}" height="{art['height']}" loading="lazy" decoding="async"><span class="image-hint">点击放大 · 完整构图</span></button><div class="character-art-description"><p>{caption}</p><a href="{original}" target="_blank" rel="noopener">查看原始 PNG ↗</a></div></article>''')
+    return f'<section class="character-art-section" aria-labelledby="character-art-title"><header class="character-art-intro"><p class="eyebrow">SCENES & BATTLES / 角色插画</p><h2 id="character-art-title">人物插画与战斗壁纸</h2><p>走进角色的日常与交锋。点击图片放大，用左右按钮切换档案中的插画。</p></header><div class="character-art-grid">{"".join(cards)}</div></section>'
 
 def avatar_url(ident, suffix="", style="original"):
     directory = 'chibi-avatars' if style == 'chibi' else 'avatars'
@@ -234,6 +257,7 @@ def build_fanworks(works):
 def build():
     fanworks = load_fanworks()
     prepare_design_assets()
+    character_art = prepare_character_art()
     characters = json.loads((ROOT / "content/characters.json").read_text(encoding="utf-8"))
     image_dir = OUT / "assets/images"
     image_dir.mkdir(parents=True, exist_ok=True)
@@ -340,7 +364,7 @@ def build():
 <header class="profile-heading"><div class="profile-avatar">{avatar(person, loading='fetchpriority="high"', sizes='94px')}</div><div class="profile-heading-copy"><p class="eyebrow">九域守界 / 人物档案 {ident}</p><h1>{name}</h1><p class="profile-name-line">{escape(profile['name_line'])}</p><div class="profile-basic">{basic}</div></div></header>{avatar_switch()}{quote}
 <div class="scene-actions"><div class="scene-action-group"><button type="button" class="button secondary image-open" data-image="{art}" data-name="{name} · 专属场景" data-kind="专属场景插画" data-original="{art_raw}">查看专属大图 ↗</button><a href="{art_raw}" target="_blank" rel="noopener" class="scene-original">背景原图</a></div><div class="scene-action-group"><button type="button" class="button secondary image-open avatar-open" data-avatar-viewer data-avatar-name="{name}" data-original-image="{avatar_full}" data-chibi-image="{chibi_full}" data-original-source="{avatar_raw}" data-chibi-source="{chibi_raw}" data-image="{avatar_full}" data-name="{name} · 人物头像" data-kind="人物头像" data-original="{avatar_raw}">查看人物头像 ↗</button><a data-avatar-download data-original-source="{avatar_raw}" data-chibi-source="{chibi_raw}" href="{avatar_raw}" target="_blank" rel="noopener" class="scene-original">头像原图</a></div></div></div></section><div class="page-shell character-profile">
 <div class="profile-layout"><section class="dossier-section" aria-labelledby="dossier-title"><h2 id="dossier-title">人物展示卡</h2><button type="button" class="image-open dossier-image" data-image="{image}" data-name="{name}" data-original="{raw}" aria-label="放大{name}人物展示卡"><img src="{image}" alt="{name}完整人物展示卡" width="1774" height="887"><span class="image-hint">点击放大</span></button><div class="dossier-actions"><a class="button secondary" href="{image}" target="_blank" rel="noopener">打开完整图片</a><a class="button secondary" href="{raw}" target="_blank" rel="noopener">查看原始 PNG</a></div></section><section class="profile-info" aria-labelledby="profile-info-title"><h2 id="profile-info-title">个人资料</h2>{''.join(sections)}</section></div>
-<nav class="profile-pagination" aria-label="人物导航"><a href="{previous['id']}.html"><span>上一位</span>{escape(previous['name'])}</a><a class="back-to-gallery" href="./">全部人物</a><a href="{following['id']}.html"><span>下一位</span>{escape(following['name'])}</a></nav></div>{image_viewer('人物档案', navigation=True)}'''
+{character_art_section(person, character_art.get(ident))}<nav class="profile-pagination" aria-label="人物导航"><a href="{previous['id']}.html"><span>上一位</span>{escape(previous['name'])}</a><a class="back-to-gallery" href="./">全部人物</a><a href="{following['id']}.html"><span>下一位</span>{escape(following['name'])}</a></nav></div>{image_viewer('人物档案', navigation=True)}'''
         save(OUT / f'gallery/{ident}.html', frame(f'{person["name"]} · 人物资料', body, '../', 'gallery', route=f'gallery/{ident}.html', background=art))
 
     outline_title, outline_body, toc = md_content((ROOT / "content/outline.md").read_text(encoding="utf-8"))

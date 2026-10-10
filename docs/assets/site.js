@@ -127,6 +127,7 @@ if (viewer) {
   const title = document.getElementById("viewer-name");
   const original = document.getElementById("viewer-original");
   const zoom = document.getElementById("viewer-zoom");
+  image.addEventListener("load", () => viewer.style.setProperty("--viewer-native-width", image.naturalWidth + "px"));
   const buttons = Array.from(document.querySelectorAll(".image-open"));
   const position = document.getElementById("viewer-position");
   const available = () => buttons.filter(button => !button.closest(".character-card, .art-card, .fanwork-card")?.hidden);
