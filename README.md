@@ -4,7 +4,7 @@
 
 **访问网站：[sdltf.github.io/jiuyu-shoujie](https://sdltf.github.io/jiuyu-shoujie/)**
 
-目前收录 28 位角色，新增[环（张瑞康）](https://sdltf.github.io/jiuyu-shoujie/gallery/28.html)。人物列表显示头像，点击后进入独立人物页面，查看完整展示卡和可阅读的个人资料；小说正文已发布七章：[第一章《交班以后》](https://sdltf.github.io/jiuyu-shoujie/chapters/001.html)、[第二章《春水不回头》](https://sdltf.github.io/jiuyu-shoujie/chapters/002.html)、[第三章《鱼汤还热着》](https://sdltf.github.io/jiuyu-shoujie/chapters/003.html)、[第四章《人已经出来了》](https://sdltf.github.io/jiuyu-shoujie/chapters/004.html)、[第五章《不回答的客人》](https://sdltf.github.io/jiuyu-shoujie/chapters/005.html)、[第六章《绳子的另一头》](https://sdltf.github.io/jiuyu-shoujie/chapters/006.html)、[第七章《早钟以后》](https://sdltf.github.io/jiuyu-shoujie/chapters/007.html)。
+目前收录 28 位角色，新增[环（张瑞康）](https://sdltf.github.io/jiuyu-shoujie/gallery/28.html)。人物列表显示头像，点击后进入独立人物页面，查看完整展示卡和可阅读的个人资料；小说正文已发布八章：[第一章《交班以后》](https://sdltf.github.io/jiuyu-shoujie/chapters/001.html)、[第二章《春水不回头》](https://sdltf.github.io/jiuyu-shoujie/chapters/002.html)、[第三章《鱼汤还热着》](https://sdltf.github.io/jiuyu-shoujie/chapters/003.html)、[第四章《人已经出来了》](https://sdltf.github.io/jiuyu-shoujie/chapters/004.html)、[第五章《不回答的客人》](https://sdltf.github.io/jiuyu-shoujie/chapters/005.html)、[第六章《绳子的另一头》](https://sdltf.github.io/jiuyu-shoujie/chapters/006.html)、[第七章《早钟以后》](https://sdltf.github.io/jiuyu-shoujie/chapters/007.html)、[第八章《井壁上的旧纹》](https://sdltf.github.io/jiuyu-shoujie/chapters/008.html)。
 
 创作大纲单独保存于 `content/outline.md`，包含完整剧情与结局。网站保留大纲页面与地址，但首页、导航、页脚和其他公开页面都不提供大纲入口，大纲页面不设置展开开关。直接知道地址的人仍可访问；这不是访问权限控制。
 
@@ -15,7 +15,7 @@
 - `content/outline.md`：故事大纲（含剧透）。
 - `content/chapters/`：小说正文，使用 Markdown 编写。
 - `content/chapter-art.json`：章节印象图与插入位置。按 `A-B` 编号，以对应正文段落作为定位；正文原稿无需添加图片标签。
-- `assets/chapter-art/`：用户提供的九张原始 PNG，第一至第四章各一张，第五章两张，第六章三张。网页保留完整构图，可点击放大；目录使用各章第一张图作缩略图。
+- `assets/chapter-art/`：第一至第六章使用用户提供的九张原始 PNG；第七、八章各两张由内置 image_gen 绘制，提示词保存在 `generation-prompts.json`。网页保留完整构图，可点击放大；目录使用各章第一张图作缩略图。
 - `docs/assets/chapter-art/`：网站使用的完整、960 像素和 480 像素 WebP 版本；手机根据屏幕宽度加载合适版本。
 - `docs/`：已经生成的静态网站，GitHub Pages 从这里发布。
 - `scripts/build.py`：将内容生成网页，并为人物图片生成 WebP 浏览版本与头像预览。头像通过 CSS 显示展示卡中间的肖像，不改动原图。

@@ -107,7 +107,55 @@
       "height": 941,
       "sha256": "3fc507d01ee1f8bae80e921af6d586c8fc0620fc8ad37aff517a6dedff1dc4af",
       "attachment_filename": "codex-clipboard-d4100c27-5209-4409-9589-958e28886bc8.png"
+    },
+    {
+      "id": "7-1",
+      "chapter": "007",
+      "caption": "水下的边界",
+      "alt": "田主压住纸角并指明被水遮住的田界，小语在石埂上记录，韦侃和格伦在旁核查。",
+      "after": "小语将板子放稳，补上他刚才说明的播种位置。田主等她写完，手还压着纸。",
+      "original": "assets/chapter-art/7-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "bb6d05a1f035ee751892099b22bb72e3dc472cfaf916358c4a32d51502124e20",
+      "generation_metadata": "assets/chapter-art/generation-prompts.json"
+    },
+    {
+      "id": "7-2",
+      "chapter": "007",
+      "caption": "墙基下的旧路",
+      "alt": "小语和韦侃沿磨坊外墙查看旧铺石，林砚对照渠图，旧检修路伸到后添的墙基下。",
+      "after": "小语将盖口、旧墙角和铺石的位置画到同一页，在检修路旁记下墙基占住。工人刚才说明的扩建另写在下面，泄水槽的去向仍标着待查。",
+      "original": "assets/chapter-art/7-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "a7eb0d264f86d3ad2d5f36ba2dbc0b1cfbf18f50262371c76767870e9ce1e103",
+      "generation_metadata": "assets/chapter-art/generation-prompts.json"
+    },
+    {
+      "id": "8-1",
+      "chapter": "008",
+      "caption": "检修口下的转角",
+      "alt": "工人放低手灯照亮检修口下的一小段旧砖槽，林砚在旁查看，小语在干地上画下可见的转角。",
+      "after": "她将两处位置分开，旧册上的口位另画在旁边。地下的线只到那一小截砖槽，没有越过后添墙基。",
+      "original": "assets/chapter-art/8-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "ac2b7d2623389d7f3286251afc879f7bd8d250698e1a6908475626007e319363",
+      "generation_metadata": "assets/chapter-art/generation-prompts.json"
+    },
+    {
+      "id": "8-2",
+      "chapter": "008",
+      "caption": "井壁上的旧纹",
+      "alt": "墨默以局部影霜减弱井壁反光，小语用淡蓝水光留下浅刻纹和坐姿暗痕，下缘仍被水面遮住。",
+      "after": "淡蓝薄光沿墙缝铺开。纸上先浮出砖台和肩背，随后，轮廓外缘多了几道细浅的线。她看得见的弯折都留在上面，向下的一截仍空着。",
+      "original": "assets/chapter-art/8-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "22f01f2e487769c28d58100d1f69fc5d4d6910840de2fa63faafac452995acc0",
+      "generation_metadata": "assets/chapter-art/generation-prompts.json"
     }
   ],
-  "provenance": "User-supplied finished chapter illustrations; preserved without image edits."
+  "provenance": "Chapters 1-6: nine user-supplied illustrations preserved unchanged. Chapters 7-8: four illustrations generated with built-in image_gen using existing artwork and character cards as references; full prompts and revisions are preserved in assets/chapter-art/generation-prompts.json."
 }
