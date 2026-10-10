@@ -4,8 +4,9 @@ import html
 import json
 import hashlib
 import re
+import shutil
 import markdown
-from PIL import Image
+from PIL import Image, ImageOps
 from design_assets import prepare_design_assets
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -31,14 +32,14 @@ def avatar(person, prefix="../", loading='loading="lazy"'):
     style = f'--portrait-width:{crop["width"]}%;--portrait-left:{crop["left"]}%;--portrait-top:{crop["top"]}%'
     return f'<span class="avatar-window" style="{style}"><img src="{prefix}assets/thumbs/{person["id"]}.webp" alt="{escape(person["name"])}头像" width="960" height="480" {loading}></span>'
 
-def image_viewer(title="人物展示卡", navigation=False):
+def image_viewer(title="人物展示卡", navigation=False, original_label="查看原始 PNG"):
     controls = '<div class="viewer-navigation" aria-label="图片切换"><button id="viewer-prev" type="button">← 上一幅</button><span id="viewer-position" aria-live="polite"></span><button id="viewer-next" type="button">下一幅 →</button></div>' if navigation else ''
-    return '''<dialog id="image-viewer" aria-labelledby="viewer-name"><div class="viewer-toolbar"><h2 id="viewer-name">VIEWER_TITLE</h2><div><button id="viewer-zoom" type="button" aria-pressed="false">放大细节</button><button id="viewer-close" type="button" aria-label="关闭图片">关闭 <span aria-hidden="true">×</span></button></div></div>VIEWER_NAV<div class="viewer-image-wrap"><img id="viewer-image" alt=""></div><div class="viewer-bottom"><p class="viewer-tip">放大后可滑动查看图片细节</p><a id="viewer-original" target="_blank" rel="noopener">查看原始 PNG</a></div></dialog>'''.replace('VIEWER_TITLE', escape(title)).replace('VIEWER_NAV', controls)
+    return '''<dialog id="image-viewer" aria-labelledby="viewer-name"><div class="viewer-toolbar"><h2 id="viewer-name">VIEWER_TITLE</h2><div><button id="viewer-zoom" type="button" aria-pressed="false">放大细节</button><button id="viewer-close" type="button" aria-label="关闭图片">关闭 <span aria-hidden="true">×</span></button></div></div>VIEWER_NAV<div class="viewer-image-wrap"><img id="viewer-image" alt=""></div><div class="viewer-bottom"><p class="viewer-tip">放大后可滑动查看图片细节</p><a id="viewer-original" target="_blank" rel="noopener">ORIGINAL_LABEL</a></div></dialog>'''.replace('VIEWER_TITLE', escape(title)).replace('VIEWER_NAV', controls).replace('ORIGINAL_LABEL', escape(original_label))
 
 def frame(title, body, prefix="", active="", noindex=False, route="", background=""):
     links = "".join(
         f'<a href="{prefix}{href}"' + (' aria-current="page"' if name == active else '') + f'>{label}</a>'
-        for name, href, label in [("gallery", "gallery/", "人物图集"), ("world", "world/", "世界观"), ("chapters", "chapters/", "正文阅读"), ("art", "art/", "印象画廊")]
+        for name, href, label in [("gallery", "gallery/", "人物图集"), ("world", "world/", "世界观"), ("chapters", "chapters/", "正文阅读"), ("art", "art/", "印象画廊"), ("fanworks", "fanworks/", "二创")]
     )
     robots = '<meta name="robots" content="noindex">' if noindex else ''
     if not route:
@@ -46,12 +47,13 @@ def frame(title, body, prefix="", active="", noindex=False, route="", background
     elif route.startswith('gallery/') and route.endswith('.html'):
         page_kind = 'character'
     else:
-        page_kind = {'gallery/': 'gallery', 'world/': 'world', 'art/': 'art'}.get(route, 'reader')
+        page_kind = {'gallery/': 'gallery', 'world/': 'world', 'art/': 'art', 'fanworks/': 'fanworks'}.get(route, 'reader')
+    description = '九域守界的粉丝二创：图片与文字作品，收录创作者署名和作品描述。' if active == 'fanworks' else '九域守界的官方故事档案：人物设定图集、小说正文与章节印象图。'
     return f'''<!doctype html>
 <html lang="zh-CN"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{escape(title)} · 九域守界</title>
-<meta name="description" content="九域守界的官方故事档案：人物设定图集、小说正文与章节印象图。">
+<meta name="description" content="{description}">
 <meta name="theme-color" content="#101b25">{robots}
 <link rel="canonical" href="{SITE_URL}{route}">
 <link rel="icon" href="{prefix}assets/favicon.svg" type="image/svg+xml">
@@ -121,7 +123,97 @@ def build_art_gallery(chapters, artwork):
     gallery = f'''<div class="page-shell art-gallery"><div class="page-heading"><p class="eyebrow">SCENES FROM THE STORY / 故事里的场景</p><h1>印象图画廊</h1><p>收藏旅途中的片刻。点击图片看细节，或回到它出现的正文。</p></div><div class="art-gallery-tools"><p class="art-gallery-count" role="status"><strong id="art-count">{len(artwork)}</strong> / {len(artwork)} 幅印象图<span>来自 {len(illustrated)} 个章节</span></p><div class="art-filters" role="group" aria-label="按章节筛选">{''.join(filters)}</div></div><div class="art-grid">{''.join(cards)}</div></div>{image_viewer('章节印象图', navigation=True)}'''
     save(OUT / 'art/index.html', frame('印象图画廊', gallery, '../', 'art', route='art/'))
 
+def load_fanworks():
+    works = json.loads((ROOT / 'content/fanworks.json').read_text(encoding='utf-8'))['works']
+    if not isinstance(works, list):
+        raise ValueError('Fanworks: works must be a list')
+    seen = set()
+    for work in works:
+        ident = work.get('id', '')
+        if not isinstance(ident, str) or not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', ident) or ident in seen:
+            raise ValueError(f'Fanwork: invalid or duplicate id {ident!r}')
+        seen.add(ident)
+        kind = work.get('type')
+        if kind not in ('image', 'text'):
+            raise ValueError(f'Fanwork {ident}: type must be image or text')
+        for field in ('creator', 'description', kind):
+            if not isinstance(work.get(field), str) or not work[field].strip():
+                raise ValueError(f'Fanwork {ident}: {field} is required')
+        if 'title' in work and not isinstance(work['title'], str):
+            raise ValueError(f'Fanwork {ident}: title must be text')
+        if kind == 'image':
+            source = (ROOT / work['image']).resolve()
+            if not source.is_relative_to((ROOT / 'assets/fanworks').resolve()) or not source.is_file():
+                raise ValueError(f'Fanwork {ident}: image must exist inside assets/fanworks/')
+            if source.suffix.lower() not in ('.png', '.jpg', '.jpeg', '.webp', '.gif'):
+                raise ValueError(f'Fanwork {ident}: unsupported image format')
+    return works
+
+def fanwork_image(work):
+    source = ROOT / work['image']
+    directory = OUT / 'assets/fanworks'
+    directory.mkdir(parents=True, exist_ok=True)
+    original_name = f"fanworks/{work['id']}-original{source.suffix.lower()}"
+    original = OUT / 'assets' / original_name
+    if not original.exists() or original.read_bytes() != source.read_bytes():
+        shutil.copyfile(source, original)
+    original_url = f'../assets/{original_name}?v={asset_version(original_name)}'
+    with Image.open(source) as picture:
+        image = ImageOps.exif_transpose(picture).convert('RGBA')
+        width, height = image.size
+        # Keep animated submissions intact; static images get uncut responsive previews.
+        if getattr(picture, 'is_animated', False):
+            return original_url, '', width, height, original_url
+        variants = []
+        for suffix, limit in (('', 2000), ('-960', 960), ('-480', 480)):
+            name = f"fanworks/{work['id']}{suffix}.webp"
+            target = OUT / 'assets' / name
+            if not target.exists() or target.stat().st_mtime < original.stat().st_mtime:
+                preview = image.copy()
+                preview.thumbnail((limit, limit), Image.Resampling.LANCZOS)
+                preview.save(target, 'WEBP', quality=90, method=6)
+            with Image.open(target) as preview:
+                variants.append((f'../assets/{name}?v={asset_version(name)}', preview.width))
+    # Portrait images can share widths; keep the largest matching candidate only.
+    by_width = {size: url for url, size in reversed(variants)}
+    srcset = ', '.join(f'{url} {size}w' for size, url in sorted(by_width.items()))
+    return variants[0][0], srcset, width, height, original_url
+
+def build_fanworks(works):
+    labels = {'image': '图片二创', 'text': '文字二创'}
+    filters = []
+    for kind, label in (('all', '全部作品'), *labels.items()):
+        count = len(works) if kind == 'all' else sum(work['type'] == kind for work in works)
+        filters.append(f'<button type="button" class="fanwork-filter" data-type="{kind}" aria-pressed="{str(kind == "all").lower()}">{label}<span>{count}</span></button>')
+    cards = []
+    for index, work in enumerate(works):
+        ident, kind = work['id'], work['type']
+        creator, description = escape(work['creator']), escape(work['description'])
+        title = escape(work.get('title') or f"{work['creator']}的二创")
+        if kind == 'image':
+            full, srcset, width, height, original = fanwork_image(work)
+            responsive = f' srcset="{srcset}" sizes="(max-width: 640px) 90vw, (max-width: 1400px) 44vw, 600px"' if srcset else ''
+            content = f'<button type="button" class="image-open fanwork-image" data-image="{full}" data-name="{title}" data-kind="图片二创" data-alt="{description}" data-original="{original}" aria-label="放大{title}"><img src="{full}"{responsive} alt="{description}" width="{width}" height="{height}" loading="lazy" decoding="async"><span class="art-image-hint" aria-hidden="true">放大查看 ↗</span></button>'
+        else:
+            text = work['text'].replace('\r\n', '\n').replace('\r', '\n')
+            body = f'<div class="fanwork-text">{escape(text)}</div>'
+            if len(text) > 220:
+                content = f'<details class="fanwork-reading"><summary>展开全文 · {len(text)} 字</summary>{body}</details><p class="fanwork-excerpt">{escape(text[:220].rstrip())}…</p>'
+            else:
+                content = body
+            content = f'<div class="fanwork-writing">{content}</div>'
+        search = escape(' '.join([work['creator'], work['description'], work.get('title', ''), work.get('text', '')]))
+        cards.append(f'<article class="fanwork-card" id="work-{ident}" data-type="{kind}" data-search="{search}"><header class="fanwork-card-heading"><p>{labels[kind]}<a href="#work-{ident}" aria-label="{title}的直接链接">#{index + 1:02}</a></p><h2>{title}</h2><p class="fanwork-creator">创作者 <strong>{creator}</strong></p></header>{content}<div class="fanwork-description"><h3>作品描述</h3><p>{description}</p></div></article>')
+    empty = '''<section class="fanworks-empty" aria-labelledby="fanworks-empty-title"><span class="empty-symbol" aria-hidden="true">创</span><p class="eyebrow">等待第一份来自你的创作</p><h2 id="fanworks-empty-title">这里，为新的故事留一盏灯</h2><p>目前还没有收录二创作品。<br>一幅画、一段文字，都可以让九域的故事继续生长。</p></section>''' if not works else ''
+    viewer = image_viewer('图片二创', navigation=True, original_label='查看原图') if any(work['type'] == 'image' for work in works) else ''
+    body = f'''<div class="page-shell fanworks-shell"><div class="page-heading"><p class="eyebrow">FAN CREATIONS / 来自读者的创作</p><h1>二创</h1><p>把你眼中的九域，留在这里。收藏读者笔下的图画与文字，也记住每一位创作者。</p></div>
+<p class="fanworks-note">图片与文字作品由站主收集后更新。投稿时，请附上创作者署名与作品描述。</p>
+<div class="fanworks-tools"><div class="fanwork-filters" role="group" aria-label="按二创类型筛选">{''.join(filters)}</div><label class="search-field"><span aria-hidden="true">⌕</span><input id="fanwork-search" type="search" placeholder="搜索创作者或作品" aria-label="搜索二创的创作者、描述或文字" autocomplete="off"></label></div><p class="fanworks-count" role="status">显示 <strong id="fanwork-count">{len(works)}</strong> / {len(works)} 件作品</p>
+{empty}<div class="fanworks-grid">{''.join(cards)}</div><p id="fanwork-no-results" class="empty-results" hidden>没有找到匹配的作品，试试其他分类或关键词。</p></div>{viewer}'''
+    save(OUT / 'fanworks/index.html', frame('二创', body, '../', 'fanworks', route='fanworks/'))
+
 def build():
+    fanworks = load_fanworks()
     prepare_design_assets()
     characters = json.loads((ROOT / "content/characters.json").read_text(encoding="utf-8"))
     image_dir = OUT / "assets/images"
@@ -175,6 +267,7 @@ def build():
 <a class="entry" href="gallery/"><div class="entry-top"><span class="eyebrow">01 / 人物</span><span class="entry-status">CHARACTER_COUNT 份设定</span></div><h2>人物设定图集</h2><p>从头像认识角色，翻阅展示卡与个人资料。</p><span class="entry-action">打开图集 <span aria-hidden="true">↗</span></span></a>
 <a class="entry" href="chapters/"><div class="entry-top"><span class="eyebrow">02 / 故事</span><span class="entry-status">正文尚未发布</span></div><h2>小说正文</h2><p>章节发布后，将在这里按顺序收录。</p><span class="entry-action">前往阅读目录 <span aria-hidden="true">↗</span></span></a>
 </section></div>'''
+    home = home.replace('</section></div>', '''</section><a class="fanworks-entry" href="fanworks/"><span class="eyebrow">FAN CREATIONS / 读者二创</span><span class="fanworks-entry-title">你眼中的九域</span><span class="fanworks-entry-copy">收藏读者的图画与文字，让每一份热爱都有署名。</span><span class="fanworks-entry-action">浏览二创 →</span></a></div>''')
     home = home.replace('<!-- CHARACTER_CAROUSEL -->', carousel)
     home = home.replace("CHARACTER_COUNT", str(len(characters)))
     chapters = sorted((ROOT / "content/chapters").glob("*.md"))
@@ -183,6 +276,7 @@ def build():
     save(OUT / "index.html", frame("故事与人物档案", home))
 
     build_world(characters)
+    build_fanworks(fanworks)
 
     cards = []
     for i, person in enumerate(characters):

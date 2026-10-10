@@ -422,3 +422,62 @@ body{font-weight:400;font-kerning:normal;text-rendering:optimizeLegibility;-webk
  .viewer-navigation{gap:12px}
 }
 @media(max-width:380px){.site-header nav{gap:3px}.site-header nav a{font-size:13px;padding-left:4px;padding-right:4px}.art-gallery-count>span{margin-left:8px}.art-filter{padding:8px 9px}}
+
+/* Reader creations keep the artwork, the words, and their authors together. */
+.page-fanworks .page-backdrop{opacity:.3;height:560px}
+.fanworks-entry{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px 24px;border:1px solid #8a765166;background:#16232ed9;padding:28px 32px;margin:-40px 0 75px}
+.fanworks-entry .eyebrow{grid-column:1/-1;font-size:12px;margin:0}
+.fanworks-entry-title{font:400 31px/1.5 var(--display)}
+.fanworks-entry-copy{grid-column:1;font-size:14px;color:var(--muted)}
+.fanworks-entry-action{grid-column:2;grid-row:2/4;align-self:center;color:var(--gold);font-size:14px}
+.fanworks-entry:hover{border-color:var(--gold)}
+.fanworks-note{border-left:2px solid #8a7651;padding:9px 16px;background:#16232e99;margin:0 0 28px;font-size:13px;color:var(--muted);line-height:1.9}
+.fanworks-tools{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:18px}
+.fanworks-tools .search-field{max-width:340px;flex:1 1 240px}
+.fanwork-filters{display:flex;gap:8px;flex-wrap:wrap}
+.fanwork-filter{min-height:44px;padding:8px 14px;border:1px solid #52616b;background:var(--panel);color:var(--muted);border-radius:3px;font-size:14px}
+.fanwork-filter>span{margin-left:8px;font-size:12px;opacity:.7}
+.fanwork-filter:hover{color:var(--ink);border-color:var(--gold)}
+.fanwork-filter[aria-pressed=true]{background:var(--gold);border-color:var(--gold);color:var(--bg)}
+.fanworks-count{color:var(--muted);font-size:13px;margin:18px 0 24px}
+.fanworks-count strong{color:var(--gold);font-size:17px;font-weight:500;margin:0 4px}
+.fanworks-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;align-items:start}
+.fanwork-card{min-width:0;background:#16232ef2;border:1px solid #52616b;border-radius:4px;overflow:hidden;scroll-margin-top:150px}
+.fanwork-card-heading{padding:21px 24px 18px}
+.fanwork-card-heading>p:first-child{display:flex;justify-content:space-between;gap:16px;font-size:12px;color:var(--gold);margin:0 0 10px}
+.fanwork-card-heading>p>a{font:13px Georgia,serif;min-width:28px;text-align:right}
+.fanwork-card h2{font:400 29px/1.6 var(--display);margin:0 0 9px;overflow-wrap:anywhere}
+.fanwork-card-heading .fanwork-creator{font-size:13px;color:var(--muted);margin:0}
+.fanwork-creator strong{color:var(--ink);font-size:15px;font-weight:500;margin-left:10px;overflow-wrap:anywhere}
+.fanwork-image{background:var(--bg);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.fanwork-image img{width:100%;height:auto}
+.fanwork-description{padding:19px 24px 23px}
+.fanwork-description h3{font-size:12px;font-weight:400;color:var(--gold);margin:0 0 8px}
+.fanwork-description p{font-size:15px;line-height:1.9;margin:0;white-space:pre-wrap;overflow-wrap:anywhere}
+.fanwork-writing{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:24px;background:#101b2570}
+.fanwork-text,.fanwork-excerpt{font:16px/2 var(--sans);white-space:pre-wrap;overflow-wrap:anywhere;margin:0}
+.fanwork-reading summary{cursor:pointer;min-height:44px;color:var(--gold);font-size:14px;line-height:44px}
+.fanwork-reading .fanwork-text{padding-top:15px}
+.fanwork-reading[open]+.fanwork-excerpt{display:none}
+.fanworks-empty{text-align:center;border-top:1px solid var(--line);padding:48px 15px 30px}
+.fanworks-empty .eyebrow{font-size:12px;margin-bottom:12px}
+.fanworks-empty h2{font:400 30px/1.6 var(--display);margin:0 0 17px}
+.fanworks-empty>p:last-child{color:var(--muted);font-size:15px;line-height:1.9}
+@media(max-width:900px){.header-inner{flex-wrap:wrap;gap:10px}.site-header nav{width:100%;gap:22px;margin-left:0}.site-header nav .repo-link{display:none}}
+@media(max-width:640px){
+ .site-header nav{justify-content:space-between;gap:0;flex-wrap:nowrap}
+ .fanworks-entry{margin:-20px 0 45px;padding:21px;grid-template-columns:minmax(0,1fr);gap:9px}
+ .fanworks-entry-title{font-size:29px}
+ .fanworks-entry-action{grid-column:1;grid-row:auto;min-height:44px;display:flex;align-items:center}
+ .fanworks-note{padding:10px 13px;margin-bottom:23px}
+ .fanworks-tools{gap:14px}
+ .fanworks-tools .search-field{max-width:none;flex-basis:100%}
+ .fanwork-filter{font-size:13px;padding:8px 11px}
+ .fanworks-grid{grid-template-columns:minmax(0,1fr);gap:22px}
+ .fanwork-card-heading{padding:18px 19px 16px}
+ .fanwork-card h2{font-size:28px}
+ .fanwork-description{padding:18px 19px 21px}
+ .fanwork-writing{padding:19px}
+ .fanworks-empty{padding:35px 0 20px}
+ .fanworks-empty h2{font-size:26px}
+}

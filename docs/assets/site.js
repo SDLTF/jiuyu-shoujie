@@ -49,6 +49,30 @@ if (artFilters.length) {
   filter(new URL(window.location.href).searchParams.get("chapter") || "all");
 }
 
+const fanworkSearch = document.getElementById("fanwork-search");
+if (fanworkSearch) {
+  const cards = Array.from(document.querySelectorAll(".fanwork-card"));
+  const filters = Array.from(document.querySelectorAll(".fanwork-filter"));
+  const count = document.getElementById("fanwork-count");
+  const noResults = document.getElementById("fanwork-no-results");
+  let type = "all";
+  const update = () => {
+    const query = fanworkSearch.value.trim().toLocaleLowerCase();
+    let visible = 0;
+    cards.forEach(card => {
+      card.hidden = !(type === "all" || card.dataset.type === type)
+        || !card.dataset.search.toLocaleLowerCase().includes(query);
+      if (!card.hidden) visible += 1;
+    });
+    filters.forEach(button => button.setAttribute("aria-pressed", String(button.dataset.type === type)));
+    count.textContent = String(visible);
+    noResults.hidden = visible !== 0 || cards.length === 0;
+  };
+  filters.forEach(button => button.addEventListener("click", () => { type = button.dataset.type; update(); }));
+  fanworkSearch.addEventListener("input", update);
+  update();
+}
+
 const viewer = document.getElementById("image-viewer");
 if (viewer) {
   const image = document.getElementById("viewer-image");
@@ -57,13 +81,13 @@ if (viewer) {
   const zoom = document.getElementById("viewer-zoom");
   const buttons = Array.from(document.querySelectorAll(".image-open"));
   const position = document.getElementById("viewer-position");
-  const available = () => buttons.filter(button => !button.closest(".character-card, .art-card")?.hidden);
+  const available = () => buttons.filter(button => !button.closest(".character-card, .art-card, .fanwork-card")?.hidden);
   let selected = 0;
   const show = (index) => {
     selected = index;
     const button = buttons[index];
     image.src = button.dataset.image;
-    image.alt = button.dataset.name + (button.dataset.kind || "人物展示卡");
+    image.alt = button.dataset.alt || button.dataset.name + (button.dataset.kind || "人物展示卡");
     title.textContent = button.dataset.name;
     original.href = button.dataset.original;
     if (position) {
@@ -100,7 +124,7 @@ if (viewer) {
     let next = selected;
     for (let step = 0; step < buttons.length; step += 1) {
       next = (next + direction + buttons.length) % buttons.length;
-      const card = buttons[next].closest(".character-card, .art-card");
+      const card = buttons[next].closest(".character-card, .art-card, .fanwork-card");
       if (!card || !card.hidden) { show(next); break; }
     }
   };

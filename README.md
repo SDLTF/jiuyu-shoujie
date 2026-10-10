@@ -6,6 +6,8 @@
 
 [印象图画廊](https://sdltf.github.io/jiuyu-shoujie/art/)集中展示全部章节插画，保留完整构图，支持按章节筛选、放大切换、查看原始 PNG，以及跳转至对应正文场景。首页、主导航和正文页均提供画廊入口。画廊由 `content/chapter-art.json` 自动生成，后续新增配图会随网站构建一起收录。
 
+[二创页面](https://sdltf.github.io/jiuyu-shoujie/fanworks/)收录粉丝的图片与文字作品，支持分类筛选、搜索、图片放大和长文字展开阅读。作品由站主收集后更新，每件作品保留创作者署名和描述。目前收录酥心糖的两张图片二创，描述分别为“神秘东方三人组”和“上课太无聊了于是嬷了三岛”，保留用户提供的完整 JPEG、PNG 原图。
+
 目前收录 28 位角色，新增[环（张瑞康）](https://sdltf.github.io/jiuyu-shoujie/gallery/28.html)。人物列表显示头像，点击后进入独立人物页面，查看完整展示卡和可阅读的个人资料；小说正文已发布八章：[第一章《交班以后》](https://sdltf.github.io/jiuyu-shoujie/chapters/001.html)、[第二章《春水不回头》](https://sdltf.github.io/jiuyu-shoujie/chapters/002.html)、[第三章《鱼汤还热着》](https://sdltf.github.io/jiuyu-shoujie/chapters/003.html)、[第四章《人已经出来了》](https://sdltf.github.io/jiuyu-shoujie/chapters/004.html)、[第五章《不回答的客人》](https://sdltf.github.io/jiuyu-shoujie/chapters/005.html)、[第六章《绳子的另一头》](https://sdltf.github.io/jiuyu-shoujie/chapters/006.html)、[第七章《早钟以后》](https://sdltf.github.io/jiuyu-shoujie/chapters/007.html)、[第八章《井壁上的旧纹》](https://sdltf.github.io/jiuyu-shoujie/chapters/008.html)。
 
 创作大纲单独保存于 `content/outline.md`，包含完整剧情与结局。网站保留大纲页面与地址，但首页、导航、页脚和其他公开页面都不提供大纲入口，大纲页面不设置展开开关。直接知道地址的人仍可访问；这不是访问权限控制。
@@ -48,6 +50,37 @@
 字体原始来源：[Ma Shan Zheng](https://github.com/google/fonts/tree/main/ofl/mashanzheng)、[Noto Sans SC](https://github.com/google/fonts/tree/main/ofl/notosanssc)。网站使用的子集字库命名为 Jiuyu Script 和 Jiuyu Text。
 
 ## 更新网站
+
+### 收录二创
+
+在 `content/fanworks.json` 的 `works` 数组中添加作品，按数组顺序展示。`id` 使用唯一的小写字母、数字和连字符；`type` 为 `image` 或 `text`。两类作品都必须有 `creator`（创作者）和 `description`（描述），`title`（标题）可选。图片类填写 `image`，文字类填写 `text`，文字中的换行会原样保留。
+
+以下为字段示例，示例作品不发布到页面：
+
+```json
+{
+  "works": [
+    {
+      "id": "001",
+      "type": "image",
+      "image": "assets/fanworks/001.jpg",
+      "creator": "酥心糖",
+      "description": "神秘东方三人组"
+    },
+    {
+      "id": "002",
+      "type": "text",
+      "text": "在这里填写作品正文。\n\n在这里继续下一段。",
+      "creator": "创作者署名",
+      "description": "作品描述"
+    }
+  ]
+}
+```
+
+图片放在 `assets/fanworks/`，支持 PNG、JPEG、WebP 和 GIF。构建会将原图复制到网站，为静态图片生成保留完整构图的响应式 WebP；动图保留原文件播放。文字作为纯文本显示，不解析 HTML。收录后执行下面的构建与发布步骤即可。
+
+### 构建与发布
 
 首次使用需要 Python 3 和依赖：
 

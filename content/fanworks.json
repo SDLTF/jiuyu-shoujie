@@ -1,0 +1,20 @@
+{
+  "works": [
+    {
+      "id": "001",
+      "type": "image",
+      "title": "神秘东方三人组",
+      "image": "assets/fanworks/001.jpg",
+      "creator": "酥心糖",
+      "description": "神秘东方三人组"
+    },
+    {
+      "id": "002",
+      "type": "image",
+      "title": "上课太无聊了于是嬷了三岛",
+      "image": "assets/fanworks/002.png",
+      "creator": "酥心糖",
+      "description": "上课太无聊了于是嬷了三岛"
+    }
+  ]
+}
