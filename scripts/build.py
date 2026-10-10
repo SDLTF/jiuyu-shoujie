@@ -102,12 +102,15 @@ def chapter_art_url(art, suffix=""):
     name = f'chapter-art/{art["id"]}{suffix}.webp'
     return f'../assets/{name}?v={asset_version(name)}'
 
+def chapter_art_original_url(art):
+    return f"{RAW_URL}{art['original']}?v={art['sha256'][:10]}"
+
 def chapter_art_figure(art):
     full = chapter_art_url(art)
     medium = chapter_art_url(art, '-960')
     small = chapter_art_url(art, '-480')
     caption = escape(art['caption'])
-    original = escape(RAW_URL + art['original'])
+    original = escape(chapter_art_original_url(art))
     return f'''<figure class="chapter-illustration" id="illustration-{art['id']}"><button type="button" class="image-open chapter-art-open" data-image="{full}" data-name="{caption}" data-kind="章节印象图" data-original="{original}" aria-label="放大{caption}"><img src="{full}" srcset="{small} 480w, {medium} 960w, {full} {art['width']}w" sizes="(max-width: 1000px) 90vw, 900px" alt="{escape(art['alt'])}" width="{art['width']}" height="{art['height']}" loading="lazy" decoding="async"></button><figcaption><span>{caption}</span><span aria-hidden="true">点击放大 ↗</span></figcaption></figure>'''
 
 def illustrated_chapter(text, artwork):
@@ -135,7 +138,7 @@ def build_art_gallery(chapters, artwork):
         ident, chapter, caption = escape(art['id']), art['chapter'], escape(art['caption'])
         full, medium, small = (chapter_art_url(art, suffix) for suffix in ('', '-960', '-480'))
         loading = 'loading="eager"' if index < 2 else 'loading="lazy"'
-        cards.append(f'''<article class="art-card" id="art-{ident}" data-chapter="{chapter}"><button type="button" class="image-open art-image" data-image="{full}" data-name="{ident} · {caption}" data-kind="章节印象图" data-original="{escape(RAW_URL + art['original'])}" aria-label="放大{ident} {caption}"><img src="{medium}" srcset="{small} 480w, {medium} 960w, {full} {art['width']}w" sizes="(max-width: 640px) 90vw, (max-width: 1400px) 44vw, 600px" alt="{escape(art['alt'])}" width="{art['width']}" height="{art['height']}" {loading} decoding="async"><span class="art-image-hint" aria-hidden="true">放大查看 ↗</span></button><div class="art-card-copy"><p class="art-card-chapter">{escape(titles[chapter])}<span>{ident}</span></p><h2>{caption}</h2><a href="../chapters/{chapter}.html#illustration-{ident}" aria-label="阅读{escape(titles[chapter])}中{caption}的场景">阅读这一幕 →</a></div></article>''')
+        cards.append(f'''<article class="art-card" id="art-{ident}" data-chapter="{chapter}"><button type="button" class="image-open art-image" data-image="{full}" data-name="{ident} · {caption}" data-kind="章节印象图" data-original="{escape(chapter_art_original_url(art))}" aria-label="放大{ident} {caption}"><img src="{medium}" srcset="{small} 480w, {medium} 960w, {full} {art['width']}w" sizes="(max-width: 640px) 90vw, (max-width: 1400px) 44vw, 600px" alt="{escape(art['alt'])}" width="{art['width']}" height="{art['height']}" {loading} decoding="async"><span class="art-image-hint" aria-hidden="true">放大查看 ↗</span></button><div class="art-card-copy"><p class="art-card-chapter">{escape(titles[chapter])}<span>{ident}</span></p><h2>{caption}</h2><a href="../chapters/{chapter}.html#illustration-{ident}" aria-label="阅读{escape(titles[chapter])}中{caption}的场景">阅读这一幕 →</a></div></article>''')
     gallery = f'''<div class="page-shell art-gallery"><div class="page-heading"><p class="eyebrow">SCENES FROM THE STORY / 故事里的场景</p><h1>印象图画廊</h1><p>收藏旅途中的片刻。点击图片看细节，或回到它出现的正文。</p></div><div class="art-gallery-tools"><p class="art-gallery-count" role="status"><strong id="art-count">{len(artwork)}</strong> / {len(artwork)} 幅印象图<span>来自 {len(illustrated)} 个章节</span></p><div class="art-filters" role="group" aria-label="按章节筛选">{''.join(filters)}</div></div><div class="art-grid">{''.join(cards)}</div></div>{image_viewer('章节印象图', navigation=True)}'''
     save(OUT / 'art/index.html', frame('印象图画廊', gallery, '../', 'art', route='art/'))
 

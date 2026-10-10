@@ -111,38 +111,50 @@
     {
       "id": "7-1",
       "chapter": "007",
-      "caption": "水下的边界",
-      "alt": "田主压住纸角并指明被水遮住的田界，小语在石埂上记录，韦侃和格伦在旁核查。",
-      "after": "小语将板子放稳，补上他刚才说明的播种位置。田主等她写完，手还压着纸。",
+      "caption": "早钟前的旅店",
+      "alt": "晨光中的旅店，小语在杯旁翻看册子，韦侃整理衣装，彭湃带盾准备出门，梁叔陪阿卓坐在后桌。",
+      "after": "楼脚有人值守，横过来的椅子还在。小语合上册子，没有往上走。彭湃带着盾剑从桌边经过，说先去队里报一声；他的左臂仍贴在身侧。",
       "original": "assets/chapter-art/7-1.png",
-      "width": 1672,
-      "height": 941,
-      "sha256": "bb6d05a1f035ee751892099b22bb72e3dc472cfaf916358c4a32d51502124e20",
-      "generation_metadata": "assets/chapter-art/generation-prompts.json"
+      "width": 1280,
+      "height": 720,
+      "sha256": "3e61406c780500bca2b1394a32fd57d0569202c977d7355f4ad44903fa20fb5f",
+      "attachment_filename": "codex-clipboard-663a9439-209a-432c-82a2-0fb2471b3533.png"
     },
     {
       "id": "7-2",
       "chapter": "007",
+      "caption": "水下的边界",
+      "alt": "田主指明被水遮住的田界，小语在石埂上记录，格伦在旁核对纸页，韦侃查看另一侧的落脚处。",
+      "after": "小语将板子放稳，补上他刚才说明的播种位置。田主等她写完，手还压着纸。",
+      "original": "assets/chapter-art/7-2.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "a79a4ca7206171011b04279075b9e2210678965464e2cd2c3ca6745e8a60c24a",
+      "attachment_filename": "codex-clipboard-c28ef881-3e59-4e3a-9fe1-9725fe1f82e6.png"
+    },
+    {
+      "id": "7-3",
+      "chapter": "007",
       "caption": "墙基下的旧路",
       "alt": "小语和韦侃沿磨坊外墙查看旧铺石，林砚对照渠图，旧检修路伸到后添的墙基下。",
       "after": "小语将盖口、旧墙角和铺石的位置画到同一页，在检修路旁记下墙基占住。工人刚才说明的扩建另写在下面，泄水槽的去向仍标着待查。",
-      "original": "assets/chapter-art/7-2.png",
-      "width": 1672,
-      "height": 941,
-      "sha256": "a7eb0d264f86d3ad2d5f36ba2dbc0b1cfbf18f50262371c76767870e9ce1e103",
-      "generation_metadata": "assets/chapter-art/generation-prompts.json"
+      "original": "assets/chapter-art/7-3.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "e34fcf104da5ae9aeb47ae1e8c40d7e398c168e6fc2b2971925824937e5df6ae",
+      "attachment_filename": "codex-clipboard-4542c5db-e4e4-4fd0-af5c-dc27325b09b0.png"
     },
     {
       "id": "8-1",
       "chapter": "008",
       "caption": "检修口下的转角",
-      "alt": "工人放低手灯照亮检修口下的一小段旧砖槽，林砚在旁查看，小语在干地上画下可见的转角。",
+      "alt": "林砚提灯查看检修口下的旧砖槽，小语在较宽处画下可见的转角，韦侃在旁观察，工人守着移开的盖板。",
       "after": "她将两处位置分开，旧册上的口位另画在旁边。地下的线只到那一小截砖槽，没有越过后添墙基。",
       "original": "assets/chapter-art/8-1.png",
-      "width": 1672,
-      "height": 941,
-      "sha256": "ac2b7d2623389d7f3286251afc879f7bd8d250698e1a6908475626007e319363",
-      "generation_metadata": "assets/chapter-art/generation-prompts.json"
+      "width": 1280,
+      "height": 720,
+      "sha256": "7661ac5b3918ee7297f5f7e144bd9495740f75e8d18d1ac4b2822d26176410e5",
+      "attachment_filename": "codex-clipboard-30a59d58-4593-4931-acba-80e4cc1ea2f1.png"
     },
     {
       "id": "8-2",
@@ -151,59 +163,59 @@
       "alt": "墨默以局部影霜减弱井壁反光，小语用淡蓝水光留下浅刻纹和坐姿暗痕，下缘仍被水面遮住。",
       "after": "淡蓝薄光沿墙缝铺开。纸上先浮出砖台和肩背，随后，轮廓外缘多了几道细浅的线。她看得见的弯折都留在上面，向下的一截仍空着。",
       "original": "assets/chapter-art/8-2.png",
-      "width": 1672,
-      "height": 941,
-      "sha256": "22f01f2e487769c28d58100d1f69fc5d4d6910840de2fa63faafac452995acc0",
-      "generation_metadata": "assets/chapter-art/generation-prompts.json"
+      "width": 1280,
+      "height": 720,
+      "sha256": "e0da19c5dd03bf8e5d27c4d73b6f569667266d702a196aae9152a2a2db58dd28",
+      "attachment_filename": "codex-clipboard-c3d79ad6-e2d3-4109-9c9f-e9cb8771ef77.png"
     },
     {
       "id": "9-1",
       "chapter": "009",
       "caption": "石碑补出的路",
       "original": "assets/chapter-art/9-1.png",
-      "width": 1672,
-      "height": 941,
-      "sha256": "15744da0b5d91ae6715b1d55a8213cf0abe7b8a110717f3ffa992f01832062f3",
-      "alt": "归首碑在夹固的窄板车上显出旧水路，小语用淡蓝水光留痕，苏弥抄图，艾琳扶住碑侧，墨默记录原问题。",
+      "width": 1280,
+      "height": 720,
+      "sha256": "a0d439ffac35467fa5e9f24c57c377a98e0146377dbb0688f13c3d1c30c5e30c",
+      "alt": "归首碑在夹固的窄板车上显出旧水路，小语用淡蓝水光留痕，韦侃对照地图，艾琳扶住碑侧，墨默在册中记录。",
       "after": "墨默从匣侧取出新媒纸，垫上干托片，搁在车架一侧的横板上。小语将手腕搁在板边，把指尖水光送向碑面。淡蓝的薄光贴着正在显现的图铺开，磨坊、旧墙角、砖渠和石阶依次留在纸上。她到了末端又看了一眼，两道横槽都在，才收回手。",
-      "generation_metadata": "assets/chapter-art/generation-prompts.json"
+      "attachment_filename": "codex-clipboard-bafc9951-33a8-49dd-a07d-c0b80937f89a.png"
     },
     {
       "id": "9-2",
       "chapter": "009",
       "caption": "拱口旁的两道横槽",
       "original": "assets/chapter-art/9-2.png",
-      "width": 1672,
-      "height": 941,
-      "sha256": "2b3c4c5bcfdb88387368fb11e3473863116ede8782ef91a4099d2e5da93aae41",
+      "width": 1280,
+      "height": 720,
+      "sha256": "8d1db19c0c11e8dc987c71f58eeb5442af9db8f15e1d7b553340972559a79bb5",
       "alt": "河堤旧石阶下，林砚与工人清出拱口和两道横槽，小语、韦侃、苏弥在较高处对照碑图，拱内仍被泥堵住。",
       "after": "“对上了。”林砚看过横槽和拱缘，“这里有旧泄水口。”",
-      "generation_metadata": "assets/chapter-art/generation-prompts.json"
+      "attachment_filename": "codex-clipboard-ebe716ab-34eb-4c07-b248-5c486ab5182a.png"
     },
     {
       "id": "10-1",
       "chapter": "010",
       "caption": "水终于往河里走",
       "original": "assets/chapter-art/10-1.png",
-      "width": 1672,
-      "height": 941,
-      "sha256": "125f4878c07d36e6250f9936f59656f2b4a99f0d97f6edbf1b056ad614952c5f",
-      "alt": "清障后的旧拱口持续向河里排出浑水，小语与韦侃、苏弥在高处笑起来，酥心糖照看撑木符札，林砚和工人在口外观察水流。",
+      "width": 1280,
+      "height": 720,
+      "sha256": "3d83dba55162dc9dde223337fdc089d478ea89ba96a613e797f2ec9c7ab760ae",
+      "alt": "清障后的旧拱口持续向河里排出浑水，小语与韦侃在高处笑起来，酥心糖照看撑木符札，工人在口外观察水流、清理杂物。",
       "after": "小语笑起来。笑得很轻，接着又忍不住笑了一声。她一直怕自己高兴太早，怕让谁白等，可这会儿水就在眼前，响着，走着，她实在忍不住了。",
-      "generation_metadata": "assets/chapter-art/generation-prompts.json"
+      "attachment_filename": "codex-clipboard-4a556d13-c4f9-4fb3-a14f-42650adf50cc.png"
     },
     {
       "id": "10-2",
       "chapter": "010",
       "caption": "水退以后，暗痕仍在",
       "original": "assets/chapter-art/10-2.png",
-      "width": 1672,
-      "height": 941,
-      "sha256": "74a4f4c83ab711343d46fdb67dae32fd0dfb15f8fbeb93d3b1aaf04810207ceb",
+      "width": 1280,
+      "height": 720,
+      "sha256": "ffd1028938b5ae129da5d813fd595afa0c5c96db630063c32068bfcc370b6400",
       "alt": "磨坊旧室水位降低，砖台与新的湿边露出，小语和墨默对照记录，原来坐姿的肩背暗痕仍伏在井壁上。",
       "after": "小语慢慢打开册子，翻到那道旧轮廓旁。墨默把干托片移近，给她留出能搁纸的地方。她先写下此刻露出的砖缝和水位，又抬头看了一眼。",
-      "generation_metadata": "assets/chapter-art/generation-prompts.json"
+      "attachment_filename": "codex-clipboard-bdc7a504-33a3-46db-82ce-8ac751aacfc6.png"
     }
   ],
-  "provenance": "Chapters 1-6: nine user-supplied illustrations preserved unchanged. Chapters 7-10: eight illustrations generated with built-in image_gen using existing artwork and character cards as references; full prompts and revisions are preserved in assets/chapter-art/generation-prompts.json."
+  "provenance": "All eighteen active illustrations for chapters 1-10 are user-supplied PNGs preserved unchanged. The nine replacements for chapters 7-10 follow the supplied order. Superseded generated originals are preserved in assets/chapter-art/archive/; their full prompts, revisions and exact reference paths remain in assets/chapter-art/generation-prompts.json."
 }
