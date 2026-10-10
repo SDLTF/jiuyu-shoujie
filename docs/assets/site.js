@@ -1,5 +1,15 @@
 "use strict";
 
+// Align incoming scene links after the chapter's fonts have settled.
+window.addEventListener("load", () => {
+  const fragment = window.location.hash;
+  if (!/^#illustration-\d+-\d+$/.test(fragment)) return;
+  document.fonts.ready.then(() => {
+    if (window.location.hash !== fragment) return;
+    document.getElementById(fragment.slice(1))?.scrollIntoView({block: "start", behavior: "instant"});
+  });
+}, {once: true});
+
 const search = document.getElementById("character-search");
 if (search) {
   const cards = Array.from(document.querySelectorAll(".character-card"));
@@ -17,6 +27,28 @@ if (search) {
   });
 }
 
+const artFilters = Array.from(document.querySelectorAll(".art-filter"));
+if (artFilters.length) {
+  const cards = Array.from(document.querySelectorAll(".art-card"));
+  const count = document.getElementById("art-count");
+  const filter = (chapter) => {
+    if (!artFilters.some(button => button.dataset.chapter === chapter)) chapter = "all";
+    let visible = 0;
+    cards.forEach(card => {
+      card.hidden = chapter !== "all" && card.dataset.chapter !== chapter;
+      if (!card.hidden) visible += 1;
+    });
+    artFilters.forEach(button => button.setAttribute("aria-pressed", String(button.dataset.chapter === chapter)));
+    count.textContent = String(visible);
+    const url = new URL(window.location.href);
+    if (chapter === "all") url.searchParams.delete("chapter");
+    else url.searchParams.set("chapter", chapter);
+    window.history.replaceState(null, "", url);
+  };
+  artFilters.forEach(button => button.addEventListener("click", () => filter(button.dataset.chapter)));
+  filter(new URL(window.location.href).searchParams.get("chapter") || "all");
+}
+
 const viewer = document.getElementById("image-viewer");
 if (viewer) {
   const image = document.getElementById("viewer-image");
@@ -24,6 +56,8 @@ if (viewer) {
   const original = document.getElementById("viewer-original");
   const zoom = document.getElementById("viewer-zoom");
   const buttons = Array.from(document.querySelectorAll(".image-open"));
+  const position = document.getElementById("viewer-position");
+  const available = () => buttons.filter(button => !button.closest(".character-card, .art-card")?.hidden);
   let selected = 0;
   const show = (index) => {
     selected = index;
@@ -32,6 +66,12 @@ if (viewer) {
     image.alt = button.dataset.name + (button.dataset.kind || "人物展示卡");
     title.textContent = button.dataset.name;
     original.href = button.dataset.original;
+    if (position) {
+      const visible = available();
+      position.textContent = `${visible.indexOf(button) + 1} / ${visible.length}`;
+      document.getElementById("viewer-prev").disabled = visible.length < 2;
+      document.getElementById("viewer-next").disabled = visible.length < 2;
+    }
     viewer.classList.remove("is-zoomed");
     zoom.textContent = "放大细节";
     zoom.setAttribute("aria-pressed", "false");
@@ -55,16 +95,21 @@ if (viewer) {
     if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) viewer.close();
   });
   viewer.addEventListener("close", () => { document.body.style.overflow = ""; });
-  viewer.addEventListener("keydown", (event) => {
-    if (buttons.length < 2 || (event.key !== "ArrowLeft" && event.key !== "ArrowRight")) return;
-    event.preventDefault();
-    const direction = event.key === "ArrowRight" ? 1 : -1;
+  const move = (direction) => {
+    if (buttons.length < 2) return;
     let next = selected;
     for (let step = 0; step < buttons.length; step += 1) {
       next = (next + direction + buttons.length) % buttons.length;
-      const card = buttons[next].closest(".character-card");
+      const card = buttons[next].closest(".character-card, .art-card");
       if (!card || !card.hidden) { show(next); break; }
     }
+  };
+  document.getElementById("viewer-prev")?.addEventListener("click", () => move(-1));
+  document.getElementById("viewer-next")?.addEventListener("click", () => move(1));
+  viewer.addEventListener("keydown", (event) => {
+    if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+    event.preventDefault();
+    move(event.key === "ArrowRight" ? 1 : -1);
   });
 }
 

@@ -31,21 +31,27 @@ def avatar(person, prefix="../", loading='loading="lazy"'):
     style = f'--portrait-width:{crop["width"]}%;--portrait-left:{crop["left"]}%;--portrait-top:{crop["top"]}%'
     return f'<span class="avatar-window" style="{style}"><img src="{prefix}assets/thumbs/{person["id"]}.webp" alt="{escape(person["name"])}头像" width="960" height="480" {loading}></span>'
 
-def image_viewer(title="人物展示卡"):
-    return '''<dialog id="image-viewer" aria-labelledby="viewer-name"><div class="viewer-toolbar"><h2 id="viewer-name">VIEWER_TITLE</h2><div><button id="viewer-zoom" type="button" aria-pressed="false">放大细节</button><button id="viewer-close" type="button" aria-label="关闭图片">关闭 <span aria-hidden="true">×</span></button></div></div><div class="viewer-image-wrap"><img id="viewer-image" alt=""></div><div class="viewer-bottom"><p class="viewer-tip">放大后可滑动查看图片细节</p><a id="viewer-original" target="_blank" rel="noopener">查看原始 PNG</a></div></dialog>'''.replace('VIEWER_TITLE', escape(title))
+def image_viewer(title="人物展示卡", navigation=False):
+    controls = '<div class="viewer-navigation" aria-label="图片切换"><button id="viewer-prev" type="button">← 上一幅</button><span id="viewer-position" aria-live="polite"></span><button id="viewer-next" type="button">下一幅 →</button></div>' if navigation else ''
+    return '''<dialog id="image-viewer" aria-labelledby="viewer-name"><div class="viewer-toolbar"><h2 id="viewer-name">VIEWER_TITLE</h2><div><button id="viewer-zoom" type="button" aria-pressed="false">放大细节</button><button id="viewer-close" type="button" aria-label="关闭图片">关闭 <span aria-hidden="true">×</span></button></div></div>VIEWER_NAV<div class="viewer-image-wrap"><img id="viewer-image" alt=""></div><div class="viewer-bottom"><p class="viewer-tip">放大后可滑动查看图片细节</p><a id="viewer-original" target="_blank" rel="noopener">查看原始 PNG</a></div></dialog>'''.replace('VIEWER_TITLE', escape(title)).replace('VIEWER_NAV', controls)
 
 def frame(title, body, prefix="", active="", noindex=False, route="", background=""):
     links = "".join(
         f'<a href="{prefix}{href}"' + (' aria-current="page"' if name == active else '') + f'>{label}</a>'
-        for name, href, label in [("gallery", "gallery/", "人物图集"), ("world", "world/", "世界观"), ("chapters", "chapters/", "正文阅读")]
+        for name, href, label in [("gallery", "gallery/", "人物图集"), ("world", "world/", "世界观"), ("chapters", "chapters/", "正文阅读"), ("art", "art/", "印象画廊")]
     )
     robots = '<meta name="robots" content="noindex">' if noindex else ''
-    page_kind = 'home' if not route else ('character' if route.startswith('gallery/') and route.endswith('.html') else ('gallery' if route == 'gallery/' else ('world' if route == 'world/' else 'reader')))
+    if not route:
+        page_kind = 'home'
+    elif route.startswith('gallery/') and route.endswith('.html'):
+        page_kind = 'character'
+    else:
+        page_kind = {'gallery/': 'gallery', 'world/': 'world', 'art/': 'art'}.get(route, 'reader')
     return f'''<!doctype html>
 <html lang="zh-CN"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{escape(title)} · 九域守界</title>
-<meta name="description" content="九域守界的官方故事档案：人物设定图集与小说正文。">
+<meta name="description" content="九域守界的官方故事档案：人物设定图集、小说正文与章节印象图。">
 <meta name="theme-color" content="#101b25">{robots}
 <link rel="canonical" href="{SITE_URL}{route}">
 <link rel="icon" href="{prefix}assets/favicon.svg" type="image/svg+xml">
@@ -97,6 +103,24 @@ def illustrated_chapter(text, artwork):
         text = text.replace(anchor, anchor + chapter_art_figure(art) + '\n\n', 1)
     return md_content(text.strip() + '\n')
 
+def build_art_gallery(chapters, artwork):
+    titles = {source.stem: md_content(source.read_text(encoding='utf-8'))[0] for source in chapters}
+    artwork = sorted(artwork, key=lambda art: tuple(int(part) for part in art['id'].split('-')))
+    illustrated = sorted({art['chapter'] for art in artwork})
+    filters = ['<button type="button" class="art-filter" data-chapter="all" aria-pressed="true">全部</button>']
+    for chapter in illustrated:
+        label = titles[chapter].split(' ', 1)[0]
+        count = sum(art['chapter'] == chapter for art in artwork)
+        filters.append(f'<button type="button" class="art-filter" data-chapter="{chapter}" aria-pressed="false">{escape(label)}<span>{count}</span></button>')
+    cards = []
+    for index, art in enumerate(artwork):
+        ident, chapter, caption = escape(art['id']), art['chapter'], escape(art['caption'])
+        full, medium, small = (chapter_art_url(art, suffix) for suffix in ('', '-960', '-480'))
+        loading = 'loading="eager"' if index < 2 else 'loading="lazy"'
+        cards.append(f'''<article class="art-card" id="art-{ident}" data-chapter="{chapter}"><button type="button" class="image-open art-image" data-image="{full}" data-name="{ident} · {caption}" data-kind="章节印象图" data-original="{escape(RAW_URL + art['original'])}" aria-label="放大{ident} {caption}"><img src="{medium}" srcset="{small} 480w, {medium} 960w, {full} {art['width']}w" sizes="(max-width: 640px) 90vw, (max-width: 1400px) 44vw, 600px" alt="{escape(art['alt'])}" width="{art['width']}" height="{art['height']}" {loading} decoding="async"><span class="art-image-hint" aria-hidden="true">放大查看 ↗</span></button><div class="art-card-copy"><p class="art-card-chapter">{escape(titles[chapter])}<span>{ident}</span></p><h2>{caption}</h2><a href="../chapters/{chapter}.html#illustration-{ident}" aria-label="阅读{escape(titles[chapter])}中{caption}的场景">阅读这一幕 →</a></div></article>''')
+    gallery = f'''<div class="page-shell art-gallery"><div class="page-heading"><p class="eyebrow">SCENES FROM THE STORY / 故事里的场景</p><h1>印象图画廊</h1><p>收藏旅途中的片刻。点击图片看细节，或回到它出现的正文。</p></div><div class="art-gallery-tools"><p class="art-gallery-count" role="status"><strong id="art-count">{len(artwork)}</strong> / {len(artwork)} 幅印象图<span>来自 {len(illustrated)} 个章节</span></p><div class="art-filters" role="group" aria-label="按章节筛选">{''.join(filters)}</div></div><div class="art-grid">{''.join(cards)}</div></div>{image_viewer('章节印象图', navigation=True)}'''
+    save(OUT / 'art/index.html', frame('印象图画廊', gallery, '../', 'art', route='art/'))
+
 def build():
     prepare_design_assets()
     characters = json.loads((ROOT / "content/characters.json").read_text(encoding="utf-8"))
@@ -142,7 +166,7 @@ def build():
 <div class="hero-copy"><p class="eyebrow">九域守界 · 故事档案</p><h1 id="hero-title">九域<span>守界</span></h1>
 <p class="hero-intro">从灰桥的一次救援出发，<br>走入九域交错的世界。</p>
 <p class="hero-note">在这里认识同行者，翻阅他们的设定，等待故事展开。</p>
-<div class="hero-actions"><a class="button primary" href="gallery/">翻阅人物图集</a><a class="button secondary" href="chapters/">正文阅读</a></div>
+<div class="hero-actions"><a class="button primary" href="gallery/">翻阅人物图集</a><a class="button secondary" href="chapters/">正文阅读</a><a class="button secondary" href="art/">印象画廊</a></div>
 <p class="hero-meta"><span class="line" aria-hidden="true"></span>CHARACTER_COUNT 位角色 · 人物设定图集已收录</p></div>
 <!-- CHARACTER_CAROUSEL -->
 </section>
@@ -206,6 +230,7 @@ def build():
 
     chapter_art_path = ROOT / 'content/chapter-art.json'
     chapter_art = json.loads(chapter_art_path.read_text(encoding='utf-8'))['images'] if chapter_art_path.exists() else []
+    build_art_gallery(chapters, chapter_art)
     chapter_entries = []
     for i, source in enumerate(chapters):
         artwork = [art for art in chapter_art if art['chapter'] == source.stem]
@@ -215,10 +240,11 @@ def build():
         chapter_entries.append(f'<a class="chapter-item{" has-art" if artwork else ""}" href="{escape(source.stem)}.html"><span>{i+1:02}</span>{thumbnail}<h2>{escape(title)}</h2><span aria-hidden="true">↗</span></a>')
         previous = f'<a href="{escape(chapters[i-1].stem)}.html">上一章</a>' if i else '<span></span>'
         following = f'<a href="{escape(chapters[i+1].stem)}.html">下一章</a>' if i + 1 < len(chapters) else '<span></span>'
-        chapter = f'<div class="page-shell chapter-reading"><p class="eyebrow">九域守界 / 正文</p><h1>{escape(title)}</h1><article class="prose">{body}</article><nav class="chapter-pagination" aria-label="章节导航">{previous}<a href="./">章节目录</a>{following}</nav></div>' + (image_viewer("章节印象图") if artwork else '')
+        art_link = f'<a class="chapter-gallery-link" href="../art/?chapter={source.stem}">浏览本章印象图 →</a>' if artwork else ''
+        chapter = f'<div class="page-shell chapter-reading"><p class="eyebrow">九域守界 / 正文</p><h1>{escape(title)}</h1><article class="prose">{body}</article><nav class="chapter-pagination" aria-label="章节导航">{previous}<a href="./">章节目录</a>{following}</nav>{art_link}</div>' + (image_viewer("章节印象图") if artwork else '')
         save(OUT / f"chapters/{source.stem}.html", frame(title, chapter, "../", "chapters", route=f"chapters/{source.stem}.html"))
     chapter_body = '<div class="chapter-list">' + ''.join(chapter_entries) + '</div>' if chapters else '''<section class="chapters-empty"><span class="empty-symbol" aria-hidden="true">卷</span><p class="eyebrow">故事正在准备中</p><h2>正文尚未发布</h2><p>章节发布后，这里会按顺序收录。<br>现在可以先认识故事中的人物。</p><a class="button primary" href="../gallery/">翻阅人物图集</a></section>'''
-    chapter_index = f'<div class="page-shell"><div class="page-heading"><p class="eyebrow">THE STORY / 正文阅读</p><h1>小说正文</h1><p>九域守界的故事，从这里展开。</p></div>{chapter_body}</div>'
+    chapter_index = f'<div class="page-shell"><div class="page-heading"><p class="eyebrow">THE STORY / 正文阅读</p><h1>小说正文</h1><p>九域守界的故事，从这里展开。</p></div><a class="chapter-gallery-link chapter-gallery-directory" href="../art/">浏览全部 {len(chapter_art)} 幅印象图 →</a>{chapter_body}</div>'
     save(OUT / "chapters/index.html", frame("正文阅读", chapter_index, "../", "chapters", route="chapters/"))
     save(OUT / "404.html", frame("页面未找到", '<div class="page-shell error-page"><p class="eyebrow">404</p><h1>这页档案还未收录</h1><p>可以回到首页，继续翻阅故事与人物。</p><a class="button primary" href="/jiuyu-shoujie/">返回首页</a></div>', "/jiuyu-shoujie/", noindex=True))
     save(OUT / ".nojekyll", "")
