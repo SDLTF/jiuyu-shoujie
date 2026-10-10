@@ -17,6 +17,8 @@ REPO = "jiuyu-shoujie"
 REPO_URL = f"https://github.com/{OWNER}/{REPO}"
 RAW_URL = f"https://raw.githubusercontent.com/{OWNER}/{REPO}/main/"
 SITE_URL = "https://sdltf.github.io/jiuyu-shoujie/"
+STICKERS = json.loads((ROOT / 'content/chibi-stickers.json').read_text(encoding='utf-8'))
+STICKER_PEOPLE = {f'{person["id"]:02}': person for person in STICKERS['characters']}
 
 def escape(value):
     return html.escape(str(value), quote=True)
@@ -59,11 +61,16 @@ def avatar_sources(ident, prefix="../", style="original"):
     small, small_version = avatar_url(ident, "-256", style)
     medium, medium_version = avatar_url(ident, "-512", style)
     src = f'{prefix}assets/{medium}?v={medium_version}'
-    srcset = f'{prefix}assets/{small}?v={small_version} 256w, {src} 512w'
+    with Image.open(OUT / 'assets' / small) as image:
+        small_width = image.width
+    with Image.open(OUT / 'assets' / medium) as image:
+        medium_width = image.width
+    candidates = {small_width:f'{prefix}assets/{small}?v={small_version}', medium_width:src}
+    srcset = ', '.join(f'{url} {width}w' for width,url in sorted(candidates.items()))
     return src, srcset
 
 def avatar_switch():
-    return '''<div class="avatar-switch" role="group" aria-label="头像风格" hidden><span class="avatar-switch-label">头像风格</span><div class="avatar-switch-options"><button type="button" data-avatar-choice="original" aria-pressed="true">原版</button><button type="button" data-avatar-choice="chibi" aria-pressed="false">Q版</button></div></div>'''
+    return '''<div class="avatar-switch" role="group" aria-label="图像风格" hidden><span class="avatar-switch-label">图像风格</span><div class="avatar-switch-options"><button type="button" data-avatar-choice="original" aria-pressed="true">原版头像</button><button type="button" data-avatar-choice="chibi" aria-pressed="false">Q版全身</button></div></div>'''
 
 def avatar(person, prefix="../", loading='loading="lazy"', sizes='(max-width: 640px) 40vw, (max-width: 1100px) 25vw, 220px'):
     ident = person["id"]
@@ -74,6 +81,44 @@ def avatar(person, prefix="../", loading='loading="lazy"', sizes='(max-width: 64
 def image_viewer(title="人物展示卡", navigation=False, original_label="查看原始 PNG"):
     controls = '<div class="viewer-navigation" aria-label="图片切换"><button id="viewer-prev" type="button">← 上一幅</button><span id="viewer-position" aria-live="polite"></span><button id="viewer-next" type="button">下一幅 →</button></div>' if navigation else ''
     return '''<dialog id="image-viewer" aria-labelledby="viewer-name"><div class="viewer-toolbar"><h2 id="viewer-name">VIEWER_TITLE</h2><div><button id="viewer-zoom" type="button" aria-pressed="false">放大细节</button><button id="viewer-close" type="button" aria-label="关闭图片">关闭 <span aria-hidden="true">×</span></button></div></div>VIEWER_NAV<div class="viewer-image-wrap"><img id="viewer-image" alt=""></div><div class="viewer-bottom"><p class="viewer-tip">放大后可滑动查看图片细节</p><a id="viewer-original" target="_blank" rel="noopener">ORIGINAL_LABEL</a></div></dialog>'''.replace('VIEWER_TITLE', escape(title)).replace('VIEWER_NAV', controls).replace('ORIGINAL_LABEL', escape(original_label))
+
+def sticker_cards(person):
+    ident = f'{person["id"]:02}'
+    cards = []
+    for pose in person['images']:
+        filename = f'chibi-stickers/{ident}/{pose["index"]:02}.webp'
+        smallname = f'chibi-stickers/{ident}/{pose["index"]:02}-256.webp'
+        full = f'../assets/{filename}?v={asset_version(filename)}'
+        small = f'../assets/{smallname}?v={asset_version(smallname)}'
+        with Image.open(OUT/'assets'/filename) as picture:
+            width = picture.width
+        with Image.open(OUT/'assets'/smallname) as picture:
+            small_width = picture.width
+        sources = {small_width:small,width:full}
+        srcset = ', '.join(f'{url} {size}w' for size,url in sorted(sources.items()))
+        title = escape(f'{person["name"]} · {pose["name"]}')
+        kind = '全身立绘' if pose['index']==1 else f'表情{pose["index"]-1}'
+        original = escape(f'../assets/chibi-stickers/{ident}/{pose["index"]:02}.png?v={pose["sha256"][:10]}')
+        description = escape(pose['description'])
+        cards.append(f'''<figure class="sticker-card"><button type="button" class="image-open sticker-image" data-image="{full}" data-name="{title}" data-kind="Q版{kind}" data-alt="{description}" data-original="{original}" aria-label="放大{title}"><img src="{full}" srcset="{srcset}" sizes="(max-width:640px) 43vw, (max-width:1000px) 40vw, 280px" width="{width}" height="{width}" alt="{description}" loading="lazy" decoding="async"><span class="image-hint">放大查看 ↗</span></button><figcaption><span class="sticker-kind">{kind}</span><h3>{escape(pose['name'])}</h3><p>{escape(pose['emotion'])}</p><a href="{original}" download="{ident}_{escape(person['name'])}_{pose['index']:02}_{escape(pose['name'])}.png">下载透明 PNG ↓</a></figcaption></figure>''')
+    return '<div class="sticker-grid">' + ''.join(cards) + '</div>'
+
+def profile_stickers(ident):
+    person = STICKER_PEOPLE[ident]
+    sheet = escape(RAW_URL+person['sheet'])
+    return f'''<section id="chibi-stickers" class="profile-stickers" aria-labelledby="chibi-title"><div class="sticker-section-heading"><div><p class="eyebrow">CHIBI / 角色的另一种表情</p><h2 id="chibi-title">Q版全身立绘与表情包</h2><p>一张完整立绘，三种不同心情。点击图片放大，或下载透明原图。</p></div><div class="sticker-links"><a href="{sheet}" target="_blank" rel="noopener">查看四宫格 ↗</a><a href="../stickers/#role-{ident}">全部角色表情包 →</a></div></div>{sticker_cards(person)}</section>'''
+
+def build_sticker_gallery(characters):
+    groups = []
+    for character in characters:
+        ident = character['id']
+        person = STICKER_PEOPLE[ident]
+        name = escape(person['name'])
+        search = escape(' '.join([person['name'],character.get('real',''),*(pose['name'] for pose in person['images'])]))
+        groups.append(f'''<section class="sticker-character" id="role-{ident}" data-search="{search}"><div class="sticker-section-heading"><h2><span>{ident}</span> {name}</h2><div class="sticker-links"><a href="../gallery/{ident}.html">人物资料 ↗</a><a href="{escape(RAW_URL+person['sheet'])}" target="_blank" rel="noopener">四宫格原图 ↗</a></div></div>{sticker_cards(person)}</section>''')
+    archive = escape(RAW_URL+STICKERS['archive'])
+    body = f'''<div class="page-shell sticker-gallery"><a class="gallery-world-link" href="../gallery/">← 返回人物图集</a><div class="page-heading"><p class="eyebrow">CHIBI & EXPRESSIONS / 全身立绘与表情包</p><h1>Q版立绘与表情包</h1><p>28 位角色，28 张全身立绘与 84 张表情包。每张都保留完整身体和透明背景。</p><div class="sticker-download"><a class="button primary" href="{archive}" target="_blank" rel="noopener">下载完整素材包 · 58 MB ↗</a><span>含 28 张四宫格，共 140 张 PNG</span></div></div><div class="gallery-tools"><label class="search-field"><span aria-hidden="true">⌕</span><input id="sticker-search" type="search" placeholder="搜索角色或表情名称" aria-label="搜索角色或表情名称" autocomplete="off"></label><span class="gallery-count" aria-live="polite"><strong id="sticker-count">28</strong> / 28 位角色</span></div><p id="sticker-no-results" class="empty-results" hidden>没有找到匹配的角色或表情，试试另一个名字。</p>{''.join(groups)}</div>{image_viewer('Q版全身立绘与表情包',navigation=True)}'''
+    save(OUT/'stickers/index.html',frame('Q版全身立绘与表情包',body,'../','gallery',route='stickers/'))
 
 def frame(title, body, prefix="", active="", noindex=False, route="", background=""):
     links = "".join(
@@ -86,7 +131,7 @@ def frame(title, body, prefix="", active="", noindex=False, route="", background
     elif route.startswith('gallery/') and route.endswith('.html'):
         page_kind = 'character'
     else:
-        page_kind = {'gallery/': 'gallery', 'world/': 'world', 'art/': 'art', 'fanworks/': 'fanworks'}.get(route, 'reader')
+        page_kind = {'gallery/': 'gallery', 'stickers/': 'gallery', 'world/': 'world', 'art/': 'art', 'fanworks/': 'fanworks'}.get(route, 'reader')
     description = '九域守界的粉丝二创：图片与文字作品，收录创作者署名和作品描述。' if active == 'fanworks' else '九域守界的官方故事档案：人物设定图集、小说正文与章节印象图。'
     return f'''<!doctype html>
 <html lang="zh-CN"><head>
@@ -326,10 +371,11 @@ def build():
         name, real, ident = escape(person["name"]), escape(person.get("real", "")), person["id"]
         loading = 'fetchpriority="high"' if i < 4 else 'loading="lazy"'
         cards.append(f'''<article class="character-card character-tile" data-search="{name} {real}"><a class="tile-link" href="{ident}.html" aria-label="查看{name}的展示卡和个人资料"><span class="tile-number">{ident}</span>{avatar(person, loading=loading)}<h2>{name}</h2><span class="tile-caption">查看人物资料</span></a></article>''')
-    gallery = f'''<div class="page-shell gallery-shell"><a class="gallery-world-link" href="../world/">← 返回世界观</a><div class="page-heading"><p class="eyebrow">CHARACTER ARCHIVE / 人物档案</p><h1>人物设定图集</h1><p>从头像认识同行者，进入档案查看展示卡、专属背景与个人资料。</p></div>
+    gallery = f'''<div class="page-shell gallery-shell"><a class="gallery-world-link" href="../world/">← 返回世界观</a><div class="page-heading"><p class="eyebrow">CHARACTER ARCHIVE / 人物档案</p><h1>人物设定图集</h1><p>从头像认识同行者，进入档案查看展示卡、人设插画、横屏战斗壁纸与个人资料。</p></div>
 <div class="gallery-tools"><label class="search-field"><span aria-hidden="true">⌕</span><input id="character-search" type="search" placeholder="搜索角色名或原名" aria-label="搜索角色名或原名" autocomplete="off"></label>{avatar_switch()}<span class="gallery-count" aria-live="polite"><strong id="character-count">{len(characters)}</strong> / {len(characters)} 位角色</span></div>
-<div class="avatar-grid">{''.join(cards)}</div><p id="no-results" class="empty-results" hidden>没有找到对应角色，换个名字试试。</p></div>'''
+<a class="sticker-entry" href="../stickers/"><span><strong>Q版全身立绘与表情包</strong><span>28 张完整立绘 · 84 张个性表情 · 透明原图下载</span></span><span aria-hidden="true">浏览全部 →</span></a><div class="avatar-grid">{''.join(cards)}</div><p id="no-results" class="empty-results" hidden>没有找到对应角色，换个名字试试。</p></div>'''
     save(OUT / "gallery/index.html", frame("人物设定图集", gallery, "../", "gallery", route="gallery/"))
+    build_sticker_gallery(characters)
 
     for index, person in enumerate(characters):
         ident, name = person["id"], escape(person["name"])
@@ -363,7 +409,7 @@ def build():
         body = f'''<section class="character-scene" aria-label="{name}专属场景"><picture class="character-scene-art"><source media="(max-width: 640px)" srcset="{art_mobile}"><img src="{art}" alt="{name}专属场景插画" width="{art_width}" height="{art_height}" fetchpriority="high"></picture><div class="scene-shade" aria-hidden="true"></div><div class="page-shell scene-content"><nav class="breadcrumbs" aria-label="位置"><a href="./">人物图集</a><span aria-hidden="true">/</span><span>{name}</span></nav>
 <header class="profile-heading"><div class="profile-avatar">{avatar(person, loading='fetchpriority="high"', sizes='94px')}</div><div class="profile-heading-copy"><p class="eyebrow">九域守界 / 人物档案 {ident}</p><h1>{name}</h1><p class="profile-name-line">{escape(profile['name_line'])}</p><div class="profile-basic">{basic}</div></div></header>{avatar_switch()}{quote}
 <div class="scene-actions"><div class="scene-action-group"><button type="button" class="button secondary image-open" data-image="{art}" data-name="{name} · 专属场景" data-kind="专属场景插画" data-original="{art_raw}">查看专属大图 ↗</button><a href="{art_raw}" target="_blank" rel="noopener" class="scene-original">背景原图</a></div><div class="scene-action-group"><button type="button" class="button secondary image-open avatar-open" data-avatar-viewer data-avatar-name="{name}" data-original-image="{avatar_full}" data-chibi-image="{chibi_full}" data-original-source="{avatar_raw}" data-chibi-source="{chibi_raw}" data-image="{avatar_full}" data-name="{name} · 人物头像" data-kind="人物头像" data-original="{avatar_raw}">查看人物头像 ↗</button><a data-avatar-download data-original-source="{avatar_raw}" data-chibi-source="{chibi_raw}" href="{avatar_raw}" target="_blank" rel="noopener" class="scene-original">头像原图</a></div></div></div></section><div class="page-shell character-profile">
-<div class="profile-layout"><section class="dossier-section" aria-labelledby="dossier-title"><h2 id="dossier-title">人物展示卡</h2><button type="button" class="image-open dossier-image" data-image="{image}" data-name="{name}" data-original="{raw}" aria-label="放大{name}人物展示卡"><img src="{image}" alt="{name}完整人物展示卡" width="1774" height="887"><span class="image-hint">点击放大</span></button><div class="dossier-actions"><a class="button secondary" href="{image}" target="_blank" rel="noopener">打开完整图片</a><a class="button secondary" href="{raw}" target="_blank" rel="noopener">查看原始 PNG</a></div></section><section class="profile-info" aria-labelledby="profile-info-title"><h2 id="profile-info-title">个人资料</h2>{''.join(sections)}</section></div>
+{profile_stickers(ident)}<div class="profile-layout"><section class="dossier-section" aria-labelledby="dossier-title"><h2 id="dossier-title">人物展示卡</h2><button type="button" class="image-open dossier-image" data-image="{image}" data-name="{name}" data-original="{raw}" aria-label="放大{name}人物展示卡"><img src="{image}" alt="{name}完整人物展示卡" width="1774" height="887"><span class="image-hint">点击放大</span></button><div class="dossier-actions"><a class="button secondary" href="{image}" target="_blank" rel="noopener">打开完整图片</a><a class="button secondary" href="{raw}" target="_blank" rel="noopener">查看原始 PNG</a></div></section><section class="profile-info" aria-labelledby="profile-info-title"><h2 id="profile-info-title">个人资料</h2>{''.join(sections)}</section></div>
 {character_art_section(person, character_art.get(ident))}<nav class="profile-pagination" aria-label="人物导航"><a href="{previous['id']}.html"><span>上一位</span>{escape(previous['name'])}</a><a class="back-to-gallery" href="./">全部人物</a><a href="{following['id']}.html"><span>下一位</span>{escape(following['name'])}</a></nav></div>{image_viewer('人物档案', navigation=True)}'''
         save(OUT / f'gallery/{ident}.html', frame(f'{person["name"]} · 人物资料', body, '../', 'gallery', route=f'gallery/{ident}.html', background=art))
 

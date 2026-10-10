@@ -1,0 +1,7 @@
+Create a transparent square 2x2 sticker sheet of ONE character. Input 1 supplies character identity and costume. Input 2 supplies ONLY the chibi style and layout. Match the small figure size and ample empty margins of input 2. FOUR independent COMPLETE full-body sprites, 2 heads tall, huge head/eyes, tiny torso/limbs, delicate polished anime chibi. No headshots. All hair, body, feet, clothing, props/effects must be completely visible. Each figure occupies just 35% of total canvas height, centered at (25%,25%), (75%,25%), (25%,75%), (75%,75%). The central horizontal and vertical 10% strips are empty transparent. Outer edges also transparent. Do not enlarge the sprites to fill their quadrants. No text, labels, panel lines, scenery or white outlines. Native transparent PNG.
+Character 06 吴语; keep official gray-haired elderly man with white beard, wood hairpin bun, worn blue-gray short shirt, wide pants, green waist sash, cloth shoes, walking staff. No young black-haired character from input 2. Identity profile {"身份":["隐世武者 · 旧守护照看者"],"性格":["话最多，嘴最碎。","越担心，越爱念叨。"],"衣装":["旧青灰短衫 · 宽裤 · 布鞋","木簪随意束起花白头发"],"随身物品":["拄杖、竹枝与茶杯"],"能力":["绝顶武学，风雷随势。","真动手时，能守住整条退路。"]}.
+TL neutral standard: 花白木簪发髻和白须，旧青灰短衫、宽裤布鞋，站立扶拄杖。
+TR 唠叨、关心: 一手叉腰，一手举食指，嘴张开说话，眉毛抬起，拄杖靠身侧。
+BL 惬意: 盘腿坐着，双手捧茶杯，眯眼笑，胡须柔软，布鞋完整。
+BR 坚定: 双脚分开站稳，拄杖横握，眉眼坚定，少量风雷弧围绕杖端。
+Four distinct expressions and full body gestures. Maintain same face, hairstyle, outfit and colors throughout.

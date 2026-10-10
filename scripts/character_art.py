@@ -37,4 +37,3 @@ def prepare_character_art():
             art["web_directory"] = directory
         by_id[ident] = row
     return by_id
-

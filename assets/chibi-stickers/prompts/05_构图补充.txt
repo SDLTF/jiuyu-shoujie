@@ -1,0 +1,1 @@
+CRITICAL additional input 4 is a VERIFIED LAYOUT reference only. Match its SMALL figure scale and generous transparent empty spacing exactly. Do not borrow its character identity. Empty margins and empty central cross must look like input 4, not the tightly packed figures in inputs 2 and 3.
