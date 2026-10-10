@@ -9,11 +9,11 @@ if (avatarSwitches.length) {
   const downloads = Array.from(document.querySelectorAll("[data-avatar-download]"));
   const applyStyle = (value) => {
     const style = value === "chibi" ? "chibi" : "original";
-    const label = style === "chibi" ? "Q版头像" : "人物头像";
+    const label = style === "chibi" ? "Q版全身立绘" : "人物头像";
     images.forEach(image => {
       image.srcset = image.dataset[style + "Srcset"];
       image.src = image.dataset[style + "Src"];
-      image.alt = image.dataset.avatarName + (style === "chibi" ? "Q版头像" : "头像");
+      image.alt = image.dataset.avatarName + (style === "chibi" ? "Q版全身立绘" : "头像");
       image.parentElement.dataset.avatarStyle = style;
     });
     choices.forEach(button => button.setAttribute("aria-pressed", String(button.dataset.avatarChoice === style)));
@@ -75,6 +75,21 @@ if (search) {
   });
 }
 
+const stickerSearch = document.getElementById("sticker-search");
+if (stickerSearch) {
+  const groups = Array.from(document.querySelectorAll(".sticker-character"));
+  stickerSearch.addEventListener("input", () => {
+    const query = stickerSearch.value.trim().toLocaleLowerCase();
+    let visible = 0;
+    groups.forEach(group => {
+      group.hidden = !group.dataset.search.toLocaleLowerCase().includes(query);
+      if (!group.hidden) visible += 1;
+    });
+    document.getElementById("sticker-count").textContent = String(visible);
+    document.getElementById("sticker-no-results").hidden = visible !== 0;
+  });
+}
+
 const artFilters = Array.from(document.querySelectorAll(".art-filter"));
 if (artFilters.length) {
   const cards = Array.from(document.querySelectorAll(".art-card"));
@@ -129,7 +144,7 @@ if (viewer) {
   const zoom = document.getElementById("viewer-zoom");
   const buttons = Array.from(document.querySelectorAll(".image-open"));
   const position = document.getElementById("viewer-position");
-  const available = () => buttons.filter(button => !button.closest(".character-card, .art-card, .fanwork-card")?.hidden);
+  const available = () => buttons.filter(button => !button.closest(".character-card, .art-card, .fanwork-card, .sticker-character")?.hidden);
   let selected = 0;
   const show = (index) => {
     selected = index;
@@ -172,7 +187,7 @@ if (viewer) {
     let next = selected;
     for (let step = 0; step < buttons.length; step += 1) {
       next = (next + direction + buttons.length) % buttons.length;
-      const card = buttons[next].closest(".character-card, .art-card, .fanwork-card");
+      const card = buttons[next].closest(".character-card, .art-card, .fanwork-card, .sticker-character");
       if (!card || !card.hidden) { show(next); break; }
     }
   };

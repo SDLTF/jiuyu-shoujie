@@ -1,0 +1,1702 @@
+{
+  "project": "九域守界 Q版立绘与表情包",
+  "version": "2026-10-11-full-body-v1",
+  "source": "官方人物展示卡、用户提供的三岛及琉西法Q版参考图、Q版小人生成prompt.md",
+  "style": "日系萌系Q版，圆润大头短身，完整全身及道具；真实透明RGBA背景",
+  "character_count": 28,
+  "sheet_count": 28,
+  "individual_count": 112,
+  "total_png_count": 140,
+  "native_sheet_size": [
+    1254,
+    1254
+  ],
+  "individual_size": [
+    627,
+    627
+  ],
+  "generator": "内置 image_gen 图像生成工具",
+  "characters": [
+    {
+      "id": 1,
+      "name": "三岛",
+      "sheet": "assets/chibi-stickers/sheets/01.png",
+      "description": "黑色长发、灰色大眼、深灰多层长袍与米白袖衬，怀抱铜饰命簿，腰间挂小袋和坠饰。",
+      "images": [
+        {
+          "index": 1,
+          "type": "标准立绘",
+          "position": "top-left",
+          "name": "记下名字",
+          "file": "assets/chibi-stickers/01/01.png",
+          "emotion": "平静",
+          "description": "站立抱着命簿，双靴落地，目光安静。",
+          "action": "站立抱着命簿，双靴落地，目光安静。",
+          "width": 627,
+          "height": 627,
+          "sha256": "dee8f7ad52afe0256059657e23b2982c1820fe9d2249dd784c18147b8651448e"
+        },
+        {
+          "index": 2,
+          "type": "表情包",
+          "position": "top-right",
+          "name": "先喝口热的",
+          "file": "assets/chibi-stickers/01/02.png",
+          "emotion": "关心、开心",
+          "description": "闭眼笑着递出热茶，另一手抱书，一只脚轻抬，杯口冒蒸汽。",
+          "action": "闭眼笑着递出热茶，另一手抱书，一只脚轻抬，杯口冒蒸汽。",
+          "width": 627,
+          "height": 627,
+          "sha256": "9c2163cdb305d4ab3fa451bcf4d21418f0a114297300fa7787fff445ffded6b2"
+        },
+        {
+          "index": 3,
+          "type": "表情包",
+          "position": "bottom-left",
+          "name": "整理命簿",
+          "file": "assets/chibi-stickers/01/03.png",
+          "emotion": "专注",
+          "description": "盘腿坐在书堆旁，用羽毛笔写摊开的命簿，纸页在身边飞起。",
+          "action": "盘腿坐在书堆旁，用羽毛笔写摊开的命簿，纸页在身边飞起。",
+          "width": 627,
+          "height": 627,
+          "sha256": "bd4be182ca9cdc0a994d67f19fcdabb86ed1ccd7febf08911e07b149dd3568e6"
+        },
+        {
+          "index": 4,
+          "type": "表情包",
+          "position": "bottom-right",
+          "name": "又忘了饭点",
+          "file": "assets/chibi-stickers/01/04.png",
+          "emotion": "慌张",
+          "description": "蹲坐着抱紧书卷，张嘴伸手抓纸，眉眼惊慌，汗滴和飞纸环绕。",
+          "action": "蹲坐着抱紧书卷，张嘴伸手抓纸，眉眼惊慌，汗滴和飞纸环绕。",
+          "width": 627,
+          "height": 627,
+          "sha256": "bb428741c0d858c85628ec7143e74471e92bb70e339e35b07ee6cdecf6dc77d9"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "琉西法",
+      "sheet": "assets/chibi-stickers/sheets/02.png",
+      "description": "黑红发光二十面骰首、双山羊角和荆棘冠；黑红金长袍，三对黑红羽翼与单蛇金杖。",
+      "images": [
+        {
+          "index": 1,
+          "type": "标准立绘",
+          "position": "top-left",
+          "name": "骰首牧师",
+          "file": "assets/chibi-stickers/02/01.png",
+          "emotion": "平静",
+          "description": "站立握蛇杖，六翼分成三对，长袍下双鞋可见。",
+          "action": "站立握蛇杖，六翼分成三对，长袍下双鞋可见。",
+          "width": 627,
+          "height": 627,
+          "sha256": "41f35ff8e3f3212560acf210e797c560126dc449383889825e46d16164c4237b"
+        },
+        {
+          "index": 2,
+          "type": "表情包",
+          "position": "top-right",
+          "name": "轮到你了",
+          "file": "assets/chibi-stickers/02/02.png",
+          "emotion": "得意、招呼",
+          "description": "向前伸手招呼，另一手握蛇杖，红色星光配合张翼动作。",
+          "action": "向前伸手招呼，另一手握蛇杖，红色星光配合张翼动作。",
+          "width": 627,
+          "height": 627,
+          "sha256": "7b95f00d9cdcdb9381eeab6ea32a04206b94b298ddbe42dcdcacc17ef5fde774"
+        },
+        {
+          "index": 3,
+          "type": "表情包",
+          "position": "bottom-left",
+          "name": "你在说什么",
+          "file": "assets/chibi-stickers/02/03.png",
+          "emotion": "困惑",
+          "description": "骰首歪斜，一手托住骰首下沿，另一手扶杖，问号表现困惑。",
+          "action": "骰首歪斜，一手托住骰首下沿，另一手扶杖，问号表现困惑。",
+          "width": 627,
+          "height": 627,
+          "sha256": "e22ec6865392f681003ddb33af312815b8b5d1a6220abac25a30f91ff8a9877e"
+        },
+        {
+          "index": 4,
+          "type": "表情包",
+          "position": "bottom-right",
+          "name": "怎么又失败",
+          "file": "assets/chibi-stickers/02/04.png",
+          "emotion": "抓狂",
+          "description": "蹲低身体，一手握拳，一手持杖，骰首亮红光，六翼张开并出现怒气符号。",
+          "action": "蹲低身体，一手握拳，一手持杖，骰首亮红光，六翼张开并出现怒气符号。",
+          "width": 627,
+          "height": 627,
+          "sha256": "17db8c0cba66967e2957dfe2dc228f3eeb62c2179a8ac7031264dc86012fdb15"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "土方奏一",
+      "sheet": "assets/chibi-stickers/sheets/03.png",
+      "description": "黑卷发和低束长发、灰色眼睛，整齐黑色礼服和花纹领巾，配小提琴及琴弓。",
+      "images": [
+        {
+          "index": 1,
+          "type": "标准立绘",
+          "position": "top-left",
+          "name": "巡演音乐生",
+          "file": "assets/chibi-stickers/03/01.png",
+          "emotion": "平静",
+          "description": "站立持小提琴和琴弓，礼服衣摆与双鞋完整。",
+          "action": "站立持小提琴和琴弓，礼服衣摆与双鞋完整。",
+          "width": 627,
+          "height": 627,
+          "sha256": "d553f5f53b06e9babf01fa5db101a7cdf91f7428d3d294fce694135fa4bc1afd"
+        },
+        {
+          "index": 2,
+          "type": "表情包",
+          "position": "top-right",
+          "name": "优美一曲",
+          "file": "assets/chibi-stickers/03/02.png",
+          "emotion": "陶醉",
+          "description": "闭眼笑着演奏小提琴，一只脚轻抬，音符在身旁浮起。",
+          "action": "闭眼笑着演奏小提琴，一只脚轻抬，音符在身旁浮起。",
+          "width": 627,
+          "height": 627,
+          "sha256": "eeae83acd04151a351de5241560c74509c303b3fc2012767655a196f1ca3a197"
+        },
+        {
+          "index": 3,
+          "type": "表情包",
+          "position": "bottom-left",
+          "name": "不合拍",
+          "file": "assets/chibi-stickers/03/03.png",
+          "emotion": "嫌弃、无奈",
+          "description": "坐在琴箱上抱臂，抿嘴微鼓脸，双鞋向前，汗滴表现闷闷不乐。",
+          "action": "坐在琴箱上抱臂，抿嘴微鼓脸，双鞋向前，汗滴表现闷闷不乐。",
+          "width": 627,
+          "height": 627,
+          "sha256": "de7e72634fac149cf7542f0baa9d31d27713df04db2762142612c9fdac8b6f07"
+        },
+        {
+          "index": 4,
+          "type": "表情包",
+          "position": "bottom-right",
+          "name": "谢谢欣赏",
+          "file": "assets/chibi-stickers/03/04.png",
+          "emotion": "得意",
+          "description": "眨眼行礼，一手按胸，另一手携琴与弓，星光点亮身旁。",
+          "action": "眨眼行礼，一手按胸，另一手携琴与弓，星光点亮身旁。",
+          "width": 627,
+          "height": 627,
+          "sha256": "fd72631fe9188e08a5644258cd87e01a929b4b3386bd86573df3100628dc2549"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "贾小鱼",
+      "sheet": "assets/chibi-stickers/sheets/04.png",
+      "description": "紫色马尾、额头护目镜、白色褶边领巾和紫色宝石，紫金工具外套、工装裤与黑靴。",
+      "images": [
+        {
+          "index": 1,
+          "type": "标准立绘",
+          "position": "top-left",
+          "name": "炼金工坊店主",
+          "file": "assets/chibi-stickers/04/01.png",
+          "emotion": "平静",
+          "description": "站立拎工具箱，腰间金链和小工具垂下。",
+          "action": "站立拎工具箱，腰间金链和小工具垂下。",
+          "width": 627,
+          "height": 627,
+          "sha256": "8b984fbbcde2bf72d6c42b1c8a42caf49a931151a1fd1e06bf834d92c0c89652"
+        },
+        {
+          "index": 2,
+          "type": "表情包",
+          "position": "top-right",
+          "name": "修好啦",
+          "file": "assets/chibi-stickers/04/02.png",
+          "emotion": "开心、得意",
+          "description": "跳起眨眼笑，举起紫晶和扳手，衣摆飞扬，星光环绕。",
+          "action": "跳起眨眼笑，举起紫晶和扳手，衣摆飞扬，星光环绕。",
+          "width": 627,
+          "height": 627,
+          "sha256": "162b05f845b25dd81e23697c1d8ef82e4998e67afa197fb92e3d24b1e8785196"
+        },
+        {
+          "index": 3,
+          "type": "表情包",
+          "position": "bottom-left",
+          "name": "细节要对齐",
+          "file": "assets/chibi-stickers/04/03.png",
+          "emotion": "专注",
+          "description": "蹲在发光机械装置旁检修，双靴露出，工具与紫晶靠近手边。",
+          "action": "蹲在发光机械装置旁检修，双靴露出，工具与紫晶靠近手边。",
+          "width": 627,
+          "height": 627,
+          "sha256": "5583188afab227fabb89baa1f92cc109b7fafe05368fd50d7e19396ad9bc64d8"
+        },
+        {
+          "index": 4,
+          "type": "表情包",
+          "position": "bottom-right",
+          "name": "这也能坏",
+          "file": "assets/chibi-stickers/04/04.png",
+          "emotion": "惊讶、吐槽",
+          "description": "一手叉腰，一手举故障零件，张嘴惊讶，问号围在头旁。",
+          "action": "一手叉腰，一手举故障零件，张嘴惊讶，问号围在头旁。",
+          "width": 627,
+          "height": 627,
+          "sha256": "a6a19b8c918cf0cda20ea0aaa93f279f6a20082d7ee191d2b03cb2851714e5e7"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "酥心糖",
+      "sheet": "assets/chibi-stickers/sheets/05.png",
+      "description": "棕发中式发髻、金色发饰和红流苏，红金短披风、宽袖与白红褶裙，配札纸和符笔。",
+      "images": [
+        {
+          "index": 1,
+          "type": "标准立绘",
+          "position": "top-left",
+          "name": "东方符师",
+          "file": "assets/chibi-stickers/05/01.png",
+          "emotion": "平静",
+          "description": "站立持符笔和札纸，裙摆下双靴可见。",
+          "action": "站立持符笔和札纸，裙摆下双靴可见。",
+          "width": 627,
+          "height": 627,
+          "sha256": "a51fedd9c55f816dbf4e166f92a2458faee7de6a3ba2d214163c52ccaaec80a0"
+        },
+        {
+          "index": 2,
+          "type": "表情包",
+          "position": "top-right",
+          "name": "符来好运",
+          "file": "assets/chibi-stickers/05/02.png",
+          "emotion": "兴奋",
+          "description": "轻跳施符，闭眼开心笑，札纸在身侧扬起，金色星光点缀。",
+          "action": "轻跳施符，闭眼开心笑，札纸在身侧扬起，金色星光点缀。",
+          "width": 627,
+          "height": 627,
+          "sha256": "438b0b33f8fbaec76a31620599534f511341bcd596105f6784f487109c876454"
+        },
+        {
+          "index": 3,
+          "type": "表情包",
+          "position": "bottom-left",
+          "name": "请你吃糖",
+          "file": "assets/chibi-stickers/05/03.png",
+          "emotion": "俏皮、亲近",
+          "description": "眨眼前倾递出包好的糖，另一手靠近身体，小爱心表现亲近。",
+          "action": "眨眼前倾递出包好的糖，另一手靠近身体，小爱心表现亲近。",
+          "width": 627,
+          "height": 627,
+          "sha256": "ca5ea09b5d11dd43823fe66d2e758fac4384528cb327c6e97a976f05eaf3ff48"
+        },
+        {
+          "index": 4,
+          "type": "表情包",
+          "position": "bottom-right",
+          "name": "符贴稳了",
+          "file": "assets/chibi-stickers/05/04.png",
+          "emotion": "认真、专注",
+          "description": "蹲着用笔写符纸，眉眼专注，衣袖与裙摆收在脚边。",
+          "action": "蹲着用笔写符纸，眉眼专注，衣袖与裙摆收在脚边。",
+          "width": 627,
+          "height": 627,
+          "sha256": "264fae8237af73a74650c76e82ddb74106c18ea86f7481df8fb974490a667546"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "吴语",
+      "sheet": "assets/chibi-stickers/sheets/06.png",
+      "description": "灰白发髻、木簪和白须，圆润老者面孔，旧灰青衣、宽裤和绿腰带，配木杖与布鞋。",
+      "images": [
+        {
+          "index": 1,
+          "type": "标准立绘",
+          "position": "top-left",
+          "name": "旧守护照看者",
+          "file": "assets/chibi-stickers/06/01.png",
+          "emotion": "平静",
+          "description": "拄木杖站立，双布鞋完整，神情自然。",
+          "action": "拄木杖站立，双布鞋完整，神情自然。",
+          "width": 627,
+          "height": 627,
+          "sha256": "bd64a799651e0b4340bfafe50ab0fc674e005b9efb33dd0de6b6d7f2c543e834"
+        },
+        {
+          "index": 2,
+          "type": "表情包",
+          "position": "top-right",
+          "name": "听我念两句",
+          "file": "assets/chibi-stickers/06/02.png",
+          "emotion": "唠叨、关心",
+          "description": "一手叉腰，一手举指说话，嘴张开，像在认真叮嘱。",
+          "action": "一手叉腰，一手举指说话，嘴张开，像在认真叮嘱。",
+          "width": 627,
+          "height": 627,
+          "sha256": "8af96a917d61a6ef1ec6a1f4d86df4afcb93204308c8a036304e2387ec01928b"
+        },
+        {
+          "index": 3,
+          "type": "表情包",
+          "position": "bottom-left",
+          "name": "喝茶就好",
+          "file": "assets/chibi-stickers/06/03.png",
+          "emotion": "惬意",
+          "description": "盘腿坐地，闭眼端着热茶，杯边冒蒸汽，神情放松。",
+          "action": "盘腿坐地，闭眼端着热茶，杯边冒蒸汽，神情放松。",
+          "width": 627,
+          "height": 627,
+          "sha256": "d9fad8a799bbbe7abf4bb29d977d30725178e023f3d1f1e21b51cfd17e7b05c4"
+        },
+        {
+          "index": 4,
+          "type": "表情包",
+          "position": "bottom-right",
+          "name": "退路我守",
+          "file": "assets/chibi-stickers/06/04.png",
+          "emotion": "坚定",
+          "description": "压低重心横持木杖，眼神坚定，风纹与竹叶围在身侧。",
+          "action": "压低重心横持木杖，眼神坚定，风纹与竹叶围在身侧。",
+          "width": 627,
+          "height": 627,
+          "sha256": "21ea1a0ed5a8b24bac90abaa49dc8070c339910fa9c1143a596fec13abbcc807"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "闵霁",
+      "sheet": "assets/chibi-stickers/sheets/07.png",
+      "description": "粉色卷发、浅色大眼和额间印记，奶白粉色花饰裙、蕾丝和花枝，配药囊及小剪。",
+      "images": [
+        {
+          "index": 1,
+          "type": "标准立绘",
+          "position": "top-left",
+          "name": "花系治疗者",
+          "file": "assets/chibi-stickers/07/01.png",
+          "emotion": "平静",
+          "description": "站立拿花枝，花饰长裙下两只浅色鞋可见。",
+          "action": "站立拿花枝，花饰长裙下两只浅色鞋可见。",
+          "width": 627,
+          "height": 627,
+          "sha256": "3c10aad92bbe89d3fa539725ccfba9fb005b5d481e1a77c9646a17f3d94bcdb7"
+        },
+        {
+          "index": 2,
+          "type": "表情包",
+          "position": "top-right",
+          "name": "给你一朵花",
+          "file": "assets/chibi-stickers/07/02.png",
+          "emotion": "温柔、关心",
+          "description": "微笑递出一朵花，另一手轻提裙摆，姿态温柔。",
+          "action": "微笑递出一朵花，另一手轻提裙摆，姿态温柔。",
+          "width": 627,
+          "height": 627,
+          "sha256": "8cdd22eaa874d14af3eb0b06a83fac17459a35220c30c025bec766a1cb417326"
+        },
+        {
+          "index": 3,
+          "type": "表情包",
+          "position": "bottom-left",
+          "name": "别碰伤口",
+          "file": "assets/chibi-stickers/07/03.png",
+          "emotion": "担心、专注",
+          "description": "蹲着打开药囊整理药材，双鞋并在裙前，眉眼认真。",
+          "action": "蹲着打开药囊整理药材，双鞋并在裙前，眉眼认真。",
+          "width": 627,
+          "height": 627,
+          "sha256": "74d388e523ac4fb34e32f89aa659429a7bd05eeef53f14fa80b5868937298148"
+        },
+        {
+          "index": 4,
+          "type": "表情包",
+          "position": "bottom-right",
+          "name": "花开了",
+          "file": "assets/chibi-stickers/07/04.png",
+          "emotion": "惊喜、开心",
+          "description": "闭眼抱着花束轻轻踮脚，花瓣在周围飘起。",
+          "action": "闭眼抱着花束轻轻踮脚，花瓣在周围飘起。",
+          "width": 627,
+          "height": 627,
+          "sha256": "11b2d08c512f3b58284631da90ef1989ddd423024718b229dead50bf550b4847"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "楚惊殊",
+      "sheet": "assets/chibi-stickers/sheets/08.png",
+      "description": "黑色双马尾与齐刘海，角色左眼蓝、右眼绿，蓝绿色洛丽塔裙及塔罗牌。",
+      "images": [
+        {
+          "index": 1,
+          "type": "标准立绘",
+          "position": "top-left",
+          "name": "牌术法师",
+          "file": "assets/chibi-stickers/08/01.png",
+          "emotion": "平静",
+          "description": "站立展开塔罗牌，蓝绿衣裙与双鞋完整。",
+          "action": "站立展开塔罗牌，蓝绿衣裙与双鞋完整。",
+          "width": 627,
+          "height": 627,
+          "sha256": "d876b386dbcd175abbeddea7dc8628548700a5f130a0de0fb977b2010ac0b255"
+        },
+        {
+          "index": 2,
+          "type": "表情包",
+          "position": "top-right",
+          "name": "抽张好牌",
+          "file": "assets/chibi-stickers/08/02.png",
+          "emotion": "得意、俏皮",
+          "description": "眨眼举起一张牌，另一手叉腰，踮起一只脚，神情俏皮。",
+          "action": "眨眼举起一张牌，另一手叉腰，踮起一只脚，神情俏皮。",
+          "width": 627,
+          "height": 627,
+          "sha256": "02284061eea1b3486dea54fc3fed3a33bfb71b1b4c56bd9ce64e4446a1965988"
+        },
+        {
+          "index": 3,
+          "type": "表情包",
+          "position": "bottom-left",
+          "name": "怎么是这张",
+          "file": "assets/chibi-stickers/08/03.png",
+          "emotion": "震惊",
+          "description": "张嘴摊开双手，卡牌飞起，抬脚后退，汗滴和惊叹号表现惊讶。",
+          "action": "张嘴摊开双手，卡牌飞起，抬脚后退，汗滴和惊叹号表现惊讶。",
+          "width": 627,
+          "height": 627,
+          "sha256": "ca4bd7d5996ba80366f86d32527d2a89b1a88f013360611e3a3d499c4f06ef6c"
+        },
+        {
+          "index": 4,
+          "type": "表情包",
+          "position": "bottom-right",
+          "name": "牌阵开场",
+          "file": "assets/chibi-stickers/08/04.png",
+          "emotion": "专注、兴奋",
+          "description": "侧坐收腿，两只鞋露在身前，手中卡牌泛蓝绿光，目光兴奋。",
+          "action": "侧坐收腿，两只鞋露在身前，手中卡牌泛蓝绿光，目光兴奋。",
+          "width": 627,
+          "height": 627,
+          "sha256": "532e6857f3ca55c3058baa83166b090f89fa194a990441517a0ded0e25e05c98"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "莉莉",
+      "sheet": "assets/chibi-stickers/sheets/09.png",
+      "description": "蓝色猫瞳的完整黑猫，颈戴巴斯特徽记项圈，保留猫爪、短腿和完整长尾。",
+      "images": [
+        {
+          "index": 1,
+          "type": "标准立绘",
+          "position": "top-left",
+          "name": "梦路向导",
+          "file": "assets/chibi-stickers/09/01.png",
+          "emotion": "平静",
+          "description": "自然坐着，四肢及长尾完整，蓝瞳看向前方。",
+          "action": "自然坐着，四肢及长尾完整，蓝瞳看向前方。",
+          "width": 627,
+          "height": 627,
+          "sha256": "fe29e32982e9242f4067acd633988b92347baa138092b9d1057699c99958674e"
+        },
+        {
+          "index": 2,
+          "type": "表情包",
+          "position": "top-right",
+          "name": "别吵我",
+          "file": "assets/chibi-stickers/09/02.png",
+          "emotion": "嫌弃",
+          "description": "眯眼举一只前爪，尾巴卷起，怒气符号表现嫌弃。",
+          "action": "眯眼举一只前爪，尾巴卷起，怒气符号表现嫌弃。",
+          "width": 627,
+          "height": 627,
+          "sha256": "14f5d70dd12febd70afaf8f13587acfdd7480ddf4345e32c6e90942bec3370e1"
+        },
+        {
+          "index": 3,
+          "type": "表情包",
+          "position": "bottom-left",
+          "name": "这里可以走",
+          "file": "assets/chibi-stickers/09/03.png",
+          "emotion": "自信、引导",
+          "description": "迈步走路并回头看，四爪与翘尾完整，蓝色梦路光点在身边。",
+          "action": "迈步走路并回头看，四爪与翘尾完整，蓝色梦路光点在身边。",
+          "width": 627,
+          "height": 627,
+          "sha256": "b6108b5c0bf17a361296e2f5f65e83297d4dcac9101317a78fe1d6e0ab42a9e0"
+        },
+        {
+          "index": 4,
+          "type": "表情包",
+          "position": "bottom-right",
+          "name": "尾巴别碰",
+          "file": "assets/chibi-stickers/09/04.png",
+          "emotion": "炸毛、惊讶",
+          "description": "弓背炸毛，四爪着地、长尾竖起，蓝瞳睁大，惊叹号表现受惊。",
+          "action": "弓背炸毛，四爪着地、长尾竖起，蓝瞳睁大，惊叹号表现受惊。",
+          "width": 627,
+          "height": 627,
+          "sha256": "0ecfe31f92879ab280e496492559a0be10dce92153c905592cb01a8eb8a4021e"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "林清翊",
+      "sheet": "assets/chibi-stickers/sheets/10.png",
+      "description": "白发金瞳、白色羽翼，白蓝金衣饰和无相密钥项链，棕色短靴，表情格出现黑鳞蓝瞳小龙。",
+      "images": [
+        {
+          "index": 1,
+          "type": "标准立绘",
+          "position": "top-left",
+          "name": "御龙师",
+          "file": "assets/chibi-stickers/10/01.png",
+          "emotion": "平静",
+          "description": "站立展开白翼，手靠近密钥，双靴和翼尖完整。",
+          "action": "站立展开白翼，手靠近密钥，双靴和翼尖完整。",
+          "width": 627,
+          "height": 627,
+          "sha256": "2e107499c189698d7d0649740b895dd45018c67e07c0cfa5246b056a2d09b472"
+        },
+        {
+          "index": 2,
+          "type": "表情包",
+          "position": "top-right",
+          "name": "一起出发",
+          "file": "assets/chibi-stickers/10/02.png",
+          "emotion": "开心、兴奋",
+          "description": "小跳张开双臂，闭眼笑，双翼扬起，星光围绕。",
+          "action": "小跳张开双臂，闭眼笑，双翼扬起，星光围绕。",
+          "width": 627,
+          "height": 627,
+          "sha256": "48c532490c2c5ccbdaa2ed3ed74311076de82260bf7f1a0c8bf3320e0ef4adff"
+        },
+        {
+          "index": 3,
+          "type": "表情包",
+          "position": "bottom-left",
+          "name": "吃饭啦",
+          "file": "assets/chibi-stickers/10/03.png",
+          "emotion": "温柔、关心",
+          "description": "坐低身体给完整的小黑龙喂食，两只靴尖朝前，龙尾和翼完整。",
+          "action": "坐低身体给完整的小黑龙喂食，两只靴尖朝前，龙尾和翼完整。",
+          "width": 627,
+          "height": 627,
+          "sha256": "845377a09eea38d67073afcd06fc251e66f4418a39f104fb6059600d3b7a7666"
+        },
+        {
+          "index": 4,
+          "type": "表情包",
+          "position": "bottom-right",
+          "name": "别怕有我",
+          "file": "assets/chibi-stickers/10/04.png",
+          "emotion": "紧张但坚定",
+          "description": "一手护在前方，一手靠近密钥，眉眼担心而坚定，汗滴点缀。",
+          "action": "一手护在前方，一手靠近密钥，眉眼担心而坚定，汗滴点缀。",
+          "width": 627,
+          "height": 627,
+          "sha256": "c41314ba19c5a346a4e40aba300a58fed8e05e3b1b386303a4d437544a9e5edc"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "韦侃",
+      "sheet": "assets/chibi-stickers/sheets/11.png",
+      "description": "微卷棕发、珍珠耳钉、绿色披风，白色内衣、棕裤和短靴，配长弓与箭袋。",
+      "images": [
+        {
+          "index": 1,
+          "type": "标准立绘",
+          "position": "top-left",
+          "name": "学院弓箭手",
+          "file": "assets/chibi-stickers/11/01.png",
+          "emotion": "平静",
+          "description": "站立握弓，箭袋背在身后，双靴可见。",
+          "action": "站立握弓，箭袋背在身后，双靴可见。",
+          "width": 627,
+          "height": 627,
+          "sha256": "e611f838d45a770aa62adaefb1a0bbf7db48705fe45755261d09fa863a5583c1"
+        },
+        {
+          "index": 2,
+          "type": "表情包",
+          "position": "top-right",
+          "name": "这边集合",
+          "file": "assets/chibi-stickers/11/02.png",
+          "emotion": "开心、热情",
+          "description": "笑着举手招呼，另一手扶弓，一只脚抬起。",
+          "action": "笑着举手招呼，另一手扶弓，一只脚抬起。",
+          "width": 627,
+          "height": 627,
+          "sha256": "1f685a33d010a0ee266b59ba5c65b84f22d54c024855f2827f8f4955fbcb065b"
+        },
+        {
+          "index": 3,
+          "type": "表情包",
+          "position": "bottom-left",
+          "name": "先让我看看",
+          "file": "assets/chibi-stickers/11/03.png",
+          "emotion": "拘谨、好奇",
+          "description": "缩肩抱弓，脚尖内收，脸上泛红并有小汗滴。",
+          "action": "缩肩抱弓，脚尖内收，脸上泛红并有小汗滴。",
+          "width": 627,
+          "height": 627,
+          "sha256": "126f0197563c2d8ae1f292c2a88dd213bcc352d92550271a6852f321a90c7429"
+        },
+        {
+          "index": 4,
+          "type": "表情包",
+          "position": "bottom-right",
+          "name": "风里一箭",
+          "file": "assets/chibi-stickers/11/04.png",
+          "emotion": "专注",
+          "description": "侧身拉满弓，双腿分开站稳，披风与风纹扬起。",
+          "action": "侧身拉满弓，双腿分开站稳，披风与风纹扬起。",
+          "width": 627,
+          "height": 627,
+          "sha256": "f51a5b2c3c533013943326870307fdb70b9c35de8473d57eafb96910e5af41fe"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "单谣",
+      "sheet": "assets/chibi-stickers/sheets/12.png",
+      "description": "黑色长发与繁复金色中式发饰，白蓝裙装、浅蓝粉丝带，配鸣骨尺和誓约文书。",
+      "images": [
+        {
+          "index": 1,
+          "type": "标准立绘",
+          "position": "top-left",
+          "name": "真名施术者",
+          "file": "assets/chibi-stickers/12/01.png",
+          "emotion": "平静",
+          "description": "站立持尺与文书，金饰和丝带围绕衣裙，双鞋露出。",
+          "action": "站立持尺与文书，金饰和丝带围绕衣裙，双鞋露出。",
+          "width": 627,
+          "height": 627,
+          "sha256": "31d9d428763c200a1471d0b115322b667dd238228bab6b11864215fc16bb504b"
+        },
+        {
+          "index": 2,
+          "type": "表情包",
+          "position": "top-right",
+          "name": "你说的真名",
+          "file": "assets/chibi-stickers/12/02.png",
+          "emotion": "玩味、调侃",
+          "description": "一手掩嘴眨眼笑，另一手持尺，踮脚显得玩味。",
+          "action": "一手掩嘴眨眼笑，另一手持尺，踮脚显得玩味。",
+          "width": 627,
+          "height": 627,
+          "sha256": "a65817b31c9fb9a612b09e0eb172c251f201398f53e3f6131c9c26dc2b1d7df1"
+        },
+        {
+          "index": 3,
+          "type": "表情包",
+          "position": "bottom-left",
+          "name": "核验誓约",
+          "file": "assets/chibi-stickers/12/03.png",
+          "emotion": "认真、专注",
+          "description": "坐着核验展开的文书，尺贴近纸面，两只鞋向前露出。",
+          "action": "坐着核验展开的文书，尺贴近纸面，两只鞋向前露出。",
+          "width": 627,
+          "height": 627,
+          "sha256": "79adefb155b13733253c3ed8681a6a17276951d6258d7c024e067442f55c634a"
+        },
+        {
+          "index": 4,
+          "type": "表情包",
+          "position": "bottom-right",
+          "name": "契约有问题",
+          "file": "assets/chibi-stickers/12/04.png",
+          "emotion": "无奈、质疑",
+          "description": "举文书并指向其中一处，歪头质疑，问号与汗滴出现在头旁。",
+          "action": "举文书并指向其中一处，歪头质疑，问号与汗滴出现在头旁。",
+          "width": 627,
+          "height": 627,
+          "sha256": "f318263908e207904f4bdc2fff308036450b5d6a99d5a712e3f289e73f6a1446"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "赵香香",
+      "sheet": "assets/chibi-stickers/sheets/13.png",
+      "description": "短黑发金瞳、红金外套和米白内衬，金链瓶饰与黑裤短靴，手持灵酒瓶和杯。",
+      "images": [
+        {
+          "index": 1,
+          "type": "标准立绘",
+          "position": "top-left",
+          "name": "酒馆老板",
+          "file": "assets/chibi-stickers/13/01.png",
+          "emotion": "平静",
+          "description": "站立拿瓶和杯，衣摆与双靴完整。",
+          "action": "站立拿瓶和杯，衣摆与双靴完整。",
+          "width": 627,
+          "height": 627,
+          "sha256": "1a3793594c940d941731a4443f3686bdbe11debce223e747a4fc7880db984cbf"
+        },
+        {
+          "index": 2,
+          "type": "表情包",
+          "position": "top-right",
+          "name": "敬你一杯",
+          "file": "assets/chibi-stickers/13/02.png",
+          "emotion": "开心、招呼",
+          "description": "举杯笑着敬酒，一只脚轻抬，金色星光点缀。",
+          "action": "举杯笑着敬酒，一只脚轻抬，金色星光点缀。",
+          "width": 627,
+          "height": 627,
+          "sha256": "bd7815084c5d34910bfd2f099e4be7ed55cedca60aaa6b59363eafd01bcd4d1a"
+        },
+        {
+          "index": 3,
+          "type": "表情包",
+          "position": "bottom-left",
+          "name": "配方正好",
+          "file": "assets/chibi-stickers/13/03.png",
+          "emotion": "得意、专注",
+          "description": "站着把红色小瓶里的液体倒入蓝色瓶，身旁放着装瓶的小箱。",
+          "action": "站着把红色小瓶里的液体倒入蓝色瓶，身旁放着装瓶的小箱。",
+          "width": 627,
+          "height": 627,
+          "sha256": "d6378eb44a02e6fe57168f0dd205715ac0f7fb6b7a83b5cef062cf4c45196876"
+        },
+        {
+          "index": 4,
+          "type": "表情包",
+          "position": "bottom-right",
+          "name": "别喝太快",
+          "file": "assets/chibi-stickers/13/04.png",
+          "emotion": "担心、惊讶",
+          "description": "护着瓶子并抬掌制止，张嘴后仰，抬脚和汗滴表现担心。",
+          "action": "护着瓶子并抬掌制止，张嘴后仰，抬脚和汗滴表现担心。",
+          "width": 627,
+          "height": 627,
+          "sha256": "46f15bfe741035f5f9f45688c7c6db6abea81fb0c567fd0f111b65b1ee5fd5fb"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "彭湃",
+      "sheet": "assets/chibi-stickers/sheets/14.png",
+      "description": "黑色卷发、灰蓝大眼，钢色护甲和蓝披风，佩剑与盾牌，短靴厚实。",
+      "images": [
+        {
+          "index": 1,
+          "type": "标准立绘",
+          "position": "top-left",
+          "name": "浪涌骑士",
+          "file": "assets/chibi-stickers/14/01.png",
+          "emotion": "平静",
+          "description": "站立持剑盾，蓝披风垂下，双靴完整。",
+          "action": "站立持剑盾，蓝披风垂下，双靴完整。",
+          "width": 627,
+          "height": 627,
+          "sha256": "51048b732cd1af2dd8a3a91bad6120af4a5460719d2b70c3012758c99d30d696"
+        },
+        {
+          "index": 2,
+          "type": "表情包",
+          "position": "top-right",
+          "name": "我来挡住",
+          "file": "assets/chibi-stickers/14/02.png",
+          "emotion": "坚定",
+          "description": "压低身体举盾防护，持剑手收在身侧，水纹表现守护动作。",
+          "action": "压低身体举盾防护，持剑手收在身侧，水纹表现守护动作。",
+          "width": 627,
+          "height": 627,
+          "sha256": "7e4e6c5323d8fdacdc2b7006f41114413ff576d9d19fdec7dc71b0ad284004b7"
+        },
+        {
+          "index": 3,
+          "type": "表情包",
+          "position": "bottom-left",
+          "name": "可以歇一会",
+          "file": "assets/chibi-stickers/14/03.png",
+          "emotion": "放松、开心",
+          "description": "坐地抬手擦额角，闭眼笑，双脚向前，盾在身旁。",
+          "action": "坐地抬手擦额角，闭眼笑，双脚向前，盾在身旁。",
+          "width": 627,
+          "height": 627,
+          "sha256": "6bdd3fa6601a6d977c418b6bc6e29c615952338048e0af75a9ee662cdea8760e"
+        },
+        {
+          "index": 4,
+          "type": "表情包",
+          "position": "bottom-right",
+          "name": "跟紧我",
+          "file": "assets/chibi-stickers/14/04.png",
+          "emotion": "关心、警觉",
+          "description": "回头伸手邀请同行，另一手拿盾，迈出一步，神情警觉。",
+          "action": "回头伸手邀请同行，另一手拿盾，迈出一步，神情警觉。",
+          "width": 627,
+          "height": 627,
+          "sha256": "af985d4e28913d083a051cea5cc03a6014ed8377504b1067438e6b9790ffb8a7"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "妙愿",
+      "sheet": "assets/chibi-stickers/sheets/15.png",
+      "description": "束起黑发、蓝花纹围巾、米白蓝旅行衣，背包和卷垫，配锅、地图与食品袋。",
+      "images": [
+        {
+          "index": 1,
+          "type": "标准立绘",
+          "position": "top-left",
+          "name": "航路记录者",
+          "file": "assets/chibi-stickers/15/01.png",
+          "emotion": "平静",
+          "description": "站立携锅和行囊，双靴完整。",
+          "action": "站立携锅和行囊，双靴完整。",
+          "width": 627,
+          "height": 627,
+          "sha256": "199b9f804541174f054534665c1391d316e83c1041b036b7dd9124c6639e6aaa"
+        },
+        {
+          "index": 2,
+          "type": "表情包",
+          "position": "top-right",
+          "name": "饭已经好了",
+          "file": "assets/chibi-stickers/15/02.png",
+          "emotion": "开心、照料",
+          "description": "蹲着揭开汤锅，用勺照料食物，小白龙在身旁，人物双靴和龙尾可见。",
+          "action": "蹲着揭开汤锅，用勺照料食物，小白龙在身旁，人物双靴和龙尾可见。",
+          "width": 627,
+          "height": 627,
+          "sha256": "3a74e51a48805429978a4a73392235cf5be0ccc5ed6c53c73ff95e1ab21fe6a9"
+        },
+        {
+          "index": 3,
+          "type": "表情包",
+          "position": "bottom-left",
+          "name": "路线在这里",
+          "file": "assets/chibi-stickers/15/03.png",
+          "emotion": "认真",
+          "description": "盘腿坐着指向摊开的地图，小白龙趴在旁边，眉眼认真。",
+          "action": "盘腿坐着指向摊开的地图，小白龙趴在旁边，眉眼认真。",
+          "width": 627,
+          "height": 627,
+          "sha256": "7ab7f003e3c4517e14046732da549482746642a0d8609c08584d41bcca87e254"
+        },
+        {
+          "index": 4,
+          "type": "表情包",
+          "position": "bottom-right",
+          "name": "救命呀",
+          "file": "assets/chibi-stickers/15/04.png",
+          "emotion": "慌张",
+          "description": "抱住食品袋张嘴求助，另一只手抬起，锅与食物飞起，汗滴表现慌乱。",
+          "action": "抱住食品袋张嘴求助，另一只手抬起，锅与食物飞起，汗滴表现慌乱。",
+          "width": 627,
+          "height": 627,
+          "sha256": "5a9af38c87daad85153c388e32332fd0604f81c22a2b1cfb62394be8e8d88bf6"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "蔚蔚",
+      "sheet": "assets/chibi-stickers/sheets/16.png",
+      "description": "黑色侧辫、绿松石发饰，绿色银线绣边长衣裙，种囊、测杆和路标布带。",
+      "images": [
+        {
+          "index": 1,
+          "type": "标准立绘",
+          "position": "top-left",
+          "name": "野外引路法师",
+          "file": "assets/chibi-stickers/16/01.png",
+          "emotion": "平静",
+          "description": "站立拿测杆与种囊，裙下双鞋可见。",
+          "action": "站立拿测杆与种囊，裙下双鞋可见。",
+          "width": 627,
+          "height": 627,
+          "sha256": "18013d5c9ac423d03e803e92b2644e8380046cec02d5ca424a713e2bd5b93336"
+        },
+        {
+          "index": 2,
+          "type": "表情包",
+          "position": "top-right",
+          "name": "路铺好了",
+          "file": "assets/chibi-stickers/16/02.png",
+          "emotion": "开心、坚定",
+          "description": "闭眼笑着指路，另一手拿测杆，脚边出现小根系光纹。",
+          "action": "闭眼笑着指路，另一手拿测杆，脚边出现小根系光纹。",
+          "width": 627,
+          "height": 627,
+          "sha256": "186106449bcd80320cae110d1fe5738afe841216646c5deaed40d4e0b6b25c82"
+        },
+        {
+          "index": 3,
+          "type": "表情包",
+          "position": "bottom-left",
+          "name": "种下希望",
+          "file": "assets/chibi-stickers/16/03.png",
+          "emotion": "温柔、专注",
+          "description": "蹲着托起嫩芽，种囊靠近身体，手边有小绿光，双鞋露出。",
+          "action": "蹲着托起嫩芽，种囊靠近身体，手边有小绿光，双鞋露出。",
+          "width": 627,
+          "height": 627,
+          "sha256": "467cdb092acf2efebdb23f52c8974148f807a18a55da84abf13580c3a7beb436"
+        },
+        {
+          "index": 4,
+          "type": "表情包",
+          "position": "bottom-right",
+          "name": "别走错啦",
+          "file": "assets/chibi-stickers/16/04.png",
+          "emotion": "关心、提醒",
+          "description": "举布带并抬掌叫停，眉眼着急，惊叹号提示提醒。",
+          "action": "举布带并抬掌叫停，眉眼着急，惊叹号提示提醒。",
+          "width": 627,
+          "height": 627,
+          "sha256": "6f38402ae62a1687469a235069c3724df30d27378de438e65294179b1b3edf89"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "顾霆",
+      "sheet": "assets/chibi-stickers/sheets/17.png",
+      "description": "凌乱黑发、小麦肤色和褐色眼睛，铜黑绝缘工装、护臂和仪表，配导流杆与容量表。",
+      "images": [
+        {
+          "index": 1,
+          "type": "标准立绘",
+          "position": "top-left",
+          "name": "雷系工程法师",
+          "file": "assets/chibi-stickers/17/01.png",
+          "emotion": "平静",
+          "description": "站立持杆和仪表，双靴落地，杆端有小蓝弧。",
+          "action": "站立持杆和仪表，双靴落地，杆端有小蓝弧。",
+          "width": 627,
+          "height": 627,
+          "sha256": "c97f03516e69495e2359b2b1647fc9134a2c6ee9890f5b94898898be2f98e6f6"
+        },
+        {
+          "index": 2,
+          "type": "表情包",
+          "position": "top-right",
+          "name": "过载切掉了",
+          "file": "assets/chibi-stickers/17/02.png",
+          "emotion": "安心、认真",
+          "description": "低头确认容量表，另一手持杆，嘴边轻轻呼气。",
+          "action": "低头确认容量表，另一手持杆，嘴边轻轻呼气。",
+          "width": 627,
+          "height": 627,
+          "sha256": "4230a00215e8635b1c0999439c3f4954f6626e270c9ea1663c23b1992e0974ed"
+        },
+        {
+          "index": 3,
+          "type": "表情包",
+          "position": "bottom-left",
+          "name": "再核对一次",
+          "file": "assets/chibi-stickers/17/03.png",
+          "emotion": "专注",
+          "description": "蹲在左侧接头装置旁核对标记，双靴朝前，手持检查工具。",
+          "action": "蹲在左侧接头装置旁核对标记，双靴朝前，手持检查工具。",
+          "width": 627,
+          "height": 627,
+          "sha256": "9ccf64f3087cbf33693d890615d0709c5f317cfd13625f3ac38c671a5b4c6c68"
+        },
+        {
+          "index": 4,
+          "type": "表情包",
+          "position": "bottom-right",
+          "name": "你该休息了",
+          "file": "assets/chibi-stickers/17/04.png",
+          "emotion": "疲倦、困惑",
+          "description": "坐工具箱揉眼角，另一手拿仪表，两脚露出，汗滴表现疲惫。",
+          "action": "坐工具箱揉眼角，另一手拿仪表，两脚露出，汗滴表现疲惫。",
+          "width": 627,
+          "height": 627,
+          "sha256": "dec46913e8b8596ba4208f3347cdc61fd0217195ceedb1c0c21e4eea85febb06"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "甄没用",
+      "sheet": "assets/chibi-stickers/sheets/18.png",
+      "description": "黑发、黄铜单片镜和镜链，黑色朋克皮衣及红内衬，钥匙、算盘和装备箱。",
+      "images": [
+        {
+          "index": 1,
+          "type": "标准立绘",
+          "position": "top-left",
+          "name": "流动装备商",
+          "file": "assets/chibi-stickers/18/01.png",
+          "emotion": "平静",
+          "description": "站立拎装备箱，腰间钥匙和铜饰完整。",
+          "action": "站立拎装备箱，腰间钥匙和铜饰完整。",
+          "width": 627,
+          "height": 627,
+          "sha256": "b6151b8e3355aed91de3452effa71c0c5263cb83190392e74d95d069ea6eaf6d"
+        },
+        {
+          "index": 2,
+          "type": "表情包",
+          "position": "top-right",
+          "name": "这件准好用",
+          "file": "assets/chibi-stickers/18/02.png",
+          "emotion": "得意、热情",
+          "description": "眨眼展示齿轮小球，另一手叉腰，神情机灵。",
+          "action": "眨眼展示齿轮小球，另一手叉腰，神情机灵。",
+          "width": 627,
+          "height": 627,
+          "sha256": "5a45fdf64431d54561a33e033c1454bffe39bc22e7b385dd584ebea6651486a3"
+        },
+        {
+          "index": 3,
+          "type": "表情包",
+          "position": "bottom-left",
+          "name": "账算清楚了",
+          "file": "assets/chibi-stickers/18/03.png",
+          "emotion": "专注",
+          "description": "坐在箱上拨算盘，一只靴子翘起、另一只落下，目光专注。",
+          "action": "坐在箱上拨算盘，一只靴子翘起、另一只落下，目光专注。",
+          "width": 627,
+          "height": 627,
+          "sha256": "ef6b4b7827c03e2a3da58924aeb955c5a68bbef75be9c61e8b0eb8c494d07d33"
+        },
+        {
+          "index": 4,
+          "type": "表情包",
+          "position": "bottom-right",
+          "name": "还有这种用法",
+          "file": "assets/chibi-stickers/18/04.png",
+          "emotion": "惊讶、脑洞",
+          "description": "蹲着观察展开的机关箱，双掌打开，两只靴子露在身前，问号表现惊奇。",
+          "action": "蹲着观察展开的机关箱，双掌打开，两只靴子露在身前，问号表现惊奇。",
+          "width": 627,
+          "height": 627,
+          "sha256": "71719e380b39c5d611967c50155db83d54163003a4ca73df4018afffe132eb36"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "曲柯",
+      "sheet": "assets/chibi-stickers/sheets/19.png",
+      "description": "金发红瞳、可见小尖牙，黑红金贵族外衣、白色领巾和戒指，双短刃配黑靴。",
+      "images": [
+        {
+          "index": 1,
+          "type": "标准立绘",
+          "position": "top-left",
+          "name": "贵族双刃手",
+          "file": "assets/chibi-stickers/19/01.png",
+          "emotion": "平静",
+          "description": "双刃低垂在身侧，站立展示衣装与双鞋。",
+          "action": "双刃低垂在身侧，站立展示衣装与双鞋。",
+          "width": 627,
+          "height": 627,
+          "sha256": "85c2f18821309693c631c220c321616fd6aca1dab5aeb2308c7a0b49b3860fe4"
+        },
+        {
+          "index": 2,
+          "type": "表情包",
+          "position": "top-right",
+          "name": "我先举个手",
+          "file": "assets/chibi-stickers/19/02.png",
+          "emotion": "开朗、俏皮",
+          "description": "笑着高举一手，眨眼并抬起一只脚，星光点缀。",
+          "action": "笑着高举一手，眨眼并抬起一只脚，星光点缀。",
+          "width": 627,
+          "height": 627,
+          "sha256": "dd167232c1c56a5e970645e7b43c66816e0034c381ce2ff467d0e037777ccfbe"
+        },
+        {
+          "index": 3,
+          "type": "表情包",
+          "position": "bottom-left",
+          "name": "准备好了",
+          "file": "assets/chibi-stickers/19/03.png",
+          "emotion": "自信、专注",
+          "description": "低重心握双刃，衣摆扬起，橙红小火光表现备战。",
+          "action": "低重心握双刃，衣摆扬起，橙红小火光表现备战。",
+          "width": 627,
+          "height": 627,
+          "sha256": "4ebaf615f517413f672f7b4a131fb3449540866c0be1a682a1f69807913c978c"
+        },
+        {
+          "index": 4,
+          "type": "表情包",
+          "position": "bottom-right",
+          "name": "说中了吗",
+          "file": "assets/chibi-stickers/19/04.png",
+          "emotion": "装无辜、心虚",
+          "description": "摊开双手耸肩，笑容带点心虚，脚尖收拢并有小汗滴。",
+          "action": "摊开双手耸肩，笑容带点心虚，脚尖收拢并有小汗滴。",
+          "width": 627,
+          "height": 627,
+          "sha256": "c101da91b446a3c0a7eb9a2a41f8f54bb85deb90a0fe063c4f2f7788e47271dd"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "谢寄风",
+      "sheet": "assets/chibi-stickers/sheets/20.png",
+      "description": "黑色短发、灰蓝披肩，罗盘扣饰、旧邮袋和封蜡信件，配深色裤靴。",
+      "images": [
+        {
+          "index": 1,
+          "type": "标准立绘",
+          "position": "top-left",
+          "name": "认真送达",
+          "file": "assets/chibi-stickers/20/01.png",
+          "emotion": "平静",
+          "description": "站立拿着信件，邮袋在身侧，双靴完整。",
+          "action": "站立拿着信件，邮袋在身侧，双靴完整。",
+          "width": 627,
+          "height": 627,
+          "sha256": "50a2a67e4ab7bce1031b144e2b36ad05ea45a96ee7680bdb8ab2684b352bde41"
+        },
+        {
+          "index": 2,
+          "type": "表情包",
+          "position": "top-right",
+          "name": "你的信到了",
+          "file": "assets/chibi-stickers/20/02.png",
+          "emotion": "开心、得意",
+          "description": "笑着向前递信，迈出一步，披肩和风纹扬起。",
+          "action": "笑着向前递信，迈出一步，披肩和风纹扬起。",
+          "width": 627,
+          "height": 627,
+          "sha256": "502c6b84167d3162f09bdb2b2522455279d2cfadbc616585b7443a6c51ff21d5"
+        },
+        {
+          "index": 3,
+          "type": "表情包",
+          "position": "bottom-left",
+          "name": "让我找一下",
+          "file": "assets/chibi-stickers/20/03.png",
+          "emotion": "着急、专注",
+          "description": "蹲着翻邮袋，少量信件飞起，两只靴子可见，眉眼认真。",
+          "action": "蹲着翻邮袋，少量信件飞起，两只靴子可见，眉眼认真。",
+          "width": 627,
+          "height": 627,
+          "sha256": "f428a68b25a92745ac23e6b844b1b4f980214783777130ac2e873c3ab88ba9c2"
+        },
+        {
+          "index": 4,
+          "type": "表情包",
+          "position": "bottom-right",
+          "name": "我可没迟到",
+          "file": "assets/chibi-stickers/20/04.png",
+          "emotion": "心虚、俏皮",
+          "description": "挠后脑并举起回执，眨眼笑，汗滴表现心虚。",
+          "action": "挠后脑并举起回执，眨眼笑，汗滴表现心虚。",
+          "width": 627,
+          "height": 627,
+          "sha256": "fe1896ce996f099d8c4aa11ab6e2f4504187b4ab60abcbfca0abd2f25c0a7a67"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "莫问",
+      "sheet": "assets/chibi-stickers/sheets/21.png",
+      "description": "低束黑发和短须、深灰破旧斗篷及粗布衣，竹篮行囊、葫芦和短靴。",
+      "images": [
+        {
+          "index": 1,
+          "type": "标准立绘",
+          "position": "top-left",
+          "name": "神秘路人",
+          "file": "assets/chibi-stickers/21/01.png",
+          "emotion": "平静",
+          "description": "站立提行囊和葫芦，双靴落地，表情悠闲。",
+          "action": "站立提行囊和葫芦，双靴落地，表情悠闲。",
+          "width": 627,
+          "height": 627,
+          "sha256": "83808275c33f5d76a2f8ad5aa3e1ff8f029d1bee6a0856580090e02be0e63a54"
+        },
+        {
+          "index": 2,
+          "type": "表情包",
+          "position": "top-right",
+          "name": "先看个热闹",
+          "file": "assets/chibi-stickers/21/02.png",
+          "emotion": "悠闲、坏笑",
+          "description": "盘腿坐地托脸，斜眼坏笑，行囊放在旁边。",
+          "action": "盘腿坐地托脸，斜眼坏笑，行囊放在旁边。",
+          "width": 627,
+          "height": 627,
+          "sha256": "429cb527a677de9502a05143e94bc2c5b451609e65b3bd029dbbf49b4d57a893"
+        },
+        {
+          "index": 3,
+          "type": "表情包",
+          "position": "bottom-left",
+          "name": "这也拿得出",
+          "file": "assets/chibi-stickers/21/03.png",
+          "emotion": "得意、神秘",
+          "description": "从篮中拿出一条鱼，另一手扶篮，眨眼显摆，双鞋露出。",
+          "action": "从篮中拿出一条鱼，另一手扶篮，眨眼显摆，双鞋露出。",
+          "width": 627,
+          "height": 627,
+          "sha256": "bf7d6fc24a4429bd87c1a752a161e24e949896251035256de3dea377ddeb6a10"
+        },
+        {
+          "index": 4,
+          "type": "表情包",
+          "position": "bottom-right",
+          "name": "该换边了",
+          "file": "assets/chibi-stickers/21/04.png",
+          "emotion": "不满、提醒",
+          "description": "双手叉腰，皱眉向侧方迈步，怒气符号表现不满。",
+          "action": "双手叉腰，皱眉向侧方迈步，怒气符号表现不满。",
+          "width": 627,
+          "height": 627,
+          "sha256": "82b28fc6af3faf432d93089af6035504cd00f4502d670c45eb1e51c65f38516d"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "江照明",
+      "sheet": "assets/chibi-stickers/sheets/22.png",
+      "description": "黑色短发、白海蓝金轻甲衣，修长佩剑、旧航灯和短靴。",
+      "images": [
+        {
+          "index": 1,
+          "type": "标准立绘",
+          "position": "top-left",
+          "name": "海路剑客",
+          "file": "assets/chibi-stickers/22/01.png",
+          "emotion": "平静",
+          "description": "站立持剑和灯，衣摆与双靴完整。",
+          "action": "站立持剑和灯，衣摆与双靴完整。",
+          "width": 627,
+          "height": 627,
+          "sha256": "ddc82a8be3f46adb78d82a3e64506f4957a8694675884db689ced6989c21d391"
+        },
+        {
+          "index": 2,
+          "type": "表情包",
+          "position": "top-right",
+          "name": "这边是归途",
+          "file": "assets/chibi-stickers/22/02.png",
+          "emotion": "自信、关心",
+          "description": "笑着指向归途，航灯挂在另一手，向前迈步并有小水光。",
+          "action": "笑着指向归途，航灯挂在另一手，向前迈步并有小水光。",
+          "width": 627,
+          "height": 627,
+          "sha256": "879f2a206627085d7927cc47c398ea8e696a12a4f6699f3b5bb09d67bb6e33c8"
+        },
+        {
+          "index": 3,
+          "type": "表情包",
+          "position": "bottom-left",
+          "name": "剑要够快",
+          "file": "assets/chibi-stickers/22/03.png",
+          "emotion": "专注、坚定",
+          "description": "压低重心挥短剑弧，海蓝衣摆扬起，水纹围在脚边。",
+          "action": "压低重心挥短剑弧，海蓝衣摆扬起，水纹围在脚边。",
+          "width": 627,
+          "height": 627,
+          "sha256": "2c428672d20d73ae51d6ba3daef01dbddf2bfc6153b6a640d44f790933fb8131"
+        },
+        {
+          "index": 4,
+          "type": "表情包",
+          "position": "bottom-right",
+          "name": "灯还可以修",
+          "file": "assets/chibi-stickers/22/04.png",
+          "emotion": "认真、无奈",
+          "description": "盘腿坐着修航灯，手持小工具，两只鞋向前露出。",
+          "action": "盘腿坐着修航灯，手持小工具，两只鞋向前露出。",
+          "width": 627,
+          "height": 627,
+          "sha256": "b3b91111546bc22dfc171c6fd95522df49fc0459863dd2972ec4221daa615413"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "小语",
+      "sheet": "assets/chibi-stickers/sheets/23.png",
+      "description": "黑短发、金发夹、红领带和蓝短披风，白色短外套、棕裤和笔记本。",
+      "images": [
+        {
+          "index": 1,
+          "type": "标准立绘",
+          "position": "top-left",
+          "name": "团队发言者",
+          "file": "assets/chibi-stickers/23/01.png",
+          "emotion": "自然、开心",
+          "description": "开心张嘴抱着笔记本，双鞋完整。",
+          "action": "开心张嘴抱着笔记本，双鞋完整。",
+          "width": 627,
+          "height": 627,
+          "sha256": "9e09ae5e46737ac47e1df5f66b455f7b951e8f787cd9609cd3d88add955f7fa5"
+        },
+        {
+          "index": 2,
+          "type": "表情包",
+          "position": "top-right",
+          "name": "你先讲完",
+          "file": "assets/chibi-stickers/23/02.png",
+          "emotion": "认真、关心",
+          "description": "抬掌示意先说，另一手抱本，眉眼认真，问号表现倾听。",
+          "action": "抬掌示意先说，另一手抱本，眉眼认真，问号表现倾听。",
+          "width": 627,
+          "height": 627,
+          "sha256": "5a5df3f2acc53e367b5ff67402cff33f7ddebf9afb10d8e86408402a20cab274"
+        },
+        {
+          "index": 3,
+          "type": "表情包",
+          "position": "bottom-left",
+          "name": "证据在这里",
+          "file": "assets/chibi-stickers/23/03.png",
+          "emotion": "自信、兴奋",
+          "description": "眨眼举起打开的笔记本并举指说明，一只脚轻抬，蓝白光点点缀。",
+          "action": "眨眼举起打开的笔记本并举指说明，一只脚轻抬，蓝白光点点缀。",
+          "width": 627,
+          "height": 627,
+          "sha256": "ad45dc3511f5c82a1b2fa86dba8571142c143da22c9a8fea7ca9b26f6f4b8282"
+        },
+        {
+          "index": 4,
+          "type": "表情包",
+          "position": "bottom-right",
+          "name": "又要补记录",
+          "file": "assets/chibi-stickers/23/04.png",
+          "emotion": "无奈、忙乱",
+          "description": "坐在书堆上抓住飞纸，怀抱数本笔记，张嘴冒汗，两只鞋底可见。",
+          "action": "坐在书堆上抓住飞纸，怀抱数本笔记，张嘴冒汗，两只鞋底可见。",
+          "width": 627,
+          "height": 627,
+          "sha256": "48fb224303eda157d23ed2ae7b508d8aedeb6f1e26a98d34c1bc332bf65dee0c"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "晏执衡",
+      "sheet": "assets/chibi-stickers/sheets/24.png",
+      "description": "墨黑碎发、灰蓝大眼，哑光黑色高领战术衣、冷银拉链和皮带，指尖幽蓝电弧。",
+      "images": [
+        {
+          "index": 1,
+          "type": "标准立绘",
+          "position": "top-left",
+          "name": "鸣雷甲术师",
+          "file": "assets/chibi-stickers/24/01.png",
+          "emotion": "平静",
+          "description": "站立抬手，指尖和发梢有极小蓝弧，双靴可见。",
+          "action": "站立抬手，指尖和发梢有极小蓝弧，双靴可见。",
+          "width": 627,
+          "height": 627,
+          "sha256": "1714646afe98d5ce2cd589f9aa077b4e13792911c7cce0223cdc765a6378f6e4"
+        },
+        {
+          "index": 2,
+          "type": "表情包",
+          "position": "top-right",
+          "name": "开关由我",
+          "file": "assets/chibi-stickers/24/02.png",
+          "emotion": "冷静、掌控",
+          "description": "抬下巴伸食指施术，另一手收在背后，表情冷静。",
+          "action": "抬下巴伸食指施术，另一手收在背后，表情冷静。",
+          "width": 627,
+          "height": 627,
+          "sha256": "9d30cc20afbbebb07d7dc5d4abe1ee4625d7f602305d7ec4b647614f92ddca41"
+        },
+        {
+          "index": 3,
+          "type": "表情包",
+          "position": "bottom-left",
+          "name": "再检查一遍",
+          "file": "assets/chibi-stickers/24/03.png",
+          "emotion": "严谨、专注",
+          "description": "蹲在左侧供能装置旁，用工具检查接头，两只靴子朝前露出。",
+          "action": "蹲在左侧供能装置旁，用工具检查接头，两只靴子朝前露出。",
+          "width": 627,
+          "height": 627,
+          "sha256": "b440cb7cd564db5b1850fa6da323ed8fe874b58b83ea496a8ea6b3894e16e71b"
+        },
+        {
+          "index": 4,
+          "type": "表情包",
+          "position": "bottom-right",
+          "name": "计划偏了",
+          "file": "assets/chibi-stickers/24/04.png",
+          "emotion": "压抑的烦躁",
+          "description": "一手按额角，一手握拳，压低身体皱眉，蓝弧表现烦躁。",
+          "action": "一手按额角，一手握拳，压低身体皱眉，蓝弧表现烦躁。",
+          "width": 627,
+          "height": 627,
+          "sha256": "df36f77b6aa928cec658311d695019d026f3220b5dd2aead58b4aafe576aea54"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "墨默",
+      "sheet": "assets/chibi-stickers/sheets/25.png",
+      "description": "墨绿长发、灰色眼睛、黑紫法师长袍和紫饰，配短杖、封存匣与透明测片。",
+      "images": [
+        {
+          "index": 1,
+          "type": "标准立绘",
+          "position": "top-left",
+          "name": "影霜观测者",
+          "file": "assets/chibi-stickers/25/01.png",
+          "emotion": "平静",
+          "description": "站立持短杖和封存匣，双靴完整。",
+          "action": "站立持短杖和封存匣，双靴完整。",
+          "width": 627,
+          "height": 627,
+          "sha256": "25b0fce3b02a27358c85f040628c82053356e85b6af6ffb2a48fc7f4c5cccfe1"
+        },
+        {
+          "index": 2,
+          "type": "表情包",
+          "position": "top-right",
+          "name": "记录先保存",
+          "file": "assets/chibi-stickers/25/02.png",
+          "emotion": "认真、谨慎",
+          "description": "蹲着将透明测片放入封存匣，两只靴子并露在箱旁，目光专注。",
+          "action": "蹲着将透明测片放入封存匣，两只靴子并露在箱旁，目光专注。",
+          "width": 627,
+          "height": 627,
+          "sha256": "363836a64220c6dbfdb919256dab3ba4b71ff875c7fd1d19bad80ab37d1e57cf"
+        },
+        {
+          "index": 3,
+          "type": "表情包",
+          "position": "bottom-left",
+          "name": "隔离完成",
+          "file": "assets/chibi-stickers/25/03.png",
+          "emotion": "冷静、坚定",
+          "description": "站稳举短杖施放紫色霜弧，另一手持匣，小冰晶点缀。",
+          "action": "站稳举短杖施放紫色霜弧，另一手持匣，小冰晶点缀。",
+          "width": 627,
+          "height": 627,
+          "sha256": "c086bc565eaf0f15c9bdfba8a8bc92d81954209cbdddaa1958db8d3be96d07cb"
+        },
+        {
+          "index": 4,
+          "type": "表情包",
+          "position": "bottom-right",
+          "name": "我听见了",
+          "file": "assets/chibi-stickers/25/04.png",
+          "emotion": "温柔但克制",
+          "description": "坐着把匣放在膝前，侧头轻笑并伸出一手，两只靴子露出。",
+          "action": "坐着把匣放在膝前，侧头轻笑并伸出一手，两只靴子露出。",
+          "width": 627,
+          "height": 627,
+          "sha256": "3b42d3aac6f70c230229be8fb14b28237ed6150315e0c2fa1444294476fd85e6"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "白阅尘",
+      "sheet": "assets/chibi-stickers/sheets/26.png",
+      "description": "自然裸毛橘色虎斑猫，圆头、奶白胸腹和四爪、完整蓬松长尾，琥珀猫瞳带轻微蓝光。",
+      "images": [
+        {
+          "index": 1,
+          "type": "标准立绘",
+          "position": "top-left",
+          "name": "故事阅读者",
+          "file": "assets/chibi-stickers/26/01.png",
+          "emotion": "自然",
+          "description": "自然坐着，前后爪与长尾完整，无衣服和饰品。",
+          "action": "自然坐着，前后爪与长尾完整，无衣服和饰品。",
+          "width": 627,
+          "height": 627,
+          "sha256": "cf309a9f1342cfbb510d01cec6ba3e78b70912649e8434578278a762bb0b4786"
+        },
+        {
+          "index": 2,
+          "type": "表情包",
+          "position": "top-right",
+          "name": "别打扰我",
+          "file": "assets/chibi-stickers/26/02.png",
+          "emotion": "炸毛、哈气",
+          "description": "弓背炸毛、飞机耳，四爪着地，张嘴哈气，尾巴竖起。",
+          "action": "弓背炸毛、飞机耳，四爪着地，张嘴哈气，尾巴竖起。",
+          "width": 627,
+          "height": 627,
+          "sha256": "b16e0ba29a73da8e73a66a73d7be557dfc030e04b6449aff5fa90db4892028ce"
+        },
+        {
+          "index": 3,
+          "type": "表情包",
+          "position": "bottom-left",
+          "name": "故事真有趣",
+          "file": "assets/chibi-stickers/26/03.png",
+          "emotion": "好奇、专注",
+          "description": "趴在打开的书旁，用前爪压住书角，眼睛睁圆，后身和尾巴完整。",
+          "action": "趴在打开的书旁，用前爪压住书角，眼睛睁圆，后身和尾巴完整。",
+          "width": 627,
+          "height": 627,
+          "sha256": "20943a33dfcc8fa477609be3b265894e794aa9d0e1f8fc924a45031a0eec6db3"
+        },
+        {
+          "index": 4,
+          "type": "表情包",
+          "position": "bottom-right",
+          "name": "蹭口饭吧",
+          "file": "assets/chibi-stickers/26/04.png",
+          "emotion": "开心、期待",
+          "description": "坐着用前爪抱空碗，露出粉色后爪垫，开心张嘴，长尾卷在身侧。",
+          "action": "坐着用前爪抱空碗，露出粉色后爪垫，开心张嘴，长尾卷在身侧。",
+          "width": 627,
+          "height": 627,
+          "sha256": "62d3d91d161a8e8b7afe0d751b59cb53188520067838cc3f94c179818e502c72"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "赫利俄斯",
+      "sheet": "assets/chibi-stickers/sheets/27.png",
+      "description": "黑发与黄色挑染、金褐大眼，黑金外衣和米白内衬，誓剑断昼与黑靴；不戴眼镜。",
+      "images": [
+        {
+          "index": 1,
+          "type": "标准立绘",
+          "position": "top-left",
+          "name": "律学院见习生",
+          "file": "assets/chibi-stickers/27/01.png",
+          "emotion": "平静",
+          "description": "站立扶剑，略带自信微笑，双靴完整。",
+          "action": "站立扶剑，略带自信微笑，双靴完整。",
+          "width": 627,
+          "height": 627,
+          "sha256": "c74f55116caae81336b5abc2b34d95c42ec2333ad380bd78f91a3b13c6cfb17e"
+        },
+        {
+          "index": 2,
+          "type": "表情包",
+          "position": "top-right",
+          "name": "叫我赫神",
+          "file": "assets/chibi-stickers/27/02.png",
+          "emotion": "得意、开心",
+          "description": "一手叉腰，一手竖拇指，眨眼笑，金色星光表现得意。",
+          "action": "一手叉腰，一手竖拇指，眨眼笑，金色星光表现得意。",
+          "width": 627,
+          "height": 627,
+          "sha256": "14e62c698de5dec331b48c1bea8cc5ce0e0090941575e413f1a67d632d2236ec"
+        },
+        {
+          "index": 3,
+          "type": "表情包",
+          "position": "bottom-left",
+          "name": "我可没输",
+          "file": "assets/chibi-stickers/27/03.png",
+          "emotion": "嘴硬、恼火",
+          "description": "抱胸鼓脸侧头，一只脚跺出小冲击线，怒气符号表现嘴硬。",
+          "action": "抱胸鼓脸侧头，一只脚跺出小冲击线，怒气符号表现嘴硬。",
+          "width": 627,
+          "height": 627,
+          "sha256": "b76c21c52a3b079c50d199f2ef450f5c8a2e0288091e0010c1fa012f5a4787ca"
+        },
+        {
+          "index": 4,
+          "type": "表情包",
+          "position": "bottom-right",
+          "name": "断昼出鞘",
+          "file": "assets/chibi-stickers/27/04.png",
+          "emotion": "认真、专注",
+          "description": "低重心握住断昼，剑身横向完整，金色剑弧环绕，神情专注。",
+          "action": "低重心握住断昼，剑身横向完整，金色剑弧环绕，神情专注。",
+          "width": 627,
+          "height": 627,
+          "sha256": "3aa2194deabf2a3d90f0e16d0a10213982491841ec64d3b65b537240df943abf"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "环",
+      "sheet": "assets/chibi-stickers/sheets/28.png",
+      "description": "普通人形黑色短发、灰褐眼睛，浅色衬衫、灰绿旧外套和圆环衣扣，深灰裤、旧棕靴。",
+      "images": [
+        {
+          "index": 1,
+          "type": "标准立绘",
+          "position": "top-left",
+          "name": "温和巡视者",
+          "file": "assets/chibi-stickers/28/01.png",
+          "emotion": "平静",
+          "description": "双手靠近衣袋自然站立，双靴完整，目光温和。",
+          "action": "双手靠近衣袋自然站立，双靴完整，目光温和。",
+          "width": 627,
+          "height": 627,
+          "sha256": "455789ab002bf9a8b18dfabdc1c615eb42d3200ee8dd9bcc93fb67335ad0cb53"
+        },
+        {
+          "index": 2,
+          "type": "表情包",
+          "position": "top-right",
+          "name": "这个不能答",
+          "file": "assets/chibi-stickers/28/02.png",
+          "emotion": "歉意、谨慎",
+          "description": "抬掌谨慎拒答，另一手放胸前，眉眼歉意，有小汗滴。",
+          "action": "抬掌谨慎拒答，另一手放胸前，眉眼歉意，有小汗滴。",
+          "width": 627,
+          "height": 627,
+          "sha256": "a7987aed447ac7fc53bc68fecae504c787831ef8f0c3756cdfc29f2cc90b203e"
+        },
+        {
+          "index": 3,
+          "type": "表情包",
+          "position": "bottom-left",
+          "name": "我先看看",
+          "file": "assets/chibi-stickers/28/03.png",
+          "emotion": "好奇、专注",
+          "description": "蹲着观察一片普通叶子，另一手扶膝，两只鞋露出，问号表现思索。",
+          "action": "蹲着观察一片普通叶子，另一手扶膝，两只鞋露出，问号表现思索。",
+          "width": 627,
+          "height": 627,
+          "sha256": "9b44cf1f2ed35d90d885fda4478d744a8cb361d37af8941bde5617257d1d746b"
+        },
+        {
+          "index": 4,
+          "type": "表情包",
+          "position": "bottom-right",
+          "name": "一起处理吧",
+          "file": "assets/chibi-stickers/28/04.png",
+          "emotion": "关心、坚定",
+          "description": "笑着向前伸手邀请，另一手指向身侧，向前迈步，星光表现鼓励。",
+          "action": "笑着向前伸手邀请，另一手指向身侧，向前迈步，星光表现鼓励。",
+          "width": 627,
+          "height": 627,
+          "sha256": "ac2d97aa8b098d7109e82b2e49db8534ed2c5f9e588ff42db848edd2c61d1fc7"
+        }
+      ]
+    }
+  ],
+  "archive": "assets/chibi-stickers/complete.zip"
+}

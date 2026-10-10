@@ -10,6 +10,18 @@ from fontTools.ttLib import TTFont
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'docs/assets'
 
+def chibi_preview(picture):
+    """Remove empty quadrant padding while retaining the whole pose and true alpha."""
+    image = picture.convert('RGBA')
+    bounds = image.getchannel('A').point(lambda a: 255 if a > 24 else 0).getbbox()
+    if not bounds:
+        raise ValueError('Empty chibi pose')
+    left, top, right, bottom = bounds
+    side = max(right-left, bottom-top) + 32
+    x = (left+right-side)//2
+    y = (top+bottom-side)//2
+    return image.crop((x,y,x+side,y+side))
+
 def prepare_design_assets():
     background_dir = OUT / 'backgrounds'
     background_dir.mkdir(parents=True, exist_ok=True)
@@ -59,9 +71,28 @@ def prepare_design_assets():
                     with Image.open(source) as picture:
                         if picture.width != picture.height:
                             raise ValueError(f'Avatar must be square: {source}')
-                        image = picture.convert('RGBA' if directory == 'chibi-avatars' else 'RGB')
+                        image = chibi_preview(picture) if directory == 'chibi-avatars' else picture.convert('RGB')
                         image.thumbnail((width, width), Image.Resampling.LANCZOS)
                         image.save(target, 'WEBP', quality=quality, method=6)
+
+    sticker_manifest = ROOT / 'content/chibi-stickers.json'
+    if sticker_manifest.exists():
+        for person in json.loads(sticker_manifest.read_text(encoding='utf-8'))['characters']:
+            ident = f'{person["id"]:02}'
+            directory = OUT / 'chibi-stickers' / ident
+            directory.mkdir(parents=True, exist_ok=True)
+            for pose in person['images']:
+                source = ROOT / pose['file']
+                native = directory / f'{pose["index"]:02}.png'
+                if not native.exists() or native.read_bytes() != source.read_bytes():
+                    shutil.copyfile(source,native)
+                for suffix, width, quality in (('', 627, 92), ('-256', 256, 87)):
+                    target = directory / f'{pose["index"]:02}{suffix}.webp'
+                    if not target.exists() or source.stat().st_mtime > target.stat().st_mtime:
+                        with Image.open(source) as picture:
+                            image = chibi_preview(picture)
+                            image.thumbnail((width,width), Image.Resampling.LANCZOS)
+                            image.save(target,'WEBP',quality=quality,method=4)
 
     # Preserve complete chapter compositions, including on small screens.
     chapter_manifest = ROOT / 'content/chapter-art.json'
