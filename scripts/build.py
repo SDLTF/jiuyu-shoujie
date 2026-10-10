@@ -27,15 +27,26 @@ def save(path, value):
 def asset_version(name):
     return hashlib.sha256((OUT / "assets" / name).read_bytes()).hexdigest()[:10]
 
-def avatar_url(ident, suffix=""):
-    name = f'avatars/{ident}{suffix}.webp'
+def avatar_url(ident, suffix="", style="original"):
+    directory = 'chibi-avatars' if style == 'chibi' else 'avatars'
+    name = f'{directory}/{ident}{suffix}.webp'
     return name, asset_version(name)
+
+def avatar_sources(ident, prefix="../", style="original"):
+    small, small_version = avatar_url(ident, "-256", style)
+    medium, medium_version = avatar_url(ident, "-512", style)
+    src = f'{prefix}assets/{medium}?v={medium_version}'
+    srcset = f'{prefix}assets/{small}?v={small_version} 256w, {src} 512w'
+    return src, srcset
+
+def avatar_switch():
+    return '''<div class="avatar-switch" role="group" aria-label="头像风格" hidden><span class="avatar-switch-label">头像风格</span><div class="avatar-switch-options"><button type="button" data-avatar-choice="original" aria-pressed="true">原版</button><button type="button" data-avatar-choice="chibi" aria-pressed="false">Q版</button></div></div>'''
 
 def avatar(person, prefix="../", loading='loading="lazy"', sizes='(max-width: 640px) 40vw, (max-width: 1100px) 25vw, 220px'):
     ident = person["id"]
-    small, small_version = avatar_url(ident, "-256")
-    medium, medium_version = avatar_url(ident, "-512")
-    return f'<span class="avatar-window"><img src="{prefix}assets/{medium}?v={medium_version}" srcset="{prefix}assets/{small}?v={small_version} 256w, {prefix}assets/{medium}?v={medium_version} 512w" sizes="{sizes}" alt="{escape(person["name"])}头像" width="512" height="512" {loading} decoding="async"></span>'
+    original, original_set = avatar_sources(ident, prefix)
+    chibi, chibi_set = avatar_sources(ident, prefix, 'chibi')
+    return f'<span class="avatar-window" data-avatar-style="original"><img data-avatar data-avatar-name="{escape(person["name"])}" data-original-src="{original}" data-original-srcset="{original_set}" data-chibi-src="{chibi}" data-chibi-srcset="{chibi_set}" src="{original}" srcset="{original_set}" sizes="{sizes}" alt="{escape(person["name"])}头像" width="512" height="512" {loading} decoding="async"></span>'
 
 def image_viewer(title="人物展示卡", navigation=False, original_label="查看原始 PNG"):
     controls = '<div class="viewer-navigation" aria-label="图片切换"><button id="viewer-prev" type="button">← 上一幅</button><span id="viewer-position" aria-live="polite"></span><button id="viewer-next" type="button">下一幅 →</button></div>' if navigation else ''
@@ -289,7 +300,7 @@ def build():
         loading = 'fetchpriority="high"' if i < 4 else 'loading="lazy"'
         cards.append(f'''<article class="character-card character-tile" data-search="{name} {real}"><a class="tile-link" href="{ident}.html" aria-label="查看{name}的展示卡和个人资料"><span class="tile-number">{ident}</span>{avatar(person, loading=loading)}<h2>{name}</h2><span class="tile-caption">查看人物资料</span></a></article>''')
     gallery = f'''<div class="page-shell gallery-shell"><a class="gallery-world-link" href="../world/">← 返回世界观</a><div class="page-heading"><p class="eyebrow">CHARACTER ARCHIVE / 人物档案</p><h1>人物设定图集</h1><p>从头像认识同行者，进入档案查看展示卡、专属背景与个人资料。</p></div>
-<div class="gallery-tools"><label class="search-field"><span aria-hidden="true">⌕</span><input id="character-search" type="search" placeholder="搜索角色名或原名" aria-label="搜索角色名或原名" autocomplete="off"></label><span class="gallery-count" aria-live="polite"><strong id="character-count">{len(characters)}</strong> / {len(characters)} 位角色</span></div>
+<div class="gallery-tools"><label class="search-field"><span aria-hidden="true">⌕</span><input id="character-search" type="search" placeholder="搜索角色名或原名" aria-label="搜索角色名或原名" autocomplete="off"></label>{avatar_switch()}<span class="gallery-count" aria-live="polite"><strong id="character-count">{len(characters)}</strong> / {len(characters)} 位角色</span></div>
 <div class="avatar-grid">{''.join(cards)}</div><p id="no-results" class="empty-results" hidden>没有找到对应角色，换个名字试试。</p></div>'''
     save(OUT / "gallery/index.html", frame("人物设定图集", gallery, "../", "gallery", route="gallery/"))
 
@@ -306,6 +317,9 @@ def build():
         avatar_name, avatar_version = avatar_url(ident)
         avatar_full = f'../assets/{avatar_name}?v={avatar_version}'
         avatar_raw = escape(RAW_URL + person['avatar']['original'])
+        chibi_name, chibi_version = avatar_url(ident, style='chibi')
+        chibi_full = f'../assets/{chibi_name}?v={chibi_version}'
+        chibi_raw = escape(RAW_URL + person['avatar']['chibi'])
 
         with Image.open(ROOT / f'assets/character-backgrounds/{ident}.png') as picture:
             art_width, art_height = picture.size
@@ -320,8 +334,8 @@ def build():
         quote = f'<blockquote class="profile-quote">{escape(profile["quote"])}</blockquote>' if profile['quote'] else ''
         previous, following = characters[(index - 1) % len(characters)], characters[(index + 1) % len(characters)]
         body = f'''<section class="character-scene" aria-label="{name}专属场景"><picture class="character-scene-art"><source media="(max-width: 640px)" srcset="{art_mobile}"><img src="{art}" alt="{name}专属场景插画" width="{art_width}" height="{art_height}" fetchpriority="high"></picture><div class="scene-shade" aria-hidden="true"></div><div class="page-shell scene-content"><nav class="breadcrumbs" aria-label="位置"><a href="./">人物图集</a><span aria-hidden="true">/</span><span>{name}</span></nav>
-<header class="profile-heading"><div class="profile-avatar">{avatar(person, loading='fetchpriority="high"', sizes='94px')}</div><div class="profile-heading-copy"><p class="eyebrow">九域守界 / 人物档案 {ident}</p><h1>{name}</h1><p class="profile-name-line">{escape(profile['name_line'])}</p><div class="profile-basic">{basic}</div></div></header>{quote}
-<div class="scene-actions"><div class="scene-action-group"><button type="button" class="button secondary image-open" data-image="{art}" data-name="{name} · 专属场景" data-kind="专属场景插画" data-original="{art_raw}">查看专属大图 ↗</button><a href="{art_raw}" target="_blank" rel="noopener" class="scene-original">背景原图</a></div><div class="scene-action-group"><button type="button" class="button secondary image-open avatar-open" data-image="{avatar_full}" data-name="{name} · 人物头像" data-kind="人物头像" data-original="{avatar_raw}">查看人物头像 ↗</button><a href="{avatar_raw}" target="_blank" rel="noopener" class="scene-original">头像原图</a></div></div></div></section><div class="page-shell character-profile">
+<header class="profile-heading"><div class="profile-avatar">{avatar(person, loading='fetchpriority="high"', sizes='94px')}</div><div class="profile-heading-copy"><p class="eyebrow">九域守界 / 人物档案 {ident}</p><h1>{name}</h1><p class="profile-name-line">{escape(profile['name_line'])}</p><div class="profile-basic">{basic}</div></div></header>{avatar_switch()}{quote}
+<div class="scene-actions"><div class="scene-action-group"><button type="button" class="button secondary image-open" data-image="{art}" data-name="{name} · 专属场景" data-kind="专属场景插画" data-original="{art_raw}">查看专属大图 ↗</button><a href="{art_raw}" target="_blank" rel="noopener" class="scene-original">背景原图</a></div><div class="scene-action-group"><button type="button" class="button secondary image-open avatar-open" data-avatar-viewer data-avatar-name="{name}" data-original-image="{avatar_full}" data-chibi-image="{chibi_full}" data-original-source="{avatar_raw}" data-chibi-source="{chibi_raw}" data-image="{avatar_full}" data-name="{name} · 人物头像" data-kind="人物头像" data-original="{avatar_raw}">查看人物头像 ↗</button><a data-avatar-download data-original-source="{avatar_raw}" data-chibi-source="{chibi_raw}" href="{avatar_raw}" target="_blank" rel="noopener" class="scene-original">头像原图</a></div></div></div></section><div class="page-shell character-profile">
 <div class="profile-layout"><section class="dossier-section" aria-labelledby="dossier-title"><h2 id="dossier-title">人物展示卡</h2><button type="button" class="image-open dossier-image" data-image="{image}" data-name="{name}" data-original="{raw}" aria-label="放大{name}人物展示卡"><img src="{image}" alt="{name}完整人物展示卡" width="1774" height="887"><span class="image-hint">点击放大</span></button><div class="dossier-actions"><a class="button secondary" href="{image}" target="_blank" rel="noopener">打开完整图片</a><a class="button secondary" href="{raw}" target="_blank" rel="noopener">查看原始 PNG</a></div></section><section class="profile-info" aria-labelledby="profile-info-title"><h2 id="profile-info-title">个人资料</h2>{''.join(sections)}</section></div>
 <nav class="profile-pagination" aria-label="人物导航"><a href="{previous['id']}.html"><span>上一位</span>{escape(previous['name'])}</a><a class="back-to-gallery" href="./">全部人物</a><a href="{following['id']}.html"><span>下一位</span>{escape(following['name'])}</a></nav></div>{image_viewer('人物档案', navigation=True)}'''
         save(OUT / f'gallery/{ident}.html', frame(f'{person["name"]} · 人物资料', body, '../', 'gallery', route=f'gallery/{ident}.html', background=art))

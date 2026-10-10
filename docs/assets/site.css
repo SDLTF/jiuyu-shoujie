@@ -485,3 +485,21 @@ body{font-weight:400;font-kerning:normal;text-rendering:optimizeLegibility;-webk
 /* Each avatar is an independent square painting, shown without dossier cropping. */
 .scene-action-group{display:flex;align-items:center;flex-wrap:wrap;gap:14px;max-width:100%}
 .scene-action-group .scene-original{display:inline-flex;align-items:center;min-height:44px}
+
+/* The same avatar preference is available in the gallery and character archives. */
+.gallery-tools{flex-wrap:wrap}
+.gallery-tools .search-field{flex:1 1 220px}
+.avatar-switch{display:flex;align-items:center;gap:12px;flex-shrink:0;font:14px var(--sans)}
+.avatar-switch-label{color:var(--muted);white-space:nowrap}
+.avatar-switch-options{display:flex;padding:3px;border:1px solid #bba27280;border-radius:7px;background:#101b25db}
+.avatar-switch-options button{min-width:62px;min-height:44px;padding:6px 15px;border:0;border-radius:4px;background:transparent;color:var(--muted);transition:background .2s,color .2s}
+.avatar-switch-options button:hover{color:var(--ink)}
+.avatar-switch-options button[aria-pressed="true"]{background:var(--gold);color:var(--bg)}
+.avatar-window[data-avatar-style="chibi"]{border-radius:8px}
+.scene-content>.avatar-switch{width:max-content;max-width:100%;margin-top:22px}
+@media(max-width:640px){
+ .gallery-tools .search-field{flex-basis:100%}
+ .avatar-switch{gap:9px;font-size:13px}
+ .avatar-switch-options button{min-width:58px;min-height:44px;padding:6px 12px}
+ .scene-content>.avatar-switch{margin-top:18px}
+}

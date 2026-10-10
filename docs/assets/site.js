@@ -1,5 +1,53 @@
 "use strict";
 
+const avatarSwitches = Array.from(document.querySelectorAll(".avatar-switch"));
+if (avatarSwitches.length) {
+  const storageKey = "jiuyu-avatar-style";
+  const choices = Array.from(document.querySelectorAll("[data-avatar-choice]"));
+  const images = Array.from(document.querySelectorAll("img[data-avatar]"));
+  const avatarViewers = Array.from(document.querySelectorAll("[data-avatar-viewer]"));
+  const downloads = Array.from(document.querySelectorAll("[data-avatar-download]"));
+  const applyStyle = (value) => {
+    const style = value === "chibi" ? "chibi" : "original";
+    const label = style === "chibi" ? "Q版头像" : "人物头像";
+    images.forEach(image => {
+      image.srcset = image.dataset[style + "Srcset"];
+      image.src = image.dataset[style + "Src"];
+      image.alt = image.dataset.avatarName + (style === "chibi" ? "Q版头像" : "头像");
+      image.parentElement.dataset.avatarStyle = style;
+    });
+    choices.forEach(button => button.setAttribute("aria-pressed", String(button.dataset.avatarChoice === style)));
+    avatarViewers.forEach(button => {
+      button.dataset.image = button.dataset[style + "Image"];
+      button.dataset.original = button.dataset[style + "Source"];
+      button.dataset.name = button.dataset.avatarName + " · " + label;
+      button.dataset.kind = label;
+      button.dataset.alt = button.dataset.avatarName + label;
+      button.textContent = "查看" + label + " ↗";
+    });
+    downloads.forEach(link => {
+      link.href = link.dataset[style + "Source"];
+      link.textContent = style === "chibi" ? "Q版原图" : "头像原图";
+    });
+  };
+  let savedStyle;
+  try { savedStyle = window.localStorage.getItem(storageKey); } catch {}
+  applyStyle(savedStyle);
+  avatarSwitches.forEach(control => { control.hidden = false; });
+  choices.forEach(button => button.addEventListener("click", () => {
+    const style = button.dataset.avatarChoice;
+    applyStyle(style);
+    try { window.localStorage.setItem(storageKey, style); } catch {}
+  }));
+  window.addEventListener("storage", event => {
+    if (event.key === storageKey || event.key === null) applyStyle(event.newValue);
+  });
+  // Restore the preference when returning to a page from the browser's history cache.
+  window.addEventListener("pageshow", () => {
+    try { applyStyle(window.localStorage.getItem(storageKey)); } catch {}
+  });
+}
+
 // Align incoming scene links after the chapter's fonts have settled.
 window.addEventListener("load", () => {
   const fragment = window.location.hash;

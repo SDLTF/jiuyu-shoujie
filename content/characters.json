@@ -51,7 +51,8 @@
       "quote": "“名字我记下了。你先喝口热的。”"
     },
     "avatar": {
-      "original": "assets/avatars/01.png"
+      "original": "assets/avatars/01.png",
+      "chibi": "assets/chibi-avatars/01.png"
     },
     "hero_framing": {
       "x": 18.602,
@@ -106,7 +107,8 @@
       "quote": "“治疗有效。现在，你愿意吗？”"
     },
     "avatar": {
-      "original": "assets/avatars/02.png"
+      "original": "assets/avatars/02.png",
+      "chibi": "assets/chibi-avatars/02.png"
     },
     "hero_framing": {
       "x": 20.011,
@@ -160,7 +162,8 @@
       "quote": "“这一段我来。下一拍，听你们的。”"
     },
     "avatar": {
-      "original": "assets/avatars/03.png"
+      "original": "assets/avatars/03.png",
+      "chibi": "assets/chibi-avatars/03.png"
     },
     "hero_framing": {
       "x": 18.038,
@@ -214,7 +217,8 @@
       "quote": "“能修。材料单你也得看。”"
     },
     "avatar": {
-      "original": "assets/avatars/04.png"
+      "original": "assets/avatars/04.png",
+      "chibi": "assets/chibi-avatars/04.png"
     },
     "hero_framing": {
       "x": 21.139,
@@ -268,7 +272,8 @@
       "quote": "“漂亮归漂亮，符也得贴稳。”"
     },
     "avatar": {
-      "original": "assets/avatars/05.png"
+      "original": "assets/avatars/05.png",
+      "chibi": "assets/chibi-avatars/05.png"
     },
     "hero_framing": {
       "x": 18.884,
@@ -322,7 +327,8 @@
       "quote": "“能砸的那个，你指给我。”"
     },
     "avatar": {
-      "original": "assets/avatars/06.png"
+      "original": "assets/avatars/06.png",
+      "chibi": "assets/chibi-avatars/06.png"
     },
     "hero_framing": {
       "x": 18.32,
@@ -376,7 +382,8 @@
       "quote": "“别急，先把呼吸放慢。”"
     },
     "avatar": {
-      "original": "assets/avatars/07.png"
+      "original": "assets/avatars/07.png",
+      "chibi": "assets/chibi-avatars/07.png"
     },
     "hero_framing": {
       "x": 18.038,
@@ -430,7 +437,8 @@
       "quote": "“来，选三个数字。”"
     },
     "avatar": {
-      "original": "assets/avatars/08.png"
+      "original": "assets/avatars/08.png",
+      "chibi": "assets/chibi-avatars/08.png"
     },
     "hero_framing": {
       "x": 18.602,
@@ -484,7 +492,8 @@
       "quote": "“莉莉。不是黑猫，也不是喂。”"
     },
     "avatar": {
-      "original": "assets/avatars/09.png"
+      "original": "assets/avatars/09.png",
+      "chibi": "assets/chibi-avatars/09.png"
     },
     "hero_framing": {
       "x": 19.166,
@@ -534,7 +543,8 @@
       "quote": "“乐温，今天也一起出发！”"
     },
     "avatar": {
-      "original": "assets/avatars/10.png"
+      "original": "assets/avatars/10.png",
+      "chibi": "assets/chibi-avatars/10.png"
     },
     "hero_framing": {
       "x": 18.038,
@@ -587,7 +597,8 @@
       "quote": "“等我探完路，再一起走。”"
     },
     "avatar": {
-      "original": "assets/avatars/11.png"
+      "original": "assets/avatars/11.png",
+      "chibi": "assets/chibi-avatars/11.png"
     },
     "hero_framing": {
       "x": 19.166,
@@ -641,7 +652,8 @@
       "quote": "“话可以乱说，名字别乱签。”"
     },
     "avatar": {
-      "original": "assets/avatars/12.png"
+      "original": "assets/avatars/12.png",
+      "chibi": "assets/chibi-avatars/12.png"
     },
     "hero_framing": {
       "x": 19.729,
@@ -695,7 +707,8 @@
       "quote": "“先交个朋友，再说喝哪一杯。”"
     },
     "avatar": {
-      "original": "assets/avatars/13.png"
+      "original": "assets/avatars/13.png",
+      "chibi": "assets/chibi-avatars/13.png"
     },
     "hero_framing": {
       "x": 18.038,
@@ -748,7 +761,8 @@
       "quote": "“这一次，我守到最后。”"
     },
     "avatar": {
-      "original": "assets/avatars/14.png"
+      "original": "assets/avatars/14.png",
+      "chibi": "assets/chibi-avatars/14.png"
     },
     "hero_framing": {
       "x": 20.857,
@@ -798,7 +812,8 @@
       "quote": "“小白，你愿意继续吗？”"
     },
     "avatar": {
-      "original": "assets/avatars/15.png"
+      "original": "assets/avatars/15.png",
+      "chibi": "assets/chibi-avatars/15.png"
     },
     "hero_framing": {
       "x": 20.857,
@@ -852,7 +867,8 @@
       "quote": "“我先去看。路线我留给你。”"
     },
     "avatar": {
-      "original": "assets/avatars/16.png"
+      "original": "assets/avatars/16.png",
+      "chibi": "assets/chibi-avatars/16.png"
     },
     "hero_framing": {
       "x": 19.448,
@@ -907,7 +923,8 @@
       "quote": "“先把人教会，再算工程完工。”"
     },
     "avatar": {
-      "original": "assets/avatars/17.png"
+      "original": "assets/avatars/17.png",
+      "chibi": "assets/chibi-avatars/17.png"
     },
     "hero_framing": {
       "x": 18.32,
@@ -961,7 +978,8 @@
       "quote": "“没用的是店名，东西包好用。”"
     },
     "avatar": {
-      "original": "assets/avatars/18.png"
+      "original": "assets/avatars/18.png",
+      "chibi": "assets/chibi-avatars/18.png"
     },
     "hero_framing": {
       "x": 21.984,
@@ -1015,7 +1033,8 @@
       "quote": "“我举手，是因为有个问题。”"
     },
     "avatar": {
-      "original": "assets/avatars/19.png"
+      "original": "assets/avatars/19.png",
+      "chibi": "assets/chibi-avatars/19.png"
     },
     "hero_framing": {
       "x": 19.448,
@@ -1069,7 +1088,8 @@
       "quote": "“邮资另算，回执不能少。”"
     },
     "avatar": {
-      "original": "assets/avatars/20.png"
+      "original": "assets/avatars/20.png",
+      "chibi": "assets/chibi-avatars/20.png"
     },
     "hero_framing": {
       "x": 22.266,
@@ -1123,7 +1143,8 @@
       "quote": "“哟，这边是不是赢得太顺了？”"
     },
     "avatar": {
-      "original": "assets/avatars/21.png"
+      "original": "assets/avatars/21.png",
+      "chibi": "assets/chibi-avatars/21.png"
     },
     "hero_framing": {
       "x": 18.602,
@@ -1177,7 +1198,8 @@
       "quote": "“剑要快，回家的路要亮。”"
     },
     "avatar": {
-      "original": "assets/avatars/22.png"
+      "original": "assets/avatars/22.png",
+      "chibi": "assets/chibi-avatars/22.png"
     },
     "hero_framing": {
       "x": 20.575,
@@ -1226,7 +1248,8 @@
       "quote": "“你先讲完，我得听明白。”"
     },
     "avatar": {
-      "original": "assets/avatars/23.png"
+      "original": "assets/avatars/23.png",
+      "chibi": "assets/chibi-avatars/23.png"
     },
     "hero_framing": {
       "x": 21.139,
@@ -1281,7 +1304,8 @@
       "quote": "“开关，为什么由你们决定？”"
     },
     "avatar": {
-      "original": "assets/avatars/24.png"
+      "original": "assets/avatars/24.png",
+      "chibi": "assets/chibi-avatars/24.png"
     },
     "hero_framing": {
       "x": 20.857,
@@ -1335,7 +1359,8 @@
       "quote": "“这是记录。原因还不知道。”"
     },
     "avatar": {
-      "original": "assets/avatars/25.png"
+      "original": "assets/avatars/25.png",
+      "chibi": "assets/chibi-avatars/25.png"
     },
     "hero_framing": {
       "x": 21.139,
@@ -1389,7 +1414,8 @@
       "quote": "“还没有结束。”"
     },
     "avatar": {
-      "original": "assets/avatars/26.png"
+      "original": "assets/avatars/26.png",
+      "chibi": "assets/chibi-avatars/26.png"
     },
     "hero_framing": {
       "x": 20.011,
@@ -1443,7 +1469,8 @@
       "quote": "“叫赫神可以。剑，你别乱碰。”"
     },
     "avatar": {
-      "original": "assets/avatars/27.png"
+      "original": "assets/avatars/27.png",
+      "chibi": "assets/chibi-avatars/27.png"
     },
     "hero_framing": {
       "x": 21.984,
@@ -1520,7 +1547,8 @@
       "quote": "“我可以不回答，但不能说假话。”"
     },
     "avatar": {
-      "original": "assets/avatars/28.png"
+      "original": "assets/avatars/28.png",
+      "chibi": "assets/chibi-avatars/28.png"
     },
     "hero_framing": {
       "x": 18.0,
