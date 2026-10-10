@@ -179,7 +179,31 @@
       "alt": "河堤旧石阶下，林砚与工人清出拱口和两道横槽，小语、韦侃、苏弥在较高处对照碑图，拱内仍被泥堵住。",
       "after": "“对上了。”林砚看过横槽和拱缘，“这里有旧泄水口。”",
       "generation_metadata": "assets/chapter-art/generation-prompts.json"
+    },
+    {
+      "id": "10-1",
+      "chapter": "010",
+      "caption": "水终于往河里走",
+      "original": "assets/chapter-art/10-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "125f4878c07d36e6250f9936f59656f2b4a99f0d97f6edbf1b056ad614952c5f",
+      "alt": "清障后的旧拱口持续向河里排出浑水，小语与韦侃、苏弥在高处笑起来，酥心糖照看撑木符札，林砚和工人在口外观察水流。",
+      "after": "小语笑起来。笑得很轻，接着又忍不住笑了一声。她一直怕自己高兴太早，怕让谁白等，可这会儿水就在眼前，响着，走着，她实在忍不住了。",
+      "generation_metadata": "assets/chapter-art/generation-prompts.json"
+    },
+    {
+      "id": "10-2",
+      "chapter": "010",
+      "caption": "水退以后，暗痕仍在",
+      "original": "assets/chapter-art/10-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "74a4f4c83ab711343d46fdb67dae32fd0dfb15f8fbeb93d3b1aaf04810207ceb",
+      "alt": "磨坊旧室水位降低，砖台与新的湿边露出，小语和墨默对照记录，原来坐姿的肩背暗痕仍伏在井壁上。",
+      "after": "小语慢慢打开册子，翻到那道旧轮廓旁。墨默把干托片移近，给她留出能搁纸的地方。她先写下此刻露出的砖缝和水位，又抬头看了一眼。",
+      "generation_metadata": "assets/chapter-art/generation-prompts.json"
     }
   ],
-  "provenance": "Chapters 1-6: nine user-supplied illustrations preserved unchanged. Chapters 7-9: six illustrations generated with built-in image_gen using existing artwork and character cards as references; full prompts and revisions are preserved in assets/chapter-art/generation-prompts.json."
+  "provenance": "Chapters 1-6: nine user-supplied illustrations preserved unchanged. Chapters 7-10: eight illustrations generated with built-in image_gen using existing artwork and character cards as references; full prompts and revisions are preserved in assets/chapter-art/generation-prompts.json."
 }

@@ -8,7 +8,7 @@
 
 [二创页面](https://sdltf.github.io/jiuyu-shoujie/fanworks/)收录粉丝的图片与文字作品，支持分类筛选、搜索、图片放大和长文字展开阅读。作品由站主收集后更新，每件作品保留创作者署名和描述。目前收录酥心糖的两张图片二创，描述分别为“神秘东方三人组”和“上课太无聊了于是嬷了三岛”，保留用户提供的完整 JPEG、PNG 原图。
 
-目前收录 28 位角色，新增[环（张瑞康）](https://sdltf.github.io/jiuyu-shoujie/gallery/28.html)。人物列表显示头像，点击后进入独立人物页面，查看完整展示卡和可阅读的个人资料；小说正文已发布九章：[第一章《交班以后》](https://sdltf.github.io/jiuyu-shoujie/chapters/001.html)、[第二章《春水不回头》](https://sdltf.github.io/jiuyu-shoujie/chapters/002.html)、[第三章《鱼汤还热着》](https://sdltf.github.io/jiuyu-shoujie/chapters/003.html)、[第四章《人已经出来了》](https://sdltf.github.io/jiuyu-shoujie/chapters/004.html)、[第五章《不回答的客人》](https://sdltf.github.io/jiuyu-shoujie/chapters/005.html)、[第六章《绳子的另一头》](https://sdltf.github.io/jiuyu-shoujie/chapters/006.html)、[第七章《早钟以后》](https://sdltf.github.io/jiuyu-shoujie/chapters/007.html)、[第八章《井壁上的旧纹》](https://sdltf.github.io/jiuyu-shoujie/chapters/008.html)、[第九章《石碑指向的地方》](https://sdltf.github.io/jiuyu-shoujie/chapters/009.html)。
+目前收录 28 位角色，新增[环（张瑞康）](https://sdltf.github.io/jiuyu-shoujie/gallery/28.html)。人物列表显示头像，点击后进入独立人物页面，查看完整展示卡和可阅读的个人资料；小说正文已发布十章：[第一章《交班以后》](https://sdltf.github.io/jiuyu-shoujie/chapters/001.html)、[第二章《春水不回头》](https://sdltf.github.io/jiuyu-shoujie/chapters/002.html)、[第三章《鱼汤还热着》](https://sdltf.github.io/jiuyu-shoujie/chapters/003.html)、[第四章《人已经出来了》](https://sdltf.github.io/jiuyu-shoujie/chapters/004.html)、[第五章《不回答的客人》](https://sdltf.github.io/jiuyu-shoujie/chapters/005.html)、[第六章《绳子的另一头》](https://sdltf.github.io/jiuyu-shoujie/chapters/006.html)、[第七章《早钟以后》](https://sdltf.github.io/jiuyu-shoujie/chapters/007.html)、[第八章《井壁上的旧纹》](https://sdltf.github.io/jiuyu-shoujie/chapters/008.html)、[第九章《石碑指向的地方》](https://sdltf.github.io/jiuyu-shoujie/chapters/009.html)、[第十章《水往河里走》](https://sdltf.github.io/jiuyu-shoujie/chapters/010.html)。
 
 创作大纲单独保存于 `content/outline.md`，包含完整剧情与结局。网站保留大纲页面与地址，但首页、导航、页脚和其他公开页面都不提供大纲入口，大纲页面不设置展开开关。直接知道地址的人仍可访问；这不是访问权限控制。
 
@@ -19,7 +19,7 @@
 - `content/outline.md`：故事大纲（含剧透）。
 - `content/chapters/`：小说正文，使用 Markdown 编写。
 - `content/chapter-art.json`：章节印象图与插入位置。按 `A-B` 编号，以对应正文段落作为定位；正文原稿无需添加图片标签。
-- `assets/chapter-art/`：第一至第六章使用用户提供的九张原始 PNG；第七至第九章各两张由内置 image_gen 绘制，提示词保存在 `generation-prompts.json`。网页保留完整构图，可点击放大；目录使用各章第一张图作缩略图。
+- `assets/chapter-art/`：第一至第六章使用用户提供的九张原始 PNG；第七至第十章各两张由内置 image_gen 绘制，提示词保存在 `generation-prompts.json`。网页保留完整构图，可点击放大；目录使用各章第一张图作缩略图。
 - `docs/assets/chapter-art/`：网站使用的完整、960 像素和 480 像素 WebP 版本；手机根据屏幕宽度加载合适版本。
 - `docs/`：已经生成的静态网站，GitHub Pages 从这里发布。
 - `scripts/build.py`：将内容生成网页，并为人物图片生成 WebP 浏览版本。图集和人物页的头像使用独立绘制的方形画像，保留完整头部构图。
