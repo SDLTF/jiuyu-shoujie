@@ -14,6 +14,9 @@
 - `assets/originals/`：28 张原始人物展示卡 PNG 图片；`28-generation.json` 保存环的展示卡提示词、画风参考和原生尺寸。
 - `content/outline.md`：故事大纲（含剧透）。
 - `content/chapters/`：小说正文，使用 Markdown 编写。
+- `content/chapter-art.json`：章节印象图与插入位置。按 `A-B` 编号，以对应正文段落作为定位；正文原稿无需添加图片标签。
+- `assets/chapter-art/`：用户提供的九张原始 PNG，第一至第四章各一张，第五章两张，第六章三张。网页保留完整构图，可点击放大；目录使用各章第一张图作缩略图。
+- `docs/assets/chapter-art/`：网站使用的完整、960 像素和 480 像素 WebP 版本；手机根据屏幕宽度加载合适版本。
 - `docs/`：已经生成的静态网站，GitHub Pages 从这里发布。
 - `scripts/build.py`：将内容生成网页，并为人物图片生成 WebP 浏览版本与头像预览。头像通过 CSS 显示展示卡中间的肖像，不改动原图。
 

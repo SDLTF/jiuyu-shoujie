@@ -1,0 +1,113 @@
+{
+  "images": [
+    {
+      "id": "1-1",
+      "chapter": "001",
+      "caption": "井边的水线",
+      "alt": "小语俯身观察井中水线，韦侃站在她身后，工人在磨坊门口加固支撑。",
+      "after": "她将指尖的光送近一点。第三道刻痕边缘发黑，水薄薄地铺上去。",
+      "original": "assets/chapter-art/1-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "fbfe973a7eeb4578e081f59b462561b9b4dad4c02340470a355f92e845f48d71",
+      "attachment_filename": "codex-clipboard-63b9e172-bb22-443a-b6e3-e4a5c4d7a63a.png"
+    },
+    {
+      "id": "2-1",
+      "chapter": "002",
+      "caption": "门外与田地",
+      "alt": "马丁获救后躺在搬运板上，小语在旁照看，彭湃举盾守住门口，远处春水流入田地。",
+      "after": "刚才那人离开田埂时，这些垄还是完整的。",
+      "original": "assets/chapter-art/2-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "ded1600339b4bcd0554e7c521d3aa1cb58ee0c61a17d234d1fb056a005a1e0f9",
+      "attachment_filename": "codex-clipboard-69120797-ee88-4de5-bce2-bba3eacce59e.png"
+    },
+    {
+      "id": "3-1",
+      "chapter": "003",
+      "caption": "鱼汤还热着",
+      "alt": "小语、韦侃、彭湃和妙愿在高处喝热鱼汤，妙愿为小白喂鱼，身后的低街仍在流水。",
+      "after": "妙愿往他旁边让了位置，把干粮包打开。彭湃坐下，先将碗放在膝间，才慢慢松开肩膀。",
+      "original": "assets/chapter-art/3-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "b2e3861e05084d4defd2bcd72a92ae8b096f59b3e10ea0115abb4af8df9b13c0",
+      "attachment_filename": "codex-clipboard-f138a307-3162-411e-bd13-511b24164074.png"
+    },
+    {
+      "id": "4-1",
+      "chapter": "004",
+      "caption": "并排的记录",
+      "alt": "旅店桌边，小语核对笔记与井壁暗痕的留痕，妙愿修补地图，小白伏在旁边，彭湃擦拭盾牌。",
+      "after": "小语把照护那页与留痕并排放好，低头看了很久。",
+      "original": "assets/chapter-art/4-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "33d8de667c636d226b27b4826f7769b60594c9bf352ac3b8f90a2aae8dbadf41",
+      "attachment_filename": "codex-clipboard-a4dbada0-90f2-4d03-b3a6-52253c9f23f9.png"
+    },
+    {
+      "id": "5-1",
+      "chapter": "005",
+      "caption": "旅店晚饭",
+      "alt": "小语、酥心糖、楚惊殊与妙愿同桌吃晚饭，甄没用在货箱旁整理器物，橘猫卧在箱盖上。",
+      "after": "橘猫往下看了一眼，终于伸直前腿。它慢慢下来吃完，又跳回原处，背朝甄没用坐着。",
+      "original": "assets/chapter-art/5-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "6a1c0b8ad070750606567a8b829302012acc49556fd32a3da4bcd26c35119bb8",
+      "attachment_filename": "codex-clipboard-f65eaf2f-9e6e-4814-99f6-216789fa9a4c.png"
+    },
+    {
+      "id": "5-2",
+      "chapter": "005",
+      "caption": "原二层廊口",
+      "alt": "小语在原二层栏边为新增的楼梯留痕，韦侃握着绳，彭湃提灯，环守在通向楼下的旧台阶上。",
+      "after": "她在旁边写下原二层廊口，又标了观察的位置。",
+      "original": "assets/chapter-art/5-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "feb9f113399f622ce9f33bb02ad56845f0887e2fdee42ae52b953a09f0f3dd0e",
+      "attachment_filename": "codex-clipboard-e03c1a81-5739-4793-b253-d8073db0f40d.png"
+    },
+    {
+      "id": "6-1",
+      "chapter": "006",
+      "caption": "墙缝后的走廊",
+      "alt": "彭湃停在掀开的墙板旁，小语与甄没用查看墙缝后重复的走廊，韦侃留意另一侧的楼梯。",
+      "after": "里面响起一声敲门。",
+      "original": "assets/chapter-art/6-1.png",
+      "width": 1671,
+      "height": 941,
+      "sha256": "562e9447c4300912b0e4a40079a5d7b79f4a3729f4b9356115073145ccfa56dc",
+      "attachment_filename": "codex-clipboard-ae0fad75-3c60-427a-a526-7b6a711b6ac7.png"
+    },
+    {
+      "id": "6-2",
+      "chapter": "006",
+      "caption": "绳子的另一头",
+      "alt": "小语握住救援绳，酥心糖压住朱砂符线，楚惊殊辨认牵引，绿狐狸引着提灯的阿卓沿台阶返回。",
+      "after": "阿卓低头看脚，慢慢挪回来。",
+      "original": "assets/chapter-art/6-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "92beb777013fdd197565f4842417b055d8ff8d302ff158771f5a7aa2448bb151",
+      "attachment_filename": "codex-clipboard-914934e3-259d-4837-bf65-06280185db6b.png"
+    },
+    {
+      "id": "6-3",
+      "chapter": "006",
+      "caption": "收回的绳与新记录",
+      "alt": "救援后小语和韦侃在桌边整理记录，妙愿递来水杯，环望着被封锁的楼梯，绳卷已收回桌上。",
+      "after": "小语低头，将夜间新记的几张纸理齐。",
+      "original": "assets/chapter-art/6-3.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "3fc507d01ee1f8bae80e921af6d586c8fc0620fc8ad37aff517a6dedff1dc4af",
+      "attachment_filename": "codex-clipboard-d4100c27-5209-4409-9589-958e28886bc8.png"
+    }
+  ],
+  "provenance": "User-supplied finished chapter illustrations; preserved without image edits."
+}

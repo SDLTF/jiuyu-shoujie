@@ -31,8 +31,8 @@ def avatar(person, prefix="../", loading='loading="lazy"'):
     style = f'--portrait-width:{crop["width"]}%;--portrait-left:{crop["left"]}%;--portrait-top:{crop["top"]}%'
     return f'<span class="avatar-window" style="{style}"><img src="{prefix}assets/thumbs/{person["id"]}.webp" alt="{escape(person["name"])}头像" width="960" height="480" {loading}></span>'
 
-def image_viewer():
-    return '''<dialog id="image-viewer" aria-labelledby="viewer-name"><div class="viewer-toolbar"><h2 id="viewer-name">人物展示卡</h2><div><button id="viewer-zoom" type="button" aria-pressed="false">放大细节</button><button id="viewer-close" type="button" aria-label="关闭图片">关闭 <span aria-hidden="true">×</span></button></div></div><div class="viewer-image-wrap"><img id="viewer-image" alt=""></div><div class="viewer-bottom"><p class="viewer-tip">放大后可滑动查看图片细节</p><a id="viewer-original" target="_blank" rel="noopener">查看原始 PNG</a></div></dialog>'''
+def image_viewer(title="人物展示卡"):
+    return '''<dialog id="image-viewer" aria-labelledby="viewer-name"><div class="viewer-toolbar"><h2 id="viewer-name">VIEWER_TITLE</h2><div><button id="viewer-zoom" type="button" aria-pressed="false">放大细节</button><button id="viewer-close" type="button" aria-label="关闭图片">关闭 <span aria-hidden="true">×</span></button></div></div><div class="viewer-image-wrap"><img id="viewer-image" alt=""></div><div class="viewer-bottom"><p class="viewer-tip">放大后可滑动查看图片细节</p><a id="viewer-original" target="_blank" rel="noopener">查看原始 PNG</a></div></dialog>'''.replace('VIEWER_TITLE', escape(title))
 
 def frame(title, body, prefix="", active="", noindex=False, route="", background=""):
     links = "".join(
@@ -73,6 +73,29 @@ def md_content(text):
     body = parser.convert(text)
     body = re.sub(r"(<table>.*?</table>)", r'<div class="table-scroll" tabindex="0">\1</div>', body, flags=re.S)
     return title, body, parser.toc
+
+def chapter_art_url(art, suffix=""):
+    name = f'chapter-art/{art["id"]}{suffix}.webp'
+    return f'../assets/{name}?v={asset_version(name)}'
+
+def chapter_art_figure(art):
+    full = chapter_art_url(art)
+    medium = chapter_art_url(art, '-960')
+    small = chapter_art_url(art, '-480')
+    caption = escape(art['caption'])
+    original = escape(RAW_URL + art['original'])
+    return f'''<figure class="chapter-illustration" id="illustration-{art['id']}"><button type="button" class="image-open chapter-art-open" data-image="{full}" data-name="{caption}" data-kind="章节印象图" data-original="{original}" aria-label="放大{caption}"><img src="{full}" srcset="{small} 480w, {medium} 960w, {full} {art['width']}w" sizes="(max-width: 1000px) 90vw, 900px" alt="{escape(art['alt'])}" width="{art['width']}" height="{art['height']}" loading="lazy" decoding="async"></button><figcaption><span>{caption}</span><span aria-hidden="true">点击放大 ↗</span></figcaption></figure>'''
+
+def illustrated_chapter(text, artwork):
+    # Anchors keep artwork beside its scene without modifying the manuscript.
+    # A changed or duplicate paragraph must be reviewed before rebuilding.
+    text = '\n\n' + text.strip() + '\n\n'
+    for art in artwork:
+        anchor = '\n\n' + art['after'] + '\n\n'
+        if text.count(anchor) != 1:
+            raise ValueError(f'Chapter artwork {art["id"]}: expected one matching paragraph')
+        text = text.replace(anchor, anchor + chapter_art_figure(art) + '\n\n', 1)
+    return md_content(text.strip() + '\n')
 
 def build():
     prepare_design_assets()
@@ -181,14 +204,18 @@ def build():
 <div id="outline-content"><div class="reading-layout"><aside class="reading-toc"><p class="eyebrow">大纲目录</p>{toc}</aside><div class="reading-column"><details class="mobile-toc"><summary>展开大纲目录</summary>{toc}</details><article class="prose">{outline_body}</article><div class="reading-end">创作大纲 · 九域守界 <a href="{REPO_URL}/blob/main/content/outline.md" target="_blank" rel="noopener">查看 Markdown 源文件</a></div></div></div></div></div>'''
     save(OUT / "outline/index.html", frame("故事大纲（含剧透）", outline, "../", noindex=True, route="outline/"))
 
+    chapter_art_path = ROOT / 'content/chapter-art.json'
+    chapter_art = json.loads(chapter_art_path.read_text(encoding='utf-8'))['images'] if chapter_art_path.exists() else []
     chapter_entries = []
     for i, source in enumerate(chapters):
-        title, body, toc = md_content(source.read_text(encoding="utf-8"))
+        artwork = [art for art in chapter_art if art['chapter'] == source.stem]
+        title, body, toc = illustrated_chapter(source.read_text(encoding="utf-8"), artwork)
         title = title or source.stem
-        chapter_entries.append(f'<a class="chapter-item" href="{escape(source.stem)}.html"><span>{i+1:02}</span><h2>{escape(title)}</h2><span aria-hidden="true">↗</span></a>')
+        thumbnail = f'<img class="chapter-thumbnail" src="{chapter_art_url(artwork[0], "-480")}" alt="{escape(title)}印象图" width="{artwork[0]["width"]}" height="{artwork[0]["height"]}" loading="lazy">' if artwork else ''
+        chapter_entries.append(f'<a class="chapter-item{" has-art" if artwork else ""}" href="{escape(source.stem)}.html"><span>{i+1:02}</span>{thumbnail}<h2>{escape(title)}</h2><span aria-hidden="true">↗</span></a>')
         previous = f'<a href="{escape(chapters[i-1].stem)}.html">上一章</a>' if i else '<span></span>'
         following = f'<a href="{escape(chapters[i+1].stem)}.html">下一章</a>' if i + 1 < len(chapters) else '<span></span>'
-        chapter = f'<div class="page-shell chapter-reading"><p class="eyebrow">九域守界 / 正文</p><h1>{escape(title)}</h1><article class="prose">{body}</article><nav class="chapter-pagination" aria-label="章节导航">{previous}<a href="./">章节目录</a>{following}</nav></div>'
+        chapter = f'<div class="page-shell chapter-reading"><p class="eyebrow">九域守界 / 正文</p><h1>{escape(title)}</h1><article class="prose">{body}</article><nav class="chapter-pagination" aria-label="章节导航">{previous}<a href="./">章节目录</a>{following}</nav></div>' + (image_viewer("章节印象图") if artwork else '')
         save(OUT / f"chapters/{source.stem}.html", frame(title, chapter, "../", "chapters", route=f"chapters/{source.stem}.html"))
     chapter_body = '<div class="chapter-list">' + ''.join(chapter_entries) + '</div>' if chapters else '''<section class="chapters-empty"><span class="empty-symbol" aria-hidden="true">卷</span><p class="eyebrow">故事正在准备中</p><h2>正文尚未发布</h2><p>章节发布后，这里会按顺序收录。<br>现在可以先认识故事中的人物。</p><a class="button primary" href="../gallery/">翻阅人物图集</a></section>'''
     chapter_index = f'<div class="page-shell"><div class="page-heading"><p class="eyebrow">THE STORY / 正文阅读</p><h1>小说正文</h1><p>九域守界的故事，从这里展开。</p></div>{chapter_body}</div>'

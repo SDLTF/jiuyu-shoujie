@@ -44,6 +44,21 @@ def prepare_design_assets():
                             image.thumbnail((900, 1200), Image.Resampling.LANCZOS)
                         image.save(target, 'WEBP', quality=90, method=6)
 
+    # Preserve complete chapter compositions, including on small screens.
+    chapter_manifest = ROOT / 'content/chapter-art.json'
+    if chapter_manifest.exists():
+        art_dir = OUT / 'chapter-art'
+        art_dir.mkdir(parents=True, exist_ok=True)
+        for art in json.loads(chapter_manifest.read_text(encoding='utf-8'))['images']:
+            source = ROOT / art['original']
+            for suffix, width, quality in (('', 1920, 90), ('-960', 960, 88), ('-480', 480, 85)):
+                target = art_dir / f'{art["id"]}{suffix}.webp'
+                if not target.exists() or source.stat().st_mtime > target.stat().st_mtime:
+                    with Image.open(source) as picture:
+                        image = picture.convert('RGB')
+                        image.thumbnail((width, width), Image.Resampling.LANCZOS)
+                        image.save(target, 'WEBP', quality=quality, method=6)
+
     font_dir = OUT / 'fonts'
     font_dir.mkdir(parents=True, exist_ok=True)
     # Include all source content and UI strings, so future chapters remain covered.
