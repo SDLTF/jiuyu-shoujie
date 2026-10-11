@@ -8,7 +8,7 @@ import shutil
 import markdown
 from PIL import Image, ImageOps
 from design_assets import prepare_design_assets
-from character_art import prepare_character_art
+from character_art import prepare_character_art, character_art_entries
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "docs"
@@ -30,49 +30,50 @@ def save(path, value):
 def asset_version(name):
     return hashlib.sha256((OUT / "assets" / name).read_bytes()).hexdigest()[:10]
 
+def character_art_urls(art):
+    directory, stem = art['web_directory'], art['web_stem']
+    full_name = f'{directory}/{stem}.webp'
+    full = f'../assets/{full_name}?v={asset_version(full_name)}'
+    sources = []
+    for suffix in ('-480', '-960'):
+        path = f'{directory}/{stem}{suffix}.webp'
+        with Image.open(OUT / 'assets' / path) as preview:
+            sources.append(f'../assets/{path}?v={asset_version(path)} {preview.width}w')
+    sources.append(f'{full} {art["width"]}w')
+    return full, ', '.join(sources), escape(RAW_URL + art['original'])
+
 def character_art_section(person, artwork):
     if not artwork:
         return ''
     name = escape(person['name'])
     cards = []
-    for kind, label in (('portrait', '人设图-2'), ('battle', '战斗壁纸')):
-        art = artwork[kind]
-        directory, ident = art['web_directory'], person['id']
-        full_name = f'{directory}/{ident}.webp'
-        full = f'../assets/{full_name}?v={asset_version(full_name)}'
-        sources = []
-        for suffix in ('-480', '-960'):
-            path = f'{directory}/{ident}{suffix}.webp'
-            with Image.open(OUT / 'assets' / path) as preview:
-                width = preview.width
-            sources.append(f'../assets/{path}?v={asset_version(path)} {width}w')
-        sources.append(f'{full} {art["width"]}w')
-        original = escape(RAW_URL + art['original'])
+    for kind, label, art in character_art_entries(artwork):
+        full, sources, original = character_art_urls(art)
+        label = escape(label)
         title, caption = escape(art['title']), escape(art['caption'])
-        cards.append(f'''<article class="character-art-card character-art-{kind}"><div class="character-art-heading"><p class="eyebrow">{label}</p><h3>{title}</h3></div><button type="button" class="image-open character-art-image" data-image="{full}" data-name="{name} · {label} · {title}" data-kind="{label}" data-alt="{name}：{caption}" data-original="{original}" aria-label="放大{name}的{label}"><img src="{full}" srcset="{', '.join(sources)}" sizes="(max-width: 760px) calc(100vw - 32px), 50vw" alt="{name}：{caption}" width="{art['width']}" height="{art['height']}" loading="lazy" decoding="async"><span class="image-hint">点击放大 · 完整构图</span></button><div class="character-art-description"><p>{caption}</p><a href="{original}" target="_blank" rel="noopener">查看原始 PNG ↗</a></div></article>''')
+        layout = ' style="grid-column:1/-1"' if art.get('variant') else ''
+        sizes = 'calc(100vw - 32px)' if art.get('variant') else '(max-width: 760px) calc(100vw - 32px), 50vw'
+        cards.append(f'''<article class="character-art-card character-art-{kind}"{layout}><div class="character-art-heading"><p class="eyebrow">{label}</p><h3>{title}</h3></div><button type="button" class="image-open character-art-image" data-image="{full}" data-name="{name} · {label} · {title}" data-kind="{label}" data-alt="{name}：{caption}" data-original="{original}" aria-label="放大{name}的{label}"><img src="{full}" srcset="{sources}" sizes="{sizes}" alt="{name}：{caption}" width="{art['width']}" height="{art['height']}" loading="lazy" decoding="async"><span class="image-hint">点击放大 · 完整构图</span></button><div class="character-art-description"><p>{caption}</p><a href="{original}" target="_blank" rel="noopener">查看原始 PNG ↗</a></div></article>''')
     return f'<section class="character-art-section" aria-labelledby="character-art-title"><header class="character-art-intro"><p class="eyebrow">SCENES & BATTLES / 角色插画</p><h2 id="character-art-title">人物插画与战斗壁纸</h2><p>走进角色的日常与交锋。点击图片放大，用左右按钮切换档案中的插画。</p></header><div class="character-art-grid">{"".join(cards)}</div></section>'
 
 def character_scene_rotation(person, artwork, art, art_mobile, art_raw, width, height):
-    """Keep the original scene visible without JS; load the battle on demand."""
+    """Keep the original scene visible without JS; load battle variants on demand."""
     name = escape(person['name'])
     first = f'<picture class="character-scene-art scene-slide is-active" data-scene-label="角色大图" data-scene-image="{art}" data-scene-original="{art_raw}" data-scene-kind="portrait" aria-hidden="true"><source media="(max-width: 640px)" srcset="{art_mobile}"><img src="{art}" alt="" width="{width}" height="{height}" fetchpriority="high"></picture>'
     if not artwork:
         return first, ''
-    battle = artwork['battle']
-    directory, ident = battle['web_directory'], person['id']
-    full_name = f'{directory}/{ident}.webp'
-    full = f'../assets/{full_name}?v={asset_version(full_name)}'
-    sources = []
-    for suffix in ('-480', '-960'):
-        path = f'{directory}/{ident}{suffix}.webp'
-        with Image.open(OUT / 'assets' / path) as preview:
-            sources.append(f'../assets/{path}?v={asset_version(path)} {preview.width}w')
-    sources.append(f'{full} {battle["width"]}w')
-    original = escape(RAW_URL + battle['original'])
-    focus_x = max(0, min(100, float(battle.get('background_focus_x', 50))))
-    second = f'<picture class="character-scene-art scene-slide" data-scene-label="战斗场景" data-scene-image="{full}" data-scene-original="{original}" data-scene-kind="battle" style="--scene-focus-x:{focus_x:g}%" aria-hidden="true"><img data-scene-src="{full}" data-scene-srcset="{escape(", ".join(sources))}" sizes="(max-width: 640px) 200vw, max(100vw, 1600px)" alt="" width="{battle["width"]}" height="{battle["height"]}" decoding="async"></picture>'
-    controls = f'''<div class="scene-rotation-controls" role="group" aria-label="{name}背景轮换" hidden><span class="scene-rotation-label">背景切换</span><div class="scene-choices"><button type="button" data-scene-select="0" aria-pressed="true">角色大图</button><button type="button" data-scene-select="1" aria-pressed="false">战斗场景</button></div><button type="button" class="scene-rotation-toggle" aria-pressed="false">暂停轮换</button><span class="scene-current">角色大图 · 每 12 秒轮换</span><span class="scene-announcement" role="status"></span></div>'''
-    return first + second, controls
+    slides = [first]
+    choices = ['<button type="button" data-scene-select="0" aria-pressed="true">角色大图</button>']
+    for kind, label, battle in character_art_entries(artwork):
+        if kind != 'battle':
+            continue
+        label = escape(battle.get('label', '战斗场景'))
+        full, sources, original = character_art_urls(battle)
+        focus_x = max(0, min(100, float(battle.get('background_focus_x', 50))))
+        choices.append(f'<button type="button" data-scene-select="{len(slides)}" aria-pressed="false">{label}</button>')
+        slides.append(f'<picture class="character-scene-art scene-slide" data-scene-label="{label}" data-scene-image="{full}" data-scene-original="{original}" data-scene-kind="battle" style="--scene-focus-x:{focus_x:g}%" aria-hidden="true"><img data-scene-src="{full}" data-scene-srcset="{escape(sources)}" sizes="(max-width: 640px) 200vw, max(100vw, 1600px)" alt="" width="{battle["width"]}" height="{battle["height"]}" decoding="async"></picture>')
+    controls = f'''<div class="scene-rotation-controls" role="group" aria-label="{name}背景轮换" hidden><span class="scene-rotation-label">背景切换</span><div class="scene-choices">{"".join(choices)}</div><button type="button" class="scene-rotation-toggle" aria-pressed="false">暂停轮换</button><span class="scene-current">角色大图 · 每 12 秒轮换</span><span class="scene-announcement" role="status"></span></div>'''
+    return ''.join(slides), controls
 
 def avatar_url(ident, suffix="", style="original"):
     directory = 'chibi-avatars' if style == 'chibi' else 'avatars'

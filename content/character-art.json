@@ -518,8 +518,22 @@
         "width": 1672,
         "height": 941,
         "sha256": "7efede334cccfc76fef4e39d65481fedbc228e1193a91742bd931b2da755a1ce",
-        "background_focus_x": 61
-      }
+        "background_focus_x": 61,
+        "label": "猫形战斗"
+      },
+      "battle_variants": [
+        {
+          "variant": "dragon",
+          "label": "龙形战斗",
+          "original": "assets/character-battles/26-dragon.png",
+          "title": "不熄蓝焰",
+          "caption": "洁白骨龙展开骨翼，体内不灭蓝焰涌向来袭的暗影。以本体形态绘制的战斗插画。",
+          "width": 1672,
+          "height": 941,
+          "sha256": "1bf99032bc5031a8dc3b933cc9d01054b6e1889ab33242ed20a436aa79f971d1",
+          "background_focus_x": 64
+        }
+      ]
     },
     {
       "id": "27",
