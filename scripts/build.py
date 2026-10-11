@@ -251,6 +251,11 @@ def load_fanworks():
                 raise ValueError(f'Fanwork {ident}: {field} is required')
         if 'title' in work and not isinstance(work['title'], str):
             raise ValueError(f'Fanwork {ident}: title must be text')
+        tags = work.get('tags', [])
+        if not isinstance(tags, list) or any(not isinstance(tag, str) or not tag or tag != tag.strip() for tag in tags):
+            raise ValueError(f'Fanwork {ident}: tags must be a list of nonempty, trimmed strings')
+        if len(tags) != len(set(tags)):
+            raise ValueError(f'Fanwork {ident}: tags must be unique')
         if kind == 'image':
             source = (ROOT / work['image']).resolve()
             if not source.is_relative_to((ROOT / 'assets/fanworks').resolve()) or not source.is_file():
@@ -295,6 +300,18 @@ def build_fanworks(works):
     for kind, label in (('all', '全部作品'), *labels.items()):
         count = len(works) if kind == 'all' else sum(work['type'] == kind for work in works)
         filters.append(f'<button type="button" class="fanwork-filter" data-type="{kind}" aria-pressed="{str(kind == "all").lower()}">{label}<span>{count}</span></button>')
+    tag_counts = {}
+    for work in works:
+        for tag in work.get('tags', []):
+            tag_counts[tag] = tag_counts.get(tag, 0) + 1
+    tag_order = sorted(tag_counts, key=lambda tag: (0 if '×' in tag or '与' in tag else 1, -tag_counts[tag], tag))
+    tag_index = ''
+    if tag_order:
+        tag_filters = [f'<button type="button" class="fanwork-tag" data-fanwork-tag="" aria-pressed="true">全部标签<span class="fanwork-tag-count" aria-hidden="true">{len(works)}</span></button>']
+        for tag in tag_order:
+            label = escape(tag)
+            tag_filters.append(f'<button type="button" class="fanwork-tag" data-fanwork-tag="{label}" aria-label="筛选标签：{label}" aria-pressed="false">{label}<span class="fanwork-tag-count" aria-hidden="true">{tag_counts[tag]}</span></button>')
+        tag_index = f'''<div class="fanworks-tag-index" role="group" aria-label="按标签筛选"><span class="fanworks-tag-label">标签索引</span><button type="button" id="fanwork-tags-prev" class="fanwork-tag-scroll" aria-label="向左浏览标签" aria-controls="fanwork-tag-list" disabled>‹</button><div id="fanwork-tag-list" class="fanwork-tag-list" role="group" aria-label="二创标签索引">{''.join(tag_filters)}</div><button type="button" id="fanwork-tags-next" class="fanwork-tag-scroll" aria-label="向右浏览标签" aria-controls="fanwork-tag-list">›</button></div>'''
     cards = []
     for index, work in enumerate(works):
         ident, kind = work['id'], work['type']
@@ -312,14 +329,18 @@ def build_fanworks(works):
             else:
                 content = body
             content = f'<div class="fanwork-writing">{content}</div>'
-        search = escape(' '.join([work['creator'], work['description'], work.get('title', ''), work.get('text', '')]))
-        cards.append(f'<article class="fanwork-card" id="work-{ident}" data-type="{kind}" data-search="{search}"><header class="fanwork-card-heading"><p>{labels[kind]}<a href="#work-{ident}" aria-label="{title}的直接链接">#{index + 1:02}</a></p><h2>{title}</h2><p class="fanwork-creator">创作者 <strong>{creator}</strong></p></header>{content}<div class="fanwork-description"><h3>作品描述</h3><p>{description}</p></div></article>')
+        tags = work.get('tags', [])
+        tag_data = escape(json.dumps(tags, ensure_ascii=False))
+        tag_buttons = ''.join(f'<button type="button" class="fanwork-tag" data-fanwork-tag="{escape(tag)}" aria-label="筛选标签：{escape(tag)}" aria-pressed="false">#{escape(tag)}</button>' for tag in tags)
+        card_tags = f'<div class="fanwork-card-tags" role="group" aria-label="作品标签">{tag_buttons}</div>' if tags else ''
+        search = escape(' '.join([work['creator'], work['description'], work.get('title', ''), work.get('text', ''), *tags]))
+        cards.append(f'<article class="fanwork-card" id="work-{ident}" data-type="{kind}" data-tags="{tag_data}" data-search="{search}"><header class="fanwork-card-heading"><p>{labels[kind]}<a href="#work-{ident}" aria-label="{title}的直接链接">#{index + 1:02}</a></p><h2>{title}</h2><p class="fanwork-creator">创作者 <strong>{creator}</strong></p>{card_tags}</header>{content}<div class="fanwork-description"><h3>作品描述</h3><p>{description}</p></div></article>')
     empty = '''<section class="fanworks-empty" aria-labelledby="fanworks-empty-title"><span class="empty-symbol" aria-hidden="true">创</span><p class="eyebrow">等待第一份来自你的创作</p><h2 id="fanworks-empty-title">这里，为新的故事留一盏灯</h2><p>目前还没有收录二创作品。<br>一幅画、一段文字，都可以让九域的故事继续生长。</p></section>''' if not works else ''
     viewer = image_viewer('图片二创', navigation=True, original_label='查看原图') if any(work['type'] == 'image' for work in works) else ''
     body = f'''<div class="page-shell fanworks-shell"><div class="page-heading"><p class="eyebrow">FAN CREATIONS / 来自读者的创作</p><h1>二创</h1><p>把你眼中的九域，留在这里。收藏读者笔下的图画与文字，也记住每一位创作者。</p></div>
 <p class="fanworks-note">图片与文字作品由站主收集后更新。投稿时，请附上创作者署名与作品描述。</p>
-<div class="fanworks-tools"><div class="fanwork-filters" role="group" aria-label="按二创类型筛选">{''.join(filters)}</div><label class="search-field"><span aria-hidden="true">⌕</span><input id="fanwork-search" type="search" placeholder="搜索创作者或作品" aria-label="搜索二创的创作者、描述或文字" autocomplete="off"></label></div><p class="fanworks-count" role="status">显示 <strong id="fanwork-count">{len(works)}</strong> / {len(works)} 件作品</p>
-{empty}<div class="fanworks-grid">{''.join(cards)}</div><p id="fanwork-no-results" class="empty-results" hidden>没有找到匹配的作品，试试其他分类或关键词。</p></div>{viewer}'''
+<div class="fanworks-tools"><div class="fanwork-filters" role="group" aria-label="按二创类型筛选">{''.join(filters)}</div><label class="search-field"><span aria-hidden="true">⌕</span><input id="fanwork-search" type="search" placeholder="搜索创作者、作品或标签" aria-label="搜索二创的创作者、描述、文字或标签" autocomplete="off"></label></div>{tag_index}<p class="fanworks-count" role="status">显示 <strong id="fanwork-count">{len(works)}</strong> / {len(works)} 件作品</p>
+{empty}<div class="fanworks-grid">{''.join(cards)}</div><p id="fanwork-no-results" class="empty-results" hidden>没有找到匹配的作品，试试其他标签、分类或关键词。</p></div>{viewer}'''
     save(OUT / 'fanworks/index.html', frame('二创', body, '../', 'fanworks', route='fanworks/'))
 
 def build():

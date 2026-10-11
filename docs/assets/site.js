@@ -244,20 +244,67 @@ if (fanworkSearch) {
   const filters = Array.from(document.querySelectorAll(".fanwork-filter"));
   const count = document.getElementById("fanwork-count");
   const noResults = document.getElementById("fanwork-no-results");
+  const tagButtons = Array.from(document.querySelectorAll("[data-fanwork-tag]"));
+  const cardTags = new Map(cards.map(card => [card, new Set(JSON.parse(card.dataset.tags || "[]"))]));
+  const validTags = new Set(Array.from(cardTags.values()).flatMap(tags => Array.from(tags)));
+  const requestedTag = new URL(window.location.href).searchParams.get("tag") || "";
+  let tag = validTags.has(requestedTag) ? requestedTag : "";
   let type = "all";
   const update = () => {
     const query = fanworkSearch.value.trim().toLocaleLowerCase();
     let visible = 0;
     cards.forEach(card => {
       card.hidden = !(type === "all" || card.dataset.type === type)
-        || !card.dataset.search.toLocaleLowerCase().includes(query);
+        || !card.dataset.search.toLocaleLowerCase().includes(query)
+        || (tag !== "" && !cardTags.get(card).has(tag));
       if (!card.hidden) visible += 1;
     });
     filters.forEach(button => button.setAttribute("aria-pressed", String(button.dataset.type === type)));
+    tagButtons.forEach(button => button.setAttribute("aria-pressed", String(button.dataset.fanworkTag === tag)));
     count.textContent = String(visible);
     noResults.hidden = visible !== 0 || cards.length === 0;
   };
   filters.forEach(button => button.addEventListener("click", () => { type = button.dataset.type; update(); }));
+  const tagList = document.getElementById("fanwork-tag-list");
+  const tagPrevious = document.getElementById("fanwork-tags-prev");
+  const tagNext = document.getElementById("fanwork-tags-next");
+  const updateTagScroll = () => {
+    if (!tagList) return;
+    tagPrevious.disabled = tagList.scrollLeft <= 2;
+    tagNext.disabled = tagList.scrollLeft + tagList.clientWidth >= tagList.scrollWidth - 2;
+  };
+  const revealSelectedTag = () => {
+    if (!tagList) return;
+    const button = Array.from(tagList.querySelectorAll("[data-fanwork-tag]")).find(button => button.dataset.fanworkTag === tag);
+    if (!button) return;
+    const left = button.offsetLeft;
+    const right = left + button.offsetWidth;
+    if (left < tagList.scrollLeft) tagList.scrollLeft = left;
+    else if (right > tagList.scrollLeft + tagList.clientWidth) tagList.scrollLeft = right - tagList.clientWidth;
+    updateTagScroll();
+  };
+  tagButtons.forEach(button => button.addEventListener("click", () => {
+    const selected = button.dataset.fanworkTag;
+    tag = selected === tag ? "" : selected;
+    const url = new URL(window.location.href);
+    if (tag) url.searchParams.set("tag", tag);
+    else url.searchParams.delete("tag");
+    window.history.replaceState(null, "", url);
+    update();
+    revealSelectedTag();
+  }));
+  if (tagList) {
+    const scrollTags = direction => {
+      const behavior = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
+      tagList.scrollBy({left: direction * tagList.clientWidth * 0.75, behavior});
+    };
+    tagPrevious.addEventListener("click", () => scrollTags(-1));
+    tagNext.addEventListener("click", () => scrollTags(1));
+    tagList.addEventListener("scroll", updateTagScroll, {passive: true});
+    window.addEventListener("resize", updateTagScroll);
+    document.fonts.ready.then(revealSelectedTag);
+    revealSelectedTag();
+  }
   fanworkSearch.addEventListener("input", update);
   update();
 }
