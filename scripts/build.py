@@ -311,7 +311,7 @@ def build_fanworks(works):
         for tag in tag_order:
             label = escape(tag)
             tag_filters.append(f'<button type="button" class="fanwork-tag" data-fanwork-tag="{label}" aria-label="筛选标签：{label}" aria-pressed="false">{label}<span class="fanwork-tag-count" aria-hidden="true">{tag_counts[tag]}</span></button>')
-        tag_index = f'''<div class="fanworks-tag-index" role="group" aria-label="按标签筛选"><span class="fanworks-tag-label">标签索引</span><button type="button" id="fanwork-tags-prev" class="fanwork-tag-scroll" aria-label="向左浏览标签" aria-controls="fanwork-tag-list" disabled>‹</button><div id="fanwork-tag-list" class="fanwork-tag-list" role="group" aria-label="二创标签索引">{''.join(tag_filters)}</div><button type="button" id="fanwork-tags-next" class="fanwork-tag-scroll" aria-label="向右浏览标签" aria-controls="fanwork-tag-list">›</button></div>'''
+        tag_index = f'''<div class="fanworks-tag-index" role="group" aria-label="按标签筛选"><span class="fanworks-tag-label">标签索引</span><div id="fanwork-tag-list" class="fanwork-tag-list" role="group" aria-label="二创标签索引">{''.join(tag_filters)}</div></div>'''
     cards = []
     for index, work in enumerate(works):
         ident, kind = work['id'], work['type']

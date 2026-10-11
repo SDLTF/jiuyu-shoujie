@@ -439,17 +439,14 @@ body{font-weight:400;font-kerning:normal;text-rendering:optimizeLegibility;-webk
 .fanwork-filter>span{margin-left:8px;font-size:12px;opacity:.7}
 .fanwork-filter:hover{color:var(--ink);border-color:var(--gold)}
 .fanwork-filter[aria-pressed=true]{background:var(--gold);border-color:var(--gold);color:var(--bg)}
-.fanworks-tag-index{display:grid;grid-template-columns:auto 34px minmax(0,1fr) 34px;align-items:center;gap:10px;margin-top:20px;min-width:0}
-.fanworks-tag-label{font-size:13px;color:var(--muted);white-space:nowrap}
-.fanwork-tag-list{position:relative;display:flex;align-items:center;gap:8px;overflow-x:auto;min-width:0;padding:3px 0 7px;scrollbar-width:thin;scrollbar-color:#8a7651 #16232e;overscroll-behavior-x:contain}
+.fanworks-tag-index{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:start;gap:10px;margin-top:20px;min-width:0}
+.fanworks-tag-label{padding-top:8px;font-size:13px;color:var(--muted);white-space:nowrap}
+.fanwork-tag-list{display:flex;flex-wrap:wrap;align-items:center;gap:8px;min-width:0}
 .fanwork-tag{flex:0 0 auto;min-height:36px;max-width:100%;padding:7px 12px;border:1px solid #52616b;border-radius:18px;background:#101b2570;color:var(--muted);font:13px/1.5 var(--sans);cursor:pointer}
-.fanwork-tag-list .fanwork-tag{max-width:none;white-space:nowrap}
+.fanwork-tag-list .fanwork-tag{flex:0 1 auto;text-align:left;overflow-wrap:anywhere}
 .fanwork-tag:hover,.fanwork-tag:focus-visible{border-color:var(--gold);color:var(--ink)}
 .fanwork-tag[aria-pressed=true]{border-color:var(--gold);background:var(--gold);color:var(--bg)}
 .fanwork-tag-count{margin-left:8px;font-size:11px;opacity:.75}
-.fanwork-tag-scroll{width:34px;min-height:44px;padding:0;border:1px solid #52616b;border-radius:3px;background:var(--panel);color:var(--gold);font:26px/1 var(--sans);cursor:pointer}
-.fanwork-tag-scroll:disabled{opacity:.3;cursor:default}
-.fanwork-tag-scroll:not(:disabled):hover{border-color:var(--gold)}
 .fanwork-card-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
 .fanwork-card-tags .fanwork-tag{min-height:32px;padding:5px 10px;font-size:12px;overflow-wrap:anywhere}
 .fanworks-count{color:var(--muted);font-size:13px;margin:18px 0 24px}
@@ -486,9 +483,8 @@ body{font-weight:400;font-kerning:normal;text-rendering:optimizeLegibility;-webk
  .fanworks-tools{gap:14px}
  .fanworks-tools .search-field{max-width:none;flex-basis:100%}
  .fanwork-filter{font-size:13px;padding:8px 11px}
- .fanworks-tag-index{grid-template-columns:auto 28px minmax(0,1fr) 28px;gap:6px;margin-top:16px}
- .fanworks-tag-label{font-size:12px}
- .fanwork-tag-scroll{width:28px}
+ .fanworks-tag-index{grid-template-columns:minmax(0,1fr);gap:8px;margin-top:16px}
+ .fanworks-tag-label{padding-top:0;font-size:12px}
  .fanwork-tag-list{gap:6px}
  .fanwork-tag-list .fanwork-tag{min-height:44px;padding:8px 11px}
  .fanworks-grid{grid-template-columns:minmax(0,1fr);gap:22px}

@@ -265,24 +265,6 @@ if (fanworkSearch) {
     noResults.hidden = visible !== 0 || cards.length === 0;
   };
   filters.forEach(button => button.addEventListener("click", () => { type = button.dataset.type; update(); }));
-  const tagList = document.getElementById("fanwork-tag-list");
-  const tagPrevious = document.getElementById("fanwork-tags-prev");
-  const tagNext = document.getElementById("fanwork-tags-next");
-  const updateTagScroll = () => {
-    if (!tagList) return;
-    tagPrevious.disabled = tagList.scrollLeft <= 2;
-    tagNext.disabled = tagList.scrollLeft + tagList.clientWidth >= tagList.scrollWidth - 2;
-  };
-  const revealSelectedTag = () => {
-    if (!tagList) return;
-    const button = Array.from(tagList.querySelectorAll("[data-fanwork-tag]")).find(button => button.dataset.fanworkTag === tag);
-    if (!button) return;
-    const left = button.offsetLeft;
-    const right = left + button.offsetWidth;
-    if (left < tagList.scrollLeft) tagList.scrollLeft = left;
-    else if (right > tagList.scrollLeft + tagList.clientWidth) tagList.scrollLeft = right - tagList.clientWidth;
-    updateTagScroll();
-  };
   tagButtons.forEach(button => button.addEventListener("click", () => {
     const selected = button.dataset.fanworkTag;
     tag = selected === tag ? "" : selected;
@@ -291,20 +273,7 @@ if (fanworkSearch) {
     else url.searchParams.delete("tag");
     window.history.replaceState(null, "", url);
     update();
-    revealSelectedTag();
   }));
-  if (tagList) {
-    const scrollTags = direction => {
-      const behavior = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
-      tagList.scrollBy({left: direction * tagList.clientWidth * 0.75, behavior});
-    };
-    tagPrevious.addEventListener("click", () => scrollTags(-1));
-    tagNext.addEventListener("click", () => scrollTags(1));
-    tagList.addEventListener("scroll", updateTagScroll, {passive: true});
-    window.addEventListener("resize", updateTagScroll);
-    document.fonts.ready.then(revealSelectedTag);
-    revealSelectedTag();
-  }
   fanworkSearch.addEventListener("input", update);
   update();
 }
