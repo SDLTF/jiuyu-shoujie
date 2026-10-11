@@ -548,10 +548,10 @@
       "battle": {
         "original": "assets/character-battles/27.png",
         "title": "断昼承刃",
-        "caption": "年轻法务握住誓剑，在屋顶的交锋中守住身后的证人。",
+        "caption": "誓剑迸起金色剑芒与交锋光屑，他在雨中守住身后的证人。",
         "width": 1672,
         "height": 941,
-        "sha256": "74c41105d16ff75eea6d2f0424e9c9d7b144fe9bc7b92c6281149589f4a1e57e",
+        "sha256": "6c7791af7b91a324cdbd0c263f42be5622d85dccdc046ef2e62babeaf2d1c072",
         "background_focus_x": 45
       }
     },
@@ -568,10 +568,10 @@
       "battle": {
         "original": "assets/character-battles/28.png",
         "title": "海中巡界",
-        "caption": "环以章鱼形态巡视海岸，在船底拦住逼近的海中威胁。",
+        "caption": "环以巨型章鱼形态巡视海岸，庞大腕足护住渔船，拦开逼近的海中威胁。",
         "width": 1672,
         "height": 941,
-        "sha256": "3882c6204d8a121fb378d024612174d15ae98162c66a24df865a60579131fd40",
+        "sha256": "dbcb4b11aeae4a4bbeada7a829f42d40f51a6a9093aa434c425d25bf928d0967",
         "background_focus_x": 51
       }
     }
