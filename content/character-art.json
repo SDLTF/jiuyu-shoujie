@@ -27,9 +27,9 @@
         "original": "assets/character-scenes/02.png",
         "title": "叙事人设",
         "caption": "琉西法的第二版人设插画，沿用已有角色外观，呈现独立的动作与场景。",
-        "width": 1086,
-        "height": 1448,
-        "sha256": "8f02330389d1d70d013856a914166e6ac992f20f306e7624ef5be388337e3161"
+        "width": 1024,
+        "height": 1536,
+        "sha256": "bb97093e3ebfe718b9031c3eb24a93b4a7b9506964c0ed25f8092c111806818d"
       },
       "battle": {
         "original": "assets/character-battles/02.png",
