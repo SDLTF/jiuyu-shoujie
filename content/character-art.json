@@ -17,7 +17,8 @@
         "caption": "袭击中的档案馆，他护住撤离者与尚未登记的姓名。",
         "width": 1672,
         "height": 941,
-        "sha256": "31bda61b5c4067401ef360821c70420205b2c0997aa190a8a51af0bbfeb1be35"
+        "sha256": "31bda61b5c4067401ef360821c70420205b2c0997aa190a8a51af0bbfeb1be35",
+        "background_focus_x": 28
       }
     },
     {
@@ -36,7 +37,8 @@
         "caption": "六翼挡住战场碎屑，他专注救治身前的伤员。",
         "width": 1672,
         "height": 941,
-        "sha256": "1cce1705995d0b733d97ed1134f183d9d6103c200a893668b5a078740248cf0f"
+        "sha256": "1cce1705995d0b733d97ed1134f183d9d6103c200a893668b5a078740248cf0f",
+        "background_focus_x": 33
       }
     },
     {
@@ -55,7 +57,8 @@
         "caption": "小提琴的共振截住来袭，为港口撤离争取节拍。",
         "width": 1672,
         "height": 941,
-        "sha256": "57fc6d58bdcbc9e3f09d5df5593f9a2822cb59b0185b5a5498c4354a43622f2c"
+        "sha256": "57fc6d58bdcbc9e3f09d5df5593f9a2822cb59b0185b5a5498c4354a43622f2c",
+        "background_focus_x": 69
       }
     },
     {
@@ -74,7 +77,8 @@
         "caption": "工坊受袭时，她抢修护盾供能，让街口重新亮起。",
         "width": 1672,
         "height": 941,
-        "sha256": "5bfb9b671ae15fd499c5a83421e9d126ddc9adf84dde7dfcdc51f84cf39397a9"
+        "sha256": "5bfb9b671ae15fd499c5a83421e9d126ddc9adf84dde7dfcdc51f84cf39397a9",
+        "background_focus_x": 43
       }
     },
     {
@@ -93,7 +97,8 @@
         "caption": "以朱砂符札守住山口，给身后的人留出撤离时间。",
         "width": 1672,
         "height": 941,
-        "sha256": "ba8e4e9d34e4fe6024696516e4e0eab7d0c1624acf9b38a83f322c3ab8926738"
+        "sha256": "ba8e4e9d34e4fe6024696516e4e0eab7d0c1624acf9b38a83f322c3ab8926738",
+        "background_focus_x": 59
       }
     },
     {
@@ -112,7 +117,8 @@
         "caption": "老武者在断桥前拦下攻势，风雷沿杖势而起。",
         "width": 1672,
         "height": 941,
-        "sha256": "b57fc81f16e8d4583d86b4510290c5d0608c3482d36db59c286f87d6ac71aa10"
+        "sha256": "b57fc81f16e8d4583d86b4510290c5d0608c3482d36db59c286f87d6ac71aa10",
+        "background_focus_x": 33
       }
     },
     {
@@ -131,7 +137,8 @@
         "caption": "以花枝辨认生命，在森林战线后撑开一处疗护空间。",
         "width": 1672,
         "height": 941,
-        "sha256": "966ec89d49d497fac18f105f6cdbb09756447cf6c4ca8400464652694585e8a2"
+        "sha256": "966ec89d49d497fac18f105f6cdbb09756447cf6c4ca8400464652694585e8a2",
+        "background_focus_x": 64
       }
     },
     {
@@ -150,7 +157,8 @@
         "caption": "剑牌在雨夜分开两道危险的牵引，她盯住真正的来袭方向。",
         "width": 1672,
         "height": 941,
-        "sha256": "fa26384c255b6566c03719f98e04ebb59e2c4f12c2ac3fc558b7dee0f2ca80d2"
+        "sha256": "fa26384c255b6566c03719f98e04ebb59e2c4f12c2ac3fc558b7dee0f2ca80d2",
+        "background_focus_x": 39
       }
     },
     {
@@ -169,7 +177,8 @@
         "caption": "黑猫以实体与幽灵态穿过梦境的断裂，守住返回的联系。",
         "width": 1672,
         "height": 941,
-        "sha256": "1a492938524b0993ea1d23c0cce120b09aa9f99d2e325da04e9a888fecd9bdb4"
+        "sha256": "1a492938524b0993ea1d23c0cce120b09aa9f99d2e325da04e9a888fecd9bdb4",
+        "background_focus_x": 62
       }
     },
     {
@@ -188,7 +197,8 @@
         "caption": "林清翊与乐温配合，挡住山道上的来袭。",
         "width": 1672,
         "height": 941,
-        "sha256": "489fbc6f635d00ab7293a23fb6798ca24314ef7df53916f685d578d3df0321f4"
+        "sha256": "489fbc6f635d00ab7293a23fb6798ca24314ef7df53916f685d578d3df0321f4",
+        "background_focus_x": 37
       }
     },
     {
@@ -207,7 +217,8 @@
         "caption": "弓手在高架桥上压住追击，箭路穿过骤雨。",
         "width": 1672,
         "height": 941,
-        "sha256": "94d605bbdf492a78071d73dfb07f53d982bf3ead993cbc99ff51342a8d905cee"
+        "sha256": "94d605bbdf492a78071d73dfb07f53d982bf3ead993cbc99ff51342a8d905cee",
+        "background_focus_x": 31
       }
     },
     {
@@ -226,7 +237,8 @@
         "caption": "她在誓约阵前核验真名，解除强加在众人身上的束缚。",
         "width": 1672,
         "height": 940,
-        "sha256": "beb35ed91a935a6d11377d9124797d78e328dabda5451a6243e8976adc84a236"
+        "sha256": "beb35ed91a935a6d11377d9124797d78e328dabda5451a6243e8976adc84a236",
+        "background_focus_x": 67
       }
     },
     {
@@ -245,7 +257,8 @@
         "caption": "酒馆受袭时，他以灵酒与清水照护同伴，稳住一夜的防线。",
         "width": 1672,
         "height": 941,
-        "sha256": "3f9b7fc66ba0efe66a3d9a4876ded04365b5f5e6a1a0aff1c6bb050c5436de83"
+        "sha256": "3f9b7fc66ba0efe66a3d9a4876ded04365b5f5e6a1a0aff1c6bb050c5436de83",
+        "background_focus_x": 48
       }
     },
     {
@@ -264,7 +277,8 @@
         "caption": "水土与护盾在缺口前合拢，他顶住第一波冲击。",
         "width": 1672,
         "height": 941,
-        "sha256": "d5a7df5aa12ac5d589061c312f4836fefad54f932bcdeff9e9da638a7ab9965f"
+        "sha256": "d5a7df5aa12ac5d589061c312f4836fefad54f932bcdeff9e9da638a7ab9965f",
+        "background_focus_x": 48
       }
     },
     {
@@ -283,7 +297,8 @@
         "caption": "妙愿护住营地中的人，小白以活着的白龙之身挡下攻势。",
         "width": 1672,
         "height": 941,
-        "sha256": "a514ec68bd58e200c03c89ec025b286150b5e629e1db2e5cf18247451f7697ab"
+        "sha256": "a514ec68bd58e200c03c89ec025b286150b5e629e1db2e5cf18247451f7697ab",
+        "background_focus_x": 31
       }
     },
     {
@@ -302,7 +317,8 @@
         "caption": "水土与根系托住撤退路线，她让每一步都有落脚之处。",
         "width": 1672,
         "height": 941,
-        "sha256": "21b8207df25eeee4b2fb0a114776e599642262d2403ae755813cc0c75252ac60"
+        "sha256": "21b8207df25eeee4b2fb0a114776e599642262d2403ae755813cc0c75252ac60",
+        "background_focus_x": 43
       }
     },
     {
@@ -321,7 +337,8 @@
         "caption": "工程法师把失控电弧导离人群，接住战线上的过载。",
         "width": 1672,
         "height": 941,
-        "sha256": "6db780541b163a4658d9dfd2bad317fcd1587f3abfc5bbd15088132cc4e8aae1"
+        "sha256": "6db780541b163a4658d9dfd2bad317fcd1587f3abfc5bbd15088132cc4e8aae1",
+        "background_focus_x": 58
       }
     },
     {
@@ -340,7 +357,8 @@
         "caption": "旧货商拉动绳索，让货场里的零件成为一场精准的伏击。",
         "width": 1672,
         "height": 941,
-        "sha256": "470ae969f4ba5afabe602efb6b2cefdc79b2aa375cfb87bb448503662c5f738f"
+        "sha256": "470ae969f4ba5afabe602efb6b2cefdc79b2aa375cfb87bb448503662c5f738f",
+        "background_focus_x": 63
       }
     },
     {
@@ -359,7 +377,8 @@
         "caption": "双刃昼切在窄巷交锋，火与光只沿真正的刃路展开。",
         "width": 1672,
         "height": 941,
-        "sha256": "74e085c434b07cc79975c8d5dd949bdc62501086b3671c73daed003dddf35600"
+        "sha256": "74e085c434b07cc79975c8d5dd949bdc62501086b3671c73daed003dddf35600",
+        "background_focus_x": 44
       }
     },
     {
@@ -378,7 +397,8 @@
         "caption": "驿使沿熟悉的巷路穿过交火，把封缄送到守线的人手里。",
         "width": 1672,
         "height": 941,
-        "sha256": "aca0d5e0fa05a22758fea1f3ef79095898ee0ab39b12b0d1b97c9c0c9c6c6c1a"
+        "sha256": "aca0d5e0fa05a22758fea1f3ef79095898ee0ab39b12b0d1b97c9c0c9c6c6c1a",
+        "background_focus_x": 53
       }
     },
     {
@@ -397,7 +417,8 @@
         "caption": "莫问借杂物绊开强敌的一步，为弱势的一方争取机会。",
         "width": 1672,
         "height": 941,
-        "sha256": "645bd0854af51069589f9f28b5e2e0c90c6e215e5fb1a1ce58a14cedc3650a63"
+        "sha256": "645bd0854af51069589f9f28b5e2e0c90c6e215e5fb1a1ce58a14cedc3650a63",
+        "background_focus_x": 25
       }
     },
     {
@@ -416,7 +437,8 @@
         "caption": "旧灯仍亮着，他用水与光守住风暴中的码头。",
         "width": 1672,
         "height": 941,
-        "sha256": "03e27e536a92b23c3fd4a82b6e61702e71672a8089facf463a55cf366dae21c2"
+        "sha256": "03e27e536a92b23c3fd4a82b6e61702e71672a8089facf463a55cf366dae21c2",
+        "background_focus_x": 55
       }
     },
     {
@@ -435,7 +457,8 @@
         "caption": "小语标出危险来向，让同伴在混乱中接上下一步。",
         "width": 1672,
         "height": 941,
-        "sha256": "f4a87aba0799d61ec18251492048dbe3f96e076cb923ab4b4a3503949c63c5ad"
+        "sha256": "f4a87aba0799d61ec18251492048dbe3f96e076cb923ab4b4a3503949c63c5ad",
+        "background_focus_x": 32
       }
     },
     {
@@ -454,7 +477,8 @@
         "caption": "晏执衡在供能塔前迎击，电弧沿鸣雷甲的结构释放。",
         "width": 1672,
         "height": 941,
-        "sha256": "ddc0e175217a57221ca520f9173d86b9f1cdae33c8c34bf6ee9be57753329719"
+        "sha256": "ddc0e175217a57221ca520f9173d86b9f1cdae33c8c34bf6ee9be57753329719",
+        "background_focus_x": 61
       }
     },
     {
@@ -473,7 +497,8 @@
         "caption": "墨默以影霜隔开袭击与人群，边界精确止在该停的地方。",
         "width": 1672,
         "height": 941,
-        "sha256": "a3478ca99edcc8c69224991acb133f88c6b1ad0b85232c38042c9a78964d9c39"
+        "sha256": "a3478ca99edcc8c69224991acb133f88c6b1ad0b85232c38042c9a78964d9c39",
+        "background_focus_x": 39
       }
     },
     {
@@ -492,7 +517,8 @@
         "caption": "胖橘猫在遗迹阶前拦住机关追击，蓝焰只在眼中一闪。",
         "width": 1672,
         "height": 941,
-        "sha256": "7efede334cccfc76fef4e39d65481fedbc228e1193a91742bd931b2da755a1ce"
+        "sha256": "7efede334cccfc76fef4e39d65481fedbc228e1193a91742bd931b2da755a1ce",
+        "background_focus_x": 61
       }
     },
     {
@@ -511,7 +537,8 @@
         "caption": "年轻法务握住誓剑，在屋顶的交锋中守住身后的证人。",
         "width": 1672,
         "height": 941,
-        "sha256": "74c41105d16ff75eea6d2f0424e9c9d7b144fe9bc7b92c6281149589f4a1e57e"
+        "sha256": "74c41105d16ff75eea6d2f0424e9c9d7b144fe9bc7b92c6281149589f4a1e57e",
+        "background_focus_x": 45
       }
     },
     {
@@ -530,7 +557,8 @@
         "caption": "环以章鱼形态巡视海岸，在船底拦住逼近的海中威胁。",
         "width": 1672,
         "height": 941,
-        "sha256": "3882c6204d8a121fb378d024612174d15ae98162c66a24df865a60579131fd40"
+        "sha256": "3882c6204d8a121fb378d024612174d15ae98162c66a24df865a60579131fd40",
+        "background_focus_x": 51
       }
     }
   ]

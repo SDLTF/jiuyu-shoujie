@@ -52,8 +52,6 @@ if (characterScene) {
       }
       const ready = image.decode().then(() => {
         const source = image.currentSrc || image.src;
-        const atmosphere = slide.querySelector(".scene-battle-atmosphere");
-        if (atmosphere) atmosphere.style.backgroundImage = `url("${source}")`;
         backgrounds[index].style.backgroundImage = `url("${source}")`;
       }).catch(error => { pending.delete(index); throw error; });
       pending.set(index, ready);

@@ -69,8 +69,9 @@ def character_scene_rotation(person, artwork, art, art_mobile, art_raw, width, h
             sources.append(f'../assets/{path}?v={asset_version(path)} {preview.width}w')
     sources.append(f'{full} {battle["width"]}w')
     original = escape(RAW_URL + battle['original'])
-    second = f'<div class="character-scene-art scene-slide" data-scene-label="战斗场景" data-scene-image="{full}" data-scene-original="{original}" data-scene-kind="battle" aria-hidden="true"><div class="scene-battle-atmosphere" aria-hidden="true"></div><img data-scene-src="{full}" data-scene-srcset="{escape(", ".join(sources))}" sizes="(max-width: 640px) 100vw, 56vw" alt="" width="{battle["width"]}" height="{battle["height"]}" decoding="async"></div>'
-    controls = f'''<div class="scene-rotation-controls" role="group" aria-label="{name}背景轮换" hidden><div class="scene-choices"><button type="button" data-scene-select="0" aria-pressed="true">角色大图</button><button type="button" data-scene-select="1" aria-pressed="false">战斗场景</button></div><button type="button" class="scene-rotation-toggle" aria-pressed="false">暂停轮换</button><span class="scene-current">角色大图 · 每 12 秒轮换</span><span class="scene-announcement" role="status"></span></div>'''
+    focus_x = max(0, min(100, float(battle.get('background_focus_x', 50))))
+    second = f'<picture class="character-scene-art scene-slide" data-scene-label="战斗场景" data-scene-image="{full}" data-scene-original="{original}" data-scene-kind="battle" style="--scene-focus-x:{focus_x:g}%" aria-hidden="true"><img data-scene-src="{full}" data-scene-srcset="{escape(", ".join(sources))}" sizes="(max-width: 640px) 200vw, max(100vw, 1600px)" alt="" width="{battle["width"]}" height="{battle["height"]}" decoding="async"></picture>'
+    controls = f'''<div class="scene-rotation-controls" role="group" aria-label="{name}背景轮换" hidden><span class="scene-rotation-label">背景切换</span><div class="scene-choices"><button type="button" data-scene-select="0" aria-pressed="true">角色大图</button><button type="button" data-scene-select="1" aria-pressed="false">战斗场景</button></div><button type="button" class="scene-rotation-toggle" aria-pressed="false">暂停轮换</button><span class="scene-current">角色大图 · 每 12 秒轮换</span><span class="scene-announcement" role="status"></span></div>'''
     return first + second, controls
 
 def avatar_url(ident, suffix="", style="original"):
