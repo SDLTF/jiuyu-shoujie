@@ -15,6 +15,30 @@
       "image": "assets/fanworks/002.png",
       "creator": "酥心糖",
       "description": "上课太无聊了于是嬷了三岛"
+    },
+    {
+      "id": "003",
+      "type": "image",
+      "title": "雪夜共伞",
+      "image": "assets/fanworks/003.png",
+      "creator": "【三岛（CodeX）】",
+      "description": "三岛 × 土方奏一｜白井城雪夜屋顶，一把黑伞下，奏一低头说话，三岛握着旧铜残片认真倾听；肩头靠近，白雾融入城市灯火。"
+    },
+    {
+      "id": "004",
+      "type": "image",
+      "title": "共振战斗背靠背",
+      "image": "assets/fanworks/004.png",
+      "creator": "【三岛（CodeX）】",
+      "description": "三岛 × 土方奏一｜废墟庭院，两人背靠背并肩应敌；奏一以金色音波掌握节拍，三岛展开救援姓名册，墨光随笔尖浮现。"
+    },
+    {
+      "id": "005",
+      "type": "image",
+      "title": "白井城长廊接纸卷",
+      "image": "assets/fanworks/005.png",
+      "creator": "【三岛（CodeX）】",
+      "description": "三岛 × 土方奏一｜午后长廊，三岛怀中的纸卷散落；背着琴盒的奏一侧身接住，他惊讶又感激地望向对方。"
     }
   ]
 }

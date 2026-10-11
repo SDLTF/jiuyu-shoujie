@@ -1,0 +1,77 @@
+{
+  "created": "2026-10-11",
+  "tool": "built-in image_gen",
+  "status": "Selected for publication by user",
+  "selection": "Only the three user-selected images. Keep the original detailed painterly style.",
+  "characterReferences": [
+    "D:/小说/jiuyu-shoujie/assets/originals/01.png",
+    "D:/小说/jiuyu-shoujie/assets/originals/03.png",
+    "D:/小说/jiuyu-shoujie/assets/character-scenes/01.png",
+    "D:/小说/jiuyu-shoujie/assets/character-scenes/03.png"
+  ],
+  "images": [
+    {
+      "id": "003",
+      "specId": "007",
+      "source": "C:/Users/31529/AppData/Local/Temp/codex-clipboard-3f8c006e-7461-41f8-8547-037ef9a92fca.png",
+      "file": "003-雪夜共伞.png",
+      "title": "雪夜共伞",
+      "creator": "【三岛（CodeX）】",
+      "description": "三岛 × 土方奏一｜白井城雪夜屋顶，一把黑伞下，奏一低头说话，三岛握着旧铜残片认真倾听；肩头靠近，白雾融入城市灯火。",
+      "output": "D:/小说/outputs/fanworks/selected-20261011/003-雪夜共伞.png",
+      "originalScenePrompt": "Use case: illustration-story. 根据参考中的两位原创角色制作一张全新的双人CP同人场景，严格按本次场景动作构图绘制。参考图1是三岛的人设卡，参考图2是土方奏一的人设卡；参考图3、4分别是两人的叙事人设图。四张参考只用于人物身份、发型、服装识别、道具，不要继承参考的半写实皮肤、繁密金纹、同款脸或档案卡布局。\n风格必须是优美清爽的日系动画插画：清晰而有轻重的二维线稿，简练准确的成人五官，赛璐璐色块和少量柔和渐变，细腻空气光、可靠透视；不要照片感、3D、油画厚重皮肤、过度肌肉、满画面金色花纹或棕金滤镜。环境细节服从人物动作。所有人物都是成年男性，三岛24岁178cm、土方奏一23岁181cm。保持三岛较柔和且略疲惫的面部、苍白脸、眼下青影、黑色长发用朴素细绳束起、旧而洁的深墨色高领外套、右食指侧明确有小块墨渍；土方奏一的脸更锐利，黑色层次短发或及颈发沿用参考、整洁深色西装配白衬衫和领带，眼神锋利优雅、有一点腹黑笑意。两张脸要可辨认且不同。小铜镇纸残片是可以压住纸页的朴素不规则旧铜片，不是发光宝石、项链或大法器。\n人物应有各自完整、自然的肢体与明确的手臂连接。小提琴为一把木质斯特拉迪瓦里式四弦提琴，不必出现商标字；执琴、执弓、调弦动作合理。忠实画出场景指定的不同工作动作与观看方向，CP感来自默契、靠近、共同注意力，不擅自改成拥抱贴脸的同一姿势。画面只有这两位明确可辨的主角。不要大标题、对白、水印、签名、相框、拼贴、人物资料栏；纸上可有细小自然笔迹但不放清晰文字。输出一张完整横向16:9画面。\n\n本图场景：雪夜共伞\n白井城雪夜屋顶，两人共撑一把黑伞。土方奏一穿整洁西装，手提琴盒，微微低头对三岛说话，笑意淡淡；三岛拿着旧铜镇纸残片，黑发素绳，苍白疲惫，却认真听他说。两人肩膀靠近，呼吸成白雾，远处城市灯火与雪幕朦胧。蓝白雪光与暖色路灯交错。远景双人，安静浪漫，克制亲密。\n构图落实：远景环境占比约三分之二，两人全身可见并处在安全宽阔平整的屋顶平台，画面下边可以有低矮石栏，绝不站在尖屋脊上。奏一一只手撑一把黑伞，另一只手稳稳提着关闭的琴盒，略低头对三岛说话；三岛两手在胸前捧着一小块朴素铜残片，仔细倾听，没有抱书、握伞或第三只手。肩膀近而不紧抱，三岛疲惫但温柔；小小白雾从两人口鼻前呼出。蓝白雪幕、积雪屋顶、暖金路灯和朦胧古城天际线，细腻疏朗动画背景美术。保持远景，不改成胸像贴脸的大特写；黑伞结构完整，雪在伞外落下。",
+      "edits": [],
+      "dimensions": [
+        1672,
+        941
+      ],
+      "format": "PNG",
+      "sha256": "d77c94757c70e72de298562e8ae8aa7efab9247f20f37843a586ea0ba0930dff"
+    },
+    {
+      "id": "004",
+      "specId": "006",
+      "source": "C:\\Users\\31529\\.codex\\generated_images\\01a1255e-e58f-7af0-852a-a228de1e92c2\\exec-68826aa0-4751-469d-a61a-e817ff312fec.png",
+      "file": "004-left-hand-writing-v2.png",
+      "title": "共振战斗背靠背",
+      "creator": "【三岛（CodeX）】",
+      "description": "三岛 × 土方奏一｜废墟庭院，两人背靠背并肩应敌；奏一以金色音波掌握节拍，三岛展开救援姓名册，墨光随笔尖浮现。",
+      "output": "D:\\小说\\outputs\\fanworks\\selected-20261011\\004-left-hand-writing-v2.png",
+      "originalScenePrompt": "Use case: illustration-story. 根据参考中的两位原创角色制作一张全新的双人CP同人场景，严格按本次场景动作构图绘制。参考图1是三岛的人设卡，参考图2是土方奏一的人设卡；参考图3、4分别是两人的叙事人设图。四张参考只用于人物身份、发型、服装识别、道具，不要继承参考的半写实皮肤、繁密金纹、同款脸或档案卡布局。\n风格必须是优美清爽的日系动画插画：清晰而有轻重的二维线稿，简练准确的成人五官，赛璐璐色块和少量柔和渐变，细腻空气光、可靠透视；不要照片感、3D、油画厚重皮肤、过度肌肉、满画面金色花纹或棕金滤镜。环境细节服从人物动作。所有人物都是成年男性，三岛24岁178cm、土方奏一23岁181cm。保持三岛较柔和且略疲惫的面部、苍白脸、眼下青影、黑色长发用朴素细绳束起、旧而洁的深墨色高领外套、右食指侧明确有小块墨渍；土方奏一的脸更锐利，黑色层次短发或及颈发沿用参考、整洁深色西装配白衬衫和领带，眼神锋利优雅、有一点腹黑笑意。两张脸要可辨认且不同。小铜镇纸残片是可以压住纸页的朴素不规则旧铜片，不是发光宝石、项链或大法器。\n人物应有各自完整、自然的肢体与明确的手臂连接。小提琴为一把木质斯特拉迪瓦里式四弦提琴，不必出现商标字；执琴、执弓、调弦动作合理。忠实画出场景指定的不同工作动作与观看方向，CP感来自默契、靠近、共同注意力，不擅自改成拥抱贴脸的同一姿势。画面只有这两位明确可辨的主角。不要大标题、对白、水印、签名、相框、拼贴、人物资料栏；纸上可有细小自然笔迹但不放清晰文字。输出一张完整横向16:9画面。\n\n本图场景：共振战斗背靠背\n白井城废墟庭院，魔法共振战斗。土方奏一拉奏斯特拉迪瓦里，金色音波与节拍环扩散，表情冷静而锐利；三岛与他背靠背，翻开救援姓名册，执笔记录，墨光浮现，眼神坚定安静。风吹纸页，碎石悬浮，背景有残破拱门与共振光纹。低角度动作双人构图，强烈明暗对比，史诗感，CP并肩感。\n构图落实：两人真正背靠背，背部或肩背彼此接触，分别面向两个不同方向，给对方守住身后。奏一以稳定微开的站姿拉琴，左手在琴颈、右手拉弓；三岛左手将救援姓名册托在胸前，右手握笔写下记录，不持剑、不持小提琴，不替换成巨大攻击魔法。墨光是从笔尖与纸上浮起的细小深蓝墨迹光纹，金色共振环来自提琴弦与弓的节拍。低机位广角、人物完整动作清晰，衣摆与马尾被风吹动，碎石只在周边少量浮起；强明暗、余烬暖光与冷蓝阴影对照。两张脸都以相反方向的三分之二侧面可见，严肃共同作战，不微笑拥抱、不挤在同一朝向。",
+      "edits": [
+        {
+          "prompt": "Use case: precise-object-edit.\nEDIT TARGET: the single supplied illustration of two adult men fighting back-to-back in a ruined courtyard.\nPrimary request: REPAIR ONLY THE OPEN BOOK AND ITS HAND SUPPORT on the long-black-ponytail archivist on the RIGHT. The existing book has impossible doubled covers, disjointed hinges and inconsistent page blocks. Replace it in the same location with ONE physically coherent open rescue-name register, a normal medium-sized worn dark-leather hardcover volume with modest old brass corner protectors. It has ONE central straight spine/gutter, TWO correctly connected covers, and two continuous cream-paper page blocks opening into a natural shallow V. The pages lie on the covers and meet at the central gutter; plausible perspective and reasonable paper thickness, no detached rigid slabs or extra overlapping volumes. Tilt the open spread naturally upward toward his gaze. His LEFT palm supports the spine and lower edge FROM UNDERNEATH, fingers curled naturally along the underside, thumb stabilizing the near page edge; his RIGHT hand holds the existing pen above the right page with the nib touching a line as he writes. Keep the right writing hand and its existing arm position as close to the original as possible. Show fine manuscript entries on both pages, with only a few thin loose page corners ruffled by battle wind. One book, two hands, five fingers per hand, plausible support and contact.\nSTRICT INVARIANTS: preserve the ORIGINAL DETAILED SEMI-REALISTIC ANIME PAINTERLY STYLE, rich gold light, fine garment brocade, detailed hair and handsome adult faces. No simplification into cel-shaded color blocks. Preserve both identities, facial expressions, glasses, hairstyles, entire body poses, back-to-back composition, the violinist and his violin/bow/hands, costumes, blue-black ink magic, golden resonance rings, airborne rubble and foreground loose papers, ruined arches, lighting, camera angle, all canvas framing. Treat everything outside the book and the minimum necessary supporting left-hand area as locked. No new people, no text overlay, no watermark.",
+          "target": "C:/Users/31529/AppData/Local/Temp/codex-clipboard-c2954dbd-d808-4688-9877-3ca1f659e34b.png"
+        },
+        {
+          "prompt": "Use case: precise-object-edit.\nInput image: the single supplied back-to-back battle illustration is the EDIT TARGET.\nPrimary request: Correct the HANDEDNESS of the long-ponytail archivist on the RIGHT. He must WRITE WITH HIS ANATOMICAL LEFT HAND, and SUPPORT THE BOOK WITH HIS ANATOMICAL RIGHT HAND. The lower supporting hand against the book is his RIGHT hand; preserve it. REDRAW ONLY the UPPER pen-holding hand and the minimum wrist/cuff connection as a convincing LEFT HAND, not a second right hand. Give the writing left hand a correct left-handed thumb-index pinch and three other distinct naturally curled fingers. The dorsal side/knuckles can face the viewer, in which case the LEFT thumb sits on the viewer-right side of that hand rather than the viewer-left right-hand configuration. The left index finger arches over the pen, the left thumb opposes it correctly, the middle finger supports the barrel, the nib touches the open page. The wrist and forearm must connect naturally to his left arm; minimally adjust wrist rotation or visible cuff if necessary. The writing hand is the elevated hand above the book; the supporting hand is the lower hand under the book. Exactly two anatomically different hands for this man: left writes, right holds.\nLock everything else: retain the repaired SINGLE open leather book with two continuous page blocks and one central spine, its size/perspective and natural right-hand support; identical character faces, glasses, hair, all clothing texture, body poses, back-to-back composition, violinist and every part of his violin/bow/hands, gold resonant rings, ink magic, floating papers and rubble, background ruins, lighting, detailed semi-realistic anime painterly style, original wide canvas. Do not mirror the canvas or change faces, style, book, composition, poses or lighting. No additional hands, no double-right-hand anatomy, no text overlay or watermark.",
+          "target": "D:/小说/outputs/fanworks/selected-20261011/004-共振战斗背靠背-书本修正版.png"
+        }
+      ],
+      "dimensions": [
+        1672,
+        941
+      ],
+      "format": "PNG",
+      "sha256": "a66cd458dfed0807b8b673815577d8ed76d8a24fecc1c0c6e23e6e4513d495ad"
+    },
+    {
+      "id": "005",
+      "specId": "005",
+      "source": "C:/Users/31529/AppData/Local/Temp/codex-clipboard-96d99b39-566d-47a4-b90d-2350d31efd8a.png",
+      "file": "005-白井城长廊接纸卷.png",
+      "title": "白井城长廊接纸卷",
+      "creator": "【三岛（CodeX）】",
+      "description": "三岛 × 土方奏一｜午后长廊，三岛怀中的纸卷散落；背着琴盒的奏一侧身接住，他惊讶又感激地望向对方。",
+      "output": "D:/小说/outputs/fanworks/selected-20261011/005-白井城长廊接纸卷.png",
+      "originalScenePrompt": "Use case: illustration-story. 根据参考中的两位原创角色制作一张全新的双人CP同人场景，严格按本次场景动作构图绘制。参考图1是三岛的人设卡，参考图2是土方奏一的人设卡；参考图3、4分别是两人的叙事人设图。四张参考只用于人物身份、发型、服装识别、道具，不要继承参考的半写实皮肤、繁密金纹、同款脸或档案卡布局。\n风格必须是优美清爽的日系动画插画：清晰而有轻重的二维线稿，简练准确的成人五官，赛璐璐色块和少量柔和渐变，细腻空气光、可靠透视；不要照片感、3D、油画厚重皮肤、过度肌肉、满画面金色花纹或棕金滤镜。环境细节服从人物动作。所有人物都是成年男性，三岛24岁178cm、土方奏一23岁181cm。保持三岛较柔和且略疲惫的面部、苍白脸、眼下青影、黑色长发用朴素细绳束起、旧而洁的深墨色高领外套、右食指侧明确有小块墨渍；土方奏一的脸更锐利，黑色层次短发或及颈发沿用参考、整洁深色西装配白衬衫和领带，眼神锋利优雅、有一点腹黑笑意。两张脸要可辨认且不同。小铜镇纸残片是可以压住纸页的朴素不规则旧铜片，不是发光宝石、项链或大法器。\n人物应有各自完整、自然的肢体与明确的手臂连接。小提琴为一把木质斯特拉迪瓦里式四弦提琴，不必出现商标字；执琴、执弓、调弦动作合理。忠实画出场景指定的不同工作动作与观看方向，CP感来自默契、靠近、共同注意力，不擅自改成拥抱贴脸的同一姿势。画面只有这两位明确可辨的主角。不要大标题、对白、水印、签名、相框、拼贴、人物资料栏；纸上可有细小自然笔迹但不放清晰文字。输出一张完整横向16:9画面。\n\n本图场景：白井城长廊接纸卷\n白井城档案馆长廊，午后阳光斜照。三岛抱着一叠命簿和救援姓名册匆匆走过，纸卷散落；土方奏一背着琴盒，穿整洁西装，侧身伸手接住飞散的纸卷，唇角轻挑，像在调侃。三岛惊讶又感激，安静地看向他。纸页悬空、尘埃、石拱与书架。中广角动态构图，运动感，温暖光影。\n构图落实：展示两人的全身或至少膝上，空间明显比前两张宽。三岛匆忙的脚步刚停住，上身为了护住怀中书册微微扭转，长马尾与外套下摆滞后摆动。奏一背着牢固有肩带的琴盒，跨出一步、侧身伸出一只手准确接住一卷展开的纸；另一只手自然平衡，不拉琴。散落纸页是惯性飞散而不是整间长廊纸海。三岛与奏一的视线交汇、表情不同。阳光斜穿石拱和书架，纸卷、书册、接纸的手形成清楚的运动轨迹，清爽温暖的动画分镜感。",
+      "edits": [],
+      "dimensions": [
+        1672,
+        941
+      ],
+      "format": "PNG",
+      "sha256": "9febf8aeff828930cb52074472ffb92024cb1bd5d217bcac56905f3c5c927940"
+    }
+  ]
+}
