@@ -54,10 +54,10 @@
       "battle": {
         "original": "assets/character-battles/03.png",
         "title": "弦上逆潮",
-        "caption": "小提琴的共振截住来袭，为港口撤离争取节拍。",
+        "caption": "他气定神闲地悬浮演奏，双腿自然垂落，以小提琴共振截住来袭，守住港口撤离的节拍。",
         "width": 1672,
         "height": 941,
-        "sha256": "57fc6d58bdcbc9e3f09d5df5593f9a2822cb59b0185b5a5498c4354a43622f2c",
+        "sha256": "39993bc3be1b70dce63f3f396b92ec755cf3ef3d09fea6223862b42de11b756a",
         "background_focus_x": 69
       }
     },
@@ -254,11 +254,11 @@
       "battle": {
         "original": "assets/character-battles/13.png",
         "title": "酒泉夜守",
-        "caption": "酒馆受袭时，他以灵酒与清水照护同伴，稳住一夜的防线。",
+        "caption": "他一手持剑、一手握灵酒，多种配方的酒瓶悬浮环绕，在酒馆门前护住同伴。",
         "width": 1672,
         "height": 941,
-        "sha256": "3f9b7fc66ba0efe66a3d9a4876ded04365b5f5e6a1a0aff1c6bb050c5436de83",
-        "background_focus_x": 48
+        "sha256": "f2507a9137301412748e91ee8660d99d4c62390e990c7114752ab5ed94ce745d",
+        "background_focus_x": 58
       }
     },
     {
