@@ -570,3 +570,30 @@ body{font-weight:400;font-kerning:normal;text-rendering:optimizeLegibility;-webk
  .avatar-switch-options button{min-width:58px;min-height:44px;padding:6px 12px}
  .scene-content>.avatar-switch{margin-top:18px}
 }
+
+/* Crossfade scenery while keeping the text steady and battle compositions whole. */
+.scene-slide{opacity:0;transition:opacity 1.6s ease;pointer-events:none}
+.scene-slide.is-active{opacity:1}
+.scene-slide[data-scene-kind="battle"]{overflow:hidden}
+.scene-battle-atmosphere{position:absolute;inset:-24px;background:center/cover no-repeat;filter:blur(18px) brightness(.55)}
+.scene-slide[data-scene-kind="battle"]>img{position:absolute;inset:12% 3% 12% auto;width:56%;height:76%;object-fit:contain;object-position:center;filter:drop-shadow(0 16px 32px #0005)}
+.page-character .page-backdrop.has-scene-rotation{background-image:none;background-color:var(--bg)}
+.scene-backdrop-image{position:absolute;inset:0;background:center top/cover no-repeat;opacity:0;transition:opacity 1.6s ease}
+.scene-backdrop-image.is-active{opacity:1}
+.page-character .page-backdrop.has-scene-rotation:after{display:block;background:linear-gradient(#101b25ed,#101b25fa)}
+.scene-rotation-controls{display:flex;align-items:center;gap:10px 14px;flex-wrap:wrap;max-width:43%;margin-top:24px;font:13px/1.7 var(--sans)}
+.scene-choices{display:flex;border:1px solid #bba27280;border-radius:4px;overflow:hidden;background:#101b25d9}
+.scene-choices button,.scene-rotation-toggle{border:0;min-height:44px;padding:8px 13px;background:transparent;color:var(--muted)}
+.scene-choices button[aria-pressed="true"]{background:var(--gold);color:var(--bg)}
+.scene-rotation-toggle{border:1px solid #bba27280;border-radius:4px;background:#101b25d9;color:var(--ink)}
+.scene-rotation-toggle:hover{background:#293944}
+.scene-current{flex-basis:100%;color:var(--muted);font-size:12px}
+.scene-announcement{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+@media(max-width:850px) and (min-width:641px){.scene-rotation-controls{max-width:46%}.scene-slide[data-scene-kind="battle"]>img{width:51%;right:1.5%}}
+@media(max-width:640px){
+ .scene-rotation-controls{max-width:none;gap:9px 12px;margin-top:20px}
+ .scene-choices button,.scene-rotation-toggle{padding:8px 12px;font-size:13px}
+ .scene-slide[data-scene-kind="battle"]>img{inset:0;width:100%;height:100%;object-fit:contain;object-position:center}
+ .scene-battle-atmosphere{filter:blur(16px) brightness(.5)}
+ .page-character .page-backdrop.has-scene-rotation .scene-backdrop-image{display:none}
+}

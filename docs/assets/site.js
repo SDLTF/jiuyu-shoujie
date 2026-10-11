@@ -1,5 +1,133 @@
 "use strict";
 
+const characterScene = document.querySelector(".character-scene");
+if (characterScene) {
+  const slides = Array.from(characterScene.querySelectorAll(".scene-slide"));
+  const controls = characterScene.querySelector(".scene-rotation-controls");
+  if (slides.length > 1 && controls) {
+    const choices = Array.from(controls.querySelectorAll("[data-scene-select]"));
+    const toggle = controls.querySelector(".scene-rotation-toggle");
+    const status = controls.querySelector(".scene-current");
+    const announcement = controls.querySelector(".scene-announcement");
+    const currentViewer = characterScene.querySelector(".scene-view-current");
+    const currentOriginal = characterScene.querySelector(".scene-original-current");
+    const backdrop = document.querySelector(".page-backdrop");
+    const motion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const storageKey = "jiuyu-scene-paused";
+    let paused = motion.matches;
+    try { paused = paused || window.localStorage.getItem(storageKey) === "true"; } catch {}
+    let active = 0;
+    let timer;
+    let inView = true;
+    let focusPaused = false;
+    let request = 0;
+    const pending = new Map();
+    const backgrounds = slides.map((slide, index) => {
+      const layer = document.createElement("div");
+      layer.className = "scene-backdrop-image" + (index === 0 ? " is-active" : "");
+      if (index === 0) layer.style.backgroundImage = `url("${slide.dataset.sceneImage}")`;
+      backdrop.append(layer);
+      return layer;
+    });
+    backdrop.classList.add("has-scene-rotation");
+    const updateStatus = () => {
+      toggle.setAttribute("aria-pressed", String(paused));
+      toggle.textContent = paused ? "开启轮换" : "暂停轮换";
+      status.textContent = slides[active].dataset.sceneLabel + (paused ? " · 已暂停" : " · 每 12 秒轮换");
+    };
+    const canPlay = () => !paused && inView && !document.hidden && !focusPaused
+      && !document.querySelector("#image-viewer[open]");
+    const schedule = () => {
+      window.clearTimeout(timer);
+      if (!canPlay()) return;
+      timer = window.setTimeout(() => show((active + 1) % slides.length, false), 12000);
+    };
+    const loadSlide = index => {
+      if (pending.has(index)) return pending.get(index);
+      const slide = slides[index];
+      const image = slide.querySelector("img");
+      if (image.dataset.sceneSrc) {
+        image.srcset = image.dataset.sceneSrcset;
+        image.src = image.dataset.sceneSrc;
+      }
+      const ready = image.decode().then(() => {
+        const source = image.currentSrc || image.src;
+        const atmosphere = slide.querySelector(".scene-battle-atmosphere");
+        if (atmosphere) atmosphere.style.backgroundImage = `url("${source}")`;
+        backgrounds[index].style.backgroundImage = `url("${source}")`;
+      }).catch(error => { pending.delete(index); throw error; });
+      pending.set(index, ready);
+      return ready;
+    };
+    const show = async (index, manual) => {
+      const version = ++request;
+      window.clearTimeout(timer);
+      if (manual) announcement.textContent = "正在加载" + slides[index].dataset.sceneLabel;
+      try {
+        await loadSlide(index);
+        if (version !== request) return;
+        // A slow download must not resume motion after the visitor pauses it.
+        if (!manual && !canPlay()) return;
+        active = index;
+        slides.forEach((slide, position) => slide.classList.toggle("is-active", position === active));
+        backgrounds.forEach((layer, position) => layer.classList.toggle("is-active", position === active));
+        choices.forEach(button => button.setAttribute("aria-pressed", String(Number(button.dataset.sceneSelect) === active)));
+        const slide = slides[active];
+        currentViewer.dataset.image = slide.dataset.sceneImage;
+        currentViewer.dataset.original = slide.dataset.sceneOriginal;
+        currentViewer.dataset.name = characterScene.dataset.sceneName + " · " + slide.dataset.sceneLabel;
+        currentViewer.dataset.kind = slide.dataset.sceneLabel;
+        currentOriginal.href = slide.dataset.sceneOriginal;
+        characterScene.dataset.sceneActive = String(active);
+        updateStatus();
+        if (manual) announcement.textContent = "已切换为" + slide.dataset.sceneLabel;
+      } catch {
+        if (manual && version === request) announcement.textContent = "图片暂时未能加载，请稍后重试。";
+      } finally {
+        if (version === request) schedule();
+      }
+    };
+    choices.forEach(button => button.addEventListener("click", () => show(Number(button.dataset.sceneSelect), true)));
+    controls.addEventListener("keydown", event => {
+      if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+      event.preventDefault();
+      const next = (active + (event.key === "ArrowRight" ? 1 : -1) + slides.length) % slides.length;
+      choices[next].focus({preventScroll:true});
+      show(next, true);
+    });
+    toggle.addEventListener("click", () => {
+      paused = !paused;
+      if (!paused) focusPaused = false;
+      try { window.localStorage.setItem(storageKey, String(paused)); } catch {}
+      updateStatus();
+      schedule();
+    });
+    controls.addEventListener("focusin", () => { focusPaused = true; schedule(); });
+    controls.addEventListener("focusout", () => window.setTimeout(() => {
+      if (!controls.contains(document.activeElement)) focusPaused = false;
+      schedule();
+    }, 0));
+    document.addEventListener("visibilitychange", schedule);
+    motion.addEventListener("change", event => {
+      if (event.matches) paused = true;
+      updateStatus();
+      schedule();
+    });
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(entries => {
+        inView = entries[0].isIntersecting;
+        schedule();
+      }).observe(characterScene);
+    }
+    const imageViewer = document.getElementById("image-viewer");
+    if (imageViewer) new MutationObserver(schedule).observe(imageViewer, {attributes:true, attributeFilter:["open"]});
+    controls.hidden = false;
+    characterScene.dataset.sceneActive = "0";
+    updateStatus();
+    schedule();
+  }
+}
+
 const avatarSwitches = Array.from(document.querySelectorAll(".avatar-switch"));
 if (avatarSwitches.length) {
   const storageKey = "jiuyu-avatar-style";
