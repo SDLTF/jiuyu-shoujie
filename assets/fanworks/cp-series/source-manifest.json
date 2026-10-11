@@ -1,0 +1,115 @@
+{
+  "archive": "CP二创.zip",
+  "archive_sha256": "55368670cddc44f1a72976a230944717beccf6ccaa3bf6bf19d83ae8a7724faa",
+  "description_file": "简介与命名.md",
+  "images": [
+    {
+      "id": "cp-1-1",
+      "source": "1-1.png",
+      "pairing": "小语 × 韦侃",
+      "title": "偏偏是你",
+      "width": 1672,
+      "height": 941,
+      "sha256": "f20142c3ecc7bb1d0ca0a215b3a97edf49f868413c8bead0f1f651dc4d289fa7"
+    },
+    {
+      "id": "cp-1-2",
+      "source": "1-2.png",
+      "pairing": "小语 × 韦侃",
+      "title": "雨还没停",
+      "width": 1672,
+      "height": 941,
+      "sha256": "026066ac6e15955c04dfc02fbdc0ccdad61c69ad50ca9fde1fbc2f097fc4674c"
+    },
+    {
+      "id": "cp-1-3",
+      "source": "1-3.png",
+      "pairing": "小语 × 韦侃",
+      "title": "比星光更近",
+      "width": 1672,
+      "height": 941,
+      "sha256": "635bc679acb74a3033d975ae9341228d1b7426f6255e833d4faced7ab8b40c59"
+    },
+    {
+      "id": "cp-2-1",
+      "source": "2-1.png",
+      "pairing": "闵霁 × 曲柯",
+      "title": "花枝与恶作剧",
+      "width": 1672,
+      "height": 941,
+      "sha256": "41f924bd8dc26d44d63c2a63099eedf3bb0db76532beecff858f1ba075f0b0e0"
+    },
+    {
+      "id": "cp-2-2",
+      "source": "2-2.png",
+      "pairing": "闵霁 × 曲柯",
+      "title": "最后一支舞",
+      "width": 1672,
+      "height": 941,
+      "sha256": "f26e9a0b3e6a78c59349a5e7aa66738c86c763e10e151e8280db761e8dcd1d62"
+    },
+    {
+      "id": "cp-2-3",
+      "source": "2-3.png",
+      "pairing": "闵霁 × 曲柯",
+      "title": "卸下玩笑之后",
+      "width": 1672,
+      "height": 941,
+      "sha256": "7f897a8b3a89773c4299212584aa8ce2b2002e4542bcc46d2524560ef0019cbe"
+    },
+    {
+      "id": "cp-3-1",
+      "source": "3-1.png",
+      "pairing": "三岛 × 土方奏一",
+      "title": "休止符",
+      "width": 1672,
+      "height": 941,
+      "sha256": "0bb085d87a5d7c9ff99a689b8d258ec51ac2852fe2c111a59cad8484becdb42e"
+    },
+    {
+      "id": "cp-3-2",
+      "source": "3-2.png",
+      "pairing": "三岛 × 土方奏一",
+      "title": "掌心的余音",
+      "width": 1672,
+      "height": 941,
+      "sha256": "cb4600bd48ea73ea48c43e7f4f85fcaf0a17b49fac6791ccced41fe8c51575c9"
+    },
+    {
+      "id": "cp-3-3",
+      "source": "3-3.png",
+      "pairing": "三岛 × 土方奏一",
+      "title": "谢幕以后",
+      "width": 1672,
+      "height": 941,
+      "sha256": "7fe36f81ca79553082daa1cff7c1535e871fac9002827234c5f157ac4453070a"
+    },
+    {
+      "id": "cp-4-1",
+      "source": "4-1.png",
+      "pairing": "酥心糖 × 楚惊殊 × 单谣",
+      "title": "糖盒里的秘密",
+      "width": 1672,
+      "height": 941,
+      "sha256": "8746eb3ea8f2108f4249a090afe780f3fb35a4496bf3c09a57ad53dcb0454c8b"
+    },
+    {
+      "id": "cp-4-2",
+      "source": "4-2.png",
+      "pairing": "酥心糖 × 楚惊殊 × 单谣",
+      "title": "晚风偏爱谁",
+      "width": 1672,
+      "height": 941,
+      "sha256": "2a53f7c61e118cdba31b9d82c574872a8f6fe4a0e7134eebe8b4cb91f5c7d618"
+    },
+    {
+      "id": "cp-4-3",
+      "source": "4-3.png",
+      "pairing": "酥心糖 × 楚惊殊 × 单谣",
+      "title": "不必立下誓约",
+      "width": 1672,
+      "height": 941,
+      "sha256": "0ac1c025c3936ab515fc27c7e4488f23f4ab4459e8f22dcbba46c0e6a6f07811"
+    }
+  ]
+}
