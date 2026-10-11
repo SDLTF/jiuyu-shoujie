@@ -1,5 +1,5 @@
 {
-  "mode": "built-in image_gen",
+  "mode": "mixed: built-in image_gen and user-provided images",
   "date": "2026-10-11",
   "images": [
     {
@@ -22,16 +22,15 @@
       "name": "琉西法",
       "title": "六翼护生",
       "caption": "六翼挡住战场碎屑，他专注救治身前的伤员。",
-      "refs": [
-        "C:\\Users\\31529\\.codex\\generated_images\\01a11ef3-0eaa-7842-9940-1b1b4e6283ee\\exec-fb6385fc-fc39-42dc-9c2f-ba16fcaa7a53.png",
-        "C:\\Users\\31529\\.codex\\generated_images\\01a11ef3-0eaa-7842-9940-1b1b4e6283ee\\exec-116ce653-7db6-4e68-b6fe-ac70484ca0fd.png"
-      ],
-      "prompt": "Edit ONLY the orientation of the faceless healer's rigid D20 HEAD in image1; preserve the complete LANDSCAPE16:9 battle wallpaper, exactly SIX wings/three pairs, SAME body/healing hand/staff withONEsnake, injured adult patient, colors and high quality. Image2 shows the newly accepted proper SIDE-FACING head orientation. Use its genuine yawed geometry, horns and crown as the pose target, placing that same head on image1 so the normal of the20 facet points DOWN and LEFT toward the patient's ACTUAL FACE, not toward the camera. The reference20 becomes a FORESHORTENED triangular plane on the LOWER-LEFT of the rotated head,2 remains attached to its same adjacent facet and can appear above due to WHOLE-head rotation,14 and8 stay on their fixed original adjacent facets,4 can be occluded. Copy facet topology and head orientation carefully from image2. DO NOT merely roll/tilt in-plane, do NOT turn just the digits. Never swap/renumber/mirror facets, duplicate20 or invent newly visible readable numbers. He has NO human face, eyes, nose or mouth. Preserve the patient-treatment focus and soft gold healing, not reader confrontation. Same landscape canvas and all other details.",
-      "source": "C:\\Users\\31529\\.codex\\generated_images\\01a11ef3-0eaa-7842-9940-1b1b4e6283ee\\exec-e74b0cc1-95c6-48c0-a4ae-96c7a202e043.png",
-      "revised_from": "C:\\Users\\31529\\.codex\\generated_images\\01a11ef3-0eaa-7842-9940-1b1b4e6283ee\\exec-fb6385fc-fc39-42dc-9c2f-ba16fcaa7a53.png",
-      "width": 1672,
-      "height": 941,
-      "sha256": "1cce1705995d0b733d97ed1134f183d9d6103c200a893668b5a078740248cf0f"
+      "mode": "user-provided image",
+      "source": "D:\\小说\\outputs\\琉西法战斗图替换\\02_琉西法_用户指定战斗图.png",
+      "user_upload": "C:\\Users\\31529\\AppData\\Local\\Temp\\codex-clipboard-4e34c676-9aac-4b3f-be76-bd296f7806f7.png",
+      "user_instruction": "琉西斯的战斗图改成这张",
+      "revised_from": "C:\\Users\\31529\\.codex\\generated_images\\01a11ef3-0eaa-7842-9940-1b1b4e6283ee\\exec-e74b0cc1-95c6-48c0-a4ae-96c7a202e043.png",
+      "previous_website_image": "D:\\小说\\outputs\\琉西法战斗图替换\\02_琉西法_替换前.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "ae8e5755574e061028c369f7b741ec4cdff00240845e4bdc2dca4b97437cc9cd"
     },
     {
       "id": "03",

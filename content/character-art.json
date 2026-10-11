@@ -35,9 +35,9 @@
         "original": "assets/character-battles/02.png",
         "title": "六翼护生",
         "caption": "六翼挡住战场碎屑，他专注救治身前的伤员。",
-        "width": 1672,
-        "height": 941,
-        "sha256": "1cce1705995d0b733d97ed1134f183d9d6103c200a893668b5a078740248cf0f",
+        "width": 1280,
+        "height": 720,
+        "sha256": "ae8e5755574e061028c369f7b741ec4cdff00240845e4bdc2dca4b97437cc9cd",
         "background_focus_x": 33
       }
     },
