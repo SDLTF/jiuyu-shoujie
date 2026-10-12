@@ -263,7 +263,55 @@
       "height": 941,
       "sha256": "cdb1f087f97f637d95153845a6d99547b1ada095e97175a47a441c260a9b6def",
       "generation_metadata": "assets/chapter-art/chapter11-12-generation.json"
+    },
+    {
+      "id": "13-1",
+      "chapter": "013",
+      "caption": "符纸的回应",
+      "alt": "旧维护室里，酥心糖悬着的符纸亮起一线朱砂，小语站在她肩侧，墨默用测片记录脉首接点的反应。",
+      "after": "酥心糖垂眼，终于笑出来。",
+      "original": "assets/chapter-art/13-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "16e0cd1422dbbb368fe89ef277fa661cf25b2b345bcdac59669ca1eb109c2012",
+      "generation_metadata": "assets/chapter-art/chapter13-14-generation.json"
+    },
+    {
+      "id": "13-2",
+      "chapter": "013",
+      "caption": "消退的墙影",
+      "alt": "接续校正后，磨坊墙上的肩背暗痕逐渐消退，砖缝重新显出，小语将旧留痕与眼前墙面并看，墨默保持灯位。",
+      "after": "砖台仍是砖台，墙上留下的是湿色和刻线。她手里的原纸还保着旧肩背，眼前的位置却已经能看见那两道原本被遮住的砖缝。",
+      "original": "assets/chapter-art/13-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "a077157eecf8ddc569ef601bfb130634f98a2599f4209adacfb3a192081684ae",
+      "generation_metadata": "assets/chapter-art/chapter13-14-generation.json"
+    },
+    {
+      "id": "14-1",
+      "chapter": "014",
+      "caption": "白石旁的补查",
+      "alt": "晨光下，小语在缺角白石旁补画漏记的田埂，格伦与田主拉绳丈量，韦侃站在硬石边，退水后的冲槽和浸坏麦种仍在眼前。",
+      "after": "田主没多说。他接过格伦递来的绳端，绕到折角外侧，将绳压在露出的石边上。格伦量过两段，把长短添到附页；小语改好自己的示意，蹲下来，去看埂下那道冲槽。",
+      "original": "assets/chapter-art/14-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "658e63e7f729d20a38d5f882c3d198e650e2841bb17272c079b166daac6b369d",
+      "generation_metadata": "assets/chapter-art/chapter13-14-generation.json"
+    },
+    {
+      "id": "14-2",
+      "chapter": "014",
+      "caption": "试托后的复位",
+      "alt": "脉首试托令净水接续中断，林砚指挥工人降回复位，彭湃只用右手稳托板，小语双手举灯照清尚未合拢的铜接片。",
+      "after": "光落到铜边，她才发现自己的手在抖。她用另一只手托住灯底，死死看着那一点空隙，像只要自己能把它照清楚，就能替井边那些人少等一息。",
+      "original": "assets/chapter-art/14-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "268069e72534d708108933ef76b86d0ee6ede4479081023e0d63dc756bccc9c6",
+      "generation_metadata": "assets/chapter-art/chapter13-14-generation.json"
     }
   ],
-  "provenance": "Chapters 1-10: eighteen user-supplied illustrations preserved unchanged. Chapters 11-12: four new illustrations generated with built-in image_gen using the current user-selected artwork and character cards as references; prompts and exact references are preserved in assets/chapter-art/chapter11-12-generation.json. Superseded generated originals for chapters 7-10 remain in assets/chapter-art/archive/, with their generation history in assets/chapter-art/generation-prompts.json."
+  "provenance": "Chapters 1-10: eighteen user-supplied illustrations preserved unchanged. Chapters 11-12: four new illustrations generated with built-in image_gen using the current user-selected artwork and character cards as references; prompts and exact references are preserved in assets/chapter-art/chapter11-12-generation.json. Superseded generated originals for chapters 7-10 remain in assets/chapter-art/archive/, with their generation history in assets/chapter-art/generation-prompts.json. Chapters 13-14: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter13-14-generation.json."
 }

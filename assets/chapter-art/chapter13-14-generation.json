@@ -1,0 +1,75 @@
+{
+  "tool": "built-in image_gen",
+  "intent": "Generate four chapter illustrations with existing artwork and character cards as visual references",
+  "images": [
+    {
+      "id": "13-1",
+      "chapter": "013",
+      "caption": "符纸的回应",
+      "alt": "旧维护室里，酥心糖悬着的符纸亮起一线朱砂，小语站在她肩侧，墨默用测片记录脉首接点的反应。",
+      "after": "酥心糖垂眼，终于笑出来。",
+      "references": [
+        "assets/chapter-art/10-1.png",
+        "assets/chapter-art/10-2.png"
+      ],
+      "prompt": "Use case: illustration-story.\nAsset type: NEW single full-bleed horizontal 16:9 narrative illustration for 九域守界, chapter 13 image 13-1. All inputs are STYLE and CHARACTER IDENTITY references only, not edit targets. Create a new coherent scene.\nReference image 1: Suxintang is the young adult woman with long brown hair, elaborate red floral hair ornaments and ribbons, red-and-gold floral robe, broad cream sleeves and floral layered skirt, holding red talismans. Xiaoyu is the young adult woman with wavy brown shoulder-length hair, tiny gold flower hairpin, ornate blue-and-gold cloak with red lining, cream shirt and red tie, practical brown trousers and boots.\nReference image 2: Mo Mo is the mature slender man with long dark-green hair tied low, pale serious face and elaborate black-purple robe; preserve his face, brass-edged sealing case and observation tools.\nStyle: match the references' finely detailed painterly fantasy anime/semi-realistic illustration, expressive faces and warm weathered stone, fabric and leather, natural anatomy. Restrained amber lamplight with a little blue-green rune light, no big magical spectacle.\nScene: a SMALL dry stone maintenance room beneath a medieval watermill. A straight open corridor and a distant rectangle of afternoon daylight behind the group. Against one wall stands a low stone socket, holding an ancient dark teal relic a little wider than two hands put together, with a curved surface and short feather-like ridges. The relic stays in its original socket. Several shallow incised channels connect the socket to the partition wall; one side segment flickers faintly.\nExactly three main people. Suxintang holds ONE spare pale-paper talisman suspended near the relic, NOT attached and NOT casting: a SINGLE thin cinnabar-red stroke on its lower edge glows in quiet response. Her other hand is lowered, her writing brush still at her sleeve. Her eyes are faintly red with emotion, and a hesitant happy smile is finally appearing. This is a long-awaited small response, not a triumphant power awakening.\nXiaoyu stands beside Suxintang's shoulder, looking at the same thin light and her friend's expression, an earnest reassuring smile. She does not touch the suspended paper. Her old scale-pattern impression sheet with a few pale curved lines rests separately on a DRY tray beside her notebook.\nMo Mo stands opposite with a small measurement strip aimed toward the nearby socket connection, quietly recording the reaction, leaving space between relic and people. A plain blank comparison sheet lies nearby and has NO light.\nComposition: readable foreground talisman and the two women's faces, dark teal relic and careful observer forming a stable triangle. Keep magic physically small. No white dragon inside the room, no archer, no battle, ghost, giant statue, transport stele, angel, floating pages, halo, or invented ancestral apparition. No readable text, caption, chapter label, montage, border, watermark or modern technology.",
+      "original": "assets/chapter-art/13-1.png",
+      "generated_filename": "exec-c7871a29-58f7-4e7d-acfa-1d349533b43e.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "16e0cd1422dbbb368fe89ef277fa661cf25b2b345bcdac59669ca1eb109c2012"
+    },
+    {
+      "id": "13-2",
+      "chapter": "013",
+      "caption": "消退的墙影",
+      "alt": "接续校正后，磨坊墙上的肩背暗痕逐渐消退，砖缝重新显出，小语将旧留痕与眼前墙面并看，墨默保持灯位。",
+      "after": "砖台仍是砖台，墙上留下的是湿色和刻线。她手里的原纸还保着旧肩背，眼前的位置却已经能看见那两道原本被遮住的砖缝。",
+      "references": [
+        "assets/chapter-art/10-2.png",
+        "assets/chapter-art/10-1.png"
+      ],
+      "prompt": "Use case: illustration-story.\nAsset type: NEW full-bleed horizontal 16:9 narrative illustration for 九域守界, chapter 13 image 13-2. Inputs are character, style and WATERMILL WALL continuity references, not edit targets. New composition.\nReference 1: match Xiaoyu's adult feminine face, brown wavy hair, tiny gold floral hairpin, ornate blue-and-gold cloak/red lining, cream blouse/red tie, brown trousers. Match Mo Mo's pale mature face, long dark-green hair and black-purple embroidered mage robe. Preserve the same old mill's gray masonry, wet lower stone and low brick ledge.\nReference 2: Suxintang is the young adult woman in the elaborate red floral robe and hair ribbons with broad cream sleeves. Preserve her identity.\nStyle: detailed painterly fantasy anime/semi-realistic cinematic artwork, tactile old masonry, soft expressive eyes, amber lantern light and restrained reflected water. Quiet relief rather than supernatural horror.\nScene: the open doorway of the mill's old wet room, after the separate side connection has been repaired. Water level is unchanged and low, a thin familiar wet line on the brick ledge. All three people remain on broad stable DRY stone by the doorway, not standing in the water.\nMain focal wall: the faint dark damp discoloration shaped like a seated shoulder, bent head and short torso is SLOWLY FADING from its edges. Two existing brick mortar joints emerge through it. It is FLAT residue in the wall texture, almost gone, NEVER a three-dimensional person or ghost. No person stands up or leaves the wall. Brick ledge, shallow maintenance incisions and damp color remain ordinary and visible.\nMo Mo holds a lantern at a fixed marked position beside the doorway, without moving its angle or casting a spell, looking carefully at the emerging mortar joints. His dry tray holds the same-time water-level record and measurement strips.\nXiaoyu stands close in the foreground, comparing a preserved old water-impression sheet showing a faint sketch-like seated shoulder outline against the nearly empty wall. Her face is softly tearful with relieved realization, lips just easing, not screaming or performing. Her free hand rests beside her open notebook and new blank impression paper, ready to record the changed wall; no attempt to summon the old outline back.\nSuxintang stands at Xiaoyu's shoulder with a quiet supportive small smile; no glowing talisman needed. Arrange the old paper outline and cleared brick seams so their difference is understandable in one scene.\nOnly these three lead characters. No rescued person, new victim, magic portal, human figure emerging, dragon, archer, dramatic flood, explosion, floating letters, black smoke, fire or battle. No readable writing, title, chapter labels, border, montage, watermark or modern objects.",
+      "original": "assets/chapter-art/13-2.png",
+      "generated_filename": "exec-d6168eaf-a027-405c-80be-fcd0fa81f2dd.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "a077157eecf8ddc569ef601bfb130634f98a2599f4209adacfb3a192081684ae"
+    },
+    {
+      "id": "14-1",
+      "chapter": "014",
+      "caption": "白石旁的补查",
+      "alt": "晨光下，小语在缺角白石旁补画漏记的田埂，格伦与田主拉绳丈量，韦侃站在硬石边，退水后的冲槽和浸坏麦种仍在眼前。",
+      "after": "田主没多说。他接过格伦递来的绳端，绕到折角外侧，将绳压在露出的石边上。格伦量过两段，把长短添到附页；小语改好自己的示意，蹲下来，去看埂下那道冲槽。",
+      "references": [
+        "assets/chapter-art/7-2.png",
+        "assets/chapter-art/9-2.png"
+      ],
+      "prompt": "Use case: illustration-story.\nAsset type: NEW single full-bleed horizontal 16:9 narrative illustration for 九域守界, chapter 14 image 14-1. Input images are visual identity, style and regional farmland references, not edit targets. Create a new composition and a later, partially drained state of the fields.\nReference 1: match Xiaoyu, the young adult woman with wavy brown hair, tiny gold flower pin, blue-and-gold embroidered cloak/red lining, cream blouse/red tie and brown travel trousers/boots. Match Weikan, the young adult woman with wavy brown hair, pearl stud earrings, richly embroidered green cloak, practical archery gear and bow/quiver. The ordinary middle-aged bearded man in a weathered cream work shirt may serve as continuity for the local field worker, not a new fantasy hero.\nReference 2: further preserve the two women's identities and warm detailed painterly fantasy anime/semi-realistic style. Keep both clearly adult women.\nScene: early morning outside the medieval riverside town after floodwater receded. Warm gentle sun, distant stone bridge and towers softened in depth. Not an active flood. Raised earth ridges and a washed-out irrigation trench now exposed; dry pale crust on some upper mud but still damp below, ruined small clods and sodden wheat seeds among roots. A distinctive WHITE field boundary stone with one chipped corner, its base fully exposed, marks an old ridge that bends inward and comes back toward the party. Make the bend readable rather than straight.\nExactly four people doing modest practical work. Xiaoyu crouches on a firm high ridge by the chipped white stone, her notebook on her knee, correcting an earlier incomplete boundary sketch and looking down at the exposed washout. Her expression is earnest and concerned, not a victorious survey pose.\nThe local field owner, an ordinary middle-aged man in plain earth-brown work clothes, holds one end of a MEASURING ROPE against the exposed stone edge at the bend, with his partly empty cloth seed sack nearby. Glen, an ordinary local registrar in a worn cream work shirt and brown vest, holds the other rope end and adds measured lengths to a paper clipped on a wooden board. They are not pulling a rescue rope.\nWeikan stands on a hard stone beside the ridge after testing footing, watching attentively with her relaxed bow carried safely. Keep everyone on firm high ground, not sinking into mud. Show notebook, wood clipboard, simple rope, chipped white stone and the actual exposed boundary as the story's center.\nA few waterlogged wheat seeds and torn roots are visible near the trench, the loss remains real despite measurement. No recovered abundant harvest, magically regrowing crops, triumphant crowd, floating survey geometry, glowing runes, dragon, armored knight or battle. No readable numbers or text, captions, titles, labels, border, collage, watermark or modern survey equipment.",
+      "original": "assets/chapter-art/14-1.png",
+      "generated_filename": "exec-b5e54f64-ab78-425c-a475-bfe45aaade4e.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "658e63e7f729d20a38d5f882c3d198e650e2841bb17272c079b166daac6b369d"
+    },
+    {
+      "id": "14-2",
+      "chapter": "014",
+      "caption": "试托后的复位",
+      "alt": "脉首试托令净水接续中断，林砚指挥工人降回复位，彭湃只用右手稳托板，小语双手举灯照清尚未合拢的铜接片。",
+      "after": "光落到铜边，她才发现自己的手在抖。她用另一只手托住灯底，死死看着那一点空隙，像只要自己能把它照清楚，就能替井边那些人少等一息。",
+      "references": [
+        "assets/chapter-art/10-2.png",
+        "assets/chapter-art/10-1.png",
+        "assets/originals/14.png"
+      ],
+      "prompt": "Use case: illustration-story.\nAsset type: NEW single full-bleed horizontal 16:9 narrative illustration for 九域守界, chapter 14 image 14-2. All inputs are STYLE and CHARACTER references only, not edit targets.\nReference 1: Xiaoyu is the young adult woman with wavy brown hair, golden flower pin, blue-and-gold cloak/red lining, cream shirt/red tie, travel trousers and boots. Preserve her face and the weathered stone mill setting. Mo Mo is the long dark-green-haired man in black-purple embroidered robe; he may be a secondary observer.\nReference 2: Suxintang is the adult woman in red floral layered robes, elaborate red floral hair ornaments and ribbons, cream broad sleeves. Reference 3: preserve Peng Pai's actual appearance from the character card, a tall athletic 24-year-old adult male knight with short wavy dark hair, deep blue-gray eyes, steel armor and an embroidered dark-blue cloak. His sword and shield are set aside for this repair. Use the card only for his identity; DO NOT copy its lettering, panels or layouts.\nStyle: established rich painterly fantasy anime/semi-realistic cinematic illustration, detailed expressive faces, worn stone/wood/brass, warm hand-lantern light with a thin restrained blue-green connection glow. One coherent ordinary repair moment, not an action battle.\nScene: dry small stone maintenance room under the mill. Afternoon daylight reaches it through an OPEN STRAIGHT short corridor, with one distant receiving worker at the sunlit outer platform. Against the wall, a dark-teal ancient curved feather-ridged relic a little wider than two joined hands is held in its original stone socket. The stone socket itself has never moved. A broad wooden support plate with side stops and an old mechanical SCREW JACK sits under the relic; it was raised only a tiny distance and is now being carefully lowered back.\nFocal action after the purification connection interrupted: a new temporary test strip is set aside, the ORIGINAL copper connector is being fitted back into its old socket, with a small visible gap still to close. Local foreman Lin Yan, ordinary experienced middle-aged craftsman in brown work apron and cream sleeves, crouches and points precisely to the LEFT copper connector, directing the return. One ordinary worker at the screw handle is turning it back gently.\nPeng Pai steadies the support plate's right side using ONLY HIS RIGHT HAND. His injured LEFT ARM stays close to his body and does not lift weight. The mechanical support carries the load. No one pries up or carries away the stone base.\nXiaoyu has set her notebook and dry drawing board down, now holds a spare hand lantern low with BOTH hands: one gripping its handle and the other supporting its base to steady her tremor. The amber light clearly illuminates the small copper gap. Her expression is frightened but focused, doing a concrete useful task.\nSuxintang is at the work side, sleeves safely tucked, watching ONE new ordinary construction talisman already attached at a verified short line, not using her special responsive spare talisman. Mo Mo stands farther back with a small measuring strip and closed sealing case, observing without obscuring the repair.\nFrame Xiaoyu's lantern, the foreman's directing hand and the tiny connector gap as the main triangle; other workers at gentle depth. The purified-water connection line is dark at the gap and dimly lit on the far side. No water flowing into this maintenance corridor, no flood, collapse, explosion, giant glowing crystal, white dragon, guardian awakening, ghosts, triumphant pose or modern machinery. No readable writing, labels, chapter number, frame, montage or watermark.",
+      "original": "assets/chapter-art/14-2.png",
+      "generated_filename": "exec-79060efc-4033-4217-8a12-0f5447040f22.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "268069e72534d708108933ef76b86d0ee6ede4479081023e0d63dc756bccc9c6"
+    }
+  ]
+}
