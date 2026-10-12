@@ -19,7 +19,7 @@
 - `content/outline.md`：故事大纲（含剧透）。
 - `content/chapters/`：小说正文，使用 Markdown 编写。
 - `content/chapter-art.json`：章节印象图与插入位置。按 `A-B` 编号，以对应正文段落作为定位；正文原稿无需添加图片标签。
-- `assets/chapter-art/`：第一至第十章使用用户提供的十八张原始 PNG，第七章三张、第八至第十章各两张，按提供顺序插入。先前生成稿保存在 `archive/`，提示词及原参考路径保存在 `generation-prompts.json`。网页保留完整构图，可点击放大；目录使用各章第一张图作缩略图。
+- `assets/chapter-art/`：第一至第十章使用用户提供的十八张原始 PNG，第七章三张、第八至第十章各两张，按提供顺序插入。第十一、十二章各两张由内置 image_gen 绘制，提示词与参考图记录在 `chapter11-12-generation.json`。先前生成稿保存在 `archive/`，提示词及原参考路径保存在 `generation-prompts.json`。网页保留完整构图，可点击放大；目录使用各章第一张图作缩略图。
 - `docs/assets/chapter-art/`：网站使用的完整、960 像素和 480 像素 WebP 版本；手机根据屏幕宽度加载合适版本。
 - `docs/`：已经生成的静态网站，GitHub Pages 从这里发布。
 - `scripts/build.py`：将内容生成网页，并为人物图片生成 WebP 浏览版本。图集和人物页的头像使用独立绘制的方形画像，保留完整头部构图。

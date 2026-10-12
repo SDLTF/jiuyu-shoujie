@@ -215,7 +215,55 @@
       "alt": "磨坊旧室水位降低，砖台与新的湿边露出，小语和墨默对照记录，原来坐姿的肩背暗痕仍伏在井壁上。",
       "after": "小语慢慢打开册子，翻到那道旧轮廓旁。墨默把干托片移近，给她留出能搁纸的地方。她先写下此刻露出的砖缝和水位，又抬头看了一眼。",
       "attachment_filename": "codex-clipboard-bdc7a504-33a3-46db-82ce-8ac751aacfc6.png"
+    },
+    {
+      "id": "11-1",
+      "chapter": "011",
+      "caption": "取回的纸与披风",
+      "alt": "在核过的旅店房间里，小语取回原始留痕纸和行囊，轻触韦侃搭在臂上的绿色披风。",
+      "after": "韦侃背好自己的行囊，将披风搭在臂上。熟悉的绿色靠近了，小语忍不住伸手摸了一下衣角。",
+      "original": "assets/chapter-art/11-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "e29b7df294996255d06e8aeec636f62b177f3670234a1246e00b9632fb77189d",
+      "generation_metadata": "assets/chapter-art/chapter11-12-generation.json"
+    },
+    {
+      "id": "11-2",
+      "chapter": "011",
+      "caption": "井边的第一桶清水",
+      "alt": "西井恢复稳定清水，妇人在桶边拦住想帮忙提水的孩子，小语与韦侃在旁露出笑容。",
+      "after": "小语笑出声。孩子听见，瞪了她一眼，她赶紧抿住嘴，却怎么也压不下嘴角。",
+      "original": "assets/chapter-art/11-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "3d4ade26ed9f001e44249a3574f8fd313c91ea7e4c1d26ba0078bc8bd99c64fa",
+      "generation_metadata": "assets/chapter-art/chapter11-12-generation.json"
+    },
+    {
+      "id": "12-1",
+      "chapter": "012",
+      "caption": "石碑上的平安二字",
+      "alt": "工坊料棚旁，艾琳触着归首碑，碑面答复第七灯区供能平安；苏弥记录答复，小语暂时松下肩膀。",
+      "after": "艾琳看着碑上的字，没有马上收手。等苏弥抄好原问题和答复，又记下午后时段，她才将掌心移开。",
+      "original": "assets/chapter-art/12-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "35db5634763e982f2474efadb25ee5c437e7116f5d73eac6cb42ccc1a7bf2e00",
+      "generation_metadata": "assets/chapter-art/chapter11-12-generation.json"
+    },
+    {
+      "id": "12-2",
+      "chapter": "012",
+      "caption": "平安与求援信",
+      "alt": "两封求援函与续报在工坊桌上展开，墨默核对记录，谢寄风指明驿戳，小语与苏弥面对昨日写下的平安二字。",
+      "after": "他将薄信移到墨默手边。墨默启开续报，纸上写着昨日傍晚的日期：三处节点自前夜起未曾恢复，白日仍靠临时照明，原求援继续有效。",
+      "original": "assets/chapter-art/12-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "cdb1f087f97f637d95153845a6d99547b1ada095e97175a47a441c260a9b6def",
+      "generation_metadata": "assets/chapter-art/chapter11-12-generation.json"
     }
   ],
-  "provenance": "All eighteen active illustrations for chapters 1-10 are user-supplied PNGs preserved unchanged. The nine replacements for chapters 7-10 follow the supplied order. Superseded generated originals are preserved in assets/chapter-art/archive/; their full prompts, revisions and exact reference paths remain in assets/chapter-art/generation-prompts.json."
+  "provenance": "Chapters 1-10: eighteen user-supplied illustrations preserved unchanged. Chapters 11-12: four new illustrations generated with built-in image_gen using the current user-selected artwork and character cards as references; prompts and exact references are preserved in assets/chapter-art/chapter11-12-generation.json. Superseded generated originals for chapters 7-10 remain in assets/chapter-art/archive/, with their generation history in assets/chapter-art/generation-prompts.json."
 }

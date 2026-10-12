@@ -1,0 +1,74 @@
+{
+  "tool": "Built-in image_gen",
+  "intent": "Generate four narrative illustrations with existing artwork as identity and style references",
+  "images": [
+    {
+      "id": "11-1",
+      "chapter": "011",
+      "caption": "取回的纸与披风",
+      "after": "韦侃背好自己的行囊，将披风搭在臂上。熟悉的绿色靠近了，小语忍不住伸手摸了一下衣角。",
+      "alt": "在核过的旅店房间里，小语取回原始留痕纸和行囊，轻触韦侃搭在臂上的绿色披风。",
+      "references": [
+        "assets/chapter-art/9-2.png"
+      ],
+      "prompt": "Use case: illustration-story.\nAsset type: NEW single horizontal 16:9 full-bleed chapter illustration for 九域守界, image 11-1. Generate a new composition, using the input ONLY as visual style and character identity reference, never as an edit target.\nInput image 1: Xiaoyu is the young adult WOMAN with wavy brown shoulder-length hair, tiny golden flower hairpin, blue cloak with ornate gold embroidery/red lining, cream shirt, red necktie, brown travel trousers and boots. Weikan is the young adult WOMAN in the green embroidered cloak, wavy brown hair and pearl stud earrings, bow and quiver. Preserve both faces and their richly textured painterly fantasy anime/semi-realistic style, delicate expressive eyes, intricate worn medieval clothing, natural anatomy.\nScene: evening inside their modest medieval inn room, recently checked by escorts after a frightening incident in a sealed-off corridor. Two single wooden beds, a low wooden cupboard, wooden wall pegs, small courtyard window; amber lantern light and fading cool window light. No luxurious palace.\nThe emotional focus is finding familiar belongings intact. Xiaoyu has crouched beside her bed and opened the dry part of her travel bag, recovering several old water-impression sheets. She has now risen into a half-standing posture, hugging the recovered sheets and notebook close with one arm. Her eyes are softly wet with relieved emotion, a small vulnerable smile. A pale cloth protects her scraped palm.\nWeikan stands close and reassuring, wearing her cream outer coat and practical brown travel clothes. Her reclaimed GREEN embroidered cloak is folded over her forearm, visibly NOT worn yet. Her relaxed bow is held safely at her other side or rests against the bed; the travel bag is on her shoulder. Xiaoyu's free fingertips gently touch the green cloak's familiar hem. Make this small contact the clear foreground gesture. The two adult women look at one another naturally, quiet friendship and reassurance.\nA single escort with a hand lantern may be a distant softened silhouette outside the open doorway, without a prominent invented portrait. The checked room feels ordinary and intact. No anomalous stairs visible, no portal, ghost, monster, romance pose, white dragon, flying papers, glowing spells, crowds or weapons drawn. Paper contains faint diagrams only, no readable text. No labels, chapter numbers, borders, collage, watermark or modern objects. Full coherent cinematic scene.",
+      "original": "assets/chapter-art/11-1.png",
+      "generated_filename": "exec-53bf2eb7-2673-4e4c-b7a7-2bcce57a2399.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "e29b7df294996255d06e8aeec636f62b177f3670234a1246e00b9632fb77189d"
+    },
+    {
+      "id": "11-2",
+      "chapter": "011",
+      "caption": "井边的第一桶清水",
+      "after": "小语笑出声。孩子听见，瞪了她一眼，她赶紧抿住嘴，却怎么也压不下嘴角。",
+      "alt": "西井恢复稳定清水，妇人在桶边拦住想帮忙提水的孩子，小语与韦侃在旁露出笑容。",
+      "references": [
+        "assets/chapter-art/9-2.png",
+        "assets/chapter-art/10-1.png"
+      ],
+      "prompt": "Use case: illustration-story.\nAsset type: NEW single horizontal 16:9 full-bleed chapter illustration for 九域守界, image 11-2. Inputs are STYLE and CHARACTER IDENTITY references only; invent a new coherent composition.\nReference images: preserve Xiaoyu, the young adult woman with wavy brown hair, golden flower hairpin, blue-and-gold cloak with red lining, cream blouse and red tie, and Weikan, the young adult woman with wavy brown hair, pearl earrings, green-and-gold cloak, bow/quiver. Keep their adult feminine features and richly detailed painterly fantasy anime/semi-realistic style.\nScene: the first steady clean water at the communal West Well in the same medieval stone river town, next morning after repairs. Warm clear morning sunshine on damp paving, worn gray well stone and timber, distant modest bell tower and stone bridge. A SMALL restrained blue purification-array glow remains on the stone rim; the clean water itself is natural clear water.\nForeground focus: a continuous modest stream of clear water drops from the well's short old dark-metal outlet into a normal-sized wooden bucket. Its water level is visibly rising with natural ripples. An ordinary mother in plain worn linen work clothes has just lifted the first filled wooden bucket to one side, careful practical effort. Her child reaches eagerly toward that first bucket's handle; she gently stops the child from taking the heavy load. Show a believable everyday interaction, calm faces and natural hands, no slap or distress. Only a few townspeople with empty buckets wait farther back.\nXiaoyu and Weikan stand slightly back on broad stable dry paving, giving residents room. Xiaoyu's notebook is held close with a cloth-protected scraped palm, her expression a spontaneous small laugh with shining eyes, quietly overwhelmed that people can take this water home to cook. Weikan in her reclaimed green cloak and bow watches with a warm restrained smile, travel bag on shoulder. They are witnesses helping the queue pass, not posing as triumphant rulers.\nCompose the flowing water and two buckets as the main readable story beat, with the women's faces clearly recognizable. Ordinary relief after several difficult days. No giant fountain, flood, waterfall, modern faucet, cheering army, heroic statue, floating spell circles, white dragon, stele, magical water creature or battle. No readable text, labels, chapter numbers, collage, frames or watermark. Preserve the complete composition.",
+      "original": "assets/chapter-art/11-2.png",
+      "generated_filename": "exec-752aeeb4-3e99-4b75-8f96-b55e40c05c55.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "3d4ade26ed9f001e44249a3574f8fd313c91ea7e4c1d26ba0078bc8bd99c64fa"
+    },
+    {
+      "id": "12-1",
+      "chapter": "012",
+      "caption": "石碑上的平安二字",
+      "after": "艾琳看着碑上的字，没有马上收手。等苏弥抄好原问题和答复，又记下午后时段，她才将掌心移开。",
+      "alt": "工坊料棚旁，艾琳触着归首碑，碑面答复第七灯区供能平安；苏弥记录答复，小语暂时松下肩膀。",
+      "references": [
+        "assets/chapter-art/9-1.png",
+        "assets/chapter-art/9-2.png"
+      ],
+      "prompt": "Use case: illustration-story.\nAsset type: NEW horizontal 16:9 full-bleed narrative illustration for 九域守界, chapter 12 image 12-1. All inputs are STYLE, CHARACTER and STONE-CART references, not edit targets. New composition.\nKeep the established richly detailed painterly fantasy anime/semi-realistic style, delicate young-adult faces, intricate weathered medieval fabric, stone, wood and leather, warm natural daylight with restrained pale-blue magic.\nReference 1: Xiaoyu is the brown-haired adult woman with a golden floral hairpin, blue-and-gold cloak/red lining, cream blouse and red necktie. Ailin is the adult stele custodian with light honey-brown wavy hair tied partly back, blue-gray travel cloak over light linen and practical leather travel gear, the woman supporting the stone. Preserve their recognizable faces. Preserve the transported waist-to-chest-high gray stone with a rounded worn top, standing securely in a NARROW wooden transport cart with clamps and a chocked wheel, not a monument.\nReference 2: the understated brunette woman writing in a notebook at the upper background is Sumi. Use her simple low tied/braided chestnut hair and muted taupe practical traveling coat/waistcoat, light blouse and leather satchel, distinct from Xiaoyu and the green-cloaked archer.\nScene: afternoon in the dry workshop yard beside a timber materials shelter. Gray protective cloth is rolled at the stele cart's side. Exactly THREE foreground women: Ailin calmly touches the lower side of the stele with one palm; Sumi stands beside the cart recording the original question and answer in her hard-backed notebook; Xiaoyu stands close beside Sumi, NOT casting a spell or reaching for impression paper, shoulders finally lowering in relief, a tentative hopeful smile. Quiet cooperative moment, not a worship ceremony.\nThe stele face displays ONE horizontal line of restrained glowing pale-blue Chinese characters directly ON its physical stone surface. Render the exact eight characters verbatim: \"第七灯区供能平安\". All eight must be legible and in that order, no other writing or punctuation on the stone. It is a reassuring answer that the characters currently believe, before receiving contrary news. Keep text large enough to read, balanced within the stone face; no floating hologram or paper sign.\nSumi's notebook has small indistinct handwriting only. No Mo Mo, archer, dragon, monsters, extra lead characters, holy aura, crowns, monumental temple, active waterworks or distant disaster in this image. No captions, chapter labels, decorative frame, collage, watermark, UI, modern technology. Natural coherent hands, full scene.",
+      "original": "assets/chapter-art/12-1.png",
+      "generated_filename": "exec-e209a065-c98c-4095-b849-a9a5b87833f5.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "35db5634763e982f2474efadb25ee5c437e7116f5d73eac6cb42ccc1a7bf2e00"
+    },
+    {
+      "id": "12-2",
+      "chapter": "012",
+      "caption": "平安与求援信",
+      "after": "他将薄信移到墨默手边。墨默启开续报，纸上写着昨日傍晚的日期：三处节点自前夜起未曾恢复，白日仍靠临时照明，原求援继续有效。",
+      "alt": "两封求援函与续报在工坊桌上展开，墨默核对记录，谢寄风指明驿戳，小语与苏弥面对昨日写下的平安二字。",
+      "references": [
+        "assets/chapter-art/9-1.png",
+        "assets/chapter-art/9-2.png",
+        "assets/originals/20.png"
+      ],
+      "prompt": "Use case: illustration-story.\nAsset type: NEW single horizontal 16:9 full-bleed chapter illustration for 九域守界, image 12-2. Reference inputs are identity/style guides, NOT edit targets.\nStyle: same richly detailed painterly fantasy anime/semi-realistic artwork, finely expressive adult faces, weathered medieval timber and linen, convincing daylight, restrained earthy browns, muted blue, gray-green and black-purple. New scene, no collage or character-card layout.\nReference 1: match Xiaoyu (young adult woman, wavy brown shoulder-length hair, tiny gold flower hairpin, blue-and-gold cloak/red lining, cream shirt/red tie) and Mo Mo (mature slender man, long dark-green hair tied low, pale serious narrow face, black-purple embroidered medieval mage robe). Reference 2: Sumi is the plain traveling recorder at the upper background, brunette with low tied/braided hair, muted taupe-gray travel clothes and a hard-backed notebook. Reference 3: match the actual face, short messy black hair, brown eyes and gray-blue/green short traveling cape of Xie Jifeng, an adult 27-year-old male courier. Preserve his worn brown leather mail satchel, practical dark travel clothes, slim active build. Do NOT copy typography or multi-panel layout from his card.\nScene: the next morning at a broad wooden desk under the open-sided materials shelter in Graybridge's workshop yard. The physical stone cart is at soft depth with its gray cover ON; it is NOT giving a new response yet. Exactly four main people gather around actual received mail.\nMo Mo has opened a thin follow-up report and reads it with precise serious attention; an earlier opened request for help lies beside it. Two opened envelopes with RED WAX seals and small dispatch-stamp marks remain together on the desk, making their separate provenance visible. The reports contain small indistinct medieval handwriting, no invented readable dates or slogans. His closed brass-trimmed sealing case and ink pot sit on dry wood.\nSumi leans toward the dates, comparing her dispatch credential with the opened letters. Xiaoyu has her notebook open to yesterday's reassurance, one short clearly readable handwritten Chinese word \"平安\" on that page, exactly those two characters. She looks shaken and ashamed of her earlier easy relief, fingers easing away from that page rather than covering it, a very subtle tightness around her eyes. Do not make her hysterical.\nXie Jifeng stands beside the table with his satchel at his hip, the smile gone; he points carefully to the separate dispatch stamps on the two envelopes, taking delivery seriously. Arrange faces, hands, the two reports and Xiaoyu's contrasting notebook into one clear conversational composition. Natural hands with one action per arm.\nNo magical projection, glowing answer on stone, supernatural vision of the faraway city, modern mail, electric screens, additional lead characters, dragon, battle or oversized disaster tableau. No captions, headings, chapter numbers, borders, montage or watermark. The emotional turn comes from real documents and faces.",
+      "original": "assets/chapter-art/12-2.png",
+      "generated_filename": "exec-15888726-f8d9-4d84-9ceb-fdba1386fef8.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "cdb1f087f97f637d95153845a6d99547b1ada095e97175a47a441c260a9b6def"
+    }
+  ]
+}
