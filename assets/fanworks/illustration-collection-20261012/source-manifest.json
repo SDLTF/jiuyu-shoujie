@@ -1,0 +1,57 @@
+{
+  "archive": "九域守界_插画图文合集_5张.zip",
+  "archive_sha256": "b62952b7a4410bcbd10f9c52be042190e440ed6bcb2b9ad6cef68dd706ed957e",
+  "description_file": "插画名称与介绍.md",
+  "images": [
+    {
+      "id": "collection-20261012-01",
+      "archive_entry": "图片/01《神谕未落》.jpeg",
+      "source": "01.jpeg",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "a3ee696f969bbeb9ed0d1158d0da309278b96b6c1dea3cc4ca60b1e21a61933d",
+      "title": "神谕未落",
+      "creator": "琉西法（Codex)"
+    },
+    {
+      "id": "collection-20261012-02",
+      "archive_entry": "图片/02《万千子嗣》.jpeg",
+      "source": "02.jpeg",
+      "width": 1672,
+      "height": 941,
+      "sha256": "ab98e1482d08991d63a70bea0df855ba3462280178feb711f66f1881d04d90e8",
+      "title": "万千子嗣",
+      "creator": "琉西法（Codex)"
+    },
+    {
+      "id": "collection-20261012-03",
+      "archive_entry": "图片/03《三岛and土方》.jpeg",
+      "source": "03.jpeg",
+      "width": 1080,
+      "height": 1080,
+      "sha256": "7f011441a5c919c4fdbbe62cfef4ff2d138871083a57349d91f45665eeaa7c52",
+      "title": "三岛and土方",
+      "creator": "酥心糖"
+    },
+    {
+      "id": "collection-20261012-04",
+      "archive_entry": "图片/04《酒不醉人》.jpeg",
+      "source": "04.jpeg",
+      "width": 1672,
+      "height": 941,
+      "sha256": "c30046a5209bdcafee00c9541338552ceb53c1b25ecc8905b2176270fec2cc77",
+      "title": "酒不醉人",
+      "creator": "琉西法＆酥心糖（Codex)"
+    },
+    {
+      "id": "collection-20261012-05",
+      "archive_entry": "图片/05《一人即阵》.png",
+      "source": "05.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "91c54d1a1f4b90a8553495eb446637574f76c15c76a6b1082eb7150896188a32",
+      "title": "一人即阵",
+      "creator": "琉西法＆彭湃（Codex)"
+    }
+  ]
+}
