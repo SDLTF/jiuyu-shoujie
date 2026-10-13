@@ -311,7 +311,55 @@
       "height": 941,
       "sha256": "268069e72534d708108933ef76b86d0ee6ede4479081023e0d63dc756bccc9c6",
       "generation_metadata": "assets/chapter-art/chapter13-14-generation.json"
+    },
+    {
+      "id": "15-1",
+      "chapter": "015",
+      "caption": "临时锚接续",
+      "alt": "旧维护室里，韦侃化成戴珍珠抹额的绿色狐狸，指出临时锚新接片下的湿缝；小语、酥心糖和墨默守着工作侧，工人重新扣紧铜片。",
+      "after": "那枚片侧边没有贴严。",
+      "original": "assets/chapter-art/15-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "30188c7f0dd7f2e7a2f996f43d0a4adf9fdfeb1e032475355a9fc4187fa5f75c",
+      "generation_metadata": "assets/chapter-art/chapter15-16-generation.json"
+    },
+    {
+      "id": "15-2",
+      "chapter": "015",
+      "caption": "留下的清水",
+      "alt": "经过两次回流观察，西井仍稳定出清水，田主提走满桶；小语眼角发热地笑起来，韦侃轻碰她的手，井边的人照常取水。",
+      "after": "小语看过去，终于笑出了声，笑得眼角发热，想擦又舍不得把眼前的水挡住。",
+      "original": "assets/chapter-art/15-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "926e7b82a0de25bd68fac7806364c289f8b3685403aaa41eac9433dd84f566a2",
+      "generation_metadata": "assets/chapter-art/chapter15-16-generation.json"
+    },
+    {
+      "id": "16-1",
+      "chapter": "016",
+      "caption": "箱里的橘猫",
+      "alt": "出发前，圆头橘猫窝进杂物箱，小语移开挡住通气孔的布包并伸指让它闻；妙愿撑好箱盖，甄没用停下放包的手。",
+      "after": "小语蹲在箱边，伸出一根手指。橘猫低头闻过，轻轻碰了她一下。",
+      "original": "assets/chapter-art/16-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "0ee1a5478c391b85e9afc9a6f80a4f78c11f0a05db0a144c24bc2b9103a48887",
+      "generation_metadata": "assets/chapter-art/chapter15-16-generation.json"
+    },
+    {
+      "id": "16-2",
+      "chapter": "016",
+      "caption": "再走一程",
+      "alt": "灰桥仍有清水流过，伙伴们带着碑车和行囊踏上石桥；小语把烙饼袋收好、抱紧册子，快步追上绿披风的韦侃，开始下一程。",
+      "after": "这一次，她知道自己要和谁一起走。",
+      "original": "assets/chapter-art/16-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "53dd3a600e599602b47630bcb76b7a7540b78523909b493ef2eaa62da2e4eb8a",
+      "generation_metadata": "assets/chapter-art/chapter15-16-generation.json"
     }
   ],
-  "provenance": "Chapters 1-10: eighteen user-supplied illustrations preserved unchanged. Chapters 11-12: four new illustrations generated with built-in image_gen using the current user-selected artwork and character cards as references; prompts and exact references are preserved in assets/chapter-art/chapter11-12-generation.json. Superseded generated originals for chapters 7-10 remain in assets/chapter-art/archive/, with their generation history in assets/chapter-art/generation-prompts.json. Chapters 13-14: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter13-14-generation.json."
+  "provenance": "Chapters 1-10: eighteen user-supplied illustrations preserved unchanged. Chapters 11-12: four new illustrations generated with built-in image_gen using the current user-selected artwork and character cards as references; prompts and exact references are preserved in assets/chapter-art/chapter11-12-generation.json. Superseded generated originals for chapters 7-10 remain in assets/chapter-art/archive/, with their generation history in assets/chapter-art/generation-prompts.json. Chapters 13-14: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter13-14-generation.json. Chapters 15-16: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter15-16-generation.json."
 }

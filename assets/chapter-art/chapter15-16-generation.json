@@ -1,0 +1,78 @@
+{
+  "tool": "built-in image_gen",
+  "intent": "Generate four closing-volume chapter illustrations using existing artwork and character cards as references",
+  "images": [
+    {
+      "id": "15-1",
+      "chapter": "015",
+      "caption": "临时锚接续",
+      "alt": "旧维护室里，韦侃化成戴珍珠抹额的绿色狐狸，指出临时锚新接片下的湿缝；小语、酥心糖和墨默守着工作侧，工人重新扣紧铜片。",
+      "after": "那枚片侧边没有贴严。",
+      "references": [
+        "assets/chapter-art/13-1.png",
+        "assets/originals/11.png"
+      ],
+      "prompt": "Use case: illustration-story.\nAsset type: NEW full-bleed horizontal 16:9 chapter illustration for 九域守界, image 15-1. Inputs are style and identity references only, not edit targets. New composition in the same richly detailed painterly fantasy anime/semi-realistic style.\nReference 1: preserve Xiaoyu (adult woman, wavy brown shoulder-length hair, tiny gold flower pin, blue-and-gold cloak/red lining, cream blouse/red tie), Suxintang (adult woman, long brown hair, ornate red floral ornaments and ribbons, red floral layered robe, broad cream sleeves), Mo Mo (mature slender man, long dark-green hair, black-purple embroidered robe), and the SMALL dark teal feather-ridged relic in its low stone socket. Relic is only a little wider than two joined hands, not a tall monument.\nReference 2: use ONLY Weikan's animal form from the lower panel: a naturally proportioned moss-green fox with white throat, bushy tail, amber eyes and a pearl-inlaid brow circlet. Do not copy the card layout or text. Weikan appears ONLY as this fox in this scene, no human duplicate, no humanoid fox girl.\nScene: afternoon in the dry stone maintenance room beneath the watermill, straight open corridor to the daylight platform. A new temporary anchor of ordinary stone supports, COPPER CONNECTOR PLATES and one small red construction talisman is mounted BESIDE the original socket. Its short rune lines follow actual shallow channels to the local water circuit. The original relic STILL remains seated and connected at this instant, before being lifted. A support board and screw jack are ready but inactive.\nFocal gesture: Weikan's green fox stands safely on the verified dry outer ledge beneath the NEW plate, nose near a small damp seam, looking back toward an ordinary worker to indicate that the plate side does not seal. A few droplets in that seam, no flooded corridor. Worker in plain brown apron reaches to reseat that plate while the experienced local foreman watches the join.\nXiaoyu crouches nearby holding her dry notebook, tense attentive eyes on the indicated seam. Suxintang's sleeves are tucked securely as she waits with an ordinary construction brush at the work side; her treasured responsive spare talisman is kept in an inner paper case, not used here. Mo Mo observes with a small measuring strip from the other side, a narrow faint gray frost boundary only around the construction area.\nComposition makes green fox, tiny wet seam and copper plate the readable foreground triangle, the three observers at gentle depth. Worn wood, stone, brass and warm daylight/lantern light, only thin restrained rune glow. No giant crystal, water beast, ghost, dragon, battle, dramatic explosion, monument, floating geometry, readable labels, chapter numbers, borders, collage or watermark.",
+      "original": "assets/chapter-art/15-1.png",
+      "generated_filename": "exec-160889c1-e165-41ec-9418-54a6d1c83e8b.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "30188c7f0dd7f2e7a2f996f43d0a4adf9fdfeb1e032475355a9fc4187fa5f75c"
+    },
+    {
+      "id": "15-2",
+      "chapter": "015",
+      "caption": "留下的清水",
+      "alt": "经过两次回流观察，西井仍稳定出清水，田主提走满桶；小语眼角发热地笑起来，韦侃轻碰她的手，井边的人照常取水。",
+      "after": "小语看过去，终于笑出了声，笑得眼角发热，想擦又舍不得把眼前的水挡住。",
+      "references": [
+        "assets/chapter-art/11-2.png",
+        "assets/chapter-art/14-1.png"
+      ],
+      "prompt": "Use case: illustration-story.\nAsset type: NEW full-bleed horizontal 16:9 narrative illustration for 九域守界, image 15-2. References guide character identity, the same West Well and town, not an edit target. New composition.\nPreserve Xiaoyu, adult woman with wavy brown hair, tiny gold flower hairpin, blue-and-gold embroidered cloak/red lining, cream blouse/red tie, brown travel clothes; Weikan, adult woman with wavy brown hair, pearl earrings, green-and-gold cloak, bow and quiver. Use the same finely detailed painterly fantasy anime/semi-realistic style, expressive feminine faces, weathered medieval materials.\nReference 1: continuity for the communal West Well's worn gray rim, short dark metal outlet and SMALL pale-blue purification marks. Reference 2: continuity for the ordinary middle-aged local field owner, dark-brown tied-back hair and short beard, cream work shirt, brown vest and trousers. Do not copy the flooded farmland or mother's earlier bucket scene.\nScene: the following dawn after the temporary anchor has stayed stable through two local return-flow cycles. Soft early sun across the cobbled well square, quiet town awakening, river and modest bridge in soft distance. A steady NATURAL clear stream drops into a wooden bucket. Its visible bottom wood grain through the water demonstrates clarity without exaggerated spectacle.\nThe field owner has just picked up a full bucket and is stepping away to take it home; another resident advances with the next empty bucket. A few ordinary residents wait with buckets, calm routine, no celebration or applause.\nForeground: Xiaoyu watches the clean water, notebook hugged against her chest with one arm, finally laughing softly with relief, wet shining eyes and a warm unguarded smile. Weikan beside her gently touches Xiaoyu's FREE lowered hand with her own free fingertips, reassuring friendship, her green cloak catching the morning breeze, bow securely slung. They stand to the side giving the residents space. Natural hands with clear separate gestures.\nA local well keeper in plain linen stands by the outlet to observe, no heroic mage continuously powering it. The relic is NOT at the well; no Suxintang casting here, no support carried by adventurers, no miracle fountain. The town's water keeps flowing by the installed local connection while they can move onward.\nWarm ordinary relief with restrained light, no triumphant crowd, crown, battle, ghost, flood, dragon, fox, glowing water creature, giant magic circle, modern faucet, readable writing, title, labels, frame, montage or watermark.",
+      "original": "assets/chapter-art/15-2.png",
+      "generated_filename": "exec-13dc91b5-c33b-469a-8b90-d4a41f48cf03.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "926e7b82a0de25bd68fac7806364c289f8b3685403aaa41eac9433dd84f566a2"
+    },
+    {
+      "id": "16-1",
+      "chapter": "016",
+      "caption": "箱里的橘猫",
+      "alt": "出发前，圆头橘猫窝进杂物箱，小语移开挡住通气孔的布包并伸指让它闻；妙愿撑好箱盖，甄没用停下放包的手。",
+      "after": "小语蹲在箱边，伸出一根手指。橘猫低头闻过，轻轻碰了她一下。",
+      "references": [
+        "assets/chapter-art/5-1.png",
+        "assets/chapter-art/3-1.png",
+        "assets/originals/18.png"
+      ],
+      "prompt": "Use case: illustration-story.\nAsset type: NEW full-bleed horizontal 16:9 narrative illustration for 九域守界, image 16-1. Reference inputs are identity, style and animal guides only. Make a new coherent outdoor composition, not an edit or collage.\nReference 1: match Xiaoyu, adult woman with brown wavy shoulder-length hair, golden flower hairpin, blue-and-gold cloak/red lining, cream shirt/red tie, brown travel trousers. Preserve the familiar round-headed chubby ORANGE tabby cat shown on the right, ordinary domestic cat with fluffy fur, no costume.\nReference 2: match Miaoyuan, young adult male traveler with long brown hair tied low, cream linen shirt, blue-gray patterned scarf, leather travel straps. The small white dragon Xiaobai has white scales, short horns, tiny folded wings and blue eyes; keep it small and settled beside Miaoyuan, not leading the scene.\nReference 3: match Zhen Meiyong, adult 31-year-old male traveling merchant with short tousled black hair, a brass MONOCLE on his RIGHT eye, worn black-brown leather coat with brass trim and red inner cloth, gloves, an amused wry expression. Do not copy the card text or panel layout.\nScene: late morning in the workshop yard before the group leaves town. Travel bags, cloth parcels and two practical wooden cargo boxes beside a small freight wagon. The separate closed padded RELIC BOX stays secured in the background; the foreground box is a normal spacious MISCELLANEOUS SUPPLY BOX, with visible ventilation holes and its lid OPEN and safely propped.\nThe orange cat has independently curled up INSIDE this supply box beside separated folded cloth parcels, opening one sleepy eye, its tail hanging loosely over the rim and not trapped. Its body and the air holes are clearly visible.\nXiaoyu crouches next to the box with a tender spontaneous smile and slightly wet eyes from farewells. One hand has moved a cloth parcel away from a ventilation hole; her other hand extends ONE fingertip gently toward the cat. The cat leans down to sniff and just touch the fingertip, no forced grabbing.\nMiaoyuan steadies a small SIDE PROP under the open lid so the cat can breathe and the lid cannot fall. Xiaobai rests calmly on his shoulder or travel bag. Zhen Meiyong has paused his hand above the box while holding a small wrapped bundle, amused at the cat choosing the best box, no attempt to shove it out.\nKeep the focus on cat, fingertip contact and practical open box, with warm yard sunlight and finely detailed wood, brass, linen, leather, painterly fantasy anime/semi-realistic faces. No dining table, fight, closed suffocating chest, squeezed or distressed animal, giant dragon, glowing artifact, supernatural cat, extra lead characters, modern cardboard box, readable writing, title, chapter labels, border, collage or watermark.",
+      "original": "assets/chapter-art/16-1.png",
+      "generated_filename": "exec-0156a36f-91a6-4de6-8692-7b9e51500809.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "0ee1a5478c391b85e9afc9a6f80a4f78c11f0a05db0a144c24bc2b9103a48887"
+    },
+    {
+      "id": "16-2",
+      "chapter": "016",
+      "caption": "再走一程",
+      "alt": "灰桥仍有清水流过，伙伴们带着碑车和行囊踏上石桥；小语把烙饼袋收好、抱紧册子，快步追上绿披风的韦侃，开始下一程。",
+      "after": "这一次，她知道自己要和谁一起走。",
+      "references": [
+        "assets/chapter-art/9-2.png",
+        "assets/chapter-art/3-1.png",
+        "assets/chapter-art/5-1.png",
+        "assets/chapter-art/9-1.png",
+        "assets/originals/14.png"
+      ],
+      "prompt": "Use case: illustration-story.\nAsset type: NEW full-bleed horizontal 16:9 cinematic closing illustration for 九域守界 volume one, chapter 16 image 16-2. All inputs are character/style guides only, no copied scene or panel layout.\nStyle: the established richly detailed painterly fantasy anime/semi-realistic fantasy artwork, delicately expressive adult faces, ornate but weathered clothing, warm medieval stone/wood/leather textures, natural late-morning sunshine and breezy movement.\nReference 1: preserve Xiaoyu, adult woman with wavy brown hair, tiny gold flower pin, blue-and-gold cloak/red lining, cream blouse/red tie; Weikan, adult woman with wavy brown hair, pearl earrings, green-and-gold cloak and bow/quiver. The subdued brown-haired woman with low tied hair and taupe traveling coat is Sumi.\nReference 2: Miaoyuan is the adult male traveler with brown low-tied hair, cream shirt, blue-gray patterned scarf and leather travel gear; Xiaobai is his small white horned winged dragon.\nReference 3: Suxintang is the adult woman in red floral robes, long brown hair with red floral ornaments and ribbons; Chu Jingshu is the adult young woman with black twin ponytails, dark navy/teal embroidered clothing and floral hair ornaments, a small performance card case among her baggage. NOT interchangeable with Sumi.\nReference 4: Ailin is the adult female stele keeper with honey-brown wavy tied-back hair, gray-blue cloak and practical pale linen/leather clothes; preserve the rounded gray stele's NARROW wooden transport cart, now with its GRAY COVER ON.\nReference 5: Peng Pai is the adult tall male knight with short dark wavy hair, steel armor and blue embroidered cloak. His injured LEFT arm stays near his side; he escorts without carrying heavy cargo. No image-card typography.\nScene: friends leave Graybridge over its broad arched STONE BRIDGE toward the current high road. The repaired town remains sunlit behind them, natural water still running toward the river below, distant high fields with a few ordinary workers and shovels in soft depth. No ruined or evacuated city.\nComposition: Xiaoyu in the near foreground has just finished looking back and now takes two eager steps to catch up, hugging her thick notebook to her chest and carrying a SMALL cloth bag of flatbread safely with her travel bag. Her face is hopeful and emotionally full, a real broad relieved smile. Weikan is just ahead, TURNED toward Xiaoyu and calling her, green cloak lifted slightly in the bridge breeze; they meet each other's eyes.\nAhead at gentle depth, the rest form one traveling procession: Miaoyuan cradles little Xiaobai, a cooking POT secured outside his pack; Chu Jingshu offers a small piece of bread to Suxintang walking beside her; Peng Pai watches the road from the wagon side; Ailin steadies the COVERED stele cart at the far end, Sumi presses down the corner of an ordinary travel map against the wind. One separate small wooden cargo wagon carries the padded relic box, closed and secure, and the airy supply box with a glimpse of orange cat. Nobody displays the relic.\nUse staggered depth and recognizable clothing rather than lining everyone up for a group portrait. All traveling faces are adult. Mo Mo and Zhen Meiyong have stayed in town and do NOT walk in this party. No gigantic relic, ghost, combat, dramatic spell, flying dragon, triumphant royal parade, cheering crowd, modern vehicle, readable map text, closing caption, chapter number, border, montage or watermark. A warm living town behind them and an open road ahead.",
+      "original": "assets/chapter-art/16-2.png",
+      "generated_filename": "exec-32c02ba8-df57-4140-a41d-0a8acfc86796.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "53dd3a600e599602b47630bcb76b7a7540b78523909b493ef2eaa62da2e4eb8a"
+    }
+  ]
+}
