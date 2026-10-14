@@ -431,7 +431,55 @@
       "height": 941,
       "sha256": "36027975cee6076bc2016133303b4f7589faf075e4030fb024381c2f78f099d9",
       "generation_metadata": "assets/chapter-art/chapter17-19-generation.json"
+    },
+    {
+      "id": "20-1",
+      "chapter": "020",
+      "caption": "来得正好的手",
+      "alt": "旧测候馆门前，曲柯先扶稳伤者肩背，再抬起卡在门槛处的平板车；小语与妙愿守着车边，让伤腿保持平稳。",
+      "after": "袖口一枚纹章戒指晃过小语眼前。",
+      "original": "assets/chapter-art/20-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "8e0d339bb364daea99b21973602783bc0e87d8ab7a673a72d9d259a7d2f7e99b",
+      "generation_metadata": "assets/chapter-art/chapter20-21-generation.json"
+    },
+    {
+      "id": "20-2",
+      "chapter": "020",
+      "caption": "实物与记录的交接",
+      "alt": "接收室里，脉首安稳留在打开的普通内撑箱中，归首碑置于另一侧支座；教员与苏弥、艾琳核对原问、原答和副件，曲柯收妥箱盖。",
+      "after": "接收教员俯身看标签，再向苏弥核尺寸与送出位置。苏弥翻到对应记录，艾琳确认原来的保管状态。曲柯将空出的盖子靠墙放好，让搬运者都能从干燥地面绕行。",
+      "original": "assets/chapter-art/20-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "d2ae51c4cd9bd71802b5c2791f6714692333265de665bbf0f5f0e27fb1b5ea1d",
+      "generation_metadata": "assets/chapter-art/chapter20-21-generation.json"
+    },
+    {
+      "id": "21-1",
+      "chapter": "021",
+      "caption": "长桌上的热饭",
+      "alt": "长桌酒馆里，赵香香把清水和热饭放到伙伴们身边，彭湃的左臂固定着，大家终于坐下吃饭，小白在凉窗台上安稳用餐。",
+      "after": "曲柯举起手。",
+      "original": "assets/chapter-art/21-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "2c4028219cb8396b961740f855b9b2d755cf17db6695d111510237481aeeb4ea",
+      "generation_metadata": "assets/chapter-art/chapter20-21-generation.json"
+    },
+    {
+      "id": "21-2",
+      "chapter": "021",
+      "caption": "一桌木片",
+      "alt": "午后的长桌上，伙伴们玩起画着圆点的普通木片，曲柯与小语争着笑，酥心糖不肯照楚惊殊的戏路猜，赵香香在旁看热闹。",
+      "after": "小语输了第三局，将木片一推。",
+      "original": "assets/chapter-art/21-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "2306160efc008b25f3fdb5075202e1fbc322092cb791847075090a841d53db7a",
+      "generation_metadata": "assets/chapter-art/chapter20-21-generation.json"
     }
   ],
-  "provenance": "Chapters 1-10: eighteen user-supplied illustrations preserved unchanged. Chapters 11-12: four new illustrations generated with built-in image_gen using the current user-selected artwork and character cards as references; prompts and exact references are preserved in assets/chapter-art/chapter11-12-generation.json. Superseded generated originals for chapters 7-10 remain in assets/chapter-art/archive/, with their generation history in assets/chapter-art/generation-prompts.json. Chapters 13-14: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter13-14-generation.json. Chapters 15-16: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter15-16-generation.json. Chapters 17-19: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter17-19-generation.json."
+  "provenance": "Chapters 1-10: eighteen user-supplied illustrations preserved unchanged. Chapters 11-12: four new illustrations generated with built-in image_gen using the current user-selected artwork and character cards as references; prompts and exact references are preserved in assets/chapter-art/chapter11-12-generation.json. Superseded generated originals for chapters 7-10 remain in assets/chapter-art/archive/, with their generation history in assets/chapter-art/generation-prompts.json. Chapters 13-14: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter13-14-generation.json. Chapters 15-16: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter15-16-generation.json. Chapters 17-19: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter17-19-generation.json. Chapters 20-21: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter20-21-generation.json."
 }

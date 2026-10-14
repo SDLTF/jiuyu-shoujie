@@ -1,0 +1,80 @@
+{
+  "tool": "built-in image_gen",
+  "intent": "Generate four chapter illustrations using current artwork and character cards as references",
+  "images": [
+    {
+      "id": "20-1",
+      "chapter": "020",
+      "caption": "来得正好的手",
+      "alt": "旧测候馆门前，曲柯先扶稳伤者肩背，再抬起卡在门槛处的平板车；小语与妙愿守着车边，让伤腿保持平稳。",
+      "after": "袖口一枚纹章戒指晃过小语眼前。",
+      "references": [
+        "assets/originals/19.png",
+        "assets/chapter-art/19-2.png",
+        "assets/chapter-art/3-1.png"
+      ],
+      "prompt": "Use case: illustration-story. Create a NEW full-bleed horizontal 16:9 narrative illustration for 九域守界 20-1. Inputs are style and character identity references, not edit targets. Match the established detailed painterly fantasy anime/semi-realistic style, expressive adult faces, warm worn medieval stone, linen, wood and leather.\nInput 1: Qu Ke is a tall ADULT male vampire research assistant, apparent age 21, slightly long wavy blond hair and clear RED eyes, sunny calm smile, black and burgundy embroidered travel coat over a cream frilled shirt, family crest RING. Match his actual face; do not copy the character card text or layout. No sinister vampire performance.\nInput 2: Xiaoyu is the adult woman with wavy brown hair, tiny golden flower pin, ornate blue-and-gold cloak/red lining, cream blouse/red tie, dusty from yesterday's rescue, one scraped PALM wrapped in dusty cloth. Weikan is the adult green-cloaked archer with pearl earrings, left forearm lightly bandaged, secondary in depth.\nInput 3: Miaoyuan is the adult man with low-tied brown hair, cream shirt and blue-gray embroidered scarf, travel leather straps. Preserve his face.\nScene: late afternoon at the entrance to the old meteorological institute's temporary medical courtyard in Yaohuan. A plain wooden FLATBED HANDCART carrying an ordinary injured young adult worker has caught its front edge on a SMALL stone threshold. The worker lies clothed with one leg supported on folded cloth, restrained bandaging only; no wound closeups, gore or exposed injury.\nQu Ke has come through the doorway, one hand FIRST steadying the worker's shoulder, his OTHER hand gripping beneath the cart's front board to lift that caught end JUST OVER THE THRESHOLD. The crest ring glints on the hand doing useful work. Calm concentrated care, small reassuring smile, no dramatic superhuman overhead lift. Miaoyuan holds the opposite edge, Xiaoyu keeps the supported leg stable with her sound hand and stands where she can still see the patient. Natural distinct hand actions.\nInside, a clean ordinary bed and a waiting physician in plain work robes are visible. Ailin and Sumi may be distant figures ushering people into the courtyard, not foreground portraits. The rescued residents are being received in an orderly, humane way, not lined up like corpses.\nThe unfamiliar blond assistant's steady hands and friendly expression are the focal point, with Xiaoyu's first look of grateful trust. Warm late light through the doorway, quiet relief after tension. No drawn twin blades, blood-drinking, fangs closeup, glowing spell, modern hospital, wheelchair, electric equipment, readable signage, caption, chapter number, border, montage or watermark.",
+      "original": "assets/chapter-art/20-1.png",
+      "generated_filename": "exec-9fa20b5c-303b-4f95-837b-0a24f2f0fb50.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "8e0d339bb364daea99b21973602783bc0e87d8ab7a673a72d9d259a7d2f7e99b"
+    },
+    {
+      "id": "20-2",
+      "chapter": "020",
+      "caption": "实物与记录的交接",
+      "alt": "接收室里，脉首安稳留在打开的普通内撑箱中，归首碑置于另一侧支座；教员与苏弥、艾琳核对原问、原答和副件，曲柯收妥箱盖。",
+      "after": "接收教员俯身看标签，再向苏弥核尺寸与送出位置。苏弥翻到对应记录，艾琳确认原来的保管状态。曲柯将空出的盖子靠墙放好，让搬运者都能从干燥地面绕行。",
+      "references": [
+        "assets/chapter-art/12-1.png",
+        "assets/chapter-art/13-1.png",
+        "assets/originals/19.png"
+      ],
+      "prompt": "Use case: illustration-story. NEW full-bleed horizontal 16:9 narrative illustration for 九域守界 20-2. Inputs are visual style, character and physical object guides only; invent a new indoor composition.\nPreserve the rich painterly fantasy anime/semi-realistic style and tactile worn stone, wood, brass, linen and paper.\nReference 1: Ailin is the honey-brown-haired adult stele custodian in gray-blue cloak and pale linen/leather travel clothes. Sumi is the plainly dressed brown-haired traveling recorder with low-tied hair and taupe travel coat, hard-backed notebook. Xiaoyu is the brown-haired adult woman with gold flower hairpin, blue-and-gold cloak/red lining, cream blouse/red tie.\nReference 2: preserve ONLY the SMALL ancient dark teal curved feather-ridged relic, a little wider than two hands put together. Do not import the underground room or glowing talisman. Reference 3: match Qu Ke's adult blond red-eyed face, black/burgundy ornate coat, cream shirt and crest ring; no card layout or text.\nScene: next morning in a properly prepared dry INSTITUTE RECEPTION ROOM, modest masonry walls, broad daylight window, ordinary reinforced floor support and document table. The SMALL RELIC has arrived in an OPEN plain wooden PADDED TRANSPORT BOX on a low cushioned floor stand. Its internal wooden braces and dry cloth corners still hold it securely, clear hand-sized scale. NO glow, no power connection, no giant monument.\nThe separate waist-to-chest-high rounded gray STELE is upright on ANOTHER support at the room's side with its gray cover folded nearby, quiet ordinary stone with NO luminous answer. Both objects remain distinct, nothing attached to the city energy grid.\nA female receiving teacher, adult middle-aged scholar in modest muted gray institute robes, leans to read the small box's indistinct transfer tag. Sumi holds the matching measurement and departure-location record open; Ailin confirms the custody state beside the stele. On the document table THREE SEPARATE paper groups hold the original question, reassuring old answer and corrected answer, kept apart from observation copies and a mailed envelope. Indistinct handwriting only, no readable text or invented dates.\nQu Ke at the side gently sets the removed wooden lid upright against the wall, keeping the dry walking route open. Xiaoyu at the doorway watches, her palm now wrapped in CLEAN white cloth and not reaching to lift anything, visible quiet relief that someone is actually receiving the materials.\nOne coherent careful handover, respectful human faces and practical supports. No electrical testing, magical aura, worship, spectacular flash lighting the city, modern laboratory screens, stele inside the relic box, monster, dragon, caption, chapter labels, montage, borders or watermark.",
+      "original": "assets/chapter-art/20-2.png",
+      "generated_filename": "exec-ea59630d-c4ef-425a-acca-8d05ed83bb36.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "d2ae51c4cd9bd71802b5c2791f6714692333265de665bbf0f5f0e27fb1b5ea1d"
+    },
+    {
+      "id": "21-1",
+      "chapter": "021",
+      "caption": "长桌上的热饭",
+      "alt": "长桌酒馆里，赵香香把清水和热饭放到伙伴们身边，彭湃的左臂固定着，大家终于坐下吃饭，小白在凉窗台上安稳用餐。",
+      "after": "曲柯举起手。",
+      "references": [
+        "assets/originals/13.png",
+        "assets/originals/19.png",
+        "assets/chapter-art/16-2.png",
+        "assets/chapter-art/5-1.png"
+      ],
+      "prompt": "Use case: illustration-story. NEW full-bleed horizontal 16:9 narrative illustration for 九域守界 21-1. All inputs are character and visual-style references only; a new midday tavern scene, not a copied dinner composition.\nReference 1: Zhao Xiangxiang is a tall adult male tavern keeper, apparent age 18, lively youthful face, wavy dark-brown hair, rich red/gold traveling coat over cream open-collar shirt, a small blessing cord around his wrist. Match his face; no glowing magical drink, card typography or panels.\nReference 2: Qu Ke is a tall adult man with slightly long blond hair, RED eyes, sunny smile, black/burgundy gold-trimmed coat, cream shirt and crest ring. He is the friendly inviter, not a sinister vampire.\nReference 3: preserve Xiaoyu (adult brown-haired woman, gold flower pin, blue/gold cloak/red lining, cream shirt/red tie), Weikan (adult woman, green/gold cloak and pearl earrings), Peng Pai (adult tall dark-haired blue-cloaked knight), Miaoyuan (adult low-tied brown-haired man with cream shirt/blue-gray scarf and small white dragon), Ailin (honey-brown-haired gray-blue-cloaked custodian) and plain brown-haired recorder Sumi in taupe.\nReference 4: preserve Suxintang's red floral layered robe and long brown hair with red floral ornaments; Chu Jingshu's dark navy/teal clothes, black twin ponytails and theatrical card case.\nScene: noon inside the LONG TABLE TAVERN at the outer edge of Yaohuan's Seventh Lamp District. Worn broad wooden table, sturdy chairs and benches, open window, modest kitchen doorway, copper cookware and soft daylight with warm stew steam. A few tired maintenance workers eat quietly at another table in depth.\nThe nine friends have finally sat to eat a real meal. Foreground Xiaoyu and Weikan are smiling over clear WATER cups, bowls of warm stew and freshly broken flatbread. Xiaoyu's PALM is wrapped cleanly, Weikan's LEFT forearm bandaged; no one is hiding a bow under the table or on duty.\nPeng Pai sits comfortably with his injured LEFT ARM fixed in a simple splint and sling at his chest, RIGHT shoulder given room and a folded cloth beneath his elbow. No shield, sword or armor gauntlets used to eat. Zhao stands beside him serving a plate of already cut small pieces and a glass of plain water, a witty warm grin rather than fussing over him.\nQu Ke sits across, lifting one hand politely as if asking whether everyone may begin, both twin blades securely SHEATHED out of the way. Suxintang and Chu share a relieved laugh farther along; Ailin and Sumi relax their paper bags under the bench. Miaoyuan sits beside a COOL safe window ledge where little Xiaobai calmly eats from its own small dish, FAR from any hot pot.\nStaggered natural seating and lively faces, not all nine posed in a row. The focus is warm food, ordinary rest and welcome. No orange cat (it stayed at the institute), drinking contest, glowing wine, magical healing, trauma flashback, relic, battle, kings' banquet, readable signs or writing, caption, labels, borders, collage or watermark.",
+      "original": "assets/chapter-art/21-1.png",
+      "generated_filename": "exec-858eb176-c233-413d-99d1-947886322a57.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "2c4028219cb8396b961740f855b9b2d755cf17db6695d111510237481aeeb4ea"
+    },
+    {
+      "id": "21-2",
+      "chapter": "021",
+      "caption": "一桌木片",
+      "alt": "午后的长桌上，伙伴们玩起画着圆点的普通木片，曲柯与小语争着笑，酥心糖不肯照楚惊殊的戏路猜，赵香香在旁看热闹。",
+      "after": "小语输了第三局，将木片一推。",
+      "references": [
+        "assets/originals/13.png",
+        "assets/originals/19.png",
+        "assets/chapter-art/16-2.png",
+        "assets/chapter-art/5-1.png"
+      ],
+      "prompt": "Use case: illustration-story. Create a NEW full-bleed horizontal 16:9 narrative illustration for 九域守界 21-2. Inputs are identity/style guides, not edit targets, no copied card text or dinner layout. Same finely detailed painterly fantasy anime/semi-realistic style, delicate adult faces, warm tactile medieval wood, cloth and brass.\nInput 1: Zhao Xiangxiang, lively tall adult male tavern keeper, apparent age 18, wavy dark-brown hair, red/gold coat and cream shirt, blessing cord on wrist. Input 2: Qu Ke, sunny tall adult blond-haired red-eyed man, ornate black/burgundy coat, cream shirt, crest ring.\nInput 3: preserve Xiaoyu (adult brown-haired woman with gold flower hairpin, blue/gold cloak/red lining, cream shirt/red tie), Weikan (green/gold cloak, brown wavy hair, pearl earrings), Peng Pai (adult tall blue-cloaked dark-haired knight), Miaoyuan (adult low-tied brown-haired traveler, cream shirt/blue-gray scarf), Ailin and plain brown-haired recorder Sumi. Input 4: Suxintang in red floral robes and hair ribbons, Chu Jingshu with black twin ponytails in dark navy/teal clothing.\nScene: later the same afternoon at the Long Table Tavern, sunlight now coming through the OTHER window, cleared dishes and a final water jug at the broad worn wooden table. The friends play an ORDINARY small strategy game using loose WOODEN TILES bearing only light and dark ROUND DOTS, a plain wooden storage box nearby. No chess pieces, modern playing cards, digital board, magical projections or invented written rules.\nMain readable foreground group: Xiaoyu has just lost her third round and pushes a few tiles forward using her SOUND hand; her other palm remains cleanly bandaged and relaxed. She laughs in exasperated delight, bending slightly toward the table. Opposite her, Qu Ke smiles with bright RED eyes and an open amused gesture, enjoying a friendly tease without holding weapons.\nSuxintang at one side calmly occupies a useful empty space with one tile, Chu beside her laughing and gesturing theatrically, no magic cards being cast. Zhao stands at the table corner smiling broadly at the noisy game, a few ordinary beans and small pebbles in a nearby wicker basket as a playful loser task, not spilling into the game.\nAt gentle depth, Weikan smiles beside the open window; Peng Pai sits safely with LEFT arm in sling/splint, no shield or sword, his comfortable right elbow supported. Miaoyuan quietly picks stones out of the bean basket while Peng Pai points them out with his sound hand, a soft secondary story beat. Little white dragon settled on a cool window ledge. Ailin and Sumi may sit at the far end as soft secondary silhouettes, not a row of forced portraits.\nOne coherent warm scene of friends being allowed to play and rest after a hard day. Natural distinct hands, unguarded laughter, restrained clothing details, no orange cat, drinking, combat, bleeding, magical healing, floating tiles, dramatic aura, text labels, chapter number, borders, montage or watermark.",
+      "original": "assets/chapter-art/21-2.png",
+      "generated_filename": "exec-e520d4d5-95e0-41e1-8d3e-80d7ec2bbb38.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "2306160efc008b25f3fdb5075202e1fbc322092cb791847075090a841d53db7a"
+    }
+  ]
+}
