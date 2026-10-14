@@ -1,0 +1,108 @@
+{
+  "tool": "built-in image_gen",
+  "intent": "Generate six chapter illustrations using the current artwork as visual references",
+  "images": [
+    {
+      "id": "17-1",
+      "chapter": "017",
+      "caption": "雨桥上的手",
+      "alt": "雨中的窄木车道上，货车车轮陷进板缝，小语抓住豆子的衣袖，蔡婶从另一侧抓稳腰带，彭湃在上坡侧稳住后梁。",
+      "after": "男孩不再喊桥了。他两只手死死扒着车边，脸白得连雀斑都不显。小语手掌在粗布上滑过一下，那处还没完全好的伤像被烧了一把，她却不敢松。",
+      "references": [
+        "assets/chapter-art/16-2.png",
+        "assets/originals/14.png"
+      ],
+      "prompt": "Use case: illustration-story. Create a NEW full-bleed horizontal 16:9 chapter illustration for 九域守界 17-1. Input 1 is a STYLE and CHARACTER guide only: preserve Xiaoyu (adult woman, wavy brown hair, tiny gold flower pin, ornate blue-and-gold cloak/red lining, cream blouse/red tie), Weikan (adult woman, green cloak/pearl earrings/archery gear), Miaoyuan (adult male, low-tied brown hair, cream shirt, blue-gray scarf, small white dragon), and the existing painterly fantasy anime/semi-realistic style. Input 2 guides Peng Pai, adult 24-year-old knight, short dark wavy hair, steel armor and dark-blue embroidered cloak. No copied reference composition or card layout.\nScene: heavy rain on a narrow wooden wagon crossing high above a rocky mountain stream. Old beams and new planks meet in one poorly compressed seam. A mule-drawn cargo wagon's wheel has SLIPPED INTO THAT SEAM and the wagon tilts slightly, not broken or falling. The covered stele cart has already crossed and rests safely at distant depth.\nForeground crisis: Xiaoyu on the walkway beside the wagon reaches firmly to GRIP A BOY'S COARSE CLOTH SLEEVE, bracing herself on stable boards. Her tense determined expression and rain-wet hair are clear. Douzi is an ordinary freckled 8-to-10-year-old boy with short dark-brown hair, cream shirt, brown vest and cloth shoes; he holds the wagon rim with both hands, his feet just slipping toward its outer edge, frightened but not injured. His mother Cai, a middle-aged seamstress with dark hair under a plain gray headscarf and a muted brown linen coat/apron, reaches from the INSIDE of the wagon to hold his belt. Both rescuers are pulling him BACK ONTO THE WAGON. Natural distinct hands and safe physical support.\nPeng Pai stands on the UPHILL side, ONLY his right hand steadying the rear beam, his injured left arm close to his body. He does not lift the wagon. Driver loosens the reins; Miaoyuan at the near side supports the wagon, little white dragon nestled safely against his arm. Weikan may stand at gentle depth on dry higher boards, no arrows drawn.\nRain and wet wood give urgency; clear load-bearing wheel and plank supports, not a heroic airborne leap. No collapsed bridge, child in the river, gore, corpses, magic rescue bubble, wings on humans, modern vehicles, chapter text, labels, montage, border or watermark.",
+      "original": "assets/chapter-art/17-1.png",
+      "generated_filename": "exec-e092ac18-a3fd-4e45-924b-020b75509f49.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "7d7fb38e5994cccab857775eebb22ad2237dd977829f39ea7aba1f07f1cb0403"
+    },
+    {
+      "id": "17-2",
+      "chapter": "017",
+      "caption": "城里的灯",
+      "alt": "初到曜环，小语与韦侃看见层层灯桥和铜边亮线，也看见七灯区楼窗的暗处，覆布的碑车停在南门外接收路旁。",
+      "after": "她仍觉得它好看，却再不能只看见好看。她心里那点不舒服从昨日门牌的名字里又浮出来，这一次有了具体的窗、具体的路和一盏亮不起来的灯。",
+      "references": [
+        "assets/chapter-art/16-2.png",
+        "assets/chapter-art/9-1.png"
+      ],
+      "prompt": "Use case: illustration-story. NEW full-bleed horizontal 16:9 cinematic illustration for 九域守界 17-2. Inputs are visual style and character references only. Keep the finely detailed painterly fantasy anime/semi-realistic medium, delicate adult faces, intricate weathered fabric, masonry, wood and brass.\nInput 1: preserve Xiaoyu's brown wavy hair, gold flower pin, blue-and-gold cloak/red lining, cream shirt/red tie, travel notebook; Weikan's wavy brown hair, pearl earrings, green-and-gold cloak, bow/quiver. Input 2: preserve honey-brown-haired Ailin in gray-blue travel clothes and the modest rounded stele's narrow wooden transport cart, with its gray cover ON; Sumi is the plain brunette with low tied hair, taupe traveling clothes and a paper case.\nScene: first view of the MUCH LARGER CITY of Yaohuan from the open south approach at late afternoon turning to dusk. A dense living medieval-fantasy engineering city of stacked bridge corridors between uneven-height stone-and-timber buildings, copper-edged conduits, ivy-clad windows, suspended freight ropes and hand-hauled wooden crates. No skyscrapers, futuristic neon or modern machines.\nWide city vista with foreground figures from three-quarter view, their faces visible. Xiaoyu has stopped with notebook held to her chest; her eager delighted wonder is now tempered by concern as she looks toward the lower RIGHT streets. Weikan stands beside her, looking with her rather than pointing a weapon. Ailin and Sumi stand with the covered cart farther down the receiving road, secondary and small.\nMake the visual contrast readable: higher copper-bordered bridges and corridors are warmly lit by thin continuous lines, ordinary shops and people alive on them. The adjacent lower Seventh Lamp District has MANY dark windows and copper rails that glow for short stretches then break into darkness. A few tiny warm oil lamps remain in those windows. These lower buildings are part of the same city, not distant abandoned ruins. Tiny people on higher walkways carry freight; a cloth wagon passes below.\nThe image holds both beauty and the unsettling unequal darkness, thoughtful arrival rather than a disaster tableau. Mild amber sunset, cool blue dusk, restrained copper light, no large spell circles, magical monsters, siege, fire, collapsing buildings, giant exposed relic, readable signs or text, chapter labels, framing border, montage or watermark.",
+      "original": "assets/chapter-art/17-2.png",
+      "generated_filename": "exec-aa12fcd7-8984-4cb9-9272-0a8dbdefb4a7.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "2a3225690a89e677e4e66143f88100fdd5a555d7f5919cab267f30942814aeba"
+    },
+    {
+      "id": "18-1",
+      "chapter": "018",
+      "caption": "导流杆下的蓝弧",
+      "alt": "南第三通道的维护平台上，顾霆把逼近工人手臂的蓝白电弧引向备用导片，小语抱着副件站在干地，等待他接收灰桥的记录。",
+      "after": "旁边的工人终于站稳。",
+      "references": [
+        "assets/originals/17.png",
+        "assets/chapter-art/16-2.png"
+      ],
+      "prompt": "Use case: illustration-story. NEW full-bleed horizontal 16:9 narrative illustration for 九域守界 18-1. Reference inputs are identity/style guides, not edit targets. Do not copy typography or panels.\nReference 1: preserve Gu Ting, 28-year-old adult male maintenance engineer, slightly long messy black hair, wheat-toned skin, deep brown eyes, exhausted but sharply focused; worn dark INSULATING WORK CLOTHES, short shoulder protection, rolled sleeves, leather/brass tool harness, old non-graphic arc scars on the hands. Preserve his actual face. His tools are a practical insulated diversion rod and analog capacity meter, not a battle wizard's wand.\nReference 2: preserve Xiaoyu, adult brown-haired woman with gold flower pin, ornate blue-and-gold cloak/red lining, cream shirt/red tie, brown travel clothes; the established rich painterly fantasy anime/semi-realistic medium.\nScene: morning at Yaohuan's South Third Passage maintenance platform. Old copper channels and real connector plates run along the edge of weathered stone; a short fixed dry platform is separate from the damp paving. A modest old copper street pillar and narrow dim streets are in depth, wooden freight wagon parked nearby.\nGu Ting braces ONE FOOT on a stable short platform, RIGHT hand grips the insulated diversion rod, LEFT hand holds the analog meter close to a physical connector. He is carefully lowering the rod tip a little, directing a thin bright blue-white electrical ARC AWAY FROM an ordinary worker's hand toward a spare copper diversion plate. The worker has stepped back onto dry stone holding a connector; no one stands in the live channel. A few tiny sparks at the plate and a small curl of steam over damp stone make the actual risk readable. No electricity through bodies.\nGu Ting's sweat and concentrated jaw show difficult precise work, not effortless spectacular magic. Xiaoyu stands safely on the DRY outer ground watching, holding the sealed reply and observation copies with her notebook, waiting to introduce herself. No casting or touching energized metal by her.\nComposition focuses on Gu Ting's face, both distinct tool actions and the diverted arc's short physical path. Copper, wood and leather, amber daylight with restrained blue arc illumination. No lightning storm, giant magical circle, explosive city destruction, injury closeup, demon, white dragon, fantasy throne, modern power plant, digital screens, legible meter numbers, captions, chapter labels, collage, border or watermark.",
+      "original": "assets/chapter-art/18-1.png",
+      "generated_filename": "exec-02838b18-47d8-4664-b983-836e4be8c81e.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "1e4d68c482fb429d29dd8f1dec92e7c5c8a4080d974d90fa8a2d0199dbf73592"
+    },
+    {
+      "id": "18-2",
+      "chapter": "018",
+      "caption": "把盾留在车边",
+      "alt": "横移栅门前，小语和膝伤工人把绳穿过护盾背带、绕住车轮侧梁，彭湃只用右手执剑挡住逼近者，韦侃在车侧掩护。",
+      "after": "彭湃左侧不必再靠那只手去稳。",
+      "references": [
+        "assets/chapter-art/16-2.png",
+        "assets/originals/14.png"
+      ],
+      "prompt": "Use case: illustration-story. NEW full-bleed horizontal 16:9 chapter illustration for 九域守界 18-2. Use both inputs only as identity/style guides; new dynamic grounded composition.\nMatch Xiaoyu (adult woman, brown wavy hair/gold flower pin, blue-and-gold cloak/red lining, cream shirt/red tie), Weikan (adult woman, green embroidered cloak, pearl earrings, bow/quiver), Peng Pai (adult tall knight, short dark wavy hair, steel armor and dark-blue cloak) and the finely detailed painterly fantasy anime/semi-realistic look. Peng Pai's injured LEFT arm is not bearing his shield.\nScene: tense midday confrontation in Yaohuan's stone outer square at a narrow street's transverse SLIDING IRON GATE. Gate is partially closing; ordinary residents behind its visible remaining gap include Cai (middle-aged woman with plain gray headscarf, brown linen work coat) and Douzi (short dark-brown-haired freckled boy, cream shirt/brown vest), clearly alive and waiting. No injury to children.\nForeground behind a stationary EMPTY wooden freight wagon: Xiaoyu crouches with a rope, her cloth-covered scraped palm non-graphic. An ordinary adult worker with an injured knee, covered by trousers and a little cloth, sits safely at the wheel. They thread the rope through the BACK STRAPS of Peng Pai's BLUE SHIELD and around the WHEEL'S SIDE WOODEN BEAM, tightening it so the shield is wedged diagonally between wheel and stone step. The physical shield, rope path and support must be clear; no rope binds people.\nMidground Peng Pai fights defensively from the wagon front with ONLY HIS RIGHT HAND holding a sword; LEFT arm kept close to his body. His blue shield is FIXED TO THE WAGON and never worn on his left arm. He holds off a mature execution captain with plain heavy iron shoulder armor, a short-handled thick WAR HAMMER and a small shield, and two generic iron-edged shield guards. Stances on dry stable stone, restrained sparks where weapons meet, no wounds or gore.\nWeikan at another wagon corner, farther back, readies her bow to cover the exposed approach, green cloak recognizable. She is mobile and focused, not shooting at residents. A narrow blue copper channel remains beyond the work boundary, not crossed by people.\nThe story is practical teamwork giving the injured knight room to protect others, not a posed duel or triumph. No impaled bodies, severed limbs, giant magic, flying people, modern riot police gear, modern cars, readable text, labels, chapter number, borders, collage or watermark.",
+      "original": "assets/chapter-art/18-2.png",
+      "generated_filename": "exec-ad2a0046-e88e-4486-9310-e79d0dd3facb.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "bd16eef9ffc8d24f39dd38493af77e1dac1e57094a50e7e6f79b6dc037822938"
+    },
+    {
+      "id": "19-1",
+      "chapter": "019",
+      "caption": "侧门终于动了",
+      "alt": "铜罩后的侧门被撬开，小语与妙愿一同压杆，酥心糖稳住已抬起的门角，楚惊殊将戏幕收在可见的朱线旁，木楔托住门底。",
+      "after": "木楔咬住石沿。",
+      "references": [
+        "assets/chapter-art/5-1.png",
+        "assets/chapter-art/16-2.png"
+      ],
+      "prompt": "Use case: illustration-story. NEW full-bleed horizontal 16:9 narrative illustration for 九域守界 19-1. Inputs are identity and style references only; new action composition, no copied inn scene.\nPreserve Xiaoyu, adult woman with wavy brown hair, gold flower pin, ornate blue-and-gold cloak/red lining, cream shirt/red tie; Miaoyuan, adult male with brown low-tied hair, cream shirt and blue-gray patterned scarf, small white dragon with folded wings tucked securely at his shoulder; Suxintang, adult woman in red floral layered robes and red floral hair ribbons; Chu Jingshu, young adult woman with black twin ponytails, ornate dark navy/teal clothing and a small theatrical card case. All have the established delicate painterly fantasy anime/semi-realistic faces.\nScene: side wall behind displaced OLD COPPER COVERS at Yaohuan's maintenance square. A narrow OLD IRON WORKSHOP SIDE DOOR has been jammed at its bottom by a newly laid copper rail; rust and dust on its hinge. Ordinary stone dry footing by the wall. The large sliding front gate and battle are out of focus far away, not the main image.\nXiaoyu and Miaoyuan use the SAME long iron PRY BAR together: its hooked tip is inserted into a small notch at the BOTTOM CORNER of the iron door. Both press its handle downward, bracing their feet on dry stone. Her hand has a dusty cloth wrap, no gore. The bar levers ONLY this corner slightly upward and the door is beginning to turn outward, a narrow gap showing warm gray workshop haze. Xiaoyu's face is strained and suddenly hopeful; Miaoyuan's grip avoids her injured hand.\nSuxintang crouches at the work side placing ONE new red talisman at the physically lifted door corner, a restrained thin cinnabar line stabilizing that corner. Chu Jingshu beside the wall holds her cards, a SMALL translucent theater curtain tracing only the VISIBLE talisman line and door corner, a faint stylized sword-like line inside it. Not an invisible full-wall spell or armored barrier.\nMiaoyuan's FREE hand has just pushed a plain WOODEN WEDGE under the lifted bottom edge, visibly biting against the stone ledge and carrying the load. Show distinct natural hands with clear tool roles. The door remains heavy and supported by bar plus wedge; the talisman is not lifting the whole door alone.\nThrough the gap, Cai in a plain gray headscarf and brown linen work coat supports a slow elderly man in muted work clothes; her freckled dark-brown-haired boy stays behind her, safely waiting INSIDE. No one crosses the still-lit copper channel yet.\nMidday light and small red talisman glow, detailed worn metal, stone, cloth. No explosion, giant magic, graphic wounds, ghosts, triumphant crowd, modern firemen, electric tools, readable text, labels, chapter number, montage, border or watermark.",
+      "original": "assets/chapter-art/19-1.png",
+      "generated_filename": "exec-4b5d5f0c-cd64-43fd-b858-ec9207128207.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "d7ddd4158072ac9ea1e650e3f7e4d120cc7bd3ccac17771781f4c3c056268b6a"
+    },
+    {
+      "id": "19-2",
+      "chapter": "019",
+      "caption": "你叫我，我听见了",
+      "alt": "住户已从侧门撤出，小语带着灰和眼热轻碰韦侃的肩；韦侃放低弓、向她靠近，蔡婶一家与获救的人在石阶旁相互扶着。",
+      "after": "她说完，把弓换到另一手，肩轻轻向小语这边靠了一点。小语没再强忍眼睛里那点东西，低头，用干净的袖内擦了擦。",
+      "references": [
+        "assets/chapter-art/16-2.png",
+        "assets/chapter-art/11-1.png"
+      ],
+      "prompt": "Use case: illustration-story. NEW full-bleed horizontal 16:9 narrative illustration for 九域守界 19-2. Inputs are adult character identity and visual style guides only. New composition after a rescue in the city, not an edit of the inn room or bridge.\nPreserve Xiaoyu, adult woman with wavy brown shoulder-length hair, tiny gold floral hairpin, ornate blue-and-gold cloak/red lining, cream shirt/red tie; Weikan, adult woman with wavy brown hair, pearl stud earrings, green-and-gold cloak and practical archery clothes. Preserve their exact recognizable faces and finely detailed painterly fantasy anime/semi-realistic medium, natural anatomy and warm expressive eyes.\nScene: late afternoon on Yaohuan's dry outer stone steps beside the now OPEN narrow workshop side door. Copper channel at the threshold is DARK after diversion, a charred small spare plate and pry bar lie safely aside. Afternoon shadows are long, the wider city's dark lower windows remain dark; the overall crisis is not solved.\nForeground emotional focus: Xiaoyu's face and hair are dusty with smudges, a tiny scrap of cloth still caught at the crown, her palm wrapped in dirty cloth. She has tears of relief and exhaustion, a fragile smile. She has gently touched Weikan's SHOULDER, then lowers her head to wipe her wet eyes with the clean INSIDE of her own sleeve. Weikan leans her shoulder a little closer, a small reassuring smile, her bow held LOWERED in the opposite hand. A small shallow abrasion on Weikan's LEFT forearm is wrapped or only a restrained narrow mark, no dripping blood or wound closeup. Careful gentle contact, quiet friendship, not kissing or a dramatic embrace.\nBehind them at soft depth, ordinary rescued neighbors on the broad stone steps help one another: Cai in plain gray headscarf and brown linen work coat holds her young freckled dark-brown-haired boy, her elderly father seated beside them holding a cup of water. A gray-haired mother supports a young adult with a bandaged leg. Other ordinary residents sit or stand with tired relief; nobody applauds.\nMiaoyuan in his cream shirt/blue-gray scarf offers water, small white dragon settled safely; Peng Pai, adult blue-cloaked knight, rests near a dented shield fixed off his injured left arm, sword SHEATHED. Background figures should not compete with the two women's faces. The people are alive and getting ready to go to the medical courtyard.\nNo enemy duel in foreground, crowd of corpses, impalement, gore, explosions, city-wide magical lighting, royal victory parade, readable text, labels, chapter number, collage, border or watermark. Let dust, lowering weapons, shoulder contact and warm afternoon light carry the relief.",
+      "original": "assets/chapter-art/19-2.png",
+      "generated_filename": "exec-0237db31-7566-4ff2-a0e0-681e3ecd06aa.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "36027975cee6076bc2016133303b4f7589faf075e4030fb024381c2f78f099d9"
+    }
+  ]
+}

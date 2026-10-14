@@ -359,7 +359,79 @@
       "height": 941,
       "sha256": "53dd3a600e599602b47630bcb76b7a7540b78523909b493ef2eaa62da2e4eb8a",
       "generation_metadata": "assets/chapter-art/chapter15-16-generation.json"
+    },
+    {
+      "id": "17-1",
+      "chapter": "017",
+      "caption": "雨桥上的手",
+      "alt": "雨中的窄木车道上，货车车轮陷进板缝，小语抓住豆子的衣袖，蔡婶从另一侧抓稳腰带，彭湃在上坡侧稳住后梁。",
+      "after": "男孩不再喊桥了。他两只手死死扒着车边，脸白得连雀斑都不显。小语手掌在粗布上滑过一下，那处还没完全好的伤像被烧了一把，她却不敢松。",
+      "original": "assets/chapter-art/17-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "7d7fb38e5994cccab857775eebb22ad2237dd977829f39ea7aba1f07f1cb0403",
+      "generation_metadata": "assets/chapter-art/chapter17-19-generation.json"
+    },
+    {
+      "id": "17-2",
+      "chapter": "017",
+      "caption": "城里的灯",
+      "alt": "初到曜环，小语与韦侃看见层层灯桥和铜边亮线，也看见七灯区楼窗的暗处，覆布的碑车停在南门外接收路旁。",
+      "after": "她仍觉得它好看，却再不能只看见好看。她心里那点不舒服从昨日门牌的名字里又浮出来，这一次有了具体的窗、具体的路和一盏亮不起来的灯。",
+      "original": "assets/chapter-art/17-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "2a3225690a89e677e4e66143f88100fdd5a555d7f5919cab267f30942814aeba",
+      "generation_metadata": "assets/chapter-art/chapter17-19-generation.json"
+    },
+    {
+      "id": "18-1",
+      "chapter": "018",
+      "caption": "导流杆下的蓝弧",
+      "alt": "南第三通道的维护平台上，顾霆把逼近工人手臂的蓝白电弧引向备用导片，小语抱着副件站在干地，等待他接收灰桥的记录。",
+      "after": "旁边的工人终于站稳。",
+      "original": "assets/chapter-art/18-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "1e4d68c482fb429d29dd8f1dec92e7c5c8a4080d974d90fa8a2d0199dbf73592",
+      "generation_metadata": "assets/chapter-art/chapter17-19-generation.json"
+    },
+    {
+      "id": "18-2",
+      "chapter": "018",
+      "caption": "把盾留在车边",
+      "alt": "横移栅门前，小语和膝伤工人把绳穿过护盾背带、绕住车轮侧梁，彭湃只用右手执剑挡住逼近者，韦侃在车侧掩护。",
+      "after": "彭湃左侧不必再靠那只手去稳。",
+      "original": "assets/chapter-art/18-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "bd16eef9ffc8d24f39dd38493af77e1dac1e57094a50e7e6f79b6dc037822938",
+      "generation_metadata": "assets/chapter-art/chapter17-19-generation.json"
+    },
+    {
+      "id": "19-1",
+      "chapter": "019",
+      "caption": "侧门终于动了",
+      "alt": "铜罩后的侧门被撬开，小语与妙愿一同压杆，酥心糖稳住已抬起的门角，楚惊殊将戏幕收在可见的朱线旁，木楔托住门底。",
+      "after": "木楔咬住石沿。",
+      "original": "assets/chapter-art/19-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "d7ddd4158072ac9ea1e650e3f7e4d120cc7bd3ccac17771781f4c3c056268b6a",
+      "generation_metadata": "assets/chapter-art/chapter17-19-generation.json"
+    },
+    {
+      "id": "19-2",
+      "chapter": "019",
+      "caption": "你叫我，我听见了",
+      "alt": "住户已从侧门撤出，小语带着灰和眼热轻碰韦侃的肩；韦侃放低弓、向她靠近，蔡婶一家与获救的人在石阶旁相互扶着。",
+      "after": "她说完，把弓换到另一手，肩轻轻向小语这边靠了一点。小语没再强忍眼睛里那点东西，低头，用干净的袖内擦了擦。",
+      "original": "assets/chapter-art/19-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "36027975cee6076bc2016133303b4f7589faf075e4030fb024381c2f78f099d9",
+      "generation_metadata": "assets/chapter-art/chapter17-19-generation.json"
     }
   ],
-  "provenance": "Chapters 1-10: eighteen user-supplied illustrations preserved unchanged. Chapters 11-12: four new illustrations generated with built-in image_gen using the current user-selected artwork and character cards as references; prompts and exact references are preserved in assets/chapter-art/chapter11-12-generation.json. Superseded generated originals for chapters 7-10 remain in assets/chapter-art/archive/, with their generation history in assets/chapter-art/generation-prompts.json. Chapters 13-14: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter13-14-generation.json. Chapters 15-16: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter15-16-generation.json."
+  "provenance": "Chapters 1-10: eighteen user-supplied illustrations preserved unchanged. Chapters 11-12: four new illustrations generated with built-in image_gen using the current user-selected artwork and character cards as references; prompts and exact references are preserved in assets/chapter-art/chapter11-12-generation.json. Superseded generated originals for chapters 7-10 remain in assets/chapter-art/archive/, with their generation history in assets/chapter-art/generation-prompts.json. Chapters 13-14: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter13-14-generation.json. Chapters 15-16: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter15-16-generation.json. Chapters 17-19: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter17-19-generation.json."
 }
