@@ -479,7 +479,55 @@
       "height": 941,
       "sha256": "2306160efc008b25f3fdb5075202e1fbc322092cb791847075090a841d53db7a",
       "generation_metadata": "assets/chapter-art/chapter20-21-generation.json"
+    },
+    {
+      "id": "22-1",
+      "chapter": "022",
+      "caption": "能修，先看原来的",
+      "alt": "贾小鱼在紫色工坊中检查彭湃受损的蓝盾，将断木撑与修复材料图展示给小语。",
+      "after": "贾说得那么快，小语刚刚空下去的地方一下被填住。可她没有将盾立起拍两下，便说以后什么也不怕。她取出一片薄纸，画出框损与背带位置，分两项列材料。",
+      "original": "assets/chapter-art/22-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "c0d47ca2ff473a44a6d6d4a9920b72d30006e55a5f633e5f31de8b7829030436",
+      "generation_metadata": "assets/chapter-art/chapter22-23-generation.json"
+    },
+    {
+      "id": "22-2",
+      "chapter": "022",
+      "caption": "今日少搬两趟，也好",
+      "alt": "旧泵在工坊有限试验中流出清水，贾小鱼与顾霆守着接架，小语看着水桶逐渐接满。",
+      "after": "她语气很平，脸上的笑却比昨日接炉盖时更亮。阿榆拖过第二只空桶，搬运的人帮他换，小语站在侧面，给他们看脚下哪块干石能落脚。谁也没有让她用伤手抱起满桶，她竟第一次没觉得自己少做了什么。",
+      "original": "assets/chapter-art/22-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "1a1da2919418f963195772dd37397fcb677f6de9284c9d01baca308bd3ec11a6",
+      "generation_metadata": "assets/chapter-art/chapter22-23-generation.json"
+    },
+    {
+      "id": "23-1",
+      "chapter": "023",
+      "caption": "先让他过",
+      "alt": "晏执衡以两道细蓝弧稳住检修桥上端接臂并带工人脱险，顾霆在下端导流，小语从东口指明退路。",
+      "after": "晏没有回头看。他将工人推向东口，顾用杆将余弧拖离最后一块干石，贾的短工具也从侧面压下，重新落入冷位的接臂被普通锁销实实在在卡住。",
+      "original": "assets/chapter-art/23-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "6da5293cd875f2d6fbeec7cdc709a66ae71eb8b83fbee1582713e6fd7de5bc54",
+      "generation_metadata": "assets/chapter-art/chapter22-23-generation.json"
+    },
+    {
+      "id": "23-2",
+      "chapter": "023",
+      "caption": "停柄在自己手里",
+      "alt": "段禾亲手将本地停柄退到底，顾霆在旁指导，晏执衡将控制扣保留在复能侧，小语看见机关停稳。",
+      "after": "两处实物机关一前一后落到停位，上端的小指片也暗下去。晏看过响应，调整控制扣旁一根短接，第二次段禾再做，动作终于顺了。",
+      "original": "assets/chapter-art/23-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "11b06ff9ff175bb94ddc4d1145ee06b787ad0f363f9a58f719b65f0c0f25cffa",
+      "generation_metadata": "assets/chapter-art/chapter22-23-generation.json"
     }
   ],
-  "provenance": "Chapters 1-10: eighteen user-supplied illustrations preserved unchanged. Chapters 11-12: four new illustrations generated with built-in image_gen using the current user-selected artwork and character cards as references; prompts and exact references are preserved in assets/chapter-art/chapter11-12-generation.json. Superseded generated originals for chapters 7-10 remain in assets/chapter-art/archive/, with their generation history in assets/chapter-art/generation-prompts.json. Chapters 13-14: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter13-14-generation.json. Chapters 15-16: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter15-16-generation.json. Chapters 17-19: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter17-19-generation.json. Chapters 20-21: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter20-21-generation.json."
+  "provenance": "Chapters 1-10: eighteen user-supplied illustrations preserved unchanged. Chapters 11-12: four new illustrations generated with built-in image_gen using the current user-selected artwork and character cards as references; prompts and exact references are preserved in assets/chapter-art/chapter11-12-generation.json. Superseded generated originals for chapters 7-10 remain in assets/chapter-art/archive/, with their generation history in assets/chapter-art/generation-prompts.json. Chapters 13-14: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter13-14-generation.json. Chapters 15-16: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter15-16-generation.json. Chapters 17-19: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter17-19-generation.json. Chapters 20-21: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter20-21-generation.json. Chapters 22-23: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter22-23-generation.json."
 }
