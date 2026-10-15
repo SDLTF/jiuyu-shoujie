@@ -1,0 +1,79 @@
+{
+  "tool": "built-in image_gen",
+  "intent": "Generate four new illustrations for chapters 26-27, preserve series style and character identities, directly integrate and publish without visual review as requested.",
+  "images": [
+    {
+      "id": "26-1",
+      "chapter": "026",
+      "caption": "桌边的凳子，也给你留",
+      "alt": "学院长廊里，小语坐在左臂仍固定的彭湃身旁，修好的蓝盾稳放在实架上，两人望向同伴所在的桌边。",
+      "after": "这一次说出来，小语心里格外稳。",
+      "references": [
+        "assets/originals/14.png",
+        "assets/chapter-art/16-2.png",
+        "assets/chapter-art/22-1.png"
+      ],
+      "prompt": "Use case: illustration-story. Asset: one new full-bleed landscape 16:9 narrative illustration for the Chinese fantasy novel 九域守界. Match the ongoing series: exquisite semi-realistic anime faces, natural anatomy, finely painted wavy hair, highly detailed embroidered travel clothing, aged stone and brass, tactile parchment and wood, warm cinematic sunlight or lamplight, luminous atmospheric depth and expressive restrained acting. ONE coherent scene, no montage, panels, captions, legible text, border, logo or watermark. Character sheets establish face, wardrobe and equipment identity only: never copy their layout or printed writing. Previous chapter art supplies style and recurring character continuity, not an edit target. Scene: Chapter 26, the quiet academy courtyard cloister after the dangerous escape. Xiaoyu is the adult woman in the ornate blue cloak embroidered with gold compass motifs and muted red lining: shoulder-length wavy chestnut hair, tiny gold flower hairpin, cream blouse and red necktie, brown travel trousers and boots. One palm is bandaged; she protects it and avoids heavy gripping. Peng Pai is the adult young knight from his character reference: short dark wavy hair, gray-blue eyes, strong but tired youthful face, blue cloak and steel armor identity. HERE he is recovering in the academy courtyard: his LEFT wrist and forearm remain splinted and supported in a sling, his RIGHT shoulder also sore; use a loosened cream undershirt and blue cloak, no heavy breastplate on injured shoulders. He stays seated, does not lift a weapon or shield.  Compose an intimate medium-wide two-person conversation with plenty of breathing room. Peng Pai sits on a comfortable low chair under the colonnade, his splinted left arm supported, right arm resting gently without strain. Xiaoyu sits beside him at equal height, listening seriously and then promising a place at the friends' table, compassionate but not cheerfully dismissing his fear of being left behind. Their eyes briefly meet, then turn toward a warmly lit table farther down the cloister. His original tall BLUE shield with a faded gold heraldic dragon, patched rim and detachable mounting clasps rests SAFELY on a solid wooden stand beside the chairs, not held by either person. Shield reference is object identity only, repaired rather than pristine, straps turned inward. An unoccupied ordinary wooden chair at the distant shared table visibly suggests his future place, with small indistinct companions and cups in soft bokeh, no extra prominent faces. Warm late-afternoon light across stone floor, healing cloth, old shield scratches, subtle sad and reassuring smiles. No battle, active sword, magic cure or triumph pose. This is belonging beyond the use of his shield, two injured friends allowed to be seated.",
+      "original": "assets/chapter-art/26-1.png",
+      "generated_filename": "exec-ab0e084d-a708-4334-a33a-3814588f8b9c.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "2dd458c94513d9c3e6d78dd0219deb4811eae3c4636b9b6045932a035c919cde"
+    },
+    {
+      "id": "26-2",
+      "chapter": "026",
+      "caption": "没问完的那句话",
+      "alt": "曲柯在学院桌边将第二张小页夹进私册，小语把温水放到他左侧，正式核页与私人小册去向不同。",
+      "after": "他将小页夹进自己的私册，扣好，收入衣内；原运输表平放回院柜，左边工作核页交教员。小语看见这两处不同的去向，仍只问他晚饭是否还要第二碗。",
+      "references": [
+        "assets/originals/19.png",
+        "assets/chapter-art/25-2.png"
+      ],
+      "prompt": "Use case: illustration-story. Asset: one new full-bleed landscape 16:9 narrative illustration for the Chinese fantasy novel 九域守界. Match the ongoing series: exquisite semi-realistic anime faces, natural anatomy, finely painted wavy hair, highly detailed embroidered travel clothing, aged stone and brass, tactile parchment and wood, warm cinematic sunlight or lamplight, luminous atmospheric depth and expressive restrained acting. ONE coherent scene, no montage, panels, captions, legible text, border, logo or watermark. Character sheets establish face, wardrobe and equipment identity only: never copy their layout or printed writing. Previous chapter art supplies style and recurring character continuity, not an edit target. Scene: Chapter 26, later in the academy's quiet working room, the subtle unsettling moment of the SECOND SMALL PAGE. Qu Ke is the adult male vampire: honey-BLOND wavy hair, distinctly red eyes, black/burgundy ornate coat with gold embroidery, cream ruffled shirt, crest ring, two red-gemmed short-sword sheaths at his belt. His RIGHT ribs were cut and have now been dressed: a clean bandage is visible at his loosened shirt edge, no exposed wound, no miraculous healing. Xiaoyu is the adult woman in the ornate blue cloak embroidered with gold compass motifs and muted red lining: shoulder-length wavy chestnut hair, tiny gold flower hairpin, cream blouse and red necktie, brown travel trousers and boots. One palm is bandaged; she protects it and avoids heavy gripping.  Only two main figures, medium-wide across a wooden desk near a dry records cabinet. Qu Ke sits carefully without twisting his injured right side, formal work sheet resting to his LEFT in the academy folder, original transport register flat on the desk about to be returned to the cabinet. With a slight familiar smile he closes a SMALL private dark notebook around a separately folded little page and begins tucking it inside his coat, clearly a different object from the formal folder. No glowing secret symbols, no villainous sneer, no incriminating legible labels; papers carry ordinary indistinct writing and a few simple route marks. Xiaoyu stands close on his left, placing warm water within his easy reach with her good hand, her bandaged palm protected, expression affectionate and concerned but with a small unfinished question in her eyes as she notices the private booklet. The two sheets' different destinations should be visually clear through placement and gesture, not lettering or diagram labels. Golden late light on white bandage and cup steam, cooler shadows around the cabinet and coat pocket, restrained psychological tension within a warm friendship. Paired short swords stay sheathed safely beside the chair. No romance pose, looming enemy, magical apparition, combat or graphic wound. Do not include the purple artisan or older worker from the style reference.",
+      "original": "assets/chapter-art/26-2.png",
+      "generated_filename": "exec-a17c505e-f015-4f46-9b37-e74e92b39d68.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "7ac3418df7f42900df9de826376859e52e02be855a805cf953e0c42e60d6663a"
+    },
+    {
+      "id": "27-1",
+      "chapter": "027",
+      "caption": "外干台上，终于有了她们的一面盾",
+      "alt": "工人将彭湃修好的蓝盾架推上主闸外干台，贾小鱼校正轮位，小语随架站稳，赫利俄斯与披鸣雷甲的晏执衡守住前侧。",
+      "after": "外干台有了她们的一面盾。",
+      "references": [
+        "assets/originals/14.png",
+        "assets/originals/24.png",
+        "assets/originals/27.png",
+        "assets/chapter-art/16-2.png"
+      ],
+      "prompt": "Use case: illustration-story. Asset: one new full-bleed landscape 16:9 narrative illustration for the Chinese fantasy novel 九域守界. Match the ongoing series: exquisite semi-realistic anime faces, natural anatomy, finely painted wavy hair, highly detailed embroidered travel clothing, aged stone and brass, tactile parchment and wood, warm cinematic sunlight or lamplight, luminous atmospheric depth and expressive restrained acting. ONE coherent scene, no montage, panels, captions, legible text, border, logo or watermark. Character sheets establish face, wardrobe and equipment identity only: never copy their layout or printed writing. Previous chapter art supplies style and recurring character continuity, not an edit target. Scene: Chapter 27, a tense earned foothold at the main sluice's OUTER DRY PLATFORM after eight stone steps, morning. Reference 1 supplies the BLUE heraldic shield object ONLY; its injured owner Peng Pai MUST NOT appear here. Xiaoyu is the adult woman in the ornate blue cloak embroidered with gold compass motifs and muted red lining: shoulder-length wavy chestnut hair, tiny gold flower hairpin, cream blouse and red necktie, brown travel trousers and boots. One palm is bandaged; she protects it and avoids heavy gripping. Helios is the slim adult male legal apprentice: tousled dark hair and one distinct small YELLOW highlighted lock at his temple, no glasses, fitted black-and-gold long coat with cream inner layers and open cream collar, dark trousers and boots. His sword has a slim steel blade and ornate gold ring-shaped guard, not a giant beam. Weikan is the adult woman with brown wavy hair, pearl earrings, green/gold embroidered cloak, bow and ordinary arrows.  Yan Zhiheng is the adult black-haired pale man of reference 2 with deep gray-blue eyes, matte black high collar and an old thumb-web scar; HERE he wears the actual Ming Lei armor over his black clothes, fitted dark metal articulated chest and arm plates with very fine SILVER conductive lines and small physical conducting clasps, disciplined fantasy craftsmanship, not glowing sci-fi power armor. Compose low three-quarter cinematic wide view up the last steps toward the platform. Two plain local adult workmen set down the feet of a stout small WHEELED MATERIAL FRAME with Peng Pai's repaired blue/gold dragon shield securely CLASPED onto it, not held on an arm. A crossbow bolt is lodged in the shield; the wood and brass clamps visibly bear the real load. Xiaoyu has just reached level ground BEHIND it, breathing hard, one hand steady on its back and the injured hand protected. The purple-clad artisan Jia is crouched by a wheel with a short pry tool after correcting the wheel track. Helios at the front right uses his real sword close to the body to keep a partly seen enforcement shield at distance. Yan stands at the far edge of an IRON CATWALK across a narrow discharge channel, one restrained fine blue arc raised from a plated forearm to hold the opponents back, no storm. Weikan behind the frame lowers her bow between shots. The iron catwalk to a HIGHER inner control platform and a sealed low southern maintenance gallery are visible in depth. Keep the focal cluster the shield frame and Xiaoyu's exhausted recognition; 3 prominent ally faces, supporting adults smaller. Warm dust and brass, blue cloak and tiny blue arc, no gore, no collapsed city, no giant magic shield or fireball.",
+      "original": "assets/chapter-art/27-1.png",
+      "generated_filename": "exec-7f5c36a8-f071-4659-b95d-3b36d7a7c5cb.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "8ebfdb9684f2c589b1ba5ff1c9a9468fb29c0ac92fee5306dc55f94ac2ce83bc"
+    },
+    {
+      "id": "27-2",
+      "chapter": "027",
+      "caption": "邵宁，看我",
+      "alt": "小语蹲稳在外台递出粗布，引导邵宁从被撬开的挡板边爬过，贾小鱼和顾霆稳住实物，同伴守着救援空间。",
+      "after": "小语向后挪，身旁工人托住腋下。邵宁整个落到外台，缩着腿，半天才哭出声。他哭得很小，纸夹不在怀里，手仍保持着抱它的样子。",
+      "references": [
+        "assets/chapter-art/16-2.png",
+        "assets/originals/04.png",
+        "assets/originals/27.png",
+        "assets/chapter-art/23-1.png"
+      ],
+      "prompt": "Use case: illustration-story. Asset: one new full-bleed landscape 16:9 narrative illustration for the Chinese fantasy novel 九域守界. Match the ongoing series: exquisite semi-realistic anime faces, natural anatomy, finely painted wavy hair, highly detailed embroidered travel clothing, aged stone and brass, tactile parchment and wood, warm cinematic sunlight or lamplight, luminous atmospheric depth and expressive restrained acting. ONE coherent scene, no montage, panels, captions, legible text, border, logo or watermark. Character sheets establish face, wardrobe and equipment identity only: never copy their layout or printed writing. Previous chapter art supplies style and recurring character continuity, not an edit target. Scene: Chapter 27, rescue at the main sluice iron catwalk after the outer platform is secured. Xiaoyu is the adult woman in the ornate blue cloak embroidered with gold compass motifs and muted red lining: shoulder-length wavy chestnut hair, tiny gold flower hairpin, cream blouse and red necktie, brown travel trousers and boots. One palm is bandaged; she protects it and avoids heavy gripping. Jia Xiaoyu is the adult female artisan with tied-back dark violet-black hair, goggles above her forehead, purple practical workshop clothes with silver fittings, cream ruffled shirt, dark trousers and tool belt. Helios is the slim adult male legal apprentice: tousled dark hair and one distinct small YELLOW highlighted lock at his temple, no glasses, fitted black-and-gold long coat with cream inner layers and open cream collar, dark trousers and boots. His sword has a slim steel blade and ornate gold ring-shaped guard, not a giant beam. Weikan is the adult woman with brown wavy hair, pearl earrings, green/gold embroidered cloak, bow and ordinary arrows.  The rescued delivery assistant Shao Ning is a school-age boy in plain slightly oversized gray-brown work clothes, short untidy dark hair, terrified and tearful, NOT an adult warrior or a baby. He is being helped out of a small tool hatch beside a shifted physical barrier board. Focused medium-wide composition from the SAFE DRY OUTER PLATFORM at the instant his knees have slid across and he finally reaches safety. Xiaoyu remains crouched steadily ON the outer platform, NOT standing or running on the unstable catwalk; her injured palm is tucked in and forearm presses one corner of an ORDINARY COARSE CLOTH while her good hand offers its far corner for Shao Ning to grip. She backs up gently and keeps eye contact, calm pleading voice implied by her lips. The boy crawls belly-low on his knees across the newly freed edge, one adult local worker beside Xiaoyu supports him under an armpit as he reaches dry stone. A dropped plain paper folder lies on the other side and is not the priority. Jia in purple uses a short pry tool at the left physical gap, Gu Ting (messy black-haired adult engineer in rolled sleeves, dark workwear and brass harness) presses the top edge of the same board from a solid foothold, ordinary tools and leverage freeing the trapped leg rather than hard-pulling him. Helios is smaller in background blocking a partly seen opposing shield with his sword, leaving the rescue corridor clear. Weikan in green crouches behind the blue shield frame watching their flank. A faint blue residual arc remains down in the CLOSED lower channel, well away from the child; no electricity touches him. Warm sunlight falls on child and offered cloth, dusty stone, brass fittings and real danger behind. The emotional subject is his safety and Xiaoyu learning to stay grounded. No gore, visible wounds, active weapons pointed at the child, magical blanket, flying people, text or labels.",
+      "original": "assets/chapter-art/27-2.png",
+      "generated_filename": "exec-f006672e-610e-4a7e-abcd-716a267bc8cb.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "71b8ba002423353c0fe01c3e7511d73406be5be475046cae9f3e056c0287d12d"
+    }
+  ]
+}

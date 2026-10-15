@@ -575,7 +575,55 @@
       "height": 941,
       "sha256": "7b6cb21ba412b54802266c6679c41452b63fbea8a0532bb5ed7687d94fd30fb2",
       "generation_metadata": "assets/chapter-art/chapter24-25-generation.json"
+    },
+    {
+      "id": "26-1",
+      "chapter": "026",
+      "caption": "桌边的凳子，也给你留",
+      "alt": "学院长廊里，小语坐在左臂仍固定的彭湃身旁，修好的蓝盾稳放在实架上，两人望向同伴所在的桌边。",
+      "after": "这一次说出来，小语心里格外稳。",
+      "original": "assets/chapter-art/26-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "2dd458c94513d9c3e6d78dd0219deb4811eae3c4636b9b6045932a035c919cde",
+      "generation_metadata": "assets/chapter-art/chapter26-27-generation.json"
+    },
+    {
+      "id": "26-2",
+      "chapter": "026",
+      "caption": "没问完的那句话",
+      "alt": "曲柯在学院桌边将第二张小页夹进私册，小语把温水放到他左侧，正式核页与私人小册去向不同。",
+      "after": "他将小页夹进自己的私册，扣好，收入衣内；原运输表平放回院柜，左边工作核页交教员。小语看见这两处不同的去向，仍只问他晚饭是否还要第二碗。",
+      "original": "assets/chapter-art/26-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "7ac3418df7f42900df9de826376859e52e02be855a805cf953e0c42e60d6663a",
+      "generation_metadata": "assets/chapter-art/chapter26-27-generation.json"
+    },
+    {
+      "id": "27-1",
+      "chapter": "027",
+      "caption": "外干台上，终于有了她们的一面盾",
+      "alt": "工人将彭湃修好的蓝盾架推上主闸外干台，贾小鱼校正轮位，小语随架站稳，赫利俄斯与披鸣雷甲的晏执衡守住前侧。",
+      "after": "外干台有了她们的一面盾。",
+      "original": "assets/chapter-art/27-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "8ebfdb9684f2c589b1ba5ff1c9a9468fb29c0ac92fee5306dc55f94ac2ce83bc",
+      "generation_metadata": "assets/chapter-art/chapter26-27-generation.json"
+    },
+    {
+      "id": "27-2",
+      "chapter": "027",
+      "caption": "邵宁，看我",
+      "alt": "小语蹲稳在外台递出粗布，引导邵宁从被撬开的挡板边爬过，贾小鱼和顾霆稳住实物，同伴守着救援空间。",
+      "after": "小语向后挪，身旁工人托住腋下。邵宁整个落到外台，缩着腿，半天才哭出声。他哭得很小，纸夹不在怀里，手仍保持着抱它的样子。",
+      "original": "assets/chapter-art/27-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "71b8ba002423353c0fe01c3e7511d73406be5be475046cae9f3e056c0287d12d",
+      "generation_metadata": "assets/chapter-art/chapter26-27-generation.json"
     }
   ],
-  "provenance": "Chapters 1-10: eighteen user-supplied illustrations preserved unchanged. Chapters 11-12: four new illustrations generated with built-in image_gen using the current user-selected artwork and character cards as references; prompts and exact references are preserved in assets/chapter-art/chapter11-12-generation.json. Superseded generated originals for chapters 7-10 remain in assets/chapter-art/archive/, with their generation history in assets/chapter-art/generation-prompts.json. Chapters 13-14: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter13-14-generation.json. Chapters 15-16: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter15-16-generation.json. Chapters 17-19: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter17-19-generation.json. Chapters 20-21: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter20-21-generation.json. Chapters 22-23: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter22-23-generation.json. Chapters 24-25: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter24-25-generation.json."
+  "provenance": "Chapters 1-10: eighteen user-supplied illustrations preserved unchanged. Chapters 11-12: four new illustrations generated with built-in image_gen using the current user-selected artwork and character cards as references; prompts and exact references are preserved in assets/chapter-art/chapter11-12-generation.json. Superseded generated originals for chapters 7-10 remain in assets/chapter-art/archive/, with their generation history in assets/chapter-art/generation-prompts.json. Chapters 13-14: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter13-14-generation.json. Chapters 15-16: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter15-16-generation.json. Chapters 17-19: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter17-19-generation.json. Chapters 20-21: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter20-21-generation.json. Chapters 22-23: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter22-23-generation.json. Chapters 24-25: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter24-25-generation.json. Chapters 26-27: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter26-27-generation.json."
 }
