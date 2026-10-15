@@ -527,7 +527,55 @@
       "height": 941,
       "sha256": "11b06ff9ff175bb94ddc4d1145ee06b787ad0f363f9a58f719b65f0c0f25cffa",
       "generation_metadata": "assets/chapter-art/chapter22-23-generation.json"
+    },
+    {
+      "id": "24-1",
+      "chapter": "024",
+      "caption": "把话说完，也把名字留下",
+      "alt": "西维护间里，段禾展开旧巡检簿陈述，赫利俄斯留下见证签名，小语和学院教员认真听他说完。",
+      "after": "段禾终于笑了一下，笑意很浅，却不像刚才被通知压住时那样，每个嘴角的动作都得先看门。",
+      "original": "assets/chapter-art/24-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "60fade383a00bd3f71b960647a18890b9816fd997084cc657e54d393199cb911",
+      "generation_metadata": "assets/chapter-art/chapter24-25-generation.json"
+    },
+    {
+      "id": "24-2",
+      "chapter": "024",
+      "caption": "人和他说过的话，一起走",
+      "alt": "赫利俄斯持断昼守住维护间门口，小语把装着原簿退件的白布套背稳，同伴在厚桌后寻找退路。",
+      "after": "小语把肩带推到不会压住伤掌的位置，向她答应。袋子比原先沉，仍只是纸和普通布套，不是能替她挡一箭的甲。她得把它同自己一齐带出屋。",
+      "original": "assets/chapter-art/24-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "b5d3977815ae0bb120a95bcb30484a63041d59caf9252f44d82c75551761bef3",
+      "generation_metadata": "assets/chapter-art/chapter24-25-generation.json"
+    },
+    {
+      "id": "25-1",
+      "chapter": "025",
+      "caption": "曲柯，接我",
+      "alt": "料车与砖墙之间，曲柯以双刃挑开钩棍和短刀，接应护着原簿的小语退出狭缝。",
+      "after": "他左刃先抵钩柄，刃锋向外带，钩尖从小语肩带旁划走；右刃贴住短刀内侧，手腕一转，将那柄刀带离狭缝。两道极短的火光在他指旁闪起，热风扑在小语脸上，逼得握钩者眯眼。",
+      "original": "assets/chapter-art/25-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "c718d9de6d58c2c86fefb44ac92416d2ba88964804065d005d8b2c629597a07b",
+      "generation_metadata": "assets/chapter-art/chapter24-25-generation.json"
+    },
+    {
+      "id": "25-2",
+      "chapter": "025",
+      "caption": "都出来了，先往干处",
+      "alt": "脱险后的西斜街屋檐下，小语替受伤的曲柯稳住鞘扣，贾小鱼协助照护，段禾确认原簿仍系在白布套里。",
+      "after": "她让开一点，真的让他自己说，手却仍稳着那条不好扣的带，没放。",
+      "original": "assets/chapter-art/25-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "7b6cb21ba412b54802266c6679c41452b63fbea8a0532bb5ed7687d94fd30fb2",
+      "generation_metadata": "assets/chapter-art/chapter24-25-generation.json"
     }
   ],
-  "provenance": "Chapters 1-10: eighteen user-supplied illustrations preserved unchanged. Chapters 11-12: four new illustrations generated with built-in image_gen using the current user-selected artwork and character cards as references; prompts and exact references are preserved in assets/chapter-art/chapter11-12-generation.json. Superseded generated originals for chapters 7-10 remain in assets/chapter-art/archive/, with their generation history in assets/chapter-art/generation-prompts.json. Chapters 13-14: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter13-14-generation.json. Chapters 15-16: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter15-16-generation.json. Chapters 17-19: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter17-19-generation.json. Chapters 20-21: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter20-21-generation.json. Chapters 22-23: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter22-23-generation.json."
+  "provenance": "Chapters 1-10: eighteen user-supplied illustrations preserved unchanged. Chapters 11-12: four new illustrations generated with built-in image_gen using the current user-selected artwork and character cards as references; prompts and exact references are preserved in assets/chapter-art/chapter11-12-generation.json. Superseded generated originals for chapters 7-10 remain in assets/chapter-art/archive/, with their generation history in assets/chapter-art/generation-prompts.json. Chapters 13-14: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter13-14-generation.json. Chapters 15-16: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter15-16-generation.json. Chapters 17-19: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter17-19-generation.json. Chapters 20-21: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter20-21-generation.json. Chapters 22-23: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter22-23-generation.json. Chapters 24-25: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter24-25-generation.json."
 }
