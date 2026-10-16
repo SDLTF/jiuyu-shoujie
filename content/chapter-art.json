@@ -695,7 +695,79 @@
       "height": 941,
       "sha256": "269d32876631716c787a88f9d1ca4bd50c0d0ffc6aa9f375ed704687f53961fe",
       "generation_metadata": "assets/chapter-art/chapter28-30-generation.json"
+    },
+    {
+      "id": "31-1",
+      "chapter": "031",
+      "caption": "别让我只能说谢谢",
+      "alt": "蒲汀驿的夜廊里，小语和曲柯隔着小桌谈起那封信，木片袋仍未打开，两人让未说完的话留在桌边。",
+      "after": "他眼里那一点不快还在，没有忽然化成完全明白的温柔。小语也没有催他点头。她坐着，让自己把那句话留在两人中间。",
+      "original": "assets/chapter-art/31-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "b125a0046fd72459e48c2b1d66556aa924c8a4a7aceb3a40ad4274be34007753",
+      "generation_metadata": "assets/chapter-art/chapter31-33-generation.json"
+    },
+    {
+      "id": "31-2",
+      "chapter": "031",
+      "caption": "你看前面，我看脚后",
+      "alt": "河湾歇脚时，左臂收在吊带里的彭湃自行练习退步，小语蹲在一旁看脚后的碎石，不替他扫平路。",
+      "after": "这回脚跟错开那块石，落到一段更平的硬地。小语看着，忍不住说对了，又赶紧闭上嘴。彭扭头，正看见她那副怕再多管一句的神情。",
+      "original": "assets/chapter-art/31-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "1cf4f6b570c3f9d8b567fdc8c5a45412fc60c8356a13d4579e10e4bece6e8b75",
+      "generation_metadata": "assets/chapter-art/chapter31-33-generation.json"
+    },
+    {
+      "id": "32-1",
+      "chapter": "032",
+      "caption": "先落石头，别踩绿的",
+      "alt": "青岚渠岸边，蔚蔚以测杆稳住露根，小语托住老妇人的肘部，韦侃在石路旁接应，绿草下的空洞显露出来。",
+      "after": "老妇人终于踏实，身体一下靠过来。小语肩疼得缩了一下，仍把人送到石路，韦侃在旁接住了另一边。",
+      "original": "assets/chapter-art/32-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "2c1121731c0ca5f74b1dd00fb9ebad02f042087d3083b51522175afed486ad5d",
+      "generation_metadata": "assets/chapter-art/chapter31-33-generation.json"
+    },
+    {
+      "id": "32-2",
+      "chapter": "032",
+      "caption": "别在门口等空",
+      "alt": "维护处门边，许禾抱着补好袖口的干净衣裳，小语陪她把衣服重新叠好，认真听她说弟弟的事。",
+      "after": "小语把门靠稳，请她在院边坐一会儿。许禾没有立刻坐，说还要把衣服送去。小语便陪她站着，等她慢慢将那套衣裳叠回原样。",
+      "original": "assets/chapter-art/32-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "a79c6165741ef1fcf8953a5914777cc97c08f1a739e1d524e3f7d4ae1ba5edf5",
+      "generation_metadata": "assets/chapter-art/chapter31-33-generation.json"
+    },
+    {
+      "id": "33-1",
+      "chapter": "033",
+      "caption": "先把呼吸放慢",
+      "alt": "林棚干地边，闵霁以一枝花辨看帮工的擦伤，小语递水，短短的治疗花径停在干地边缘。",
+      "after": "她将一小段治疗花径铺到林棚口，止在干地边，让擦伤者从那里过来坐下。那人放下水杯时，攥紧的手终于能摊平了。",
+      "original": "assets/chapter-art/33-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "6a2a172c1a0b3a30c7d0db7801943df160d1eeae413d9f9545b31f68f5becf23",
+      "generation_metadata": "assets/chapter-art/chapter31-33-generation.json"
+    },
+    {
+      "id": "33-2",
+      "chapter": "033",
+      "caption": "别退进水里，往北去",
+      "alt": "苔甲守横在破损木栈旁，赫利俄斯以断昼抵住根爪，小语指向北高埂的倒木落点，蔚蔚正在移根铺出新路。",
+      "after": "小语沿着西桩再挪一步，尽量让他能看见自己的手。",
+      "original": "assets/chapter-art/33-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "5a357fa0dd69efe8780b86afea9e4f8e0644d4bf8dd71f0c50c0704a7b8b6b29",
+      "generation_metadata": "assets/chapter-art/chapter31-33-generation.json"
     }
   ],
-  "provenance": "Chapters 1-10: eighteen user-supplied illustrations preserved unchanged. Chapters 11-12: four new illustrations generated with built-in image_gen using the current user-selected artwork and character cards as references; prompts and exact references are preserved in assets/chapter-art/chapter11-12-generation.json. Superseded generated originals for chapters 7-10 remain in assets/chapter-art/archive/, with their generation history in assets/chapter-art/generation-prompts.json. Chapters 13-14: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter13-14-generation.json. Chapters 15-16: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter15-16-generation.json. Chapters 17-19: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter17-19-generation.json. Chapters 20-21: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter20-21-generation.json. Chapters 22-23: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter22-23-generation.json. Chapters 24-25: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter24-25-generation.json. Chapters 26-27: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter26-27-generation.json. Chapters 28-30: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter28-30-generation.json."
+  "provenance": "Chapters 1-10: eighteen user-supplied illustrations preserved unchanged. Chapters 11-12: four new illustrations generated with built-in image_gen using the current user-selected artwork and character cards as references; prompts and exact references are preserved in assets/chapter-art/chapter11-12-generation.json. Superseded generated originals for chapters 7-10 remain in assets/chapter-art/archive/, with their generation history in assets/chapter-art/generation-prompts.json. Chapters 13-14: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter13-14-generation.json. Chapters 15-16: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter15-16-generation.json. Chapters 17-19: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter17-19-generation.json. Chapters 20-21: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter20-21-generation.json. Chapters 22-23: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter22-23-generation.json. Chapters 24-25: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter24-25-generation.json. Chapters 26-27: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter26-27-generation.json. Chapters 28-30: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter28-30-generation.json. Chapters 31-33: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter31-33-generation.json."
 }

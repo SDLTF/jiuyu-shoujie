@@ -1,0 +1,109 @@
+{
+  "tool": "built-in image_gen",
+  "intent": "Generate six illustrations only for chapters 31-33, maintaining character identity, supported injured-limb anatomy and narrative continuity. Integrate into prose and gallery and publish directly without visual review as requested.",
+  "images": [
+    {
+      "id": "31-1",
+      "chapter": "031",
+      "caption": "别让我只能说谢谢",
+      "alt": "蒲汀驿的夜廊里，小语和曲柯隔着小桌谈起那封信，木片袋仍未打开，两人让未说完的话留在桌边。",
+      "after": "他眼里那一点不快还在，没有忽然化成完全明白的温柔。小语也没有催他点头。她坐着，让自己把那句话留在两人中间。",
+      "references": [
+        "assets/originals/19.png",
+        "assets/chapter-art/26-2.png"
+      ],
+      "prompt": "Use case: illustration-story. Create ONE full-bleed landscape 16:9 narrative painting for the Chinese fantasy novel 九域守界. Match the ongoing chapter illustrations: exquisite semi-realistic anime faces, natural adult anatomy, finely painted hair, detailed embroidered travel clothes, tactile old wood and stone, cinematic atmospheric depth and expressive restrained acting. One coherent scene, no panels, montage, readable writing, caption, logo, watermark or border. Character sheets establish identity and clothing only, never their printed text or layout. Scene references supply visual continuity and style, not edit targets. Every person has exactly two anatomically connected arms and hands. Chapter 31, after dinner in the simple wooden corridor of PUTING POST INN, NIGHT, not an academy study. Xiaoyu is the adult woman with shoulder-length wavy chestnut hair, tiny gold flower hairpin, ornate blue cloak embroidered with gold compass motifs and muted red lining, cream blouse, red necktie, brown travel trousers and boots. One palm is bandaged and one shoulder still sore; she protects that side. Qu Ke is the adult male vampire with wavy honey-BLOND hair, distinctly red eyes, black/burgundy coat with gold embroidery, cream ruffled shirt and crest ring. His RIGHT ribs are still dressed under his shirt; he sits carefully with a soft support and does not twist or lift with that side. His paired short swords stay sheathed.  Only two people, seated at equal height on opposite sides of a small plain table, with a real respectful gap between them. Xiaoyu has her folded spare travel coat on her lap, her good hand relaxed on it, bandaged palm protected; nervous but direct, damp eyes and a steady face as she finally says more than thanks. Qu Ke rests his left hand near a small CLOSED cloth pouch containing wooden game tiles on the table corner; right ribs cushioned, expression attentive but still a little hurt and displeased, not instantly forgiving, not villainous. No open game, flirtation, embrace or drawn weapons. Warm light of a single inn lantern across their faces, cool blue night beyond the railing, a bucket carried far away as a tiny indistinct background shape. Sparse cups, worn chair backs, quiet space between the closed game pouch and their hands. The difficult conversation is about a private letter and permission, but no need to display or invent that letter, incriminating labels or legible writing. Close cinematic wide composition, restrained unresolved trust and continuing care rather than a romantic confession.",
+      "original": "assets/chapter-art/31-1.png",
+      "generated_filename": "exec-9ba6fa65-ecb0-4e6f-95b5-30bcdb15fa81.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "b125a0046fd72459e48c2b1d66556aa924c8a4a7aceb3a40ad4274be34007753"
+    },
+    {
+      "id": "31-2",
+      "chapter": "031",
+      "caption": "你看前面，我看脚后",
+      "alt": "河湾歇脚时，左臂收在吊带里的彭湃自行练习退步，小语蹲在一旁看脚后的碎石，不替他扫平路。",
+      "after": "这回脚跟错开那块石，落到一段更平的硬地。小语看着，忍不住说对了，又赶紧闭上嘴。彭扭头，正看见她那副怕再多管一句的神情。",
+      "references": [
+        "assets/chapter-art/26-1.png",
+        "assets/chapter-art/16-2.png"
+      ],
+      "prompt": "Use case: illustration-story. Create ONE full-bleed landscape 16:9 narrative painting for the Chinese fantasy novel 九域守界. Match the ongoing chapter illustrations: exquisite semi-realistic anime faces, natural adult anatomy, finely painted hair, detailed embroidered travel clothes, tactile old wood and stone, cinematic atmospheric depth and expressive restrained acting. One coherent scene, no panels, montage, readable writing, caption, logo, watermark or border. Character sheets establish identity and clothing only, never their printed text or layout. Scene references supply visual continuity and style, not edit targets. Every person has exactly two anatomically connected arms and hands. Chapter 31, the promised HALF-DAY REST beside a calm river bend on the road, sunny afternoon. Peng Pai is the young adult knight with short dark wavy hair, gray-blue eyes, cream travel shirt, blue cloak and brown trousers. He is recovering: his anatomical LEFT elbow is bent and his entire bandaged left forearm AND HAND are concealed and supported INSIDE one cream cloth sling across his chest. No extra hanging hand on that side. His anatomical RIGHT arm is the ONE free arm, unbandaged forearm relaxed beside him with a single right hand. Exactly TWO arms total. No heavy breastplate. Xiaoyu is the adult woman with shoulder-length wavy chestnut hair, tiny gold flower hairpin, ornate blue cloak embroidered with gold compass motifs and muted red lining, cream blouse, red necktie, brown travel trousers and boots. One palm is bandaged and one shoulder still sore; she protects that side.  Two main figures in a full-body wide composition with clear foot placement. Peng Pai is STANDING and practicing only a small controlled backward and sideways weight shift with his LEGS, no weapon or shield, his injured left forearm and left hand completely tucked INSIDE the sling exactly as in corrected reference 1. His free right arm hangs relaxed naturally, not supporting phantom extra fingers. One boot has just stepped around an ordinary sharp pebble to firm dry earth. Xiaoyu crouches a little to the side, hands safely close to her own knees, looking at the stone BEHIND his heel and giving a short verbal cue. She does NOT grab him, sweep stones away, carry his shield or order him to sit. He turns toward her with a small relieved amused smile at her effort not to overprotect him. Behind them two ordinary travel wagons are parked well back on HIGH DRY GROUND, the blue heraldic shield securely clamped to a wagon frame. A pot on a simple camp stove, mats spread on sun-warmed stones and a small distant white dragon exploring grass establish an actual unhurried rest; supporting friends remain tiny background silhouettes. River ripples, green hillside woods, gentle wind and warm sunlight. No battle, exercise with the injured arm, magic rehabilitation, heavy lifting or extra limbs.",
+      "original": "assets/chapter-art/31-2.png",
+      "generated_filename": "exec-7b83ae38-dc6f-4f73-a413-61a1db44cd40.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "1cf4f6b570c3f9d8b567fdc8c5a45412fc60c8356a13d4579e10e4bece6e8b75"
+    },
+    {
+      "id": "32-1",
+      "chapter": "032",
+      "caption": "先落石头，别踩绿的",
+      "alt": "青岚渠岸边，蔚蔚以测杆稳住露根，小语托住老妇人的肘部，韦侃在石路旁接应，绿草下的空洞显露出来。",
+      "after": "老妇人终于踏实，身体一下靠过来。小语肩疼得缩了一下，仍把人送到石路，韦侃在旁接住了另一边。",
+      "references": [
+        "assets/originals/16.png",
+        "assets/chapter-art/16-2.png"
+      ],
+      "prompt": "Use case: illustration-story. Create ONE full-bleed landscape 16:9 narrative painting for the Chinese fantasy novel 九域守界. Match the ongoing chapter illustrations: exquisite semi-realistic anime faces, natural adult anatomy, finely painted hair, detailed embroidered travel clothes, tactile old wood and stone, cinematic atmospheric depth and expressive restrained acting. One coherent scene, no panels, montage, readable writing, caption, logo, watermark or border. Character sheets establish identity and clothing only, never their printed text or layout. Scene references supply visual continuity and style, not edit targets. Every person has exactly two anatomically connected arms and hands. Chapter 32, FIRST ARRIVAL in QINGLAN at dusk beside a shallow stone-edged irrigation channel and vegetable beds under tall trees. Weiwei is the adult female field mage from her reference: long dark braided hair with dewdrop TURQUOISE ornaments, pale green velvet long dress with SILVER botanical embroidered edging, practical boots, seed pouch, foldable measuring rod and plain route-marking cloth ties. She is distinct from the brown-haired green-cloaked archer. Xiaoyu is the adult woman with shoulder-length wavy chestnut hair, tiny gold flower hairpin, ornate blue cloak embroidered with gold compass motifs and muted red lining, cream blouse, red necktie, brown travel trousers and boots. One palm is bandaged and one shoulder still sore; she protects that side. Weikan is the adult female archer with brown wavy hair, pearl earrings and green-and-gold embroidered travel cloak, bow and ordinary arrows.  A plain elderly woman has been stranded on a deceptively GREEN thin patch of turf, beneath which soil is hollowed and exposed roots hang over cloudy shallow water. Compose a readable rescue: Weiwei half-crouches at the root edge, her long green dress skirt tied safely back from the mud with a cloth tie, foldable measuring rod braced across a genuinely firm old stone, her one hand guiding just a few real roots to hold the last bit of turf steady. Tiny turquoise hair ornaments catch dusk light; exertion visible, no effortless huge glowing vine bridge. Xiaoyu stands on the firm stone path and supports the elderly woman's FOREARM from BELOW THE ELBOW with her good hand, not yanking the wrist; the elderly woman steps onto an actual safe stone using her own legs. Weikan receives the woman's other side from solid ground. Four figures, distinct hands and real load paths. A small EMPTY wooden bucket on the roadside suggests the woman's daily route to her vegetable plot. A compact section of green sod begins slipping behind her, exposing black mud underneath, not a giant landslide or deep abyss. Two wagons halted far away on the stone road, nobody drives across grass. Silver-green dress, gold dusk through leaves, muddy root detail and careful practical help. No monsters, weapons in use, giant spells, gore or glowing flowers.",
+      "original": "assets/chapter-art/32-1.png",
+      "generated_filename": "exec-cfdf02a0-fa26-4c13-87aa-f0a8e8715daf.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "2c1121731c0ca5f74b1dd00fb9ebad02f042087d3083b51522175afed486ad5d"
+    },
+    {
+      "id": "32-2",
+      "chapter": "032",
+      "caption": "别在门口等空",
+      "alt": "维护处门边，许禾抱着补好袖口的干净衣裳，小语陪她把衣服重新叠好，认真听她说弟弟的事。",
+      "after": "小语把门靠稳，请她在院边坐一会儿。许禾没有立刻坐，说还要把衣服送去。小语便陪她站着，等她慢慢将那套衣裳叠回原样。",
+      "references": [
+        "assets/chapter-art/16-2.png",
+        "assets/chapter-art/30-1.png"
+      ],
+      "prompt": "Use case: illustration-story. Create ONE full-bleed landscape 16:9 narrative painting for the Chinese fantasy novel 九域守界. Match the ongoing chapter illustrations: exquisite semi-realistic anime faces, natural adult anatomy, finely painted hair, detailed embroidered travel clothes, tactile old wood and stone, cinematic atmospheric depth and expressive restrained acting. One coherent scene, no panels, montage, readable writing, caption, logo, watermark or border. Character sheets establish identity and clothing only, never their printed text or layout. Scene references supply visual continuity and style, not edit targets. Every person has exactly two anatomically connected arms and hands. Chapter 32, early evening at the OPEN DOORWAY of Qinglan's modest maintenance courtyard. Xiaoyu is the adult woman with shoulder-length wavy chestnut hair, tiny gold flower hairpin, ornate blue cloak embroidered with gold compass motifs and muted red lining, cream blouse, red necktie, brown travel trousers and boots. One palm is bandaged and one shoulder still sore; she protects that side.  The other main subject Xu He is a young ADULT local woman in simple worn gray-brown work dress, dark hair loosely tied back, tired reddened eyes. She holds a small neatly FOLDED CLEAN SHIRT AND TROUSERS for her thirteen-year-old younger brother, who is elsewhere in a care house and MUST NOT be shown unconscious in this scene. A few fresh pale stitches on the clean sleeve edge are visible; she presses the already folded cloth flat again with shaky fingers, one tear dropping onto her own sleeve. Xiaoyu stands at the same level beside her and holds the ordinary wooden door securely with her good hand, allowing her time to refold the bundle, listening rather than rushing to take it away or offering a magical cure. Only two clear figures, respectful personal distance. Inside the courtyard, parked transport wheels, an ordinary bench and folded route maps are subdued shapes; no glowing relic or people crowding the doorway. Warm light from a nearby lantern meets blue-green evening shade in the lane toward the care house. Focus on folded mended clothing, caring uncertainty and the two faces. No dramatic collapse, embrace, diagnosis chart, readable writing, hospital equipment, sick child or spell effects.",
+      "original": "assets/chapter-art/32-2.png",
+      "generated_filename": "exec-a912b84d-b500-4e11-ab60-b4725ef6a325.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "a79c6165741ef1fcf8953a5914777cc97c08f1a739e1d524e3f7d4ae1ba5edf5"
+    },
+    {
+      "id": "33-1",
+      "chapter": "033",
+      "caption": "先把呼吸放慢",
+      "alt": "林棚干地边，闵霁以一枝花辨看帮工的擦伤，小语递水，短短的治疗花径停在干地边缘。",
+      "after": "她将一小段治疗花径铺到林棚口，止在干地边，让擦伤者从那里过来坐下。那人放下水杯时，攥紧的手终于能摊平了。",
+      "references": [
+        "assets/originals/07.png",
+        "assets/chapter-art/16-2.png"
+      ],
+      "prompt": "Use case: illustration-story. Create ONE full-bleed landscape 16:9 narrative painting for the Chinese fantasy novel 九域守界. Match the ongoing chapter illustrations: exquisite semi-realistic anime faces, natural adult anatomy, finely painted hair, detailed embroidered travel clothes, tactile old wood and stone, cinematic atmospheric depth and expressive restrained acting. One coherent scene, no panels, montage, readable writing, caption, logo, watermark or border. Character sheets establish identity and clothing only, never their printed text or layout. Scene references supply visual continuity and style, not edit targets. Every person has exactly two anatomically connected arms and hands. Chapter 33, morning at the DRY FOREST SHELTER west of the reed-islet root embankment, BEFORE the guardian attack. Min Ji is the adult woman from reference 1, pink curled hair swept back from shoulders, soft pink eyes, small iris-shaped forehead birthmark, pale cherry-blossom layered crinoline dress, flower earrings and a practical medicine pouch. Preserve her identity and elegant dress while keeping its hem on DRY GROUND. Xiaoyu is the adult woman with shoulder-length wavy chestnut hair, tiny gold flower hairpin, ornate blue cloak embroidered with gold compass motifs and muted red lining, cream blouse, red necktie, brown travel trousers and boots. One palm is bandaged and one shoulder still sore; she protects that side.  Three main figures in an intimate medium-wide scene: Min Ji crouches gently in front of an adult local work helper seated on a plain wooden bench. His hand has an ordinary shallow wood scrape now covered by a little clean cloth, no blood or open wound focal point. She holds ONE delicate flowering branch just above his now relaxing fingers, a few petals inclining toward the sore place with an extremely faint light along the petal veins. His tense shoulders slowly lower, one hand can finally open. Xiaoyu crouches beside the bench and offers a cup of water with her good hand, her own bandaged palm kept safe. Min Ji's flower scissors and folded care record stay in the open medicine pouch on a dry board. A SHORT modest path of tiny healing blossoms reaches only from the bench to the shelter mouth and STOPS at the dry edge; no magical flower carpet stretching through mud or guaranteed miracle. Reed-lined dark muddy ditch and old wooden walkway visible at a safe distance in background, dawn-gold light filtering through leaves. Quiet practical attention, not a royal garden, battle or medical procedure.",
+      "original": "assets/chapter-art/33-1.png",
+      "generated_filename": "exec-439f3f97-9a53-4ea3-9985-b4b8ab841126.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "6a2a172c1a0b3a30c7d0db7801943df160d1eeae413d9f9545b31f68f5becf23"
+    },
+    {
+      "id": "33-2",
+      "chapter": "033",
+      "caption": "别退进水里，往北去",
+      "alt": "苔甲守横在破损木栈旁，赫利俄斯以断昼抵住根爪，小语指向北高埂的倒木落点，蔚蔚正在移根铺出新路。",
+      "after": "小语沿着西桩再挪一步，尽量让他能看见自己的手。",
+      "references": [
+        "assets/originals/27.png",
+        "assets/originals/16.png",
+        "assets/chapter-art/16-2.png"
+      ],
+      "prompt": "Use case: illustration-story. Create ONE full-bleed landscape 16:9 narrative painting for the Chinese fantasy novel 九域守界. Match the ongoing chapter illustrations: exquisite semi-realistic anime faces, natural adult anatomy, finely painted hair, detailed embroidered travel clothes, tactile old wood and stone, cinematic atmospheric depth and expressive restrained acting. One coherent scene, no panels, montage, readable writing, caption, logo, watermark or border. Character sheets establish identity and clothing only, never their printed text or layout. Scene references supply visual continuity and style, not edit targets. Every person has exactly two anatomically connected arms and hands. Chapter 33 CLIFFHANGER, an ongoing dangerous guardian attack at a SMALL reed-islet wooden walkway above a shallow BLACK-MUD ditch, not a deep river or mountain bridge. Helios is the slim adult man with tousled dark hair and a distinct small YELLOW highlighted lock at his temple, no glasses, fitted black-and-gold long coat with cream inner layers and open cream collar, dark trousers and boots. His real slender steel sword has an ornate gold ring-shaped guard. Xiaoyu is the adult woman with shoulder-length wavy chestnut hair, tiny gold flower hairpin, ornate blue cloak embroidered with gold compass motifs and muted red lining, cream blouse, red necktie, brown travel trousers and boots. One palm is bandaged and one shoulder still sore; she protects that side. Weiwei is the adult female field mage from her reference: long dark braided hair with dewdrop TURQUOISE ornaments, pale green velvet long dress with SILVER botanical embroidered edging, practical boots, seed pouch, foldable measuring rod and plain route-marking cloth ties. She is distinct from the brown-haired green-cloaked archer. Weikan is the adult female archer with brown wavy hair, pearl earrings and green-and-gold embroidered travel cloak, bow and ordinary arrows.  The Moss-Armor Guardian is a low FOUR-LEGGED ancient construct made of twisted WOOD ROOT bones under overlapping weathered STONE ARMOR and moss; its back reaches Helios's CHEST, roughly big-boar scale, not a giant dragon, humanoid robot or wolf. Its four separate root feet find different stone footholds, showing a real mobile sideways weight shift. It is still dangerous and NOT defeated. In midground Helios crouches low on a broken half-section of the walkway, sword spine diagonally braced beneath one looming root claw, his back heel turning toward a LOW FIRM STONE NORTH of him rather than retreating into mud. His coat and black/gold sword identity remain clear; no huge light beam. Foreground on the still-solid WEST POST Xiaoyu leans forward only far enough to be visible, protects her bandaged palm, and POINTS with the good hand toward a fallen tree supported on an old stone ledge at the HIGH NORTHERN BANK. Her face urgently calls a precise new foothold, not an all-clear. Weiwei in pale green braces her measuring rod at that northern firm earth and re-routes a limited number of real roots to shift the fallen tree a LITTLE toward the east gap, not yet a finished bridge. Weikan in green/gold stands farther back with bow tracking the construct safely clear of allies. Two distant adult workers shelter on west hard ground, two still wait near the east root gap, subdued silhouettes only; nobody magically teleports to safety. Broken board ends, one plain red-paper stabilization talisman, reeds, muddy spray, a few small stone chips, tense directional light and clear relative footing. No gore, giant explosion, finished victory, multiple monsters, modern weapons or extra limbs.",
+      "original": "assets/chapter-art/33-2.png",
+      "generated_filename": "exec-7337f59e-974a-475d-af93-edeef20ef2f9.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "5a357fa0dd69efe8780b86afea9e4f8e0644d4bf8dd71f0c50c0704a7b8b6b29"
+    }
+  ]
+}
