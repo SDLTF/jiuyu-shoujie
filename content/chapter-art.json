@@ -623,7 +623,79 @@
       "height": 941,
       "sha256": "71b8ba002423353c0fe01c3e7511d73406be5be475046cae9f3e056c0287d12d",
       "generation_metadata": "assets/chapter-art/chapter26-27-generation.json"
+    },
+    {
+      "id": "28-1",
+      "chapter": "028",
+      "caption": "三齿扣，成了",
+      "alt": "南廊里，贾小鱼将三齿扣装入断架，小语蹲在实台旁用短撑抵住冷面，同伴从上方留出修复时间。",
+      "after": "新扣咬合，贾连敲三下，销到底，第三齿翻扣。",
+      "original": "assets/chapter-art/28-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "0ad93474c24d555510bc61ada262fb416957958c51827500c255fb3244868f07",
+      "generation_metadata": "assets/chapter-art/chapter28-30-generation.json"
+    },
+    {
+      "id": "28-2",
+      "chapter": "028",
+      "caption": "错接退了",
+      "alt": "段禾在顾霆身旁亲手握住主柄，三齿扣带着架臂回位，槽底最后的蓝弧缩回护板。",
+      "after": "槽底的低响退了。最后两条蓝弧贴着护板缩回去，没再出来。",
+      "original": "assets/chapter-art/28-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "77c3c6db6d1bf8b77aae65436ee6d2dfba39146d802f785b3b5d2b48f16831bb",
+      "generation_metadata": "assets/chapter-art/chapter28-30-generation.json"
+    },
+    {
+      "id": "29-1",
+      "chapter": "029",
+      "caption": "这里已经有火",
+      "alt": "恢复供能的街边灶窗升起白汽，小语和韦侃坐在矮桌边吃热面，楚惊殊与酥心糖笑着分开一根宽面。",
+      "after": "小语笑得肩疼，索性扶着碗笑完。",
+      "original": "assets/chapter-art/29-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "2fc640abad1a0c1f5756abcb20b09a2646af2b11b71c411ab6a5432d5eec8a95",
+      "generation_metadata": "assets/chapter-art/chapter28-30-generation.json"
+    },
+    {
+      "id": "29-2",
+      "chapter": "029",
+      "caption": "先把这一班交出去",
+      "alt": "本地维护者在新分段板前互验柄位，顾霆收图，晏执衡伸出的手又收回，二人隔着尚未说开的分歧。",
+      "after": "顾伸手去卷图，晏也抬了一下手，两人的动作碰到一半，又各自收回。",
+      "original": "assets/chapter-art/29-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "01f31a12a565c816ad48e5fa03cfac44be8c82d49aea62c43b5863697f8d7ad9",
+      "generation_metadata": "assets/chapter-art/chapter28-30-generation.json"
+    },
+    {
+      "id": "30-1",
+      "chapter": "030",
+      "caption": "灰桥的回信",
+      "alt": "学院廊边，小语与韦侃展读灰桥来信，妙愿抱着探向信角的小白，同伴围坐读到平安与未完的事。",
+      "after": "小语望着他们笑，伸手将所有页重新理齐。她原先怕读到坏消息，又怕一封信只写好，如今未完的事也写在里面，她反而舍不得放下。",
+      "original": "assets/chapter-art/30-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "7282bb4ab0519293d075378b5e21b1789fef430e6428f22e0239fcfc4ca8403a",
+      "generation_metadata": "assets/chapter-art/chapter28-30-generation.json"
+    },
+    {
+      "id": "30-2",
+      "chapter": "030",
+      "caption": "下一程，往青岚",
+      "alt": "两辆转运车缓缓离开学院，小语在韦侃身旁回头挥手，顾霆、贾小鱼与晏执衡留在院门送行。",
+      "after": "她这回用没伤的那只手挥得高了一点，挥完才转身，赶到韦侃旁边。",
+      "original": "assets/chapter-art/30-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "269d32876631716c787a88f9d1ca4bd50c0d0ffc6aa9f375ed704687f53961fe",
+      "generation_metadata": "assets/chapter-art/chapter28-30-generation.json"
     }
   ],
-  "provenance": "Chapters 1-10: eighteen user-supplied illustrations preserved unchanged. Chapters 11-12: four new illustrations generated with built-in image_gen using the current user-selected artwork and character cards as references; prompts and exact references are preserved in assets/chapter-art/chapter11-12-generation.json. Superseded generated originals for chapters 7-10 remain in assets/chapter-art/archive/, with their generation history in assets/chapter-art/generation-prompts.json. Chapters 13-14: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter13-14-generation.json. Chapters 15-16: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter15-16-generation.json. Chapters 17-19: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter17-19-generation.json. Chapters 20-21: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter20-21-generation.json. Chapters 22-23: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter22-23-generation.json. Chapters 24-25: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter24-25-generation.json. Chapters 26-27: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter26-27-generation.json."
+  "provenance": "Chapters 1-10: eighteen user-supplied illustrations preserved unchanged. Chapters 11-12: four new illustrations generated with built-in image_gen using the current user-selected artwork and character cards as references; prompts and exact references are preserved in assets/chapter-art/chapter11-12-generation.json. Superseded generated originals for chapters 7-10 remain in assets/chapter-art/archive/, with their generation history in assets/chapter-art/generation-prompts.json. Chapters 13-14: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter13-14-generation.json. Chapters 15-16: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter15-16-generation.json. Chapters 17-19: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter17-19-generation.json. Chapters 20-21: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter20-21-generation.json. Chapters 22-23: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter22-23-generation.json. Chapters 24-25: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter24-25-generation.json. Chapters 26-27: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter26-27-generation.json. Chapters 28-30: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter28-30-generation.json."
 }

@@ -1,0 +1,113 @@
+{
+  "tool": "built-in image_gen",
+  "intent": "Generate six new chapter 28-30 illustrations, preserve series identities and continuity, integrate into chapters and gallery and publish directly without visual review as requested.",
+  "images": [
+    {
+      "id": "28-1",
+      "chapter": "028",
+      "caption": "三齿扣，成了",
+      "alt": "南廊里，贾小鱼将三齿扣装入断架，小语蹲在实台旁用短撑抵住冷面，同伴从上方留出修复时间。",
+      "after": "新扣咬合，贾连敲三下，销到底，第三齿翻扣。",
+      "references": [
+        "assets/originals/04.png",
+        "assets/chapter-art/16-2.png",
+        "assets/chapter-art/27-1.png"
+      ],
+      "prompt": "Use case: illustration-story. Create ONE new full-bleed 16:9 landscape narrative painting for the Chinese fantasy novel 九域守界. Match the chapter series: exquisite semi-realistic anime faces, natural anatomy, fine wavy hair, ornate embroidered travel clothes, tactile aged stone, wood and brass, luminous cinematic sunlight, atmospheric depth and restrained expressive acting. Each person has exactly two anatomically connected arms and hands; supported injured limbs remain supported. Single coherent scene, no panels, montage, legible writing, labels, captions, border, logo or watermark. Character sheets define identity and clothes only, never their layout or printed text. Scene references establish continuing identities and style, not edit targets. Chapter 28, inside the main sluice's newly COOLED low southern maintenance gallery under the iron catwalk. Jia Xiaoyu: adult female artisan, dark violet-black tied-back hair, goggles above forehead, purple practical work clothes with silver fittings, cream ruffled shirt, dark trousers and tool belt. Xiaoyu: adult woman, shoulder-length wavy chestnut hair and tiny gold flower hairpin, blue gold-compass-embroidered cloak with muted red lining, cream blouse, red necktie, brown travel trousers and boots. One palm is bandaged and one shoulder is bruised; protect the injured hand.  Two main figures in a close three-quarter wide composition. Jia crouches on a genuine dry stone ledge, fixing a compact ordinary three-toothed metal clasp into the holes of an old broken pivot arm: the new load is shared by three real fittings. Her short hammer has just seated the replacement pin; the old rusty broken pin and small tools lie in a cloth tool bag beside her. Xiaoyu kneels on the adjoining solid platform and keeps a short physical prop against the COLD metal surface, its tail locked on real stone, the load borne by its support and her shoulder rather than the bandaged palm. Her good hand steadies it, injured hand protected. She is strained and sweaty but beginning to see that the fitting has engaged. Upper catwalk gaps show only a pair of distant boots, a steel sword edge guarding them and a plain red-paper talisman on an actual external wooden catch; do not add more close faces. Very faint harmless residual blue far outside the cooled work area, warm light filtering through the low gallery, realistic metal dust and careful practical repair. No magical floating clamp, electrical contact with the workers, glowing crystals, giant machinery or graphic injuries.",
+      "original": "assets/chapter-art/28-1.png",
+      "generated_filename": "exec-c87f5cf1-a8e6-4657-b96f-1eb8380004bd.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "0ad93474c24d555510bc61ada262fb416957958c51827500c255fb3244868f07"
+    },
+    {
+      "id": "28-2",
+      "chapter": "028",
+      "caption": "错接退了",
+      "alt": "段禾在顾霆身旁亲手握住主柄，三齿扣带着架臂回位，槽底最后的蓝弧缩回护板。",
+      "after": "槽底的低响退了。最后两条蓝弧贴着护板缩回去，没再出来。",
+      "references": [
+        "assets/chapter-art/23-2.png",
+        "assets/originals/17.png",
+        "assets/chapter-art/27-1.png"
+      ],
+      "prompt": "Use case: illustration-story. Create ONE new full-bleed 16:9 landscape narrative painting for the Chinese fantasy novel 九域守界. Match the chapter series: exquisite semi-realistic anime faces, natural anatomy, fine wavy hair, ornate embroidered travel clothes, tactile aged stone, wood and brass, luminous cinematic sunlight, atmospheric depth and restrained expressive acting. Each person has exactly two anatomically connected arms and hands; supported injured limbs remain supported. Single coherent scene, no panels, montage, legible writing, labels, captions, border, logo or watermark. Character sheets define identity and clothes only, never their layout or printed text. Scene references establish continuing identities and style, not edit targets. Chapter 28, the battle has ended and the main sluice is returned to a safe configuration. Duan He: older thin-cheeked local maintenance worker, graying dark hair, rough short beard, callused hands, worn brown-gray work clothes and small workshop key at his waist. Gu Ting: adult male engineer, slightly long messy black hair, wheat complexion, brown eyes, dark insulating work clothes, short shoulder armor, brass harness, rolled sleeves and old burn scars on hands; physical analog meter and diversion rod. Xiaoyu: adult woman, shoulder-length wavy chestnut hair and tiny gold flower hairpin, blue gold-compass-embroidered cloak with muted red lining, cream blouse, red necktie, brown travel trousers and boots. One palm is bandaged and one shoulder is bruised; protect the injured hand.  Duan He is the central subject, standing at the actual main control lever and carefully bringing it to its seated position himself. Gu stands beside him watching and leaving him time, NOT grabbing his hands. A linked subsidiary lever is visibly retracted and a compact THREE-toothed newly fitted clasp carries the old arm back into line. Show a short WHITE mechanical stop rod in its full-down position, held by an ordinary local worker farther to the side; actual link rods and one analog needle tell the engineering story without text. Two last very fine blue arcs retreat beneath protective plates in the discharge channel rather than explode into the air. Xiaoyu stays on the outer dry platform off to the side, exhausted, hand protected, watching the local worker's meaningful action. The repaired blue shield secured to its wheeled frame remains nearby. Armed companions are only indistinct quiet silhouettes in depth; ordinary weapons have been put aside, no fighting or wounded enemy focal point. Bright worn stone, warm brass and dust, steady water below, immense relief in small expressions. The injured blue-shield knight is absent; no giant city-wide magical illumination, no new relic or force-field.",
+      "original": "assets/chapter-art/28-2.png",
+      "generated_filename": "exec-b5f63c24-89ea-49c3-ab1e-dcf686456318.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "77c3c6db6d1bf8b77aae65436ee6d2dfba39146d802f785b3b5d2b48f16831bb"
+    },
+    {
+      "id": "29-1",
+      "chapter": "029",
+      "caption": "这里已经有火",
+      "alt": "恢复供能的街边灶窗升起白汽，小语和韦侃坐在矮桌边吃热面，楚惊殊与酥心糖笑着分开一根宽面。",
+      "after": "小语笑得肩疼，索性扶着碗笑完。",
+      "references": [
+        "assets/chapter-art/16-2.png",
+        "assets/chapter-art/5-1.png"
+      ],
+      "prompt": "Use case: illustration-story. Create ONE new full-bleed 16:9 landscape narrative painting for the Chinese fantasy novel 九域守界. Match the chapter series: exquisite semi-realistic anime faces, natural anatomy, fine wavy hair, ornate embroidered travel clothes, tactile aged stone, wood and brass, luminous cinematic sunlight, atmospheric depth and restrained expressive acting. Each person has exactly two anatomically connected arms and hands; supported injured limbs remain supported. Single coherent scene, no panels, montage, legible writing, labels, captions, border, logo or watermark. Character sheets define identity and clothes only, never their layout or printed text. Scene references establish continuing identities and style, not edit targets. Chapter 29, ordinary cooking heat has returned to the street, after the sluice rescue. Xiaoyu: adult woman, shoulder-length wavy chestnut hair and tiny gold flower hairpin, blue gold-compass-embroidered cloak with muted red lining, cream blouse, red necktie, brown travel trousers and boots. One palm is bandaged and one shoulder is bruised; protect the injured hand. Weikan: adult woman with brown wavy hair and pearl earrings, green-and-gold travel cloak, bow and ordinary arrows.  Suxintang is the adult woman in red-and-gold floral robes with cream wide sleeves, brown hair with red floral ornaments and ribbons; Chu Jingshu is the adult woman with dark twin ponytails and navy/teal floral clothes. Only these FOUR friends prominent. A modest old woman cooks noodles at an open stone kitchen window behind a small low street-side table. Real steam rises from a plain pot, no banquet and no luxury tavern interior. Xiaoyu blows gently on her plain bowl of hot noodles, chopped scallion and pickles, smiling with wet eyes and sore shoulder; her bandaged palm rests safely rather than grips a hot heavy pot. Weikan smiles beside her, green cloak laid back and bow safely set aside. Chu holds up an unusually wide noodle with chopsticks while Su tries to divide it; a small splash makes both lean away laughing. One bowl per person, natural hands and chopsticks, intimate earned warmth. Sunlight catches the window steam, wet street stones and ordinary mended clothes; dim newly working street lamps can sit in deep background, not a brilliantly glowing city. No battle, gore, spell effects, piles of ornate feast food or dragon at the table.",
+      "original": "assets/chapter-art/29-1.png",
+      "generated_filename": "exec-5a766355-6f92-41ad-94fd-ac8bac5d2f1c.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "2fc640abad1a0c1f5756abcb20b09a2646af2b11b71c411ab6a5432d5eec8a95"
+    },
+    {
+      "id": "29-2",
+      "chapter": "029",
+      "caption": "先把这一班交出去",
+      "alt": "本地维护者在新分段板前互验柄位，顾霆收图，晏执衡伸出的手又收回，二人隔着尚未说开的分歧。",
+      "after": "顾伸手去卷图，晏也抬了一下手，两人的动作碰到一半，又各自收回。",
+      "references": [
+        "assets/originals/17.png",
+        "assets/originals/24.png",
+        "assets/chapter-art/23-2.png"
+      ],
+      "prompt": "Use case: illustration-story. Create ONE new full-bleed 16:9 landscape narrative painting for the Chinese fantasy novel 九域守界. Match the chapter series: exquisite semi-realistic anime faces, natural anatomy, fine wavy hair, ornate embroidered travel clothes, tactile aged stone, wood and brass, luminous cinematic sunlight, atmospheric depth and restrained expressive acting. Each person has exactly two anatomically connected arms and hands; supported injured limbs remain supported. Single coherent scene, no panels, montage, legible writing, labels, captions, border, logo or watermark. Character sheets define identity and clothes only, never their layout or printed text. Scene references establish continuing identities and style, not edit targets. Chapter 29, the later main-sluice handover, a quiet difficult engineering disagreement after successful rescue. Gu Ting: adult male engineer, slightly long messy black hair, wheat complexion, brown eyes, dark insulating work clothes, short shoulder armor, brass harness, rolled sleeves and old burn scars on hands; physical analog meter and diversion rod. Yan Zhiheng: adult man with ink-black tousled hair, pale face, deep gray-blue eyes, matte black high-collar coat with cool silver zipper, restrained expression. Duan He: older thin-cheeked local maintenance worker, graying dark hair, rough short beard, callused hands, worn brown-gray work clothes and small workshop key at his waist.  Yan has REMOVED his armor and wears the black coat again, a freshly dressed wrist burn visible as a clean cloth wrap. Compose a medium-wide scene with Gu and Yan in the foreground at the same modest control-table, a slight natural space between them. Gu starts rolling a real paper route diagram; Yan has instinctively half-raised his good hand to help hold a corner, then withdraws it. Their hands must NOT clasp or shake; both keep restrained tired expressions, neither a villainous sneer nor angry theatrical shouting. A small silver restart clasp is being put back in Yan's coat pocket, not installed as sole permanent control. In the middle distance Duan He and another older local worker stand by the newly mounted ordinary sectional control board, one checking the physical lever stop, the other confirming the analog meter. A third local worker with worn ear protectors reads two distinct white mechanical marker lines. The board is genuinely operating locally under a limited two-person procedure, not a high-tech screen or glowing magical panel. Plain handover page and pencil with indistinct marks, high-load section still mechanically sealed. Warm later daylight, steady machinery and a fine emotional fracture between two capable friends. Four clear faces maximum, background worker subdued. No battle, lightning display, oppressive guards, reconciliation embrace or tears forced into a smile.",
+      "original": "assets/chapter-art/29-2.png",
+      "generated_filename": "exec-f9171cba-3c82-41b3-aa68-7a92df1d1b9f.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "01f31a12a565c816ad48e5fa03cfac44be8c82d49aea62c43b5863697f8d7ad9"
+    },
+    {
+      "id": "30-1",
+      "chapter": "030",
+      "caption": "灰桥的回信",
+      "alt": "学院廊边，小语与韦侃展读灰桥来信，妙愿抱着探向信角的小白，同伴围坐读到平安与未完的事。",
+      "after": "小语望着他们笑，伸手将所有页重新理齐。她原先怕读到坏消息，又怕一封信只写好，如今未完的事也写在里面，她反而舍不得放下。",
+      "references": [
+        "assets/chapter-art/16-2.png",
+        "assets/chapter-art/5-1.png"
+      ],
+      "prompt": "Use case: illustration-story. Create ONE new full-bleed 16:9 landscape narrative painting for the Chinese fantasy novel 九域守界. Match the chapter series: exquisite semi-realistic anime faces, natural anatomy, fine wavy hair, ornate embroidered travel clothes, tactile aged stone, wood and brass, luminous cinematic sunlight, atmospheric depth and restrained expressive acting. Each person has exactly two anatomically connected arms and hands; supported injured limbs remain supported. Single coherent scene, no panels, montage, legible writing, labels, captions, border, logo or watermark. Character sheets define identity and clothes only, never their layout or printed text. Scene references establish continuing identities and style, not edit targets. Chapter 30, morning in the academy cloister, an actual long-awaited letter from Graybridge. Xiaoyu: adult woman, shoulder-length wavy chestnut hair and tiny gold flower hairpin, blue gold-compass-embroidered cloak with muted red lining, cream blouse, red necktie, brown travel trousers and boots. One palm is bandaged and one shoulder is bruised; protect the injured hand. Weikan: adult woman with brown wavy hair and pearl earrings, green-and-gold travel cloak, bow and ordinary arrows.  Miaoyuan is the adult man with low-tied brown hair, cream travel shirt and blue-gray embroidered scarf, a small white blue-eyed dragon with tiny horns, folded wings and slender tail supported comfortably at his shoulder. Three main friends at an ordinary wooden table, plus one subdued adult brown-haired recorder in a taupe travel coat farther back. Xiaoyu lays several real letter sheets and a receipt flat, smiles with misty eyes, keeping every page together; Weikan leans close and holds one envelope corner so it does not slip. A bowl of water has been moved away from the papers. Miaoyuan smiles at a line about the next food bag while gently guiding the little dragon's nose AWAY from the letter corner, no biting, tearing or magic reading. The paper carries delicate indistinct ink lines and a small ordinary postal mark, no readable text or glowing news hologram. Warm sunlight through cloister vines, travel bag and notebook on the bench, cups, light breeze and an unhurried table of friends who have received both reassurance and honest unfinished news. Hands anatomically distinct, no duplicated limbs. No giant dragon, injured knight, elaborate feast, floating mail or modern electronics.",
+      "original": "assets/chapter-art/30-1.png",
+      "generated_filename": "exec-a2afe1e5-9036-4680-9d4c-524474141b80.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "7282bb4ab0519293d075378b5e21b1789fef430e6428f22e0239fcfc4ca8403a"
+    },
+    {
+      "id": "30-2",
+      "chapter": "030",
+      "caption": "下一程，往青岚",
+      "alt": "两辆转运车缓缓离开学院，小语在韦侃身旁回头挥手，顾霆、贾小鱼与晏执衡留在院门送行。",
+      "after": "她这回用没伤的那只手挥得高了一点，挥完才转身，赶到韦侃旁边。",
+      "references": [
+        "assets/chapter-art/16-2.png",
+        "assets/originals/17.png",
+        "assets/originals/04.png",
+        "assets/originals/24.png"
+      ],
+      "prompt": "Use case: illustration-story. Create ONE new full-bleed 16:9 landscape narrative painting for the Chinese fantasy novel 九域守界. Match the chapter series: exquisite semi-realistic anime faces, natural anatomy, fine wavy hair, ornate embroidered travel clothes, tactile aged stone, wood and brass, luminous cinematic sunlight, atmospheric depth and restrained expressive acting. Each person has exactly two anatomically connected arms and hands; supported injured limbs remain supported. Single coherent scene, no panels, montage, legible writing, labels, captions, border, logo or watermark. Character sheets define identity and clothes only, never their layout or printed text. Scene references establish continuing identities and style, not edit targets. Chapter 30, departure day from Yaohuan academy, the road toward Qinglan begins HERE, they have not yet arrived at a new green kingdom. Xiaoyu: adult woman, shoulder-length wavy chestnut hair and tiny gold flower hairpin, blue gold-compass-embroidered cloak with muted red lining, cream blouse, red necktie, brown travel trousers and boots. One palm is bandaged and one shoulder is bruised; protect the injured hand. Weikan: adult woman with brown wavy hair and pearl earrings, green-and-gold travel cloak, bow and ordinary arrows. Gu Ting: adult male engineer, slightly long messy black hair, wheat complexion, brown eyes, dark insulating work clothes, short shoulder armor, brass harness, rolled sleeves and old burn scars on hands; physical analog meter and diversion rod. Jia Xiaoyu: adult female artisan, dark violet-black tied-back hair, goggles above forehead, purple practical work clothes with silver fittings, cream ruffled shirt, dark trousers and tool belt. Yan Zhiheng: adult man with ink-black tousled hair, pale face, deep gray-blue eyes, matte black high-collar coat with cool silver zipper, restrained expression.  Wide cinematic departure composition. In the foreground Xiaoyu walks beside Weikan and turns her head and upper body just a little to wave back with her GOOD hand, injured palm and bruised shoulder protected; hopeful but with lingering complicated feelings. Weikan walks close without touching the sore shoulder, green cloak and bow at her side. Behind them TWO ordinary sturdy wooden transport wagons roll slowly through the academy gateway onto the stone street: first wagon carries one rounded old stone stele secured to a padded physical cradle; second carries a CLOSED ordinary timber chest with fitted internal-support transport marks, no exposed teal relic or glowing crystal. Adult drivers and seated traveling companions are small subdued silhouettes, their injured members staying seated, no one lifting heavy cargo. A faded blue heraldic shield is securely CLASPED to a wagon frame rather than held by an injured knight. Three senders remain standing at the gate in middle distance: Gu with his ordinary tools and tired gentle face, Jia in purple smiling, Yan in black with a clean wrist dressing raises one hand in a restrained reply. Let all three faces be identifiable but the foreground women remain the focus; no crowded row of giant faces. An ordinary laundry bucket and cooking steam at the street edge suggest the restored city continuing its own work. Morning golden light, ivy on stone, rolling wooden wheels, open road beyond, tender real farewell without magical spectacle, flying wagons or written signs.",
+      "original": "assets/chapter-art/30-2.png",
+      "generated_filename": "exec-dc85c37c-ce49-4747-9ea0-3e65051e3aae.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "269d32876631716c787a88f9d1ca4bd50c0d0ffc6aa9f375ed704687f53961fe"
+    }
+  ]
+}
