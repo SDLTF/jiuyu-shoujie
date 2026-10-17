@@ -839,7 +839,103 @@
       "height": 941,
       "sha256": "50b7b05025a4a6c708481cd70fd857ecaea48238372c11bcddf2142d410e4ce5",
       "generation_metadata": "assets/chapter-art/chapter34-36-generation.json"
+    },
+    {
+      "id": "37-1",
+      "chapter": "037",
+      "caption": "白门外，先认住彼此",
+      "alt": "闭合的白门前，小语与韦侃握住手，蓝眼黑猫莉莉站在石阶下，引着五人辨认梦中归路。",
+      "after": "小语先叫出名字，才将手伸过去。韦握住了她，指节的温度、虎口稍硬的触感都在，拇指还压了压她掌边，避过浅伤。",
+      "original": "assets/chapter-art/37-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "b99bb1c8936cfa4159635ef24953e76aecf580fc4945aebfb55662d909f473c6",
+      "generation_metadata": "assets/chapter-art/chapter37-40-generation.json"
+    },
+    {
+      "id": "37-2",
+      "chapter": "037",
+      "caption": "带着没做完的凳脚回去",
+      "alt": "老木工放下锉，握着未完成的凳脚，在小语和韦侃搀扶下自愿走出白昼小院，门外仍亮着花灯。",
+      "after": "老人没再说等一会儿，把那条没完成的凳脚抓在手里，跟着他们走了出来。",
+      "original": "assets/chapter-art/37-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "97bac0b5edd981acab79f936ca3677cb4c56b015021b3719980f56523f9c1c8d",
+      "generation_metadata": "assets/chapter-art/chapter37-40-generation.json"
+    },
+    {
+      "id": "38-1",
+      "chapter": "038",
+      "caption": "想回的地方，也要先放下",
+      "alt": "梦中的灰桥长桌冒着饭菜热气，小语却收回伸向门框的手，转身照看累得发颤的老木工。",
+      "after": "小语蹲下，给他腾出坐的地方。",
+      "original": "assets/chapter-art/38-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "7420ed7c0ccd973640f08e151f3b1c92638a694977dc95653075183869d6891a",
+      "generation_metadata": "assets/chapter-art/chapter37-40-generation.json"
+    },
+    {
+      "id": "38-2",
+      "chapter": "038",
+      "caption": "空着篮子，也有人等你",
+      "alt": "采药人抱着空竹篮坐在墙根，小语安静陪他等，没把那丛迟迟采不成的花拔走。",
+      "after": "他没哭出声，掌心停在眼上，过了好一会儿才放下来。小语没有再去看他的神情，只将自己蹲麻的一条腿慢慢伸开，陪着等。",
+      "original": "assets/chapter-art/38-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "5bac2d042e4faeb012f34b5e1086d8e6b6a94a3f87bafb03e931501f9799e491",
+      "generation_metadata": "assets/chapter-art/chapter37-40-generation.json"
+    },
+    {
+      "id": "39-1",
+      "chapter": "039",
+      "caption": "先站稳，才接得住",
+      "alt": "赫利俄斯踩稳石脚提住阿槐前臂，小语递下稳住的横栏，酥与楚合力固定真实的梁脚。",
+      "after": "小语从侧面扶住他的背。楚仍牵着旧纹，等他的第二只脚也踩实，才一点点松开。",
+      "original": "assets/chapter-art/39-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "fec54dc60938c032a333b0715a73645c04de3991aec4f1ed258e35f6e3fc089d",
+      "generation_metadata": "assets/chapter-art/chapter37-40-generation.json"
+    },
+    {
+      "id": "39-2",
+      "chapter": "039",
+      "caption": "长高以后，再告别一次",
+      "alt": "许舟屈下已经长高的膝背，让记忆里母亲的手碰到额发，小语坐在门边等待，没有催促。",
+      "after": "小语看见他侧过一点脸，像等着那一下熟悉的拉扯。窗纸上映着两人的影，女人的手落在孩子头上，他却必须把长起来的膝背压得很低，才挨得着。",
+      "original": "assets/chapter-art/39-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "4c70dc045c06c4823b0935d34d9144dd1f3925a8e5e3be815f05404201f14313",
+      "generation_metadata": "assets/chapter-art/chapter37-40-generation.json"
+    },
+    {
+      "id": "40-1",
+      "chapter": "040",
+      "caption": "领路的，也会等人相救",
+      "alt": "断廊上，小语将被旧线牵慢的黑猫莉莉收进臂间滚开，轻影的爪在身旁木面留下三道深痕。",
+      "after": "轻爪切过她刚才扶着的木面。",
+      "original": "assets/chapter-art/40-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "96cd909a8bda1f368cb517c1ed2f193d0c13fd2cf6c1d7e4388419a31c62439a",
+      "generation_metadata": "assets/chapter-art/chapter37-40-generation.json"
+    },
+    {
+      "id": "40-2",
+      "chapter": "040",
+      "caption": "先把手放平",
+      "alt": "小语以肘和腰稳住半扇旧门，许舟伏低把掌心放平，莉莉先探过落点，远处白门的光终于接稳。",
+      "after": "许舟照做，掌心压在门上。",
+      "original": "assets/chapter-art/40-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "62c2590a6af166336a4509b11b901114a333a080ec3ab4a7139969fa097077e2",
+      "generation_metadata": "assets/chapter-art/chapter37-40-generation.json"
     }
   ],
-  "provenance": "Chapters 1-10: eighteen user-supplied illustrations preserved unchanged. Chapters 11-12: four new illustrations generated with built-in image_gen using the current user-selected artwork and character cards as references; prompts and exact references are preserved in assets/chapter-art/chapter11-12-generation.json. Superseded generated originals for chapters 7-10 remain in assets/chapter-art/archive/, with their generation history in assets/chapter-art/generation-prompts.json. Chapters 13-14: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter13-14-generation.json. Chapters 15-16: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter15-16-generation.json. Chapters 17-19: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter17-19-generation.json. Chapters 20-21: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter20-21-generation.json. Chapters 22-23: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter22-23-generation.json. Chapters 24-25: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter24-25-generation.json. Chapters 26-27: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter26-27-generation.json. Chapters 28-30: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter28-30-generation.json. Chapters 31-33: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter31-33-generation.json. Chapters 34-36: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter34-36-generation.json."
+  "provenance": "Chapters 1-10: eighteen user-supplied illustrations preserved unchanged. Chapters 11-12: four new illustrations generated with built-in image_gen using the current user-selected artwork and character cards as references; prompts and exact references are preserved in assets/chapter-art/chapter11-12-generation.json. Superseded generated originals for chapters 7-10 remain in assets/chapter-art/archive/, with their generation history in assets/chapter-art/generation-prompts.json. Chapters 13-14: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter13-14-generation.json. Chapters 15-16: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter15-16-generation.json. Chapters 17-19: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter17-19-generation.json. Chapters 20-21: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter20-21-generation.json. Chapters 22-23: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter22-23-generation.json. Chapters 24-25: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter24-25-generation.json. Chapters 26-27: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter26-27-generation.json. Chapters 28-30: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter28-30-generation.json. Chapters 31-33: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter31-33-generation.json. Chapters 34-36: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter34-36-generation.json. Chapters 37-40: eight built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter37-40-generation.json."
 }

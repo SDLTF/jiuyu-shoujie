@@ -1,0 +1,146 @@
+{
+  "tool": "built-in image_gen",
+  "intent": "Generate eight illustrations for chapters 37-40, two per chapter, with existing character and dream/real-world continuity. Insert into the prose and gallery and publish directly without visual or render review, as requested.",
+  "images": [
+    {
+      "id": "37-1",
+      "chapter": "037",
+      "caption": "白门外，先认住彼此",
+      "alt": "闭合的白门前，小语与韦侃握住手，蓝眼黑猫莉莉站在石阶下，引着五人辨认梦中归路。",
+      "after": "小语先叫出名字，才将手伸过去。韦握住了她，指节的温度、虎口稍硬的触感都在，拇指还压了压她掌边，避过浅伤。",
+      "references": [
+        "assets/chapter-art/16-2.png",
+        "assets/chapter-art/35-1.png"
+      ],
+      "prompt": "Use case: illustration-story. Create ONE new full-bleed 16:9 landscape illustration for the Chinese fantasy novel 九域守界, part of the existing chapter impression series. Match the reference paintings: exquisite semi-realistic anime faces, finely painted loose hair, elaborate gold embroidery, tactile aged wood and stone, luminous cinematic light, atmospheric depth and nuanced human expressions. A single coherent narrative scene, not a collage or panels. References are identity/style guides, not edit targets; never copy character-sheet text or layout. All people have exactly two anatomically connected arms and hands, natural fingers and distinct limbs. No caption, lettering, logo, watermark or border. Xiaoyu is an ADULT woman with shoulder-length wavy chestnut hair, a tiny gold flower hairpin, blue cloak with gold compass embroidery and muted red lining, cream blouse, loose red necktie, brown traveling trousers and boots. Her palm is cleanly bandaged and one shoulder sore; she cannot support a person's entire body with the injured arm. Weikan is an ADULT female archer with wavy brown hair and pearl earrings, deep GREEN cloak with elaborate gold botanical embroidery, cream shirt, brown fitted traveling trousers, leather bracers, ordinary bow and finite ordinary arrows. Lili is a normal ADULT CAT-SIZED female cat, entirely BLACK fur, clear BLUE eyes, dark collar with one SMALL gold Bastet cat-head emblem, four feline legs and one tail. No giant cat, humanoid familiar or laser eyes. Chapter 37, the FIRST ARRIVAL INSIDE the dream, at night. Foreground Xiaoyu and Weikan stand on TWO SOUND STONE STEPS OUTSIDE a CLOSED WHITE WOODEN DOOR. They have first called one another's names and are gently clasping one hand, Weikan's thumb avoiding Xiaoyu's bandaged palm. Both look tired but present and attentive, a small real reassurance rather than a romance poster. Lili stands one step below looking along the street, her little blue eyes sharply visible. The door is shut and unbroken, not a glowing open portal. Beyond the steps a narrow worn stone street goes away into warm flower lanterns, dry flower bundles at a shop, a broken-rim clay pot behind a stone railing, a bend that hides the next stretch. Put the scene in liminal night with amber lanterns and cool white door light, NOT the bright sunny city of the reference. Three small out-of-focus companions can wait farther down the steps: a red-robed woman, a dark twin-tailed woman with a single card, and a black/gold-coated young swordsman; no extra distinct faces or crowd. Keep the primary composition intimate: two adult women and the normal-sized black cat, enough surrounding street to feel a long unknown journey ahead. No sleeping beds in this scene, no involuntary hypnosis, no open exit, no giant magical map.",
+      "original": "assets/chapter-art/37-1.png",
+      "generated_filename": "exec-b29b4c02-4d2c-447a-a07f-72b181c36411.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "b99bb1c8936cfa4159635ef24953e76aecf580fc4945aebfb55662d909f473c6"
+    },
+    {
+      "id": "37-2",
+      "chapter": "037",
+      "caption": "带着没做完的凳脚回去",
+      "alt": "老木工放下锉，握着未完成的凳脚，在小语和韦侃搀扶下自愿走出白昼小院，门外仍亮着花灯。",
+      "after": "老人没再说等一会儿，把那条没完成的凳脚抓在手里，跟着他们走了出来。",
+      "references": [
+        "assets/chapter-art/16-2.png",
+        "assets/chapter-art/35-1.png"
+      ],
+      "prompt": "Use case: illustration-story. Create ONE new full-bleed 16:9 landscape illustration for the Chinese fantasy novel 九域守界, part of the existing chapter impression series. Match the reference paintings: exquisite semi-realistic anime faces, finely painted loose hair, elaborate gold embroidery, tactile aged wood and stone, luminous cinematic light, atmospheric depth and nuanced human expressions. A single coherent narrative scene, not a collage or panels. References are identity/style guides, not edit targets; never copy character-sheet text or layout. All people have exactly two anatomically connected arms and hands, natural fingers and distinct limbs. No caption, lettering, logo, watermark or border. Xiaoyu is an ADULT woman with shoulder-length wavy chestnut hair, a tiny gold flower hairpin, blue cloak with gold compass embroidery and muted red lining, cream blouse, loose red necktie, brown traveling trousers and boots. Her palm is cleanly bandaged and one shoulder sore; she cannot support a person's entire body with the injured arm. Weikan is an ADULT female archer with wavy brown hair and pearl earrings, deep GREEN cloak with elaborate gold botanical embroidery, cream shirt, brown fitted traveling trousers, leather bracers, ordinary bow and finite ordinary arrows. Lili is a normal ADULT CAT-SIZED female cat, entirely BLACK fur, clear BLUE eyes, dark collar with one SMALL gold Bastet cat-head emblem, four feline legs and one tail. No giant cat, humanoid familiar or laser eyes. Chapter 37, INSIDE the dream: the OLD CARPENTER has voluntarily stopped his endlessly repeating work and is choosing to walk OUT of his small courtyard. He is an elderly local man with short wispy gray hair, weathered face, a worn umber waistcoat over a beige work shirt, loose dark work trousers and cloth shoes. His shaky legs are being supported without force: Xiaoyu at one side and Weikan at the other, each gently steadies one upper arm, the man's weight stays over his own feet. The carpenter holds ONE short unfinished wooden stool leg in his own hand, an ordinary file now set down on the low workbench behind. He glances back once with tender reluctance; Xiaoyu waits for his choice rather than dragging him. Lili sits just outside the open courtyard gate, watching the next safe step. The courtyard behind contains a low woodworker's stool, one completed leg against a wall, old shavings that have stopped multiplying. Crucial dream contradiction: inside the courtyard it is SOFT DAYLIGHT, beyond the wooden gate a night street glows with FLOWER LANTERNS. One continuous three-quarter scene spanning this threshold, no split-panel divider or surreal floating objects. The unfinished stool leg is small and tangible, not a staff or sword. Quiet fragile relief, unfinished work allowed to remain. No healthy young carpenter, wheelchair, compulsory magic pull, bright city panorama or celebratory crowd.",
+      "original": "assets/chapter-art/37-2.png",
+      "generated_filename": "exec-f4b6ebc6-fc35-44d5-bbd2-4e24eed8c854.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "97bac0b5edd981acab79f936ca3677cb4c56b015021b3719980f56523f9c1c8d"
+    },
+    {
+      "id": "38-1",
+      "chapter": "038",
+      "caption": "想回的地方，也要先放下",
+      "alt": "梦中的灰桥长桌冒着饭菜热气，小语却收回伸向门框的手，转身照看累得发颤的老木工。",
+      "after": "小语蹲下，给他腾出坐的地方。",
+      "references": [
+        "assets/chapter-art/16-2.png",
+        "assets/originals/14.png",
+        "assets/originals/19.png",
+        "assets/chapter-art/35-1.png"
+      ],
+      "prompt": "Use case: illustration-story. Create ONE new full-bleed 16:9 landscape illustration for the Chinese fantasy novel 九域守界, part of the existing chapter impression series. Match the reference paintings: exquisite semi-realistic anime faces, finely painted loose hair, elaborate gold embroidery, tactile aged wood and stone, luminous cinematic light, atmospheric depth and nuanced human expressions. A single coherent narrative scene, not a collage or panels. References are identity/style guides, not edit targets; never copy character-sheet text or layout. All people have exactly two anatomically connected arms and hands, natural fingers and distinct limbs. No caption, lettering, logo, watermark or border. Xiaoyu is an ADULT woman with shoulder-length wavy chestnut hair, a tiny gold flower hairpin, blue cloak with gold compass embroidery and muted red lining, cream blouse, loose red necktie, brown traveling trousers and boots. Her palm is cleanly bandaged and one shoulder sore; she cannot support a person's entire body with the injured arm. Weikan is an ADULT female archer with wavy brown hair and pearl earrings, deep GREEN cloak with elaborate gold botanical embroidery, cream shirt, brown fitted traveling trousers, leather bracers, ordinary bow and finite ordinary arrows. Lili is a normal ADULT CAT-SIZED female cat, entirely BLACK fur, clear BLUE eyes, dark collar with one SMALL gold Bastet cat-head emblem, four feline legs and one tail. No giant cat, humanoid familiar or laser eyes. Chapter 38, the tempting FALSE GRAYBRIDGE TAVERN inside the dream. Outside the inviting doorway in the cooler lantern-lit stone lane, Xiaoyu has just stopped reaching for the doorframe and turns AWAY from the steaming meal to crouch beside the exhausted old carpenter. Her expression is longing mixed with a practical choice to care for him. The carpenter is elderly with wispy gray hair, umber waistcoat, beige shirt, dark loose trousers; he sits weak-kneed against the outer stone wall with ONE unfinished stool leg across his knees. Weikan stands at his other side steadying him, cloak rumpled from the journey, visibly tired herself. Lili sits on the threshold without entering. Through the OPEN tavern doorway in the warm middle background, show an empty bowl and vacant seat at the familiar long wooden table, steam from simple supper, TWO inviting DREAM VERSIONS of friends: Peng Pai, adult short dark-wavy-haired knight in a blue/gold cape beside a blue heraldic shield, can lift a bench easily with his LEFT hand; Qu Ke, honey-BLOND wavy hair, red eyes, black/burgundy-and-gold coat and cream ruffled shirt, stands comfortably turning toward the doorway. These two are deliberately UNINJURED DREAM IMAGES: Peng has NO arm sling, his two normal arms both intact, Qu has NO rib pain and no hand protecting his side. Their healthy ease is the emotional temptation, NOT a factual recovery of their real bodies outside the dream. Keep them softly focused in depth, two background faces only; no additional party members at the table. A unified view from the lane across the doorway, warm welcome behind and weary real responsibility at foreground. No entering the tavern, no joyous reunion or explicit villain masquerade.",
+      "original": "assets/chapter-art/38-1.png",
+      "generated_filename": "exec-12447b9a-26f4-4249-ac3c-66fe75303288.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "7420ed7c0ccd973640f08e151f3b1c92638a694977dc95653075183869d6891a"
+    },
+    {
+      "id": "38-2",
+      "chapter": "038",
+      "caption": "空着篮子，也有人等你",
+      "alt": "采药人抱着空竹篮坐在墙根，小语安静陪他等，没把那丛迟迟采不成的花拔走。",
+      "after": "他没哭出声，掌心停在眼上，过了好一会儿才放下来。小语没有再去看他的神情，只将自己蹲麻的一条腿慢慢伸开，陪着等。",
+      "references": [
+        "assets/chapter-art/16-2.png",
+        "assets/chapter-art/35-1.png"
+      ],
+      "prompt": "Use case: illustration-story. Create ONE new full-bleed 16:9 landscape illustration for the Chinese fantasy novel 九域守界, part of the existing chapter impression series. Match the reference paintings: exquisite semi-realistic anime faces, finely painted loose hair, elaborate gold embroidery, tactile aged wood and stone, luminous cinematic light, atmospheric depth and nuanced human expressions. A single coherent narrative scene, not a collage or panels. References are identity/style guides, not edit targets; never copy character-sheet text or layout. All people have exactly two anatomically connected arms and hands, natural fingers and distinct limbs. No caption, lettering, logo, watermark or border. Xiaoyu is an ADULT woman with shoulder-length wavy chestnut hair, a tiny gold flower hairpin, blue cloak with gold compass embroidery and muted red lining, cream blouse, loose red necktie, brown traveling trousers and boots. Her palm is cleanly bandaged and one shoulder sore; she cannot support a person's entire body with the injured arm. Chapter 38, a quiet pause INSIDE the dream, in a narrow stone-walled alley after escaping the old shadow guardians. A middle-aged adult HERBALIST, lean weathered face, short dark-brown hair touched with gray, worn moss-brown work tunic and faded charcoal trousers, sits low by the wall. He holds an EMPTY SMALL BAMBOO BASKET on his knees; one hand has just lowered from his tearful eyes, the other rests on the EMPTY basket rim, his face tired and exposed. Beside him, Xiaoyu has been crouching for a long time and now eases one cramped leg out, giving him quiet time rather than asking more questions. Her bandaged hand rests safely on her own lap, her gaze lowered toward the empty basket so she is not staring at him while he grieves. A small real-looking cluster of delicate pale herb flowers still grows UNPICKED in the stone-wall foot, a few stalks, intact roots; the basket remains visibly EMPTY. Behind them, softly out of focus on a clean step, the elderly carpenter with gray hair, umber waistcoat and beige shirt sits holding the unfinished stool leg, talking quietly with an older work-clothed married couple. No more than two clear foreground faces. A few soft flower lanterns high along the alley, warm amber and cool dusky blue, worn paving, nearby companions making a brief safe space. The feeling is grief and the possibility of returning without the thing he endlessly sought. Do not depict a healing miracle, successful flower harvest, deceased father apparition, medical bed, giant bouquet or triumphant rescue.",
+      "original": "assets/chapter-art/38-2.png",
+      "generated_filename": "exec-9702330b-e4e0-4806-95e0-b69411c9f329.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "5bac2d042e4faeb012f34b5e1086d8e6b6a94a3f87bafb03e931501f9799e491"
+    },
+    {
+      "id": "39-1",
+      "chapter": "039",
+      "caption": "先站稳，才接得住",
+      "alt": "赫利俄斯踩稳石脚提住阿槐前臂，小语递下稳住的横栏，酥与楚合力固定真实的梁脚。",
+      "after": "小语从侧面扶住他的背。楚仍牵着旧纹，等他的第二只脚也踩实，才一点点松开。",
+      "references": [
+        "assets/chapter-art/35-1.png",
+        "assets/originals/27.png",
+        "assets/chapter-art/16-2.png",
+        "assets/chapter-art/5-1.png"
+      ],
+      "prompt": "Use case: illustration-story. Create ONE new full-bleed 16:9 landscape illustration for the Chinese fantasy novel 九域守界, part of the existing chapter impression series. Match the reference paintings: exquisite semi-realistic anime faces, finely painted loose hair, elaborate gold embroidery, tactile aged wood and stone, luminous cinematic light, atmospheric depth and nuanced human expressions. A single coherent narrative scene, not a collage or panels. References are identity/style guides, not edit targets; never copy character-sheet text or layout. All people have exactly two anatomically connected arms and hands, natural fingers and distinct limbs. No caption, lettering, logo, watermark or border. Xiaoyu is an ADULT woman with shoulder-length wavy chestnut hair, a tiny gold flower hairpin, blue cloak with gold compass embroidery and muted red lining, cream blouse, loose red necktie, brown traveling trousers and boots. Her palm is cleanly bandaged and one shoulder sore; she cannot support a person's entire body with the injured arm. Helios is a slim adult man, tousled dark hair with one small distinct YELLOW temple lock, NO glasses, fitted black-and-gold long coat, cream open collar, dark trousers and boots, one slender steel oath sword with a gold RING-shaped guard. There is NO sword spirit accompanying him inside this dream. Chapter 39, the precarious rescue of Ah Huai INSIDE the dream's LANTERN CROSSING CORRIDOR, a timber walkway between old stone courtyards, warm old flower lanterns and dark broken floor joints. Ah Huai is the SAME young adult worker sleeping on the right in the bedside reference, now AWAKE: short tousled dark-brown hair, plain worn brown-gray work shirt, clean wrapping on a scraped hand, very faint teal powder stain near the cloth, tired frightened face. He has just let go of the endlessly recurring long board and is climbing back onto a REAL narrow supporting beam beside a stone footing. He is NOT carrying a board while being lifted. Helios crouches with one knee and boot securely braced on the solid stone-footed beam and grips Ah Huai's FOREARM with one hand, lifting in a controlled way; his single sword is sheathed or securely placed at his side, never a second extra arm. Xiaoyu stays back with her elbow supported on a stable edge and a short STABILIZED WOODEN RAIL lowered within the worker's reach, now moving to steady his back as his SECOND FOOT reaches the beam. Do not have her sore shoulder bear his whole body. In middle depth Su, adult long brown hair, red floral ornaments and RED/gold robes, has pasted ONE small red-ink talisman on the REAL LEFT SUPPORT BOARD, not the repeating long board. Chu, adult dark twin ponytails and navy/teal floral clothes, crouches at the column base with ONE card close to an existing fine seam, barely shifting the connected beam; a faint restrained teal line shows a real connection, not a giant force field. Four clear foreground/middle figures maximum plus Su/Chu small, readable safe footholds, splintered boards, physical teamwork, fear beginning to release. No gore, bottomless sky canyon, rescuing a child instead, healthy robe-wearing Ah Huai, rope suddenly invented or mass levitation.",
+      "original": "assets/chapter-art/39-1.png",
+      "generated_filename": "exec-74f8982b-a9bb-45e2-9ead-7cdbe1719caf.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "fec54dc60938c032a333b0715a73645c04de3991aec4f1ed258e35f6e3fc089d"
+    },
+    {
+      "id": "39-2",
+      "chapter": "039",
+      "caption": "长高以后，再告别一次",
+      "alt": "许舟屈下已经长高的膝背，让记忆里母亲的手碰到额发，小语坐在门边等待，没有催促。",
+      "after": "小语看见他侧过一点脸，像等着那一下熟悉的拉扯。窗纸上映着两人的影，女人的手落在孩子头上，他却必须把长起来的膝背压得很低，才挨得着。",
+      "references": [
+        "assets/chapter-art/35-1.png",
+        "assets/chapter-art/16-2.png"
+      ],
+      "prompt": "Use case: illustration-story. Create ONE new full-bleed 16:9 landscape illustration for the Chinese fantasy novel 九域守界, part of the existing chapter impression series. Match the reference paintings: exquisite semi-realistic anime faces, finely painted loose hair, elaborate gold embroidery, tactile aged wood and stone, luminous cinematic light, atmospheric depth and nuanced human expressions. A single coherent narrative scene, not a collage or panels. References are identity/style guides, not edit targets; never copy character-sheet text or layout. All people have exactly two anatomically connected arms and hands, natural fingers and distinct limbs. No caption, lettering, logo, watermark or border. Xiaoyu is an ADULT woman with shoulder-length wavy chestnut hair, a tiny gold flower hairpin, blue cloak with gold compass embroidery and muted red lining, cream blouse, loose red necktie, brown traveling trousers and boots. Her palm is cleanly bandaged and one shoulder sore; she cannot support a person's entire body with the injured arm. Chapter 39, inside Xu Zhou's dream of his mother, an intimate SMALL modest domestic room with pale paper window, a low stool and worn threshold. Xu Zhou is a THIRTEEN-YEAR-OLD BOY, clearly an ordinary lanky child with short dark-brown hair, plain loose brown-gray work clothes, mended pale stitching at the wrist and practical cloth shoes. His mother is a calm middle-aged woman with dark hair in a simple low bun, ordinary faded beige and brown clothes, seated by the window with a needle, fine thread and an unfinished patched garment set across her lap. She is a remembered image, corporeal and softly lit, NOT a ghost, corpse or sorceress. Her hand remains at the height of the NINE-YEAR-OLD he was in her memory, while he has grown taller. Show the boy bending his long knees and back very LOW, face pressed near her lap, so her relaxed palm can finally rest on his forehead hair. His own hands grip the low stool edge lightly; tears and tender grief, not injury or punishment. The emotional visual detail is how far the grown child has to crouch to meet the old familiar hand. A small pair of outgrown shoes is set beneath the window; one chipped ordinary bowl is beside the stool with chip facing the boy. Xiaoyu sits quietly at the OPEN doorway at one side, leaving the path clear, waiting with damp eyes rather than touching or pulling the boy. Her blue cloak, gold pin and red tie stay recognizable. Warm window light makes the needle thread a fine bright arc and casts the mother-and-child shadow onto paper; outside the door a cooler old lantern corridor is barely visible. Three people only. No modern room, infant, romantic pose, big magical speech bubble, resurrection or instant happy ending.",
+      "original": "assets/chapter-art/39-2.png",
+      "generated_filename": "exec-f4195d15-b7b8-4a8e-a31c-1d6a02941264.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "4c70dc045c06c4823b0935d34d9144dd1f3925a8e5e3be815f05404201f14313"
+    },
+    {
+      "id": "40-1",
+      "chapter": "040",
+      "caption": "领路的，也会等人相救",
+      "alt": "断廊上，小语将被旧线牵慢的黑猫莉莉收进臂间滚开，轻影的爪在身旁木面留下三道深痕。",
+      "after": "轻爪切过她刚才扶着的木面。",
+      "references": [
+        "assets/chapter-art/35-1.png",
+        "assets/chapter-art/16-2.png"
+      ],
+      "prompt": "Use case: illustration-story. Create ONE new full-bleed 16:9 landscape illustration for the Chinese fantasy novel 九域守界, part of the existing chapter impression series. Match the reference paintings: exquisite semi-realistic anime faces, finely painted loose hair, elaborate gold embroidery, tactile aged wood and stone, luminous cinematic light, atmospheric depth and nuanced human expressions. A single coherent narrative scene, not a collage or panels. References are identity/style guides, not edit targets; never copy character-sheet text or layout. All people have exactly two anatomically connected arms and hands, natural fingers and distinct limbs. No caption, lettering, logo, watermark or border. Xiaoyu is an ADULT woman with shoulder-length wavy chestnut hair, a tiny gold flower hairpin, blue cloak with gold compass embroidery and muted red lining, cream blouse, loose red necktie, brown traveling trousers and boots. Her palm is cleanly bandaged and one shoulder sore; she cannot support a person's entire body with the injured arm. Lili is a normal ADULT CAT-SIZED female cat, entirely BLACK fur, clear BLUE eyes, dark collar with one SMALL gold Bastet cat-head emblem, four feline legs and one tail. No giant cat, humanoid familiar or laser eyes. Chapter 40, INSIDE the damaged dream corridor, the moment Xiaoyu saves Lili rather than assuming the guide is invulnerable. A slim LIGHT SHADOW GUARDIAN clings beneath the eaves, an angular gray-black silhouette made of old wooden/stone protection joints and very faint teal connection seams; long thin clawed forelimbs, no animal flesh, no gore. It has just swiped down across a weathered WOODEN PLANK, leaving THREE sharply cut parallel deep scratches beside Xiaoyu. The cat's rear paw was briefly slowed by an OLD FINE LINE caught in a broken timber seam. Xiaoyu has caught the cat near its shoulder scruff with one hand, supported its body with the other forearm, and is rolling sideways OUT of the claw's path onto a low firm stone ledge. Her two arms form one clear protective cradle, exactly two hands, normal cat scale and no squeezing or hanging animal. Capture the end of the evasive roll: Xiaoyu's cloak sweeps over dusty stone, sore shoulder guarded close, face strained with concern rather than superhuman force. The cat is alive and alert, blue-eyed, turning its head as if about to object and get down. The thin teal contact trace along the ground is still connected, just stretched; no severed magic collar. Single guardian only at upper edge, feet and body anchored to old eaves, not a disembodied flying hand. Behind, splintered narrow walkway, stone wall, dim flower lanterns and distant dust show the route is breaking. Dynamic low oblique framing with clear separation between two human hands, four feline paws, and the guardian's claw. No wound, maimed animal, giant cat, third arm, acrobatic airborne leap or fiery explosion.",
+      "original": "assets/chapter-art/40-1.png",
+      "generated_filename": "exec-cfd614b8-a77c-4e5a-bdc5-af065ba0e5b9.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "96cd909a8bda1f368cb517c1ed2f193d0c13fd2cf6c1d7e4388419a31c62439a"
+    },
+    {
+      "id": "40-2",
+      "chapter": "040",
+      "caption": "先把手放平",
+      "alt": "小语以肘和腰稳住半扇旧门，许舟伏低把掌心放平，莉莉先探过落点，远处白门的光终于接稳。",
+      "after": "许舟照做，掌心压在门上。",
+      "references": [
+        "assets/chapter-art/35-1.png",
+        "assets/chapter-art/16-2.png"
+      ],
+      "prompt": "Use case: illustration-story. Create ONE new full-bleed 16:9 landscape illustration for the Chinese fantasy novel 九域守界, part of the existing chapter impression series. Match the reference paintings: exquisite semi-realistic anime faces, finely painted loose hair, elaborate gold embroidery, tactile aged wood and stone, luminous cinematic light, atmospheric depth and nuanced human expressions. A single coherent narrative scene, not a collage or panels. References are identity/style guides, not edit targets; never copy character-sheet text or layout. All people have exactly two anatomically connected arms and hands, natural fingers and distinct limbs. No caption, lettering, logo, watermark or border. Xiaoyu is an ADULT woman with shoulder-length wavy chestnut hair, a tiny gold flower hairpin, blue cloak with gold compass embroidery and muted red lining, cream blouse, loose red necktie, brown traveling trousers and boots. Her palm is cleanly bandaged and one shoulder sore; she cannot support a person's entire body with the injured arm. Lili is a normal ADULT CAT-SIZED female cat, entirely BLACK fur, clear BLUE eyes, dark collar with one SMALL gold Bastet cat-head emblem, four feline legs and one tail. No giant cat, humanoid familiar or laser eyes. Chapter 40, final scene INSIDE the dream, a fragile improvised crossing next to Xu Zhou's small courtyard. Xu Zhou is a THIRTEEN-YEAR-OLD lanky boy with short dark-brown hair, ordinary loose brown-gray clothes, PALE MENDED WRIST STITCHING, dusty shoes, tear-and-dust streaks on his cheeks. He is still at the FAR STONE THRESHOLD, lowering himself safely and laying ONE PALM FLAT on a tilted wooden DOOR PANEL while keeping both feet and his other hand on his safe stone; NOT already crossing or dangling. Between him and Xiaoyu there is a NARROW dark crack from the collapsed wooden corridor, about a short stride wide, not a vast canyon. The ordinary half-detached door is still attached by its ONE UPPER WOODEN HINGE at the far stone doorframe; its lower corner has just been lowered onto the NEAR SOLID STONE RIB, making a small diagonal sloping temporary bridge. Show correct load-bearing contact, physically plausible joined wooden panel, not floating. Xiaoyu crouches firmly on the near ledge, pressing the panel inward with ELBOW and SIDE OF WAIST rather than hanging by her injured shoulder; her other hand extends low toward the boy, palm open, still waiting for him to be ready. Lili tests the near corner with TWO front paws on the wood while her hind paws remain on the stone, normal-sized cat with black fur and blue eyes. The three concentrate on HANDS AND FEET, reassuring but exhausted, no victorious smile. Across the ruined corridor in the distant WEST, a SEPARATE CLOSED WHITE DOOR now glows steadily along its base and upward edges, with five rescued adults small and blurred on a stone platform nearby. That is the return door, visually separate from the brown wooden panel used for this crossing. Broken beams and drifting dust, amber lantern reflections, first steady cool-white light across stone. No whole group returning home yet, no modern planks or rail bridge, no magically complete road, no open glowing portal, no extra hands.",
+      "original": "assets/chapter-art/40-2.png",
+      "generated_filename": "exec-7463fcd4-be2d-44ee-b8ce-7b3802f908a8.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "62c2590a6af166336a4509b11b901114a333a080ec3ab4a7139969fa097077e2"
+    }
+  ]
+}
