@@ -1,0 +1,112 @@
+{
+  "tool": "built-in image_gen",
+  "intent": "Generate six illustrations for chapters 34-36 with existing character and scene continuity; directly integrate into prose and gallery and publish without visual review as requested.",
+  "images": [
+    {
+      "id": "34-1",
+      "chapter": "034",
+      "caption": "根束齐断，路终于留下",
+      "alt": "赫利俄斯斩断外守颈下根束，石甲沉入低沟，韦侃仍举弓守着，蔚蔚稳住倒木救援路。",
+      "after": "石甲向两边错开，沉重的头砸进低沟。四足一阵乱挣，断根拍着泥，泼起半人高的水，随后一条一条垂下去。",
+      "references": [
+        "assets/chapter-art/33-2.png",
+        "assets/originals/27.png",
+        "assets/originals/16.png"
+      ],
+      "prompt": "Use case: illustration-story. Create ONE new full-bleed landscape 16:9 narrative illustration for the Chinese fantasy novel 九域守界. Match the established chapter series: exquisite semi-realistic anime faces, natural anatomy, finely painted hair, elaborate embroidered traveling clothes, tactile aged wood and stone, luminous cinematic light and atmospheric depth, nuanced restrained acting. One coherent scene only, no panels, montage, readable writing, captions, logos, watermark or border. Reference sheets define identity and clothes, never copy their printed text or layout. Previous chapter scenes define continuity and painting style, not edit targets. Every person has exactly two anatomically connected arms and hands. Chapter 34, the LAST STRIKE against the outer moss-armor guardian at the small reed-islet walkway, continuing exactly from the referenced confrontation. Helios is the slim adult man with tousled dark hair, one distinct small YELLOW highlighted lock at his temple, no glasses, fitted black-and-gold long coat with cream layers, dark trousers and boots; his slender steel oath sword has an ornate gold ring-shaped guard. Weikan is the adult female archer with brown wavy hair, pearl earrings, green-and-gold embroidered cloak, bow and ordinary arrows. Weiwei is the adult field mage with long dark braided hair, dewdrop turquoise ornaments, pale GREEN velvet long dress with SILVER botanical embroidery, practical boots, foldable measuring rod and route-marking cloth ties.  The guardian is the SAME low FOUR-LEGGED construct of mossy STONE plates over WOOD ROOT bones, with no animal flesh. Its neck root bundles have just been severed cleanly: show snapped pale wet ROOT fibers, dark muddy WATER and stone chips, NOT red blood or biological gore. The heavy stone head sinks into the SHALLOW BLACK-MUD DITCH while the four root legs slacken, no huge explosion. Helios has both normal hands on the single gold-guard sword after finishing the cut and starts to step BACK onto the low WHITE FIRM STONE rather than sinking into mud, tired, muddy, shoulder aching but alert. Weikan remains on west solid ground with her ordinary bow covering the scene until he is safely back. Weiwei at the north bank maintains several SHORT root supports under a FALLEN TREE bridging toward east stone, not a giant magic vine bridge. The retained log route and three distant adult workers carefully helping an injured colleague across it remain visibly important in depth. Xiaoyu can be a small blue-cloaked figure at the west landing receiving a worker, not a prominent extra face. The creature is defeated but people are still getting off the broken route. Dynamic wide three-quarter view, warm light through reeds, splashed mud, breathing space between figures. No towers, city-scale bridge, dragon, second monster, sword energy beam or victory parade.",
+      "original": "assets/chapter-art/34-1.png",
+      "generated_filename": "exec-39d74f8e-4eaa-4ce4-91fd-27c972fc3eb5.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "34e69b04451e2a45f26c8dd95fb15f442dfdb1e4c3cae0ae7c0b88f251e256a2"
+    },
+    {
+      "id": "34-2",
+      "chapter": "034",
+      "caption": "图还给你留着",
+      "alt": "夜里的照护侧屋中，阿槐平稳呼吸却没有醒来，小语带着北路小图守在床旁，闵霁以花枝察看。",
+      "after": "“图还给你留着。”她说，“你不是说要拿船坞图来换？”",
+      "references": [
+        "assets/chapter-art/33-1.png",
+        "assets/originals/07.png"
+      ],
+      "prompt": "Use case: illustration-story. Create ONE new full-bleed landscape 16:9 narrative illustration for the Chinese fantasy novel 九域守界. Match the established chapter series: exquisite semi-realistic anime faces, natural anatomy, finely painted hair, elaborate embroidered traveling clothes, tactile aged wood and stone, luminous cinematic light and atmospheric depth, nuanced restrained acting. One coherent scene only, no panels, montage, readable writing, captions, logos, watermark or border. Reference sheets define identity and clothes, never copy their printed text or layout. Previous chapter scenes define continuity and painting style, not edit targets. Every person has exactly two anatomically connected arms and hands. Chapter 34, NIGHT after the rescue in a modest maintenance-courtyard CARE SIDE ROOM, not a grand hospital. Xiaoyu is the adult woman with shoulder-length wavy chestnut hair, tiny gold flower pin, blue cloak embroidered with gold compass motifs and muted red lining, cream blouse, red necktie and brown travel trousers. One palm is bandaged, her shoulder sore; keep the injured hand protected. Min Ji is the adult female healer with cherry-pink curled hair, pink eyes, small iris-shaped forehead birthmark, pale pink blossom-layered crinoline dress, flower jewelry, medicine pouch and ONE delicate flowering branch for sensing life.  Ah Huai is a young ADULT local worker, short tousled dark-brown hair, ordinary worn brown-gray work shirt, one scraped hand cleanly wrapped; he lies breathing steadily on a narrow simple bed under a plain blanket, eyes CLOSED and unresponsive. A small faint gray-TEAL POWDER STAIN remains on the back of that hand near the clean cloth, no gore, no glow or creeping fantasy infection. Xiaoyu kneels at bedside and softly speaks to him, a SMALL imperfect ink sketch of a fallen-log path, heavy white stone and one little human figure held safely near her lap; the drawing is a personal promise, no legible writing. Her good fingertips touch near his wrist without pressing the scrape, worried tears and weary disbelief in her face. Min Ji stands just behind the bed corner holding one flowering branch near the blanket over his chest; petal veins carry only an extremely faint calm glimmer, not a cure. His plain-clothed middle-aged mother stands farther back, watching with a dry cloth in both hands. Four figures, restrained atmosphere: he is visibly alive and stable yet not waking. Warm small oil lamp against cool night window, folded work clothes, a cup of water, quiet shadows. No dream projection, floating spirit, miraculous awakening, dramatic seizure, medical machines or visible wound.",
+      "original": "assets/chapter-art/34-2.png",
+      "generated_filename": "exec-8539e87f-b9d3-46f1-b0ef-603281b6186f.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "f9df73443967abcb1b6e468f743ae14b84d0914e185035397057b9d492cadd06"
+    },
+    {
+      "id": "35-1",
+      "chapter": "035",
+      "caption": "已经说了三句",
+      "alt": "蓝眼黑猫莉莉将前爪放在小语袖上，提醒她别翻动阿槐的伤腕，小语惊讶地发现猫会说话。",
+      "after": "“已经说了三句。”",
+      "references": [
+        "assets/originals/09.png",
+        "assets/chapter-art/33-1.png"
+      ],
+      "prompt": "Use case: illustration-story. Create ONE new full-bleed landscape 16:9 narrative illustration for the Chinese fantasy novel 九域守界. Match the established chapter series: exquisite semi-realistic anime faces, natural anatomy, finely painted hair, elaborate embroidered traveling clothes, tactile aged wood and stone, luminous cinematic light and atmospheric depth, nuanced restrained acting. One coherent scene only, no panels, montage, readable writing, captions, logos, watermark or border. Reference sheets define identity and clothes, never copy their printed text or layout. Previous chapter scenes define continuity and painting style, not edit targets. Every person has exactly two anatomically connected arms and hands. Chapter 35, morning at the bedside of sleeping Ah Huai in the simple care room, the first unexpected conversation with LILI. Lili is a NORMAL ADULT CAT-SIZED female cat with entirely BLACK fur, clear BLUE eyes, and a dark collar carrying a SMALL gold Bastet cat-head emblem, dignified and mildly disdainful; no humanoid body, giant size or luminous laser eyes. Xiaoyu is the adult woman with shoulder-length wavy chestnut hair, tiny gold flower pin, blue cloak embroidered with gold compass motifs and muted red lining, cream blouse, red necktie and brown travel trousers. One palm is bandaged, her shoulder sore; keep the injured hand protected. Min Ji is the adult female healer with cherry-pink curled hair, pink eyes, small iris-shaped forehead birthmark, pale pink blossom-layered crinoline dress, flower jewelry, medicine pouch and ONE delicate flowering branch for sensing life.  Compose a medium-close wide view putting the real black cat and Xiaoyu's surprised face at the same visual importance. Lili sits neatly on a DRY BED EDGE, four normal feline paws, one front paw LIGHTLY rests on Xiaoyu's sleeve to stop her from repeatedly turning the patient's scraped wrist. The cat's mouth is only slightly open as if delivering a dry curt reply, no cartoon speech balloon. Xiaoyu has pulled her good hand back toward her knee, looking at the cat with startled attentive embarrassment, not screaming or laughing at the patient. In soft middle distance the young adult worker sleeps peacefully with his clean hand bandage and faint teal dust stain; Min Ji in pink quietly packs a medicine pouch after checking him. Morning sun through an ordinary window, folded cloth and one old sketch corner at the bedhead. Ordinary cat scale, fine BLACK fur and clearly BLUE eyes, small gold emblem; no ghost form in this first encounter, no extra tail, giant familiar, luminous magic collar or spirit emerging from the patient. Three human faces at most, simple intimate scene with a hint of the strange amid practical care.",
+      "original": "assets/chapter-art/35-1.png",
+      "generated_filename": "exec-c30cd4bf-f041-4373-8c5f-615b100f0d95.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "4be12c159b309e5a45699db40440d4b8deb6d77810fb3c5edc7a9801358cc350"
+    },
+    {
+      "id": "35-2",
+      "chapter": "035",
+      "caption": "家谱里，也有这一段",
+      "alt": "酥心糖将家传册的旧临纹与小语带回的潮青留痕并排比较，楚惊殊指向末端不同的一笔，莉莉伏在桌旁。",
+      "after": "“我家谱上也有这一段。”",
+      "references": [
+        "assets/chapter-art/5-1.png",
+        "assets/originals/09.png",
+        "assets/chapter-art/16-2.png"
+      ],
+      "prompt": "Use case: illustration-story. Create ONE new full-bleed landscape 16:9 narrative illustration for the Chinese fantasy novel 九域守界. Match the established chapter series: exquisite semi-realistic anime faces, natural anatomy, finely painted hair, elaborate embroidered traveling clothes, tactile aged wood and stone, luminous cinematic light and atmospheric depth, nuanced restrained acting. One coherent scene only, no panels, montage, readable writing, captions, logos, watermark or border. Reference sheets define identity and clothes, never copy their printed text or layout. Previous chapter scenes define continuity and painting style, not edit targets. Every person has exactly two anatomically connected arms and hands. Chapter 35, late afternoon at a plain side table outside the care room, a real comparison of OLD PATTERNS rather than entering a dream. Suxintang is the adult woman from the red floral reference: long brown hair with red floral ornaments and ribbons, ornate RED-and-gold floral robes and cream wide sleeves. Chu Jingshu is the adult woman with dark twin ponytails and NAVY/teal floral clothes, small patterned card case. Xiaoyu is the adult woman with shoulder-length wavy chestnut hair, tiny gold flower pin, blue cloak embroidered with gold compass motifs and muted red lining, cream blouse, red necktie and brown travel trousers. One palm is bandaged, her shoulder sore; keep the injured hand protected. Lili is a NORMAL ADULT CAT-SIZED female cat with entirely BLACK fur, clear BLUE eyes, and a dark collar carrying a SMALL gold Bastet cat-head emblem, dignified and mildly disdainful; no humanoid body, giant size or luminous laser eyes.  Center the two women and two small papers in a three-quarter medium-wide composition. Su has pushed her wide sleeve carefully back from her wrist, her face intent and quietly moved, as she opens her worn family notebook to a faint incomplete hand-copied angular looping pattern. Beside it lies a fresh sheet with the ACTUAL gray-TEAL old-root pattern Xiaoyu recorded, similar at the central fork but with a visibly different or missing end stroke. Keep these marks abstract flowing motifs, no readable Chinese or invented slogans, no giant rune wheel. Chu points gently to the differing final stroke without taking the notebook away, one ordinary illustrated card set flat nearby. Xiaoyu stands to the side holding the new record steady with a good hand, listening rather than declaring the mystery solved. Lili sits at the table leg in normal cat form, blue eyes watchful. Warm window light, a closed medicine pouch and plain water bowl in the distance, no banquet food, dragon or unrelated tavern merchant. Curiosity, personal recognition and uncertainty; no glowing spell connecting to people's heads or finished discovery.",
+      "original": "assets/chapter-art/35-2.png",
+      "generated_filename": "exec-2f7a9796-c443-4914-876f-0b76e9edc8bb.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "f570955c834aadaec9b9210d6ed44c8101d4cb8040e8cb5303ed618e436ac93c"
+    },
+    {
+      "id": "36-1",
+      "chapter": "036",
+      "caption": "先把人解下来",
+      "alt": "眠庭内石庭里，吴语以杖和石槛托住联梁，把内守的挣力卸向空石，小语和赫利俄斯在回廊口看见仍连着外护屋的细纹。",
+      "after": "小语沿门口望出去，才看见他一脚一直抵着石槛。庭中那道联梁的下端被他托高一点，苔甲守再挣，力量便卸向另一块空石，没有继续拽动通向外屋的细纹。",
+      "references": [
+        "assets/originals/06.png",
+        "assets/originals/27.png",
+        "assets/chapter-art/33-2.png"
+      ],
+      "prompt": "Use case: illustration-story. Create ONE new full-bleed landscape 16:9 narrative illustration for the Chinese fantasy novel 九域守界. Match the established chapter series: exquisite semi-realistic anime faces, natural anatomy, finely painted hair, elaborate embroidered traveling clothes, tactile aged wood and stone, luminous cinematic light and atmospheric depth, nuanced restrained acting. One coherent scene only, no panels, montage, readable writing, captions, logos, watermark or border. Reference sheets define identity and clothes, never copy their printed text or layout. Previous chapter scenes define continuity and painting style, not edit targets. Every person has exactly two anatomically connected arms and hands. Chapter 36, the SMALL INNER STONE COURTYARD at Mianting, separated from the outer care house by a low corridor. Wu Yu is the elderly man from his sheet: gray-white hair tied loosely with an angled WOODEN hairpin, white beard, lively weathered face, worn BLUE-GRAY short shirt, loose trousers, cloth shoes, plain wooden staff. Here his expression is intensely practical and protective. His one foot stays braced against a SOLID STONE THRESHOLD while his hands and STAFF lift the LOWER END of one of TWO HEAVY LINK BEAMS a little, redirecting a struggling guardian's load toward a genuinely EMPTY STONE support. Use clear physical leverage and grounded old martial skill, not a giant aura. The inner guardian resembles the referenced stone/root creature but is INTACT, restrained in a short range by the two real beams, not the already slain wetland guardian. Its chest holds a dim teal trace, overlapping mossy stone plates over root framework, back about adult chest height. It struggles without being smashed; the point is that its linkage still connects to sleeping people elsewhere. Delicate worn channels in the paving lead toward the west outer-house door, now no longer being pulled; no visible strings attached to human bodies. Helios is the slim adult man with tousled dark hair, one distinct small YELLOW highlighted lock at his temple, no glasses, fitted black-and-gold long coat with cream layers, dark trousers and boots; his slender steel oath sword has an ornate gold ring-shaped guard.  Helios stands at the corridor edge holding Wu Yu's ordinary half cup of tea, sword still safely sheathed, watching the elder's hands rather than attacking. Xiaoyu in blue can be a smaller figure at the west doorway looking between the linkage and the warm lit care room, at most three clear human faces. A quiet old pedestal is blurred deep in courtyard, no invented towering relic. Restrained morning sun, stone dust, one fine crack in wooden staff, calm danger and responsibility. No explosive defeat, patient torment, gore, modern machine or magic force field.",
+      "original": "assets/chapter-art/36-1.png",
+      "generated_filename": "exec-4034dd78-61d5-40cd-955c-7190b4e033be.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "cf37c1d086ffa3096ae91c0c2ea033227714b85749907d0a06abef462d28da71"
+    },
+    {
+      "id": "36-2",
+      "chapter": "036",
+      "caption": "交回的是这一页",
+      "alt": "曲柯将额外抄录的小页抽出交回，私册仍留在自己手里；小语把学院回件放在桌上，艾琳坐在侧边核接。",
+      "after": "她只接了额外小页，将上面的几行与学院回件所指核了一遍，告诉他这页会由苏弥封存，寄回学院受托接收。",
+      "references": [
+        "assets/originals/19.png",
+        "assets/chapter-art/26-2.png",
+        "assets/chapter-art/20-2.png"
+      ],
+      "prompt": "Use case: illustration-story. Create ONE new full-bleed landscape 16:9 narrative illustration for the Chinese fantasy novel 九域守界. Match the established chapter series: exquisite semi-realistic anime faces, natural anatomy, finely painted hair, elaborate embroidered traveling clothes, tactile aged wood and stone, luminous cinematic light and atmospheric depth, nuanced restrained acting. One coherent scene only, no panels, montage, readable writing, captions, logos, watermark or border. Reference sheets define identity and clothes, never copy their printed text or layout. Previous chapter scenes define continuity and painting style, not edit targets. Every person has exactly two anatomically connected arms and hands. Chapter 36, a quiet side room at Mianting in late afternoon, the private extra PAGE is returned after the academy's reply. Qu Ke is the adult male vampire with wavy honey-BLOND hair, red eyes, black/burgundy ornate coat with gold embroidery, cream ruffled shirt and crest ring. His RIGHT ribs remain dressed under his shirt, so he sits supported without twisting, free light actions done with his LEFT hand. Xiaoyu is the adult woman with shoulder-length wavy chestnut hair, tiny gold flower pin, blue cloak embroidered with gold compass motifs and muted red lining, cream blouse, red necktie and brown travel trousers. One palm is bandaged, her shoulder sore; keep the injured hand protected.  Ailin is the adult female custodian from the handover scene: honey-brown tied-back hair, pale gray-blue traveling cloak and cream practical clothes, composed serious face. Three adult figures only. Compose a medium-wide view across an ordinary table: Xiaoyu seated on one side has laid the academy's thin reply flat facing Qu Ke, hands relaxed close to the paper, no clenched accusations. Qu Ke seated opposite has used his LEFT hand to pull ONE small separately copied sheet from his private dark notebook and place it next to the reply. The notebook is now CLOSED and remains on HIS LAP or in his own other relaxed hand; it is not seized, opened for a search, or piled with other private letters. Ailin occupies the THIRD CHAIR set to the SIDE rather than physically between the pair, receiving only that small sheet and comparing its few indistinct ink lines with the reply. His right injured ribs remain supported, no strain or fresh wound. Their expressions retain hurt, resolve and care without an instant smile or reconciliation. The real subject is a limited careful handover, two separate matters still not resolved. Paper carries abstract ordinary pen lines and a small dull seal, NO legible writing. Soft light through a window open one small crack, a plain water cup pushed nearby, warm wood and cool late shadows. No guards, judge's bench, cuffs, magical lie detector, romance pose or unrelated stone relic in the room.",
+      "original": "assets/chapter-art/36-2.png",
+      "generated_filename": "exec-e8b9fa47-39e0-4c38-a253-d8325c1c9a74.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "50b7b05025a4a6c708481cd70fd857ecaea48238372c11bcddf2142d410e4ce5"
+    }
+  ]
+}
