@@ -9,6 +9,7 @@ import markdown
 from PIL import Image, ImageOps
 from design_assets import prepare_design_assets
 from character_art import prepare_character_art, character_art_entries
+from character_side_stories import profile_side_stories
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "docs"
@@ -448,6 +449,7 @@ def build():
                 sections.append(f'<details class="profile-secret"><summary>隐秘设定 <span>含剧透</span></summary><div>{text}</div></details>')
             else:
                 sections.append(f'<section class="profile-section"><h3>{escape(section["title"])}</h3>{text}</section>')
+        sections.append(profile_side_stories(ident, ROOT))
         quote = f'<blockquote class="profile-quote">{escape(profile["quote"])}</blockquote>' if profile['quote'] else ''
         previous, following = characters[(index - 1) % len(characters)], characters[(index + 1) % len(characters)]
         scene_art, scene_controls = character_scene_rotation(person, character_art.get(ident), art, art_mobile, art_raw, art_width, art_height)

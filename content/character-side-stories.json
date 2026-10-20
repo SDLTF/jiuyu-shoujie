@@ -1,0 +1,19 @@
+{
+  "stories": [
+    {
+      "id": "story-7bc9bbc4304f44a9",
+      "title": "日后谈.莫问",
+      "character_ids": ["21"]
+    },
+    {
+      "id": "story-82c5e022989042ca",
+      "title": "三岛",
+      "character_ids": ["01"]
+    },
+    {
+      "id": "story-798a1f0183d94384",
+      "title": "前传·同路一程",
+      "character_ids": ["05", "14", "09", "02"]
+    }
+  ]
+}
