@@ -1,0 +1,181 @@
+{
+  "tool": "built-in image_gen",
+  "intent": "Create ten chapter illustrations for chapters 41-45, two per chapter, with established characters and narrative continuity. Integrate into prose, gallery and chapter directory, and synchronize the server's durable illustration manifest and assets before publication. User handles visual review; do not render or visually inspect newly generated outputs.",
+  "images": [
+    {
+      "id": "41-1",
+      "chapter": "041",
+      "caption": "等这一寸，箭才离弦",
+      "alt": "赫利俄斯踩稳受护的落板，撬开重影胸甲，韦侃的箭沿细风送入接束，小语护着许舟留在墙侧。",
+      "after": "小语看见它越过两人之间最后一截空处，进入裂甲正中。箭杆撞得弯了一瞬，随即没入那团绷紧的胸根。",
+      "references": [
+        "assets/chapter-art/40-2.png",
+        "assets/chapter-art/39-1.png",
+        "assets/originals/27.png",
+        "assets/chapter-art/16-2.png"
+      ],
+      "prompt": "Use case: illustration-story. Make ONE full-bleed landscape 16:9 chapter illustration for 九域守界. Match the established illustrations: exquisite semi-realistic anime faces, naturally connected anatomy, finely painted loose hair, gold-embroidered clothing, tactile wood/stone/cloth, luminous cinematic lighting and atmospheric depth, restrained sincere emotion. References are identity and painting-style guides only, not edit targets; never copy their text, labels or collage layout. One continuous scene, no montage, panels, captions, legible lettering, watermark, logo or border. Every human has exactly two arms and hands, each clearly attached; natural fingers, physically readable interactions. Helios: slim adult man with tousled dark hair, one small distinct YELLOW lock at the temple, no glasses, black/gold long coat over cream open collar, dark trousers/boots, slender steel oath sword with gold RING guard. Weikan: adult female archer, wavy brown hair, pearl earrings, deep GREEN cloak with gold botanical embroidery, cream shirt, brown travel trousers, leather bracers, ordinary bow and finite ordinary arrows. Xiaoyu: adult woman, shoulder-length wavy chestnut hair, tiny gold flower pin, cream blouse with loose red necktie, BLUE cloak with intricate GOLD compass embroidery and muted red lining, brown travel trousers and boots. A palm is bandaged, one shoulder still sore; no weight suspended from the injured arm. Chapter41, the decisive coordinated strike INSIDE the dream's broken lantern corridor, before returning to the real world. A HEAVY FOUR-LIMBED SHADOW GUARDIAN of moss-dark stone plates and wooden/root-like joint bundles is caught between TWO WORN STONE COLUMNS. It has no animal flesh. Helios has his boots on a small real supported plank, faint red talisman securing that plank; with BOTH HANDS on ONE sword he has just levered apart the LOWER CHEST ARMOR. He braces low and to the side, sweat and strained sore shoulder, exposing one narrow cluster of dark TEAL ROOT/CONNECTION FIBERS. At a separate narrow higher platform, Weikan has just RELEASED ONE ordinary arrow through the exposed seam. A very small ribbon of wind parts the floating dust along the arrow's line, no giant magic beam or endless arrow storm. Keep a physically clear line of fire with no ally in front of the arrow. The heavy guard's knee starts to buckle, its chest root fibers breaking, STONE dust but NO blood, gore or fiery explosion. Xiaoyu is smaller at the stone-wall edge, keeping a THIRTEEN-YEAR-OLD short dark-haired boy in plain mended brown-gray clothes safely close inside, not reaching out to fight. Behind them, a separate closed WHITE RETURN DOOR glows along its base, five rescued civilians blurred close to the wall, no many detailed faces. Amber old flower lanterns, cool return light, broken beams grounded in an intimate stone courtyard, no city-wide abyss. Main action is Helios's lever and Weikan's precisely timed arrow, three readable planes, no sword spirit, superhero armor transformation or extra sword.",
+      "original": "assets/chapter-art/41-1.png",
+      "generated_filename": "exec-76fc657d-779b-4dee-bd6b-d1cde6e10f0f.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "bc13a32659daaf61bed3484856f3a0989848e3c398853eb641ab50ccba4eca27"
+    },
+    {
+      "id": "41-2",
+      "chapter": "041",
+      "caption": "等到了，这次都能答",
+      "alt": "返醒后的照护屋里，小语与韦侃在床边轻握发颤的手，许禾也终于接住醒来的许舟，莉莉守在床沿。",
+      "after": "小语低头看两只手，才轻轻说：“等到了。”",
+      "references": [
+        "assets/chapter-art/35-1.png",
+        "assets/chapter-art/16-2.png",
+        "assets/chapter-art/39-2.png"
+      ],
+      "prompt": "Use case: illustration-story. Make ONE full-bleed landscape 16:9 chapter illustration for 九域守界. Match the established illustrations: exquisite semi-realistic anime faces, naturally connected anatomy, finely painted loose hair, gold-embroidered clothing, tactile wood/stone/cloth, luminous cinematic lighting and atmospheric depth, restrained sincere emotion. References are identity and painting-style guides only, not edit targets; never copy their text, labels or collage layout. One continuous scene, no montage, panels, captions, legible lettering, watermark, logo or border. Every human has exactly two arms and hands, each clearly attached; natural fingers, physically readable interactions. Xiaoyu: adult woman, shoulder-length wavy chestnut hair, tiny gold flower pin, cream blouse with loose red necktie, BLUE cloak with intricate GOLD compass embroidery and muted red lining, brown travel trousers and boots. A palm is bandaged, one shoulder still sore; no weight suspended from the injured arm. Weikan: adult female archer, wavy brown hair, pearl earrings, deep GREEN cloak with gold botanical embroidery, cream shirt, brown travel trousers, leather bracers, ordinary bow and finite ordinary arrows. Lili: normal adult CAT-SIZED black female cat, completely BLACK fur, clear BLUE eyes, dark collar and SMALL gold Bastet cat-head emblem, four feline legs and one tail. Chapter41, AFTER the return, in the REAL modest care house under ordinary AFTERNOON window sun. Main foreground: Xiaoyu is awake, exhausted, half reclining on a plain bed with coarse linen and a pillow supporting her sore shoulder, eyes damp with relief. Weikan has moved slowly from the adjacent bed to sit close enough to reach, and they gently hold ONE hand each across the bed edges, trembling fingers relaxed, no hug squeezing the injury, no kiss, no dramatic romance pose. Their other hands stay naturally on their own lap/bed. In quiet soft background at a separate bed, Xu He, a plain-clothed young adult woman with dark-brown hair in a low bun, clasps her now AWAKE thirteen-year-old brother Xu Zhou's hand. The boy has short dark-brown hair, gray-brown mended wrist stitching and lies tired but alert under a simple blanket; his sister cries from relief, not grief. Lili sits near Xiaoyu's bed edge, black fur and blue eyes, calm and solid. At most FOUR clear human faces, all other beds only suggested by curtains and blankets. Physical travel bow with all sixteen real arrows and unburnt talisman packet remain by the beds, modest water cup within reach, clean bandages rather than dream dust. The contrast is tactile, ordinary safety after the dream: solid bed frame, sunlit dust, warm water, people able to answer. No magical healing glow, open portal, floating dream ghost, mass unconsciousness, gore or modern hospital equipment.",
+      "original": "assets/chapter-art/41-2.png",
+      "generated_filename": "exec-2ca5c785-50d8-4485-af91-9a8956b52cfc.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "1f76115bd2c2c72151dcc592094440d89b083bad2ea49ff6f4d8dff15ac0985f"
+    },
+    {
+      "id": "42-1",
+      "chapter": "042",
+      "caption": "把破口慢慢合上",
+      "alt": "窗下，小语把绿披风放在膝头压稳，韦侃一针一针修补被轻影擦开的边，两人终于能慢慢说起海。",
+      "after": "两个人把那道破口慢慢合上，才开始讲到海边以后想先看什么。没有谁能说出自己没见过的海，最后只商量到时候找个不挡人干活的地方，坐一会儿，不急着先替谁问话。",
+      "references": [
+        "assets/chapter-art/16-2.png",
+        "assets/chapter-art/35-1.png"
+      ],
+      "prompt": "Use case: illustration-story. Make ONE full-bleed landscape 16:9 chapter illustration for 九域守界. Match the established illustrations: exquisite semi-realistic anime faces, naturally connected anatomy, finely painted loose hair, gold-embroidered clothing, tactile wood/stone/cloth, luminous cinematic lighting and atmospheric depth, restrained sincere emotion. References are identity and painting-style guides only, not edit targets; never copy their text, labels or collage layout. One continuous scene, no montage, panels, captions, legible lettering, watermark, logo or border. Every human has exactly two arms and hands, each clearly attached; natural fingers, physically readable interactions. Xiaoyu: adult woman, shoulder-length wavy chestnut hair, tiny gold flower pin, cream blouse with loose red necktie, BLUE cloak with intricate GOLD compass embroidery and muted red lining, brown travel trousers and boots. A palm is bandaged, one shoulder still sore; no weight suspended from the injured arm. Weikan: adult female archer, wavy brown hair, pearl earrings, deep GREEN cloak with gold botanical embroidery, cream shirt, brown travel trousers, leather bracers, ordinary bow and finite ordinary arrows. Chapter42, real world, quiet RECOVERY at the modest care-house window before departing Qinglan. Two adult women only, a close but uncrowded medium-wide painting. Weikan has taken OFF her GREEN/GOLD embroidered cloak to mend the RAGGED EDGE torn by the light shadow; she wears her cream travel shirt, leather bracers loosened, brown trousers. She sits beside Xiaoyu threading a simple NEEDLE through the cloth, small imperfect stitches that slowly close the tear. Xiaoyu still wears her BLUE/GOLD compass cloak, red tie, palm bandage; her shoulder is visibly protected by a pillow against the chair. The shared GREEN cloth lies entirely across Xiaoyu's LAP so she needs only press a small corner with her good fingertips, no holding arms overhead or carrying weight. Weikan's two hands handle needle and fabric with readable natural fingers; Xiaoyu's other hand rests quietly. A coil of ordinary thread and little scissors on a low stool, their travel bags not packed yet. They look from the mended edge toward one another, a tiny tired smile while tentatively imagining the sea neither has seen. Warm slanting afternoon window light, outside a calm small stone courtyard and simple root supports, no sea visible yet. Worn bed linen and a cup of water stay subtly in depth. No magic sewing, romantic kiss, miraculous healed shoulder or banquet crowd.",
+      "original": "assets/chapter-art/42-1.png",
+      "generated_filename": "exec-ac09f52d-0530-4a45-a290-f7e04752482d.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "6e819c633bc813c89b8ff92f4ca4ca303204b33e41f9ec0b5d7caf0728ed3805"
+    },
+    {
+      "id": "42-2",
+      "chapter": "042",
+      "caption": "海，终于铺到天底下",
+      "alt": "沿海碎石路上，小语坐在慢行车侧，韦侃扶住车边，海风掀起披风，第一次真正看见无边的海。",
+      "after": "风掀起绿色披风，韦一手按住自己的发，另一只手扶了下车边，让小语别一下起得太急。小语没起，只望着那条很远的线，过了好久，才慢慢吐出口气。",
+      "references": [
+        "assets/chapter-art/16-2.png"
+      ],
+      "prompt": "Use case: illustration-story. Make ONE full-bleed landscape 16:9 chapter illustration for 九域守界. Match the established illustrations: exquisite semi-realistic anime faces, naturally connected anatomy, finely painted loose hair, gold-embroidered clothing, tactile wood/stone/cloth, luminous cinematic lighting and atmospheric depth, restrained sincere emotion. References are identity and painting-style guides only, not edit targets; never copy their text, labels or collage layout. One continuous scene, no montage, panels, captions, legible lettering, watermark, logo or border. Every human has exactly two arms and hands, each clearly attached; natural fingers, physically readable interactions. Xiaoyu: adult woman, shoulder-length wavy chestnut hair, tiny gold flower pin, cream blouse with loose red necktie, BLUE cloak with intricate GOLD compass embroidery and muted red lining, brown travel trousers and boots. A palm is bandaged, one shoulder still sore; no weight suspended from the injured arm. Weikan: adult female archer, wavy brown hair, pearl earrings, deep GREEN cloak with gold botanical embroidery, cream shirt, brown travel trousers, leather bracers, ordinary bow and finite ordinary arrows. Chapter42, late afternoon of their FIRST VIEW OF THE SEA, on a pale gravel coastal road after leaving Qinglan. A wide cinematic vista with a vast horizontal gray-blue sea filling most of the background to the hazy horizon, silver small waves changing in sun, ONE tiny distant white sail, sparse coastal trees and low headland, no familiar river city or giant castle. Foreground two adult women riding by the side of a slowly moving practical travel CART, ordinary wheels, folded canvas over secured cargo boxes; a second cart only small farther back on the road. Xiaoyu remains SITTING safely on the cart-side bench, her sore shoulder supported by a folded soft cushion, bandaged hand quiet on her lap, breath caught and eyes wide at the first immensity of open water. She does not stand on the cart or jump up. Weikan sits close beside her; one hand holds her own windblown brown hair, the other steadies the REAL cart edge, green cloak lifting in the salt breeze. Their faces are in three-quarter side view looking across the water, small in the spacious composition but recognizable. Their blue and green gold-embroidered cloaks contrast with the enormous soft blue-gray horizon and warm pale road. Real leather straps keep cargo covered, no uncovered relics in sea spray. The emotion is wordless wonder mixed with fatigue, not a posed travel selfie. No shipboard setting yet, flying cart, modern road, passenger crowd or floating map.",
+      "original": "assets/chapter-art/42-2.png",
+      "generated_filename": "exec-4c69d945-e62e-4a8a-bd29-9298831b36c8.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "f70c2cd6083a92dc6dab1c9eef9a9d25c61fefb738e8a6bed91c73f09b6801b8"
+    },
+    {
+      "id": "43-1",
+      "chapter": "043",
+      "caption": "这下，有人能坐稳了",
+      "alt": "候船棚下，莫问将随身木楔塞进松动的凳脚，小语拾起老妇的叶包点心，旧行囊仍靠在身旁。",
+      "after": "他将凳子稍稍抬起，木楔进了空隙，座板便不再向外歪。",
+      "references": [
+        "assets/originals/21.png",
+        "assets/chapter-art/16-2.png"
+      ],
+      "prompt": "Use case: illustration-story. Make ONE full-bleed landscape 16:9 chapter illustration for 九域守界. Match the established illustrations: exquisite semi-realistic anime faces, naturally connected anatomy, finely painted loose hair, gold-embroidered clothing, tactile wood/stone/cloth, luminous cinematic lighting and atmospheric depth, restrained sincere emotion. References are identity and painting-style guides only, not edit targets; never copy their text, labels or collage layout. One continuous scene, no montage, panels, captions, legible lettering, watermark, logo or border. Every human has exactly two arms and hands, each clearly attached; natural fingers, physically readable interactions. Xiaoyu: adult woman, shoulder-length wavy chestnut hair, tiny gold flower pin, cream blouse with loose red necktie, BLUE cloak with intricate GOLD compass embroidery and muted red lining, brown travel trousers and boots. A palm is bandaged, one shoulder still sore; no weight suspended from the injured arm. Chapter43, a bustling but ordinary coastal ferry waiting SHELTER in early morning, wet stone steps and small wooden ferries in the background, salt-washed timber pillars, warm low sunshine and sea mist. Mo Wen is the same adult MAN around30 from his reference: tall but crouching here, messy long dark-brown hair tied loosely, light stubble, easy mischievous half-smile, tattered DARK GRAY patchwork cloak over coarse worn fisherman's martial clothes, battered old bulging traveling sack. His body and clothes are real and weathered, no immortal aura or youthful prince finery. He is crouched beside a sagging OLD WOODEN BENCH and carefully lifts the end a few centimeters with ONE hand, sliding ONE small worn wooden WEDGE from his sack beneath the loose/short bench leg with the OTHER. The wedge is visibly supporting the leg, not floating or beneath someone's foot. An ELDERLY plain-clothed woman sits safely at the inner end, one hand resting on her knee, small bamboo food basket at her feet. Xiaoyu crouches on the other side picking up a few leaf-wrapped pastries that rolled onto wet paving; her sore shoulder close to her body, not pulling the old woman by the arm. One leaf packet has damp sand, the rest dry, modest everyday care. A rude waiting man's cloth bag can be partly visible held back at the far pillar, no fight, grabbing or crowd of detailed faces. Three main figures with space for the small practical act. The unseen long history in Mo Wen's amused face and patched cloak, no readable signs, supernatural tricks, giant staff or dramatic duel.",
+      "original": "assets/chapter-art/43-1.png",
+      "generated_filename": "exec-626926f3-0f0f-4fc3-8183-d871a2e4356c.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "c646f4bbbd1094738e42d222b001226db2f324c82a61ef478ca77a21ca5f8cc7"
+    },
+    {
+      "id": "43-2",
+      "chapter": "043",
+      "caption": "先把靠岸的这一段接住",
+      "alt": "江照明落进失控回渡的小船，斜引船侧浪头，陶岸与船工将缆绳收上实桩，让船首避开候船低台。",
+      "after": "执剑的人已经落进船里，膝弯压低，剑尖向外挑。横挤向岸的浪头被斜引开一小段，船侧猛地向外一晃，正好让收紧的接缆带住。",
+      "references": [
+        "assets/originals/22.png",
+        "assets/chapter-art/16-2.png"
+      ],
+      "prompt": "Use case: illustration-story. Make ONE full-bleed landscape 16:9 chapter illustration for 九域守界. Match the established illustrations: exquisite semi-realistic anime faces, naturally connected anatomy, finely painted loose hair, gold-embroidered clothing, tactile wood/stone/cloth, luminous cinematic lighting and atmospheric depth, restrained sincere emotion. References are identity and painting-style guides only, not edit targets; never copy their text, labels or collage layout. One continuous scene, no montage, panels, captions, legible lettering, watermark, logo or border. Every human has exactly two arms and hands, each clearly attached; natural fingers, physically readable interactions. Jiang Zhaoming: adult man age25, tall slender, tousled dark-brown hair, confident composed face, sea-BLUE and WHITE fitted coat with gold embroidery, small shoulder armor, tall black boots, slender single sword with gold guard, an OLD PATCHED BRASS NAVIGATION LANTERN at his belt, its warm light modest. Tao An: local adult ferryman around40, short dark hair, weathered sun-tanned face, rolled sleeves of an off-white work shirt under a faded navy waistcoat, brown-gray sturdy work trousers, old paint stains on hands, plain clothes without a hero cloak. Chapter43, the ferry LANDING RESCUE at the small outer dock, bright windy morning, no magical time loop yet. An ordinary SMALL RETURNING SAILBOAT has drifted sideways toward the low stone waiting platform, half-lowered sail, ropes snared at an old loading frame, iron-reinforced bow about to push against thick timber fenders. Jiang has already LANDED INSIDE this small boat with knees bent low and one boot braced, one hand holding his SINGLE slender sword angled out along the side. A thin realistic ribbon of WATER LIGHT follows the sword tip, diverting just the immediate sideways wave a SMALL distance so the hull yaws outward into the mooring line. He does not levitate a whole ship or part the sea; patched old BRASS LANTERN remains secured at his belt rather than a giant beacon. On the safe STONE QUAY, Tao An and one ordinary deckhand have passed the line around a stout SOLID BOLLARD, backing a step to take the load, no one wrapping rope around their own arm. A cut loose line and half-fallen sail show practical teamwork. Show coherent geometry: boat close to stone quay but wave redirected AWAY from people, line under tension and fender taking the bump. Two or three main readable faces, no mass passenger crowd. Xiaoyu's blue-cloaked small silhouette can be farther in shelter helping an old woman behind a pillar, no focus or invented sword in her hands. Spray and wet ropes, urgency but controlled skill, ship low and modest not a war galleon. No modern harbor, exploding hull, giant wave wall, sword energy beam or blood.",
+      "original": "assets/chapter-art/43-2.png",
+      "generated_filename": "exec-7becd1b2-5368-4a83-984d-253a616a66a5.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "be9862c338e8932f2d8daab8da404feb2404c8222356c59bc29f7df99bd72d6e"
+    },
+    {
+      "id": "44-1",
+      "chapter": "044",
+      "caption": "救回来的，不只是一段水路",
+      "alt": "清翊借无相密钥从小艇带回受伤的陶岸，半跪在湿甲板上扶住他，乐温扑到臂边，项链的余光尚未合拢。",
+      "after": "陶岸撞到甲板上，膝盖屈着，清翊半跪在他旁边，两人衣袖滴下的水顷刻漫开一小片。乐温扑到清翊臂上，他下意识接住，另一只手仍死死扶着陶岸。",
+      "references": [
+        "assets/originals/10.png",
+        "assets/originals/22.png",
+        "assets/chapter-art/16-2.png"
+      ],
+      "prompt": "Use case: illustration-story. Make ONE full-bleed landscape 16:9 chapter illustration for 九域守界. Match the established illustrations: exquisite semi-realistic anime faces, naturally connected anatomy, finely painted loose hair, gold-embroidered clothing, tactile wood/stone/cloth, luminous cinematic lighting and atmospheric depth, restrained sincere emotion. References are identity and painting-style guides only, not edit targets; never copy their text, labels or collage layout. One continuous scene, no montage, panels, captions, legible lettering, watermark, logo or border. Every human has exactly two arms and hands, each clearly attached; natural fingers, physically readable interactions. Lin Qingyi: youthful male angel looking thirteen, short tousled SILVER-WHITE hair, bright GOLD eyes, small slight build, cream/white traveling tunic with pale-blue/gold trim, brown belts/pouches and boots, TWO WHITE FEATHERED WINGS folded tightly behind his own back, ONE ornate hollow gold KEY-PENDANT on a chain at the chest. His companion Lewen is a SMALL BLACK-SCALED dragon with BLUE eyes, four legs, folded membranous wings, little horns and slender tail, never white. Tao An: local adult ferryman around40, short dark hair, weathered sun-tanned face, rolled sleeves of an off-white work shirt under a faded navy waistcoat, brown-gray sturdy work trousers, old paint stains on hands, plain clothes without a hero cloak. Chapter44, AFTER Lin Qingyi has used the hollow KEY-PENDANT to shift himself and injured Tao An from a separated rock-survey skiff back to the FERRY DECK. Show the moment AFTER both have landed, not a child physically carrying a large man through the air. Tao An sits on the wet deck with one knee bent, a shoe loosened over a freshly rope-bruised ankle, minor clean scrape only, one hand still clutching Qingyi's sleeve; no graphic injury or severed limb. Qingyi kneels beside him, one normal arm steadying Tao's shoulder, the other receiving SMALL BLACK dragon Lewen against his forearm, exactly TWO arms total. His WHITE wings are folded TIGHT at his own back because low rigging blocks flight; no wing on Tao, no extra hands. Water drips from their sleeves into one small pool. The ornate hollow GOLD KEY pendant at Qingyi's collar has only two very faint opposing traces, pale gold and cool blue not fully merging, residual momentary light rather than a huge portal or halo. He is alert but beginning to look uncertain, unaware yet of the short memory he has lost; Tao relieved and in pain. Xiaoyu in BLUE/gold can be a smaller kneeling figure just arriving with a folded dry cloth, leaving the injured foot clear. A short loose boarding plank floats in the water gap between ferry and survey skiff in background; Jiang Zhaoming blue/white and an ordinary deckhand remain aboard that other small skiff, tiny in depth, nobody fallen in the sea. Distant white-shouldered rock, rigging, choppy bright water and taut reef mooring, no modern ship. Main emotional triangle is boy, rescued ferryman and black dragon. No resurrection, healthy ankle, memory restored, giant dragon, explosive magic, aerial winged embrace or montage.",
+      "original": "assets/chapter-art/44-1.png",
+      "generated_filename": "exec-829840e4-93bd-498f-bd02-1126b20b532e.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "1f11234a24b2d7546a4203893d83d6d6ec4a48abb96c093902765b8dbb12f512"
+    },
+    {
+      "id": "44-2",
+      "chapter": "044",
+      "caption": "把记不住的名字，写在灯下",
+      "alt": "北岬客舍的晚饭桌边，清翊重新写下陶岸的名字，小语挪近普通油灯，乐温伏在册旁，记忆的空处没有被草草补成想起。",
+      "after": "亮处落在他刚写好的名字上。",
+      "references": [
+        "assets/originals/10.png",
+        "assets/chapter-art/35-1.png",
+        "assets/chapter-art/16-2.png"
+      ],
+      "prompt": "Use case: illustration-story. Make ONE full-bleed landscape 16:9 chapter illustration for 九域守界. Match the established illustrations: exquisite semi-realistic anime faces, naturally connected anatomy, finely painted loose hair, gold-embroidered clothing, tactile wood/stone/cloth, luminous cinematic lighting and atmospheric depth, restrained sincere emotion. References are identity and painting-style guides only, not edit targets; never copy their text, labels or collage layout. One continuous scene, no montage, panels, captions, legible lettering, watermark, logo or border. Every human has exactly two arms and hands, each clearly attached; natural fingers, physically readable interactions. Lin Qingyi: youthful male angel looking thirteen, short tousled SILVER-WHITE hair, bright GOLD eyes, small slight build, cream/white traveling tunic with pale-blue/gold trim, brown belts/pouches and boots, TWO WHITE FEATHERED WINGS folded tightly behind his own back, ONE ornate hollow gold KEY-PENDANT on a chain at the chest. His companion Lewen is a SMALL BLACK-SCALED dragon with BLUE eyes, four legs, folded membranous wings, little horns and slender tail, never white. Xiaoyu: adult woman, shoulder-length wavy chestnut hair, tiny gold flower pin, cream blouse with loose red necktie, BLUE cloak with intricate GOLD compass embroidery and muted red lining, brown travel trousers and boots. A palm is bandaged, one shoulder still sore; no weight suspended from the injured arm. Tao An: local adult ferryman around40, short dark hair, weathered sun-tanned face, rolled sleeves of an off-white work shirt under a faded navy waistcoat, brown-gray sturdy work trousers, old paint stains on hands, plain clothes without a hero cloak. Chapter44, evening in a modest DRY COASTAL INN after surviving the false repeated water route. Intimate medium-wide table scene, TWO main faces: Qingyi and Xiaoyu. Qingyi has laid a thin damp-cornered JOURNAL flat on a stable wooden table and is carefully writing down the ferryman's name and the small encounter he can no longer remember. Paper shows only indistinct small ink lines, NO legible lettering. His gold eyes bright but quietly vulnerable, a gentle hesitant smile, not suddenly recalling everything. His silver-white hair slightly salt-tousled, TWO folded white wings tucked behind chair, hollow gold KEY necklace dim and ordinary against cream/blue/gold travel clothes. SMALL BLACK-SCALED BLUE-EYED dragon Lewen lies beside the book with four paws and folded wings; Qingyi's free hand rests gently on its back, his writing hand uses ONE pen. Xiaoyu has just moved an ORDINARY OIL LAMP between them and returns to her warm soup bowl. Her bandaged hand protected, sore shoulder relaxed low; she listens and offers only what she truly witnessed, no mind-reading spell. Warm lamp light falls on the newly written lines, steaming bowl and damp cloth, cool open window beyond shows a few small port lights and people walking, weathered coastal interior not a palace. At the far end of the table, Tao An may sit out of focus with wrapped ankle supported on a stool, mouth slightly open to repeat his name, ONE modest background face, no crowds. The missing memory is respected as missing, expressed by the notebook and silence, no floating memory hologram, erased head, magical cure, tears of triumph or modern hospital props.",
+      "original": "assets/chapter-art/44-2.png",
+      "generated_filename": "exec-98977b75-7cb6-4fe9-b8fb-ebb1b927b450.png",
+      "width": 1672,
+      "height": 940,
+      "sha256": "9d5ceb86f61aee99e670bcbdf472fbcf36c2fdd1ed034d30cd7e2b0acc5b57ed"
+    },
+    {
+      "id": "45-1",
+      "chapter": "045",
+      "caption": "别只拉手，先把人接住",
+      "alt": "料驳被拖离接人台时，小语稳住丁茂的前臂，乔棠和本地船工用短带托住腰腋，合力将他接回岸板。",
+      "after": "丁茂的膝盖磕上岸板，半边身子扑进来，乔棠立即拖他离开台沿。",
+      "references": [
+        "assets/chapter-art/16-2.png",
+        "assets/chapter-art/35-1.png"
+      ],
+      "prompt": "Use case: illustration-story. Make ONE full-bleed landscape 16:9 chapter illustration for 九域守界. Match the established illustrations: exquisite semi-realistic anime faces, naturally connected anatomy, finely painted loose hair, gold-embroidered clothing, tactile wood/stone/cloth, luminous cinematic lighting and atmospheric depth, restrained sincere emotion. References are identity and painting-style guides only, not edit targets; never copy their text, labels or collage layout. One continuous scene, no montage, panels, captions, legible lettering, watermark, logo or border. Every human has exactly two arms and hands, each clearly attached; natural fingers, physically readable interactions. Xiaoyu: adult woman, shoulder-length wavy chestnut hair, tiny gold flower pin, cream blouse with loose red necktie, BLUE cloak with intricate GOLD compass embroidery and muted red lining, brown travel trousers and boots. A palm is bandaged, one shoulder still sore; no weight suspended from the injured arm. Chapter45, the real NORTH CAPE DOCK rescue as a detained material BARGE is being forcibly pulled AWAY from the small landing by a separate tug's tightening MAIN TOW ROPE. Main foreground FOUR ordinary people on and at the real timber landing: Ding Mao is a young ADULT MALE shipyard worker, short dark hair, plain worn gray-brown shirt/trousers, a swollen scraped back of one hand, no hero cloak. He has just brought his KNEE onto the LANDING and upper body over the edge, feet finding a protruding cross-timber instead of being suspended by one wrist. Xiaoyu braces beside a REAL stout post, sore shoulder tucked, holds ONLY his near FOREARM steady with her good hand, no supporting his entire weight on the injured shoulder. Qiao Tang is a practical ADULT WOMAN around30, dark-brown hair in a low tied bun, short earth-brown shipyard work jacket with sleeves rolled below elbows, dark work trousers, small pale repair scratches on her hands. She and one local adult deckhand take the actual load with a SHORT EXISTING WEBBING STRAP under Ding's armpits/waist, lifting then bringing him INWARD from the wet edge. Qiao's face strained and resolute, Xiaoyu frightened but calling for the right help, Ding shocked and coughing, NOT a romantic rescue. Behind them a single-person removable BOARDING PLANK has just lost its far contact and drops into the water gap, splash at shoe height. Material barge with tightly lashed pale lumber and SEVEN frightened adult workers still aboard in soft depth, barred exit, main towing line leading toward a distant tug and winch. Keep the seven only small grouped silhouettes, no knife at any throat. Real worn piers, narrow rear maintenance doorway and low warehouse beam nearby, bright sea wind, urgency. No giant wave, magical lifting, gore, worker still hanging from Xiaoyu's arm or magically released cargo.",
+      "original": "assets/chapter-art/45-1.png",
+      "generated_filename": "exec-50150578-8682-4dfd-a2e5-ee98fd2aad65.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "20801210bec764d0be1b08950f56e86ac19cc83084b5de3088e174149b0dba5c"
+    },
+    {
+      "id": "45-2",
+      "chapter": "045",
+      "caption": "已经动了",
+      "alt": "临水会馆外，土方奏一取出小提琴，面对已开始的暴力不再等候晚场；小语在低门处为取梯的人留出通路，韦侃守着高处射位。",
+      "after": "“已经动了。”",
+      "references": [
+        "assets/originals/03.png",
+        "assets/chapter-art/16-2.png",
+        "assets/originals/22.png"
+      ],
+      "prompt": "Use case: illustration-story. Make ONE full-bleed landscape 16:9 chapter illustration for 九域守界. Match the established illustrations: exquisite semi-realistic anime faces, naturally connected anatomy, finely painted loose hair, gold-embroidered clothing, tactile wood/stone/cloth, luminous cinematic lighting and atmospheric depth, restrained sincere emotion. References are identity and painting-style guides only, not edit targets; never copy their text, labels or collage layout. One continuous scene, no montage, panels, captions, legible lettering, watermark, logo or border. Every human has exactly two arms and hands, each clearly attached; natural fingers, physically readable interactions. Chapter45, the tense PRELUDE at the waterfront hall beside the North Cape loading dock, violence has already begun and the touring musician elects to help rather than being used to quiet the detainees. Primary foreground subject: HIZIKATA SOICHI, the adult male age23 from the musician reference, tall slim, dark softly waved hair tied low, calm exacting face, IMMACULATE BLACK tailored three-piece suit, white collared shirt and ornate dark patterned tie/pin, polished black shoes. He stands on DRY GROUND beside a raised wooden rack holding his OPEN violin case; takes out ONE warm reddish-brown classical VIOLIN and ONE horsehair bow, left hand on the neck and right hand holding the bow just lifted toward the strings, correct violin anatomy and delicate natural fingers, preparing his first note rather than a big performance pose. He looks steadily toward the barge, quietly sharp, not smiling for applause. A worried hall manager stands partly out of frame with an indistinct folded program, no readable text. In middle distance through two weathered warehouses, Xiaoyu's BLUE/gold cape is visible as she holds a low MAINTENANCE DOOR fully open with her BACK and waist, leaving both hands free to indicate the low beam. TWO local workers pass inward to fetch a replacement LADDER, she is NOT carrying it on her sore shoulder. Weikan in green is small higher on a cargo platform, bow half drawn but HELD while a civilian blocks the line of fire; no arrow hitting a person. A glimpse of Jiang in blue/white near a tug's loading frame establishes the ongoing dock standoff; barge and seven civilians stay blurred in depth. Keep only musician's face strongly defined, perhaps manager partial, avoid crowded portrait lineup. Warm hard daylight, salt stains, strained ropes, calm resolve against distant noise. No visible sound-wave forcefield, strings cutting people, enchanted barrier already completed, modern microphone, concert stage, blood or triumphant end to the conflict.",
+      "original": "assets/chapter-art/45-2.png",
+      "generated_filename": "exec-3c3bed6e-c291-429a-bf03-082b11a23be7.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "78cd0c0042a30027d9d66c95b33e01c52b8f4e0447182135bd303a3402f6b2ad"
+    }
+  ]
+}

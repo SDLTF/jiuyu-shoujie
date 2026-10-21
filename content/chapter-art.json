@@ -935,7 +935,127 @@
       "height": 941,
       "sha256": "62c2590a6af166336a4509b11b901114a333a080ec3ab4a7139969fa097077e2",
       "generation_metadata": "assets/chapter-art/chapter37-40-generation.json"
+    },
+    {
+      "id": "41-1",
+      "chapter": "041",
+      "caption": "等这一寸，箭才离弦",
+      "alt": "赫利俄斯踩稳受护的落板，撬开重影胸甲，韦侃的箭沿细风送入接束，小语护着许舟留在墙侧。",
+      "after": "小语看见它越过两人之间最后一截空处，进入裂甲正中。箭杆撞得弯了一瞬，随即没入那团绷紧的胸根。",
+      "original": "assets/chapter-art/41-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "bc13a32659daaf61bed3484856f3a0989848e3c398853eb641ab50ccba4eca27",
+      "generation_metadata": "assets/chapter-art/chapter41-45-generation.json"
+    },
+    {
+      "id": "41-2",
+      "chapter": "041",
+      "caption": "等到了，这次都能答",
+      "alt": "返醒后的照护屋里，小语与韦侃在床边轻握发颤的手，许禾也终于接住醒来的许舟，莉莉守在床沿。",
+      "after": "小语低头看两只手，才轻轻说：“等到了。”",
+      "original": "assets/chapter-art/41-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "1f76115bd2c2c72151dcc592094440d89b083bad2ea49ff6f4d8dff15ac0985f",
+      "generation_metadata": "assets/chapter-art/chapter41-45-generation.json"
+    },
+    {
+      "id": "42-1",
+      "chapter": "042",
+      "caption": "把破口慢慢合上",
+      "alt": "窗下，小语把绿披风放在膝头压稳，韦侃一针一针修补被轻影擦开的边，两人终于能慢慢说起海。",
+      "after": "两个人把那道破口慢慢合上，才开始讲到海边以后想先看什么。没有谁能说出自己没见过的海，最后只商量到时候找个不挡人干活的地方，坐一会儿，不急着先替谁问话。",
+      "original": "assets/chapter-art/42-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "6e819c633bc813c89b8ff92f4ca4ca303204b33e41f9ec0b5d7caf0728ed3805",
+      "generation_metadata": "assets/chapter-art/chapter41-45-generation.json"
+    },
+    {
+      "id": "42-2",
+      "chapter": "042",
+      "caption": "海，终于铺到天底下",
+      "alt": "沿海碎石路上，小语坐在慢行车侧，韦侃扶住车边，海风掀起披风，第一次真正看见无边的海。",
+      "after": "风掀起绿色披风，韦一手按住自己的发，另一只手扶了下车边，让小语别一下起得太急。小语没起，只望着那条很远的线，过了好久，才慢慢吐出口气。",
+      "original": "assets/chapter-art/42-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "f70c2cd6083a92dc6dab1c9eef9a9d25c61fefb738e8a6bed91c73f09b6801b8",
+      "generation_metadata": "assets/chapter-art/chapter41-45-generation.json"
+    },
+    {
+      "id": "43-1",
+      "chapter": "043",
+      "caption": "这下，有人能坐稳了",
+      "alt": "候船棚下，莫问将随身木楔塞进松动的凳脚，小语拾起老妇的叶包点心，旧行囊仍靠在身旁。",
+      "after": "他将凳子稍稍抬起，木楔进了空隙，座板便不再向外歪。",
+      "original": "assets/chapter-art/43-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "c646f4bbbd1094738e42d222b001226db2f324c82a61ef478ca77a21ca5f8cc7",
+      "generation_metadata": "assets/chapter-art/chapter41-45-generation.json"
+    },
+    {
+      "id": "43-2",
+      "chapter": "043",
+      "caption": "先把靠岸的这一段接住",
+      "alt": "江照明落进失控回渡的小船，斜引船侧浪头，陶岸与船工将缆绳收上实桩，让船首避开候船低台。",
+      "after": "执剑的人已经落进船里，膝弯压低，剑尖向外挑。横挤向岸的浪头被斜引开一小段，船侧猛地向外一晃，正好让收紧的接缆带住。",
+      "original": "assets/chapter-art/43-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "be9862c338e8932f2d8daab8da404feb2404c8222356c59bc29f7df99bd72d6e",
+      "generation_metadata": "assets/chapter-art/chapter41-45-generation.json"
+    },
+    {
+      "id": "44-1",
+      "chapter": "044",
+      "caption": "救回来的，不只是一段水路",
+      "alt": "清翊借无相密钥从小艇带回受伤的陶岸，半跪在湿甲板上扶住他，乐温扑到臂边，项链的余光尚未合拢。",
+      "after": "陶岸撞到甲板上，膝盖屈着，清翊半跪在他旁边，两人衣袖滴下的水顷刻漫开一小片。乐温扑到清翊臂上，他下意识接住，另一只手仍死死扶着陶岸。",
+      "original": "assets/chapter-art/44-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "1f11234a24b2d7546a4203893d83d6d6ec4a48abb96c093902765b8dbb12f512",
+      "generation_metadata": "assets/chapter-art/chapter41-45-generation.json"
+    },
+    {
+      "id": "44-2",
+      "chapter": "044",
+      "caption": "把记不住的名字，写在灯下",
+      "alt": "北岬客舍的晚饭桌边，清翊重新写下陶岸的名字，小语挪近普通油灯，乐温伏在册旁，记忆的空处没有被草草补成想起。",
+      "after": "亮处落在他刚写好的名字上。",
+      "original": "assets/chapter-art/44-2.png",
+      "width": 1672,
+      "height": 940,
+      "sha256": "9d5ceb86f61aee99e670bcbdf472fbcf36c2fdd1ed034d30cd7e2b0acc5b57ed",
+      "generation_metadata": "assets/chapter-art/chapter41-45-generation.json"
+    },
+    {
+      "id": "45-1",
+      "chapter": "045",
+      "caption": "别只拉手，先把人接住",
+      "alt": "料驳被拖离接人台时，小语稳住丁茂的前臂，乔棠和本地船工用短带托住腰腋，合力将他接回岸板。",
+      "after": "丁茂的膝盖磕上岸板，半边身子扑进来，乔棠立即拖他离开台沿。",
+      "original": "assets/chapter-art/45-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "20801210bec764d0be1b08950f56e86ac19cc83084b5de3088e174149b0dba5c",
+      "generation_metadata": "assets/chapter-art/chapter41-45-generation.json"
+    },
+    {
+      "id": "45-2",
+      "chapter": "045",
+      "caption": "已经动了",
+      "alt": "临水会馆外，土方奏一取出小提琴，面对已开始的暴力不再等候晚场；小语在低门处为取梯的人留出通路，韦侃守着高处射位。",
+      "after": "“已经动了。”",
+      "original": "assets/chapter-art/45-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "78cd0c0042a30027d9d66c95b33e01c52b8f4e0447182135bd303a3402f6b2ad",
+      "generation_metadata": "assets/chapter-art/chapter41-45-generation.json"
     }
   ],
-  "provenance": "Chapters 1-10: eighteen user-supplied illustrations preserved unchanged. Chapters 11-12: four new illustrations generated with built-in image_gen using the current user-selected artwork and character cards as references; prompts and exact references are preserved in assets/chapter-art/chapter11-12-generation.json. Superseded generated originals for chapters 7-10 remain in assets/chapter-art/archive/, with their generation history in assets/chapter-art/generation-prompts.json. Chapters 13-14: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter13-14-generation.json. Chapters 15-16: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter15-16-generation.json. Chapters 17-19: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter17-19-generation.json. Chapters 20-21: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter20-21-generation.json. Chapters 22-23: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter22-23-generation.json. Chapters 24-25: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter24-25-generation.json. Chapters 26-27: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter26-27-generation.json. Chapters 28-30: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter28-30-generation.json. Chapters 31-33: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter31-33-generation.json. Chapters 34-36: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter34-36-generation.json. Chapters 37-40: eight built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter37-40-generation.json."
+  "provenance": "Chapters 1-10: eighteen user-supplied illustrations preserved unchanged. Chapters 11-12: four new illustrations generated with built-in image_gen using the current user-selected artwork and character cards as references; prompts and exact references are preserved in assets/chapter-art/chapter11-12-generation.json. Superseded generated originals for chapters 7-10 remain in assets/chapter-art/archive/, with their generation history in assets/chapter-art/generation-prompts.json. Chapters 13-14: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter13-14-generation.json. Chapters 15-16: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter15-16-generation.json. Chapters 17-19: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter17-19-generation.json. Chapters 20-21: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter20-21-generation.json. Chapters 22-23: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter22-23-generation.json. Chapters 24-25: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter24-25-generation.json. Chapters 26-27: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter26-27-generation.json. Chapters 28-30: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter28-30-generation.json. Chapters 31-33: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter31-33-generation.json. Chapters 34-36: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter34-36-generation.json. Chapters 37-40: eight built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter37-40-generation.json. Chapters 41-45: ten built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter41-45-generation.json."
 }
