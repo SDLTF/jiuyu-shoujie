@@ -113,7 +113,7 @@ def prepare_design_assets():
     font_dir.mkdir(parents=True, exist_ok=True)
     # Include all source content and UI strings, so future chapters remain covered.
     paths = list((ROOT / 'content').rglob('*.md')) + list((ROOT / 'content').rglob('*.json'))
-    paths += [ROOT / 'scripts/build.py', ROOT / 'docs/assets/site.js']
+    paths += [ROOT / 'scripts/build.py', ROOT / 'scripts/catalog_design.py', ROOT / 'docs/assets/site.js', ROOT / 'docs/assets/catalog.js']
     text = ''.join(path.read_text(encoding='utf-8') for path in paths)
     codepoints = sorted({ord(character) for character in text} | set(range(32, 127)))
     signature = hashlib.sha256(str(codepoints).encode()).hexdigest()

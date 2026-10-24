@@ -10,6 +10,7 @@ from PIL import Image, ImageOps
 from design_assets import prepare_design_assets
 from character_art import prepare_character_art, character_art_entries
 from character_side_stories import profile_side_stories
+from catalog_design import enhance as enhance_catalog
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "docs"
@@ -157,6 +158,11 @@ def frame(title, body, prefix="", active="", noindex=False, route="", background
     else:
         page_kind = {'gallery/': 'gallery', 'stickers/': 'gallery', 'world/': 'world', 'art/': 'art', 'fanworks/': 'fanworks'}.get(route, 'reader')
     description = '九域守界的粉丝二创：图片与文字作品，收录创作者署名和作品描述。' if active == 'fanworks' else '九域守界的官方故事档案：人物设定图集、小说正文与章节印象图。'
+    body, catalog_kind = enhance_catalog(body, route)
+    catalog_assets = ''
+    if catalog_kind:
+        page_kind = catalog_kind
+        catalog_assets = f'<link rel="stylesheet" href="{prefix}assets/catalog.css?v={asset_version("catalog.css")}">\n<script src="{prefix}assets/catalog.js?v={asset_version("catalog.js")}" defer></script>\n'
     return f'''<!doctype html>
 <html lang="zh-CN"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
@@ -168,7 +174,7 @@ def frame(title, body, prefix="", active="", noindex=False, route="", background
 <link rel="stylesheet" href="{prefix}assets/fonts/fonts.css?v={asset_version('fonts/fonts.css')}">
 <link rel="stylesheet" href="{prefix}assets/site.css?v={asset_version('site.css')}">
 <script src="{prefix}assets/site.js?v={asset_version('site.js')}" defer></script>
-</head><body class="page-{page_kind}"{f' style="--character-background:url({escape(background)})"' if background else ''}>
+{catalog_assets}</head><body class="page-{page_kind}"{f' style="--character-background:url({escape(background)})"' if background else ''}>
 <a class="skip-link" href="#main">跳到正文</a>
 <header class="site-header"><div class="header-inner">
 <a class="brand" href="{prefix or './'}" aria-label="九域守界首页"><span class="brand-mark" aria-hidden="true">九</span><span>九域守界</span></a>

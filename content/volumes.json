@@ -1,0 +1,10 @@
+{
+  "volumes": [
+    {"id": "01", "label": "第一卷", "title": "灰桥来客", "start": 1, "end": 16},
+    {"id": "02", "label": "第二卷", "title": "曜环的账单", "start": 17, "end": 30},
+    {"id": "03", "label": "第三卷", "title": "符纸与花", "start": 31, "end": 42},
+    {"id": "04", "label": "第四卷", "title": "龙与海峡", "start": 43, "end": 58},
+    {"id": "05", "label": "第五卷", "title": "名字与尸骸", "start": 59, "end": 76},
+    {"id": "06", "label": "第六卷", "title": "不会结束的一天", "start": 77, "end": 94}
+  ]
+}
