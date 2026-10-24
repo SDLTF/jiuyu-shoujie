@@ -1415,7 +1415,127 @@
       "height": 941,
       "sha256": "5d4db537da792e3e262668a2342b89852ed4d0a67b1b524fbdf319e67d63f462",
       "generation_metadata": "assets/chapter-art/chapter56-60-generation.json"
+    },
+    {
+      "id": "61-1",
+      "chapter": "061",
+      "caption": "后面没写完，现在可以讲",
+      "alt": "医棚灯下，酥心糖将夹在旧信夹里的半封信亲手交给琉西法；他用手托住纸背，没有硬压旧折痕，彭湃坐在旁边，旧友终于能接着说话。",
+      "after": "琉接过去，手指托着纸背，没有把折痕硬压平。",
+      "original": "assets/chapter-art/61-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "9c377793b7577e098757e2c63df69b2f2ba34f79fa550f8a07ff63afa93619bb",
+      "generation_metadata": "assets/chapter-art/chapter61-65-generation.json"
+    },
+    {
+      "id": "61-2",
+      "chapter": "061",
+      "caption": "这回，也数过我自己",
+      "alt": "救济棚外院的晚饭后，酥心糖把两颗糖放到琉西法手边，又摊开自己仍留着两颗糖的掌心；琉西法收好糖，旧友在暮色里重新笑起来。",
+      "after": "“留了。”她说，“这回也数过我自己。”",
+      "original": "assets/chapter-art/61-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "24595fe0e34cb563b8f00d4723edb237783703968d76910577dc1d238e6124a7",
+      "generation_metadata": "assets/chapter-art/chapter61-65-generation.json"
+    },
+    {
+      "id": "62-1",
+      "chapter": "062",
+      "caption": "左边给你",
+      "alt": "医棚后门，蓝金盾面卡在实木槽与压板架里，彭湃只用右掌扶方向；铁钩撞上盾沿，琉西法从留出的左侧接住陈树生与受惊的妇人。",
+      "after": "盾面已经卡进实木槽。",
+      "original": "assets/chapter-art/62-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "079a1708d81c544965e1e54e077e807cbc10d15106f33fdfe4ce9b6624001086",
+      "generation_metadata": "assets/chapter-art/chapter61-65-generation.json"
+    },
+    {
+      "id": "62-2",
+      "chapter": "062",
+      "caption": "纸还在，人也回来了",
+      "alt": "医棚长凳上，陈树生用没伤的手摸女儿的头，妻子把干净外衣放到他膝上；带泥的纸套仍在掌下，小语在旁让开位置，家人终于能坐到一起。",
+      "after": "陈用没伤的那只手摸她头顶。",
+      "original": "assets/chapter-art/62-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "66477175dbc8e921e0fedad338789d1c5ae62ab5158446afedb2ea020f9ce168",
+      "generation_metadata": "assets/chapter-art/chapter61-65-generation.json"
+    },
+    {
+      "id": "63-1",
+      "chapter": "063",
+      "caption": "这不是我男人",
+      "alt": "旧安置场北门，杜嫂抱着补过领口的棉衣，认出被叫来的人并非杜永；冒认者摊开的手指完整，小语在旁抱住衣角，门后的帘仍遮着真正住舍的人。",
+      "after": "简策走到门槛正中，让那人把手摊开。十指完整。场守立刻说叫错了，都是等迁居的人，名字多，走来时听岔。",
+      "original": "assets/chapter-art/63-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "c4ca0e4c4bbac685d8391892f8db37f356ba7bd0c882c7c2372aff88bcd656b3",
+      "generation_metadata": "assets/chapter-art/chapter61-65-generation.json"
+    },
+    {
+      "id": "63-2",
+      "chapter": "063",
+      "caption": "回应是他的，错的仍要改",
+      "alt": "救济棚侧院，三岛在邵安自愿后试写命簿稿本，纸内只出现极浅的回应；小语看着邵安仍能自由抬起的手，普通查核册和未吃完的粥都留在旁边。",
+      "after": "页上那两字的墨停住了洇开的边。小语看见纸内很浅的一点颤动，像水面有人从另一边轻轻碰过，然而并没有邵安的声音从纸里再响一遍。邵安自己低头，呼吸忽然停了半息。",
+      "original": "assets/chapter-art/63-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "f7f9b5faa53477af4837bf5f5359ddb54c945f29f48ad7e3c2b401227f6e474b",
+      "generation_metadata": "assets/chapter-art/chapter61-65-generation.json"
+    },
+    {
+      "id": "64-1",
+      "chapter": "064",
+      "caption": "看过以后，搬不搬由我们说",
+      "alt": "救济棚侧院，陈树生自己说清原先只答应看新公舍；单谣用鸣骨尺缓缓松开续接到“原居退出”的细扣，旧迁入凭据仍完整留在桌上，妻女守在身边。",
+      "after": "小语看见那一点扣住的地方松了。",
+      "original": "assets/chapter-art/64-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "1d3191e3034fab9112e92c346888c5337f00df86a19cc4db93528e6b20c5b7ce",
+      "generation_metadata": "assets/chapter-art/chapter61-65-generation.json"
+    },
+    {
+      "id": "64-2",
+      "chapter": "064",
+      "caption": "哪门通，就喊哪一门",
+      "alt": "灯下的简图只画出亲眼看过的北门、东车门和西柴口，韦侃指出接应方向，小语、单谣与三岛一起核对呼声、担架和不能硬断的束纹，准备次日入舍。",
+      "after": "九个进场的人在灯下再看了一回简图。",
+      "original": "assets/chapter-art/64-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "3daa9e517be3da65a9f0dd24e6bab9e3276f11195da1ab1bbe785fd23ae14f4a",
+      "generation_metadata": "assets/chapter-art/chapter61-65-generation.json"
+    },
+    {
+      "id": "65-1",
+      "chapter": "065",
+      "caption": "会长回去，也仍然会痛",
+      "alt": "暗廊实墙后，琉西法受箭后坐低缓气，破衣与地上的短矢还留着血痕，下方一翼新羽正慢慢收拢；酥心糖蹲在他身旁问痛不痛，小语把厚布垫到他撑地的掌下。",
+      "after": "琉没有马上应，隔了一息，才点头。那颗有棱的头低下去，六翼缓缓松开，刚长回的那一翼仍垂得比别的低。",
+      "original": "assets/chapter-art/65-1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "f6cdf2df26591cb2babd72995d4d20512997a20cec0aabd9fbd28bf78dc1d953",
+      "generation_metadata": "assets/chapter-art/chapter61-65-generation.json"
+    },
+    {
+      "id": "65-2",
+      "chapter": "065",
+      "caption": "在，我们没走",
+      "alt": "后舍隔门前，小语将所剩不多的灯光护到轴后，照见铁扣下面仍连着细线；单谣与三岛蹲近辨认暗扣，赫利俄斯停住剑，门后的人仍在安全位置应声。",
+      "after": "“我们没走。”",
+      "original": "assets/chapter-art/65-2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "08d659003117841c8d84677b70bc135378ca7bb4094699e8c882ba7189a54756",
+      "generation_metadata": "assets/chapter-art/chapter61-65-generation.json"
     }
   ],
-  "provenance": "Chapters 1-10: eighteen user-supplied illustrations preserved unchanged. Chapters 11-12: four new illustrations generated with built-in image_gen using the current user-selected artwork and character cards as references; prompts and exact references are preserved in assets/chapter-art/chapter11-12-generation.json. Superseded generated originals for chapters 7-10 remain in assets/chapter-art/archive/, with their generation history in assets/chapter-art/generation-prompts.json. Chapters 13-14: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter13-14-generation.json. Chapters 15-16: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter15-16-generation.json. Chapters 17-19: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter17-19-generation.json. Chapters 20-21: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter20-21-generation.json. Chapters 22-23: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter22-23-generation.json. Chapters 24-25: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter24-25-generation.json. Chapters 26-27: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter26-27-generation.json. Chapters 28-30: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter28-30-generation.json. Chapters 31-33: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter31-33-generation.json. Chapters 34-36: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter34-36-generation.json. Chapters 37-40: eight built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter37-40-generation.json. Chapters 41-45: ten built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter41-45-generation.json. Chapters 46-50: ten built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter46-50-generation.json. Chapters 51-55: ten built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter51-55-generation.json. Chapters 56-60: ten built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter56-60-generation.json."
+  "provenance": "Chapters 1-10: eighteen user-supplied illustrations preserved unchanged. Chapters 11-12: four new illustrations generated with built-in image_gen using the current user-selected artwork and character cards as references; prompts and exact references are preserved in assets/chapter-art/chapter11-12-generation.json. Superseded generated originals for chapters 7-10 remain in assets/chapter-art/archive/, with their generation history in assets/chapter-art/generation-prompts.json. Chapters 13-14: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter13-14-generation.json. Chapters 15-16: four illustrations generated with built-in image_gen; full prompts and exact reference paths are preserved in assets/chapter-art/chapter15-16-generation.json. Chapters 17-19: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter17-19-generation.json. Chapters 20-21: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter20-21-generation.json. Chapters 22-23: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter22-23-generation.json. Chapters 24-25: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter24-25-generation.json. Chapters 26-27: four built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter26-27-generation.json. Chapters 28-30: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter28-30-generation.json. Chapters 31-33: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter31-33-generation.json. Chapters 34-36: six built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter34-36-generation.json. Chapters 37-40: eight built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter37-40-generation.json. Chapters 41-45: ten built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter41-45-generation.json. Chapters 46-50: ten built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter46-50-generation.json. Chapters 51-55: ten built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter51-55-generation.json. Chapters 56-60: ten built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter56-60-generation.json. Chapters 61-65: ten built-in image_gen illustrations, full prompts and references in assets/chapter-art/chapter61-65-generation.json."
 }
